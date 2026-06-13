@@ -104,8 +104,26 @@ export default function ArtizenPage() {
   const featured = PROJECTS[dayOfYear(new Date()) % PROJECTS.length];
 
   return (
-    <main className="min-h-screen bg-[#0a1628] text-white px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-4xl">
+    <main className="min-h-screen bg-[#0a1628] text-white">
+      <nav className="sticky top-0 z-20 border-b border-white/10 bg-[#0a1628]/90 backdrop-blur">
+        <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+          <span className="text-sm font-bold tracking-tight">ZArtizen</span>
+          <div className="flex items-center gap-4 text-xs text-white/70">
+            <a href="#projects" className="hidden transition hover:text-white sm:inline">Projects</a>
+            <a href="#funds" className="hidden transition hover:text-white sm:inline">Funds</a>
+            <a href="#join" className="hidden transition hover:text-white sm:inline">Join</a>
+            <a
+              href={FUND_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#f5a623] px-3 py-1.5 font-semibold text-[#0a1628] transition hover:brightness-110"
+            >
+              Back the fund
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
         {/* Hero */}
         <header className="mb-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#f5a623]">
@@ -210,46 +228,56 @@ export default function ArtizenPage() {
         </section>
 
         {/* Roster */}
-        <section className="mb-12">
+        <section id="projects" className="mb-12 scroll-mt-20">
           <div className="mb-5 flex items-baseline justify-between">
             <h2 className="text-lg font-bold sm:text-xl">The projects</h2>
             <span className="text-xs text-white/50">Ranked by sales — snapshot {SNAPSHOT_DATE}</span>
           </div>
           <ul className="space-y-3">
             {PROJECTS.map((p) => (
-              <li
-                key={p.rank}
-                className="rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-[#f5a623]/40"
-              >
-                <div className="flex gap-4">
-                  <div className="shrink-0 text-lg font-bold text-white/30 tabular-nums">
-                    {String(p.rank).padStart(2, '0')}
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                      <h3 className="text-base font-semibold leading-snug">{p.name}</h3>
-                      <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] uppercase tracking-wide text-white/60">
-                        {p.category}
-                      </span>
+              <li key={p.rank}>
+                <a
+                  href={FUND_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Collect ${p.name} on Artizen`}
+                  className="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-[#f5a623]/50 hover:bg-white/[0.07]"
+                >
+                  <div className="flex gap-4">
+                    <div className="shrink-0 text-lg font-bold text-white/30 tabular-nums">
+                      {String(p.rank).padStart(2, '0')}
                     </div>
-                    <p className="mt-0.5 text-xs text-white/50">by {p.creator}</p>
-                    <p className="mt-2 text-sm leading-relaxed text-white/70">{p.blurb}</p>
-                    {p.zaoTie ? (
-                      <p className="mt-2 text-xs font-medium text-[#f5a623]">ZAO link: {p.zaoTie}</p>
-                    ) : null}
-                    <div className="mt-2 flex gap-4 text-xs text-white/50 tabular-nums">
-                      <span>{usd(p.sales)} sales</span>
-                      <span>{usd(p.match)} matched</span>
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                        <h3 className="text-base font-semibold leading-snug transition group-hover:text-[#f5a623]">
+                          {p.name}
+                        </h3>
+                        <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] uppercase tracking-wide text-white/60">
+                          {p.category}
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-white/50">by {p.creator}</p>
+                      <p className="mt-2 text-sm leading-relaxed text-white/70">{p.blurb}</p>
+                      {p.zaoTie ? (
+                        <p className="mt-2 text-xs font-medium text-[#f5a623]">ZAO link: {p.zaoTie}</p>
+                      ) : null}
+                      <div className="mt-2 flex items-center gap-4 text-xs text-white/50 tabular-nums">
+                        <span>{usd(p.sales)} sales</span>
+                        <span>{usd(p.match)} matched</span>
+                        <span className="ml-auto font-semibold text-[#f5a623] opacity-0 transition group-hover:opacity-100">
+                          Collect on Artizen →
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </li>
             ))}
           </ul>
         </section>
 
         {/* Like-minded funds */}
-        <section className="mb-12">
+        <section id="funds" className="mb-12 scroll-mt-20">
           <h2 className="text-lg font-bold sm:text-xl">The company we keep</h2>
           <p className="mt-2 text-sm leading-relaxed text-white/70">
             We are not alone on Artizen. These funds point at the same frontier — we back their
@@ -267,7 +295,7 @@ export default function ArtizenPage() {
         </section>
 
         {/* Submit your project */}
-        <section className="mb-12 rounded-2xl border border-[#f5a623]/30 bg-white/5 p-6">
+        <section id="join" className="mb-12 scroll-mt-20 rounded-2xl border border-[#f5a623]/30 bg-white/5 p-6">
           <h2 className="text-lg font-bold sm:text-xl">Building something? Join the fund.</h2>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
             The ZAO Fund backs creator-owned projects that merge art, emerging technology, and real
@@ -317,15 +345,27 @@ export default function ArtizenPage() {
           </p>
         </section>
 
-        <footer className="border-t border-white/10 pt-6 text-center">
-          <a
-            href={FUND_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-full bg-[#f5a623] px-6 py-3 text-sm font-semibold text-[#0a1628] transition hover:brightness-110"
-          >
-            Support emerging culture on Artizen
-          </a>
+        <footer className="border-t border-white/10 pt-8">
+          <div className="flex flex-col items-center gap-5 text-center">
+            <a
+              href={FUND_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-full bg-[#f5a623] px-6 py-3 text-sm font-semibold text-[#0a1628] transition hover:brightness-110"
+            >
+              Support emerging culture on Artizen
+            </a>
+            <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-white/60">
+              <a href={FUND_URL} target="_blank" rel="noopener noreferrer" className="transition hover:text-white">The fund</a>
+              <a href="https://artizen.fund" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">Artizen</a>
+              <a href="https://zaoos.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">The ZAO</a>
+              <a href="https://github.com/ZAODEVZ/zartizen" target="_blank" rel="noopener noreferrer" className="transition hover:text-white">GitHub</a>
+            </nav>
+            <p className="text-[11px] leading-relaxed text-white/35">
+              ZArtizen - the ZAO Fund for Emerging Culture on Artizen. Standings are a snapshot
+              ({SNAPSHOT_DATE}) and move as artifacts sell; the live fund is canonical. Built by The ZAO.
+            </p>
+          </div>
         </footer>
       </div>
     </main>
