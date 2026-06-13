@@ -113,6 +113,7 @@ export default function ArtizenPage() {
           <div className="flex items-center gap-4 text-xs text-white/70">
             <a href="#projects" className="hidden transition hover:text-white sm:inline">Projects</a>
             <a href="#funds" className="hidden transition hover:text-white sm:inline">Funds</a>
+            <a href="/festivals" className="transition hover:text-[#f5a623]">Festivals</a>
             <a href="#join" className="hidden transition hover:text-white sm:inline">Join</a>
             <a
               href={FUND_URL}
