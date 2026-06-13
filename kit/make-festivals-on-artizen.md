@@ -4,11 +4,14 @@ Two things to stand up, in order. Part A you can do TODAY. Part B needs the Ren�
 
 ---
 
-## PART A - Submit the flagship PROJECT today: ZAOstock 2026
+## PART A - Submit the events today (ZAOstock + Zaoville)
 
-This is the move that can happen right now (no approval needed). A strong flagship project is also
-the best argument for the fund on the René call. Go to artizen.fund/submit, connect your wallet, and
-paste this in.
+ZAO Festivals is the umbrella; each event is its own Artizen project. Both can be submitted right now
+(no approval needed) - submit them so the whole umbrella is represented and Zaoville gets support too.
+Strong live projects are also the best argument for the fund on the René call. Go to artizen.fund/submit,
+connect your wallet, and paste each in.
+
+### A1 - ZAOstock 2026 (flagship)
 
 **Title:** ZAOstock 2026
 
@@ -47,6 +50,40 @@ no text overlay - a clip or image that captures the ZAOstock / Ellsworth-parklet
 
 **Payout wallet:** [your ETH address]
 
+### A2 - Zaoville
+
+**Title:** Zaoville
+
+**One-liner:** A ZAO day-party in the DC metro - and the live dry run for the ZAOstock model.
+
+**Category:** Music / Event
+
+**Description (paste, ~150 words):**
+> Zaoville is a ZAO Festivals day-party in the DC metro area this summer, hosted with Dcoop. It is the
+> umbrella in action ahead of our flagship: a smaller, faster gathering where we test the ZAO Festivals
+> model in the real world - community-curated music, artists paid fairly, and a crowd that owns the
+> moment.
+>
+> The weird part: a crypto-native music community throwing a real day-party, treating the event as a
+> prototype, not a product. The wonderful part: live music in person, people who funded it standing in
+> the room. The working part: it is hosted by Dcoop, it is on the calendar, and it doubles as the dry
+> run that de-risks ZAOstock.
+>
+> Collect an Artifact to back it - your support unlocks matching from the funds behind ZAO Festivals,
+> paid straight into the party.
+
+**Team:** Dcoop + ZAO Festivals / The ZAO
+
+**Links:** zaoos.com - zartizen.vercel.app/festivals
+
+**Funds to target:** ZAO Fund for Emerging Culture + Greenpill Fund for Regenerative Gatherings + (the
+ZAO Festivals Fund once it is live)
+
+**Artifact asset (you create):** square 1:1, min 1000x1000px, no text overlay - a clip/image of the
+day-party vibe.
+
+**Payout wallet:** [your ETH address]
+
 ---
 
 ## PART B - Create the FUND: ZAO Festivals Fund
@@ -71,7 +108,7 @@ into it before launch.
 
 ## The sequence
 
-1. Today: submit ZAOstock (Part A). Rally the ZAO community to collect its Artifact.
+1. Today: submit ZAOstock + Zaoville (Part A). Rally the ZAO community to collect both Artifacts.
 2. Send the René DM (kit/outreach-drafts.md #1) -> book the call.
 3. On the call: get the fund greenlit + the 3 questions answered.
 4. On approval: create the ZAO Festivals Fund (Part B), curate ZAOstock + the cohort into it.

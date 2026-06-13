@@ -31,6 +31,40 @@ const LANES: Lane[] = [
   { fund: 'ZAO Festivals Fund', owns: 'music + artist-led IRL festivals and activations' },
 ];
 
+interface FestEvent {
+  name: string;
+  when: string;
+  where: string;
+  blurb: string;
+  flagship?: boolean;
+}
+
+// Events under the ZAO Festivals umbrella. ZAOstock = flagship; Zaoville needs support too.
+const EVENTS: FestEvent[] = [
+  {
+    name: 'ZAOstock 2026',
+    when: 'October 2026',
+    where: 'Franklin St Parklet, Ellsworth, Maine',
+    blurb:
+      'The flagship - a one-day independent-artist festival where a crypto-native music community throws a real small-town Maine festival. Community-curated lineup, artists paid fairly, free and open.',
+    flagship: true,
+  },
+  {
+    name: 'Zaoville',
+    when: 'Summer 2026',
+    where: 'DC metro area',
+    blurb:
+      'A ZAO day-party hosted with Dcoop - and a live dry run for the ZAOstock model. The umbrella in action ahead of the flagship.',
+  },
+  {
+    name: 'Your event',
+    when: 'Rolling',
+    where: 'Anywhere',
+    blurb:
+      'Running a festival, concert, show, or gathering that fits the ZAO spirit? Bring it under ZAO Festivals and tap the fund + the community.',
+  },
+];
+
 const ELIGIBILITY: string[] = [
   'Produces a real-world gathering or live cultural activation - festival, concert, show, residency, tour, exhibition',
   'Creator / organizer owned and independently operated',
@@ -46,12 +80,10 @@ interface CohortItem {
 }
 
 const COHORT: CohortItem[] = [
-  { name: 'ZAOstock', blurb: 'A music gathering in Ellsworth, Maine - October 2026. Festival as community prototype.' },
-  { name: 'Zaoville', blurb: 'ZAO x VT day-party in the DC metro under ZAO Festivals.' },
   { name: 'COC Concertz', blurb: 'Community-owned concert promotion and artist showcases.' },
   { name: 'Artist tours + residencies', blurb: 'ZAO-incubated artists taking the work on the road and into rooms.' },
   { name: 'ZABAL Games activations', blurb: 'Live demos, showcases, and workshops from the bootcamp world.' },
-  { name: 'Your festival', blurb: 'Independent organizers who want a fund that actually gets live culture.' },
+  { name: 'Independent organizers', blurb: 'Anyone running live culture who wants a fund that actually gets it.' },
 ];
 
 function NavBar() {
@@ -63,6 +95,7 @@ function NavBar() {
         </a>
         <div className="flex items-center gap-4 text-xs text-white/70">
           <a href="/" className="hidden transition hover:text-white sm:inline">Home</a>
+          <a href="#events" className="hidden transition hover:text-white sm:inline">Events</a>
           <a href="#fund" className="hidden transition hover:text-white sm:inline">What we fund</a>
           <a href="#join" className="hidden transition hover:text-white sm:inline">Join</a>
           <a
@@ -85,13 +118,13 @@ export default function FestivalsPage() {
         {/* Hero */}
         <header className="mb-10">
           <p className="text-xs font-semibold uppercase tracking-widest text-[#f5a623]">
-            A ZAO fund on Artizen - launching
+            A ZAO umbrella + fund on Artizen - launching
           </p>
-          <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">ZAO Festivals Fund</h1>
+          <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">ZAO Festivals</h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
-            Back the artists and organizers who gather people in the real world - music festivals,
-            concerts, pop-up shows, residencies, and cultural activations - and help them fund it
-            without losing ownership. Artist-first, IRL, community-powered.
+            ZAO Festivals presents music festivals, concerts, and artist-led real-world activations -
+            ZAOstock, Zaoville, and more - and backs them with a community match fund so organizers get
+            funded without losing ownership. Artist-first, IRL, community-powered.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
@@ -115,6 +148,43 @@ export default function FestivalsPage() {
           lining up the first festivals and sponsors now so the fund launches with momentum. Get in
           early - the earliest organizers and backers set the tone.
         </div>
+
+        {/* Events under the umbrella */}
+        <section id="events" className="mb-12 scroll-mt-20">
+          <h2 className="text-lg font-bold sm:text-xl">Our events</h2>
+          <p className="mt-2 text-sm leading-relaxed text-white/70">
+            ZAO Festivals is the umbrella. Each event is its own project that the community backs, and
+            the fund matches. ZAOstock is the flagship - Zaoville is the dry run - and the door is open
+            for more.
+          </p>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-3">
+            {EVENTS.map((e) => (
+              <li
+                key={e.name}
+                className={
+                  e.flagship
+                    ? 'flex flex-col rounded-xl border border-[#f5a623]/50 bg-[#f5a623]/10 p-4'
+                    : 'flex flex-col rounded-xl border border-white/10 bg-white/5 p-4'
+                }
+              >
+                <div className="flex items-baseline justify-between gap-2">
+                  <h3 className={e.flagship ? 'text-sm font-bold text-[#f5a623]' : 'text-sm font-bold'}>
+                    {e.name}
+                  </h3>
+                  {e.flagship ? (
+                    <span className="rounded-full bg-[#f5a623]/20 px-2 py-0.5 text-[9px] uppercase tracking-wide text-[#f5a623]">
+                      Flagship
+                    </span>
+                  ) : null}
+                </div>
+                <p className="mt-1 text-[11px] uppercase tracking-wide text-white/45">
+                  {e.when} - {e.where}
+                </p>
+                <p className="mt-2 text-xs leading-relaxed text-white/70">{e.blurb}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
 
         {/* The open lane */}
         <section className="mb-12">
