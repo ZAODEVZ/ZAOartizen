@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local private query output (PII hygiene - never commit)
+**/.private/
+*.private.json
+.zao-private/
+
+# Node (if the page is ever built out into an app here)
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.*
+!.env.example
