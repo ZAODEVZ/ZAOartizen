@@ -17,6 +17,9 @@ library where they originated; descriptive-named docs are zartizen-native.
 ## Reference (zartizen-native)
 
 - [fund-directory.md](fund-directory.md) - the Artizen community-fund landscape + ZAO stacking map + cross-backing targets
+- [community-fund-playbook.md](community-fund-playbook.md) - how the best funds run + fill, as a model for ZAO
+- [rene-pinnell-digest.md](rene-pinnell-digest.md) - René's thesis, roadmap, trackable targets, track record
+- [art-token-onchain.md](art-token-onchain.md) - on-chain reality check on the ART token (Etherscan-verified)
 
 ## How to use
 
