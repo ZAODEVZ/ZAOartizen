@@ -2,6 +2,8 @@
 // Static, server-rendered from the Season 6 roster captured 2026-06-11.
 // Provenance: research/843. Numbers are a point-in-time snapshot; the live fund is canonical.
 
+import { RosterExplorer } from './roster-explorer';
+
 const FUND_URL = 'https://artizen.thezao.com/';
 const SNAPSHOT_DATE = 'June 11, 2026';
 
@@ -227,54 +229,8 @@ export default function ArtizenPage() {
           </div>
         </section>
 
-        {/* Roster */}
-        <section id="projects" className="mb-12 scroll-mt-20">
-          <div className="mb-5 flex items-baseline justify-between">
-            <h2 className="text-lg font-bold sm:text-xl">The projects</h2>
-            <span className="text-xs text-white/50">Ranked by sales — snapshot {SNAPSHOT_DATE}</span>
-          </div>
-          <ul className="space-y-3">
-            {PROJECTS.map((p) => (
-              <li key={p.rank}>
-                <a
-                  href={FUND_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Collect ${p.name} on Artizen`}
-                  className="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-[#f5a623]/50 hover:bg-white/[0.07]"
-                >
-                  <div className="flex gap-4">
-                    <div className="shrink-0 text-lg font-bold text-white/30 tabular-nums">
-                      {String(p.rank).padStart(2, '0')}
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                        <h3 className="text-base font-semibold leading-snug transition group-hover:text-[#f5a623]">
-                          {p.name}
-                        </h3>
-                        <span className="rounded-full bg-white/10 px-2 py-0.5 text-[10px] uppercase tracking-wide text-white/60">
-                          {p.category}
-                        </span>
-                      </div>
-                      <p className="mt-0.5 text-xs text-white/50">by {p.creator}</p>
-                      <p className="mt-2 text-sm leading-relaxed text-white/70">{p.blurb}</p>
-                      {p.zaoTie ? (
-                        <p className="mt-2 text-xs font-medium text-[#f5a623]">ZAO link: {p.zaoTie}</p>
-                      ) : null}
-                      <div className="mt-2 flex items-center gap-4 text-xs text-white/50 tabular-nums">
-                        <span>{usd(p.sales)} sales</span>
-                        <span>{usd(p.match)} matched</span>
-                        <span className="ml-auto font-semibold text-[#f5a623] opacity-0 transition group-hover:opacity-100">
-                          Collect on Artizen →
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
+        {/* Roster (searchable + filterable) */}
+        <RosterExplorer projects={PROJECTS} fundUrl={FUND_URL} snapshot={SNAPSHOT_DATE} />
 
         {/* Like-minded funds */}
         <section id="funds" className="mb-12 scroll-mt-20">
