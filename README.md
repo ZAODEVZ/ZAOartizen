@@ -45,9 +45,12 @@ The plan from here:
 | `research/850` | Create + run the ZAO Festivals Fund (manager playbook) |
 | `research/760` | InfiniteZero / DIN (the #1 project in the ZAO fund - context) |
 | `kit/fund-proposal.md` | Ready-to-submit ZAO Festivals Fund proposal + 3 Qs for René |
+| `kit/rene-call-brief.md` | Agenda + asks + talking points for the René call |
+| `kit/sponsor-onepager.md` | Sponsor pitch for the ZAO Festivals Fund match pool |
 | `kit/outreach-drafts.md` | René/Nate DM, DWeb Village app, cross-curation DM, member rally |
 | `kit/submission-template.md` | Project submission template + artifact specs + first cohort |
 | `kit/daily-spotlights.md` | 32-post daily project-spotlight series |
+| `CLAUDE.md` | Repo context for collaborators + agents |
 | `page/artizen-page.tsx` | The zaoos.com/artizen hub page (Next.js, for reference/port) |
 
 ## Status (2026-06-13)
