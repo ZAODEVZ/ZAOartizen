@@ -1,42 +1,46 @@
-# ZArtizen - Handoff (current as of 2026-06-14)
+# ZArtizen - Handoff (current as of 2026-06-22)
 
-For whoever picks this up next (Zaal, a teammate, or a fresh session). Read README.md for the full
-picture; this is the "where it stands + what to do next" layer.
+For whoever picks this up next (Zaal, a teammate, or a fresh session). Read TEAM-PLAYBOOK.md first, then
+README.md for the full picture; this is the "where it stands + what to do next" layer.
 
 ## What this is
 
 The ZAO's operating home for everything Artizen - research, strategy, a ready-to-use kit, and a live
-3-page site. Graduated out of the ZAOOS monorepo (2026-06-13) into ZADEVZ/zartizen so parallel sessions
-stop colliding the work.
+7-page site at **https://zaoartizen.vercel.app**. Graduated out of the ZAOOS monorepo (2026-06-13).
 
-## Live site (deploy via Vercel)
+## Live site (deploy: `npx vercel --prod --yes`; or `scripts/refresh.sh` to scrape + update + deploy)
 
-- **https://zaoartizen.vercel.app** - the ZAO Fund hub (daily featured project, searchable 32-project roster, like-minded funds).
-- **https://zaoartizen.vercel.app/festivals** - the ZAO Festivals umbrella (ZAOstock, Zaoville, how to join).
-- **https://zaoartizen.vercel.app/proposal** - SHAREABLE decision page for ZAO Festivals teammates (create a fund vs curate into existing, with a call for input). Send this one around for feedback.
+- **/** - the ZAO Fund hub (featured project, searchable roster; rank/pool read from dashboard data).
+- **/dashboard** - live scoreboard: rank, match deployed/remaining, headroom alert, backed projects, cross-back targets, proof log. Data in `app/dashboard/data.ts`.
+- **/leaderboard** - Season 6 field (all 35 projects), ZAO ties flagged.
+- **/rally** - the GC-shareable 3-step crew CTA (sign up, buy the $10 Artifact, boost).
+- **/apply** - artist-facing: what the fund backs, eligibility, how to get in. Send to applicants.
+- **/festivals** - ZAO Festivals umbrella. **/proposal** - create-a-fund vs curate-into decision page.
 
-## The headline decision (needs team input)
+## Strategy on record: permissionless-first, then René
 
-A full scan of Artizen (79 funds) reversed the original plan. **Recommendation: do NOT create a new ZAO
-Festivals Fund yet - curate ZAOstock + Zaoville INTO existing funds** (We're Loud, Global Music, Greenpill,
-ZAO Emerging Culture). Why: the "music white space" is gone (those funds exist and 6 ZAO music projects
-are already stacked in Global Music), and a new fund is overhead in a crowded field while the ZAO fund is
-already dormant. A dedicated ZAO Festivals Fund is a later, bigger step (only if ZAO wants to host other
-organizers). Full reasoning: research/priority-funds.md + research/research-audit.md. The /proposal page
-puts this to the team.
+Do everything permissionless first (mobilize the crew, curate ZAO artists in, run the bootstrap motion,
+log the proof on /dashboard), THEN take the track record to René (Accelerator: 20 spots, 3mo, up to $10k;
+ETH Boulder + Ven = warm intro). Don't rush a second fund - curate ZAOstock/Zaoville into existing funds
+(We're Loud, Global Music, Greenpill). Full reasoning: research 886 (ZAOOS).
 
 ## Tasks to absorb (priority order)
 
-1. **Share /proposal** with the ZAO Festivals team, collect input on Option A (create) vs B (curate-into).
-2. **Activate the ZAO fund this drive** - it's dormant (~$188); rally the community to collect its projects (kit/outreach-drafts.md #4).
-3. **Stack the events** - submit ZAOstock + Zaoville (kit/make-festivals-on-artizen.md) into We're Loud + Global Music + Greenpill + ZAO Emerging Culture.
-4. **Put ZOE/Hermes in the Bonfires fund** - our knowledge-graph partner; Arun's DreamStarter + Abraham Nash are already there.
-5. **Send the René DM** (kit/outreach-drafts.md #1) only if the team chooses to pursue a dedicated fund.
+1. **Share /rally** with the crew + **/apply** with prospective artists.
+2. **Curate ZAO artists in** via the Discord vote: Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia.
+3. **Deploy the match** - ~$6.3k headroom on the Flourish drive (ends ~2026-06-24); rally buys + boosts.
+4. **Fill the dashboard TBDs** - projectsCurated, signups, multiplier from the logged-in curator view.
+5. **Ask Venus** (Artizen's AI bot) the exact boost/score formula + Season 7 timing; then the René path.
 
-## Key findings / decisions on record
+## Key findings / decisions on record (live, 2026-06-21)
 
-- Music/festival funds are crowded (We're Loud, Global Music, Greenpill + more) - white-space claim corrected.
-- ZAO Fund is dormant per-drive ($188, ~#23); standings are volatile - re-render before quoting any rank.
+- **Win condition: most Artifacts SOLD (count) wins the prize - NOT boosts.** Boosts = a separate visibility
+  layer. Lever = many people each buying a $10 Artifact. Winning Artifact = square, video/GIF, no text.
+- ZAO Fund (scraped live): rank **#11**, pool **$10,547**, match deployed **$4,262**, remaining **$6,331**.
+  Standings move daily - re-scrape (`scripts/refresh.sh`) before quoting.
+- PolyRaiders = HuRya Empowerment Foundation (Moses), **#22, ~$1,200** (call's "#17/$14k" was misheard).
+- Payouts are reliable (creators confirm); the speculative risk is only the ART token/endowment - keep treasury OFF it.
+- Artizen is client-rendered (Bubble.io) - use the headless `browse` scraper, not WebFetch, for live data.
 - The "$14M endowment" is self-reported - on-chain, the ART token's Juicebox project (587) holds ~34 ETH
   and is dormant. Do NOT cite $14M as fact; keep ZAO treasury off the ART token. (research/art-token-onchain.md)
 - Ecosystem allies run funds: Bonfires (our partner), Edge City (Telamon), DeSci Asia, Pressman Film.
