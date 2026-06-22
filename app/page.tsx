@@ -182,12 +182,19 @@ export default function ArtizenPage() {
         </header>
 
         {/* Stats */}
-        <section className="mb-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          <Stat label="Season" value="6" />
+        <section className="mb-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <Stat label="Fund rank" value="#11" />
           <Stat label="Projects backed" value={String(PROJECTS.length)} />
-          <Stat label="Fund pool" value="$10K" />
+          <Stat label="Fund pool" value="$10.5K" />
           <Stat label="Artifact volume" value={usd(totalSales)} />
         </section>
+        <p className="mb-12 text-xs text-white/40">
+          Snapshot. Live standings + match headroom on the{' '}
+          <a href="/dashboard" className="text-[#f5a623] underline-offset-2 hover:underline">
+            dashboard
+          </a>
+          .
+        </p>
 
         {/* Featured project of the day */}
         <section className="mb-12">
