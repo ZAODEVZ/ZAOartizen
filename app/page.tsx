@@ -159,6 +159,18 @@ export default function ArtizenPage() {
               Back the fund
             </a>
             <a
+              href="/rally"
+              className="rounded-full border border-[#f5a623]/40 px-5 py-2.5 text-sm font-semibold text-[#f5a623] transition hover:bg-[#f5a623]/10"
+            >
+              Rally the crew
+            </a>
+            <a
+              href="/apply"
+              className="rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-white/80 transition hover:bg-white/5"
+            >
+              Artists: apply
+            </a>
+            <a
               href="https://zaoos.com"
               target="_blank"
               rel="noopener noreferrer"
