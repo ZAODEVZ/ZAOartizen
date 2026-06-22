@@ -11,19 +11,41 @@ shows up on Artizen as a fund manager + creator + community.
 
 ## The goal in one line
 
-Make The ZAO one of the most effective communities on Artizen: run two funds (Emerging Culture +
-a new Festivals Fund), run the whole ZAO project portfolio as creators, stack across funds, and show
-up on Console + IRL.
+Make The ZAO one of the most effective communities on Artizen: run the ZAO Fund for Emerging Culture
+well, run the ZAO portfolio as creators, stack across funds, and prove we bootstrap communities - then
+take that proof to René. Strategy = **permissionless-first, then René** (see TEAM-PLAYBOOK.md).
+
+## Start here
+
+**Read [TEAM-PLAYBOOK.md](TEAM-PLAYBOOK.md) first** - how Artizen works, how we win, the strategy, who
+does what. The front door for humans and agents.
 
 ## Repo layout
 
-- `research/` - the 8 source docs (843-850 + 760). Read these for the why. Numbered to match the
-  ZAOOS research library (provenance lives there too, PR #844).
-- `kit/` - the actionable, copy-paste material: fund proposal, outreach drafts, submission template,
-  daily spotlight series, plus call brief + sponsor one-pager.
-- `page/artizen-page.tsx` - the zaoos.com/artizen hub component (Next.js server component). Lives
-  canonically in ZAOOS; copy here for porting / reference.
-- `README.md` - front door. `HANDOFF.md` - what to do next + cold-start.
+- `app/` - the live Next.js 16 site (https://zaoartizen.vercel.app). Pages: `/` (hub), `/dashboard`
+  (live ZAO Fund scoreboard - data in `app/dashboard/data.ts`), `/leaderboard` (Season 6 field,
+  `app/leaderboard/data.ts`), `/rally` (crew CTA), `/apply` (artist-facing), `/festivals`, `/proposal`.
+- `scripts/` - `refresh.sh` (scrape live numbers -> update dashboard -> deploy); `refresh-fund.mjs`
+  (the scraper; `--write` updates `app/dashboard/data.ts`).
+- `research/` - source docs (843-850 + 760) + reference (fund-directory, priority-funds, etc). The why.
+- `kit/` - copy-paste material: TEAM-PLAYBOOK is the index; new-artist-briefs, crew-mobilization,
+  standings-tracker, fund proposal, outreach drafts, daily spotlights, call brief, sponsor one-pager.
+- `README.md` - front door. `HANDOFF.md` - cold-start.
+
+## How we win (keep accurate)
+
+The Artizen Prize goes to the project that **sells the most Artifacts (count)** - NOT the most boosts.
+Boosts/voting are a separate visibility layer. So the lever is many people each buying a $10 Artifact
+(the ZAO crowd advantage), not a few big checks. Winning Artifact = square 1:1, video/GIF, no text.
+
+## Live site + deploy
+
+- Live: **https://zaoartizen.vercel.app** (the old zartizen.vercel.app is dead).
+- Deploy: `cd ~/Desktop/repos/ZAOartizen && npx vercel --prod --yes` (CLI authed as bettercallzaal).
+  Auto-deploy is NOT wired - redeploy manually after changes.
+- Commit as: `git -c user.email=zaalp99@gmail.com -c user.name=bettercallzaal commit ...`
+- The `browse` headless tool needs bun on PATH: `export PATH="$HOME/.bun/bin:$PATH"`. Do NOT clobber
+  PATH (keep /usr/local/bin so npx/node resolve).
 
 ## Working conventions
 
@@ -38,11 +60,19 @@ up on Console + IRL.
 
 ## Status + next steps
 
-See HANDOFF.md. Gated on the René call: send `kit/outreach-drafts.md` #1, then submit
-`kit/fund-proposal.md`. Daily series (`kit/daily-spotlights.md`) can start anytime.
+Permissionless-first (no René gate): mobilize the crew (share `/rally`), curate ZAO artists in
+(Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia), run the bootstrap motion, log the proof on
+`/dashboard`. THEN take the track record to René (the Accelerator for Community Funds: 20 spots, 3mo,
+up to $10k). ETH Boulder + Ven is a warm intro path. See TEAM-PLAYBOOK.md + research 886 (in ZAOOS).
 
-## Key facts
+## Key facts (live, scraped 2026-06-21)
 
-- ZAO Fund for Emerging Culture: live, Season 6, ~$22k raised, 32 projects. URL: artizen.thezao.com.
-- Artifacts: $10, 100% to creator, 0% fee, Ethereum mainnet. ART token + Endowment (~$14M) fund the platform.
+- ZAO Fund for Emerging Culture: rank **#11** among funds, pool **$10,547**, match deployed **$4,262**,
+  match remaining **$6,331**, score 522.19. Active: Flourish Fund Drive (ends ~2026-06-24). URL: artizen.thezao.com.
+- Artifacts: $10, 100% to creator, 0% fee, Ethereum mainnet. Payouts confirmed reliable by creators
+  (Trustpilot/reports). The ART token + Endowment ("$14M" self-reported, on-chain ~34 ETH dormant) is the
+  speculative layer - keep ZAO treasury OFF it.
+- ZAO-tied projects: InfiniteZero #1 ($46k), Edge Esmeralda #2, Edge City #4, PolyRaiders/HuRya #22 ($1.2k),
+  Impact Concerts #32. (PolyRaiders was misheard on the call as #17/$14k - real is #22/$1.2k.)
+- Venus = Artizen's in-platform AI bot; ask it the exact boost/score formula + Season 7 timing (GitHub/newsletter dead ends).
 - Contacts: René Pinnell (@RJPinnell), Nate Van Cleve (Head of Product). News: news.artizen.fund.
