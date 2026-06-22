@@ -82,6 +82,11 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
   - `kit/new-artist-briefs.md` - submission briefs for Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia.
   - `kit/crew-mobilization.md` - the GC-ready "sign up, buy, boost" rally + how to run one.
   - `kit/standings-tracker.md` - the ZAO Fund scoreboard to update each drive (the proof we bring to Rene).
+- `scripts/refresh.sh` - one command to re-scrape the live ZAO Fund numbers, update the dashboard, and redeploy
+  (`bash scripts/refresh.sh`). Keeps `/dashboard` current without hand-editing. `scripts/refresh-fund.mjs --write`
+  does just the scrape+update if you want to review before deploying.
+- Live site: **https://zaoartizen.vercel.app** - `/dashboard` (scoreboard), `/leaderboard` (the field),
+  `/rally` (the GC-shareable 3-step crew CTA).
 - `research/` - the deep dives: platform study (844), ART/endowment economics (845), funding strategy (846),
   ecosystem playbook (847), fund-creation playbook (850), fund directory + stacking map (fund-directory.md),
   Rene digest, on-chain token reality check (art-token-onchain.md).
