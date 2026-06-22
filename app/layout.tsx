@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://zartizen.vercel.app'),
+  metadataBase: new URL('https://zaoartizen.vercel.app'),
   title: 'ZArtizen - The ZAO on Artizen',
   description:
     'The ZAO Fund for Emerging Culture on Artizen - a community match fund backing artists and technologists building collaborative cultural experiences.',
