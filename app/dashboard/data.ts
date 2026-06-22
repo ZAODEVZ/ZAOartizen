@@ -46,11 +46,11 @@ export interface ProofEntry {
 
 // Live numbers from artizen.thezao.com, confirmed 2026-06-22 (re-check before quoting; they move daily).
 export const fundStats: FundStats = {
-  rank: 14,
-  scoreLabel: '526.11',
-  prizeUsd: 1853,
+  rank: 13,
+  scoreLabel: '873.62',
+  prizeUsd: 2432,
   poolUsd: 10547,
-  matchDeployedUsd: 1853, // "RAISED" on Artizen
+  matchDeployedUsd: 2432, // "RAISED" on Artizen
   matchRemainingUsd: 6331, // "AVAILABLE" on Artizen
   projectsCurated: null, // confirm from the logged-in curator view
   signupsDriven: null,
