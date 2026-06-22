@@ -79,9 +79,30 @@ zaoartizen.vercel.app and zaoartizen.vercel.app/festivals.
 
 ---
 
+## F. Crew rally (drop in the GC / Telegram)
+
+> Help me back our artists on Artizen - 3 minutes:
+> 1. Sign up at artizen.thezao.com
+> 2. Buy the $10 Artifact of the project we are pushing: [LINK]
+> 3. Boost it + reshare
+> Every $10 you spend gets doubled by our fund. The project that sells the most wins a prize. We win by
+> showing up together. Live: zaoartizen.vercel.app/rally
+
+---
+
+## G. Artist call (for creators / DMs)
+
+> Building something at the edge of art + tech + community? The ZAO Fund for Emerging Culture backs
+> independent creators on Artizen - mint a $10 collectible, every $1 a fan spends gets matched from our
+> fund, 0% fees, 100% to you. What we back + how to get in: zaoartizen.vercel.app/apply
+
+---
+
 ## Sequencing
 
 1. Post A (hub) first - it is live and ready.
-2. Post B (Festivals) once ZAOstock + Zaoville are submitted on Artizen, so it points at real projects.
-3. C/D/E in parallel to the right audiences.
-4. Run posts through /socials for platform-tuned variants.
+2. Post F (rally) to the crew/GC each drive, pointed at the one project you are pushing (set the horse on /dashboard).
+3. Post G (artist call) in DMs + creator channels to fill the applicant pipeline.
+4. Post B (Festivals) once ZAOstock + Zaoville are submitted on Artizen, so it points at real projects.
+5. C/D/E in parallel to the right audiences.
+6. Run posts through /socials for platform-tuned variants.
