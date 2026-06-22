@@ -8,6 +8,9 @@ Graduated out of the ZAOOS monorepo (2026-06-13) into its own repo under ZADEVZ 
 colliding with parallel sessions and stands on its own. Research provenance still lives in ZAOOS
 (PR #844); this repo is the operating home.
 
+> **New to this? Start with [TEAM-PLAYBOOK.md](TEAM-PLAYBOOK.md)** - how Artizen works, how we win
+> (most Artifacts sold, not boosts), our permissionless-first strategy, and who does what.
+
 ## What Artizen is (60 seconds)
 
 Web3 match-funding platform for art / science / tech / culture, founded by René Pinnell. Creators
