@@ -64,7 +64,25 @@ attribute it to Artizen ("Artizen reports a ~$14M endowment") if cited at all.
 
 - ~~Find the Juicebox projectId and inspect the treasury.~~ Done: project 587, ~34 ETH, dormant.
 
+## Update 2026-06-22 - canonical Base contract + the endowment Revnet (the decisive check)
+
+The 0x59fbbc check above was the **Ethereum-mainnet** ART (72 holders, ~2,711 supply). But the official
+Playbook (play.artizen.fund) says ART launched first on **Base** - the canonical contract. Verified that day:
+
+- **Base ART `0x44c4516768e47cd97cfF2561B81a74699F23f8Ec`** (Basescan): supply ~959,607,599 ART, **237 holders**,
+  **no listed market price / market cap** ($0.00), **0 transfers in 24h**. Thin, illiquid, unpriced.
+- **The endowment itself = the Revnet `revnet.app/v5:base:6`** (operator `artizenendowment.eth`): on-chain
+  balance **$96.96**, **261 owners**, last activity ~2 months ago. **The on-chain endowment holds under $100.**
+- The legacy Juicebox `@artizenfund` (34.21 ETH, dormant since ~2024) is the OLD vehicle - NOT today's endowment.
+
+**Verdict: the "$14M endowment" is refuted as an on-chain / liquid figure.** On-chain, the Revnet holds <$100;
+the $14M is almost entirely a claim about off-chain reserves (insured USD, BTC/ETH/SOL, Artifact copies) that
+cannot be verified. Decision unchanged + reinforced: keep ZAO treasury OFF ART; the real money is sales + match
+in USDC; ART prizes are illiquid. Full capture: ZAOOS research doc 887 (the Artizen Playbook).
+
 ## Sources
 
-- [FULL] Etherscan token page - `etherscan.io/token/0x59fbbc7d9c579547b47f3669aab2aec5b58d63de` (supply, holders, transfers, verified JBToken source), fetched 2026-06-13.
-- Cross-ref: research/845 (ART/Endowment economics), research/rene-pinnell-digest.md.
+- [FULL] Etherscan token page - `etherscan.io/token/0x59fbbc7d9c579547b47f3669aab2aec5b58d63de` (Ethereum ART), fetched 2026-06-13.
+- [FULL] Basescan - `basescan.org/token/0x44c4516768e47cd97cfF2561B81a74699F23f8Ec` (Base ART, canonical), 2026-06-22.
+- [FULL] `revnet.app/v5:base:6` (the endowment Revnet, $96.96 balance) + `juicebox.money/@artizenfund` (legacy 34.21 ETH), scraped 2026-06-22.
+- Cross-ref: research/845 (ART/Endowment economics), ZAOOS doc 887 (Artizen Playbook).
