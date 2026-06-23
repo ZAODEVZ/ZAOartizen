@@ -125,6 +125,7 @@ export default function ArtizenPage() {
             <a href="/leaderboard" className="hidden transition hover:text-[#f5a623] sm:inline">Leaderboard</a>
             <a href="/rally" className="transition hover:text-[#f5a623]">Rally</a>
             <a href="/community" className="transition hover:text-[#f5a623]">Community</a>
+            <a href="/sponsor" className="transition hover:text-[#f5a623]">Sponsor</a>
             <a href="/apply" className="hidden transition hover:text-[#f5a623] sm:inline">Apply</a>
             <a href="/proposal" className="hidden transition hover:text-white sm:inline">Proposal</a>
             <a href="#join" className="hidden transition hover:text-white sm:inline">Join</a>
