@@ -110,6 +110,24 @@ one QR offers both - claim your magnet, back an artist.
 are "gatherings." Move: mutual curation + a co-rally - ZAO backs Edge City projects, Edge City backs ZAOstock;
 two real-world-gathering communities boosting each other compounds both Boost Scores.
 
+## Network in action - who to learn from + start with (grounds #9)
+
+The fund's top performers already cracked the sales+boost game - they are the playbooks to ask about, and the
+warmest first relationships:
+
+- **InfiniteZero Network (Abraham Nash) - #1, ~$46k sales.** The clearest "how do you win" case in the fund
+  (also the DIN project, ZAOOS doc 760). First ask: how do you drive both sales AND boosts?
+- **Edge Esmeralda / Edge City (Telamon) - #2 + #4.** Already a ZAO ally; a real-world-gathering peer. Start
+  the two-way exchange here (see synergy #13).
+- **Voices of the Land (Yessie), Gaian Temple (NAOBA), Sonic Sanctuary (Plexonerz)** - music/sound projects
+  that out-ranked many; closest to ZAOstock's lane, best to compare distribution notes with.
+- **The 10-project ZAO bloc** (app/community/data.ts) - already ours; they should be the first to swap
+  playbooks + cross-boost. Start the network with people who already show up for ZAO.
+
+Move: pick 3-5 of these, send the light touch from #9 (we share our model, they share their Artizen +
+distribution stack, we boost each other). Document what each says into this file - the roster's collective
+know-how becomes a ZAO asset.
+
 ## Sources
 
 - [FULL] zaostock repo (ZAODEVZ/zaostock) - README, landing copy, artist deal memo, sponsor finders-fee, soul-benders plan, public-surfaces audit. Cloned + read 2026-06-23.
