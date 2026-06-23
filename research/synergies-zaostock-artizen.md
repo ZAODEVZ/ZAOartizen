@@ -78,11 +78,20 @@ Each ZAOstock cycle feeds the next, and the ZAO Fund's match deployed becomes th
 
 ## 9-13. More synergies (round 2)
 
-**9. The ZAO Fund as the ecosystem's shared funding rail.** Every ZAO thing - WaveWarZ artists, SongJam,
-ZAOstock performers, the 10-project bloc, ZABAL Games finalists - can curate into the ONE ZAO Fund. That
-concentrates "match deployed" in a single fund, which is exactly the proof metric that wins René's
-attention + the Accelerator. One rail, compounding evidence. Move: make "submit to the ZAO Fund" a default
-step in every ZAO project's launch checklist.
+**9. The ZAO Fund is already a creator NETWORK - use it as two-way knowledge + amplification, not just a rail.**
+The fund already curates a full roster (32+ projects, doc 843). The bigger value is not "concentrate match
+deployed as proof" - it is that every project in the fund is a creator who has figured something out. Run it
+as a network:
+- **Share what WE do:** how The ZAO supports artists (fair pay, the festival, WaveWarZ, the bloc) - so
+  grantees see ZAO as a partner, not just a backer.
+- **Learn what THEY do:** ask each project how they use Artizen (what wins them sales + boosts), and what
+  OTHER tools/platforms they use to get the word out (their distribution stack). That intel compounds across
+  the whole roster - free playbooks from people already winning.
+- **Amplify each other:** ZAO promotes their projects, they promote ZAO's - cross-posting + cross-boosting so
+  everyone's word travels further. A fund of 32 amplifiers beats a fund of 32 line items.
+Move: a light recurring touch to the fund's grantees - "here's how we support artists, tell us how you use
+Artizen + what else you use to spread the word, let's boost each other." Turns the roster into a living,
+reciprocal creator network. (The match-deployed proof for René is a byproduct, not the point.)
 
 **10. ZABAL Games -> Artizen project pipeline.** The ZABAL Games cohort already ships buildable projects.
 Move: add "mint an Artizen Artifact + submit to the ZAO Fund" as a finals deliverable - the games become a
