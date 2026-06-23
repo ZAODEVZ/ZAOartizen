@@ -12,28 +12,35 @@ as two separate projects, the copy in `make-festivals-on-artizen.md` covers that
 
 ## 1. Submission fields (paste-ready)
 
+All facts below verified against the zaostock repo (ZAODEVZ/zaostock) audit, 2026-06-23.
+
 ```
 Project Title (max 75):
-ZAO Festivals
+ZAOstock 2026
 
 Logline (max 140):
-Community-owned music festivals where the crowd that funds it owns it. Flagship: ZAOstock, Ellsworth Maine, Oct 2026.
+A free, artist-built music festival in downtown Ellsworth, Maine - Sat Oct 3, 2026, gateway to Acadia. Independent artists, one stage.
 
 Tags:
 Music, Festival, Community, Live Events
 
 What are you making? (max 250):
-ZAO Festivals produces independent-artist music festivals run as protocols, not products. Flagship is ZAOstock 2026 (Franklin St Parklet, Ellsworth Maine, October), plus Zaoville in the DC metro. Open-call lineups the community curates, artists paid fairly and transparently.
+ZAOstock 2026 is a free, one-day, artist-built music festival in downtown Ellsworth, Maine on Saturday October 3 - independent artists on one stage, free to listen from the sidewalk in the town every Acadia visitor drives through. Built by The ZAO and the local crew.
 
 How will it impact the world? (max 250):
-We turn festivals from extractive events into community-owned culture: artists paid fairly, the crowd that funds it is the crowd standing in it, and a digital music community meeting a real town in person. A repeatable model other organizers can run, not a one-off.
+We turn festivals into community-owned culture: artists paid fairly, the crowd that funds it standing in it, and a digital music community throwing a real small-town Maine festival. Free to attend, 501(c)(3)-backed, and a repeatable model other organizers can run.
 
 What progress have you made? (max 250):
-The ZAO has run 4 years and incubated WaveWarZ and SongJam. ZAOstock 2026 has the venue, the date, and an open-call lineup in motion. Zaoville is on the calendar with Dcoop as the live dry run. We build in public and share every step.
+Locked: Sat Oct 3 2026, downtown Ellsworth. 27 teammates plus 100+ ZAO community and a local crew across 8 working circles. 501(c)(3) fiscal sponsorship via Fractured Atlas / New Media Commons. 5 confirmed local partners and an open-call lineup in motion. Lineage: prior festivals in NYC + Miami.
 
 Why are you the right person? (max 250):
-Zaal directs The ZAO and runs the ZAO Fund for Emerging Culture on Artizen. Four years building a crypto-native music community, a fair-pay artist ethos, and a track record of shipping real events and incubating projects from inside it.
+Zaal directs The ZAO and runs the ZAO Fund for Emerging Culture on Artizen. Four years building a crypto-native music community with a fair-pay artist ethos, plus a 27-person team and Ellsworth locals already building ZAOstock in public.
 ```
+
+**Submission asset advantages to lean on (from the audit):** it is FREE + sidewalk-accessible (gateway to
+Acadia, ~4M annual through-traffic), 501(c)(3) tax-deductible giving (Fractured Atlas / New Media Commons -
+this is also the fiscal-sponsorship path René flagged), a real 27-person team, and a verifiable lineage
+(prior NYC + Miami festivals). These make the project read as real and de-risked - emphasize them.
 
 ## 2. Reward tiers (offer 3-5; only promise what's deliverable)
 
