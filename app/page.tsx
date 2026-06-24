@@ -118,7 +118,7 @@ export default function ArtizenPage() {
         <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <span className="text-sm font-bold tracking-tight">ZArtizen</span>
           <div className="flex items-center gap-4 text-xs text-white/70">
-            <a href="#projects" className="hidden transition hover:text-white sm:inline">Projects</a>
+            <a href="/about" className="transition hover:text-[#f5a623]">How it works</a>
             <a href="#funds" className="hidden transition hover:text-white sm:inline">Funds</a>
             <a href="/festivals" className="transition hover:text-[#f5a623]">Festivals</a>
             <a href="/dashboard" className="transition hover:text-[#f5a623]">Dashboard</a>
