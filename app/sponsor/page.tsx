@@ -128,6 +128,24 @@ export default function SponsorPage() {
         </ul>
       </section>
 
+      <section className="mb-10">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/50">Who is behind this</h2>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {[
+            'The ZAO - a 4-year independent music community',
+            '27-person team + local crew building ZAOstock 2026',
+            '501(c)(3)-backed (Fractured Atlas / New Media Commons)',
+            'Track record: prior festivals in NYC + Miami',
+          ].map((c) => (
+            <div key={c} className="flex gap-2 rounded-lg border border-white/10 bg-white/5 p-3 text-sm text-white/70">
+              <span className="text-[#f5a623]">-</span>
+              <span>{c}</span>
+            </div>
+          ))}
+        </div>
+        <p className="mt-2 text-xs text-white/40">We build in public - the team, the lineup, and the standings are all visible.</p>
+      </section>
+
       <div className="flex flex-wrap gap-3">
         <a
           href={CONTACT}
