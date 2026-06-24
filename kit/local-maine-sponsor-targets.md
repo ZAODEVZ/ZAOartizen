@@ -6,12 +6,15 @@ come from Zaal + the team.
 
 ## Key context that shapes the local pitch
 
-- **Banks + credit unions are the reliable local event sponsors here** - they sponsor community/Main Street
-  events as part of their community-development (CRA) mandate. Highest yes-rate for a free community festival.
-- **ZAOstock (Oct 3) overlaps Art of Ellsworth weekend (Oct 2-5, Maine Craft Weekend).** The town is already
-  activated, with its sponsors + visitors present. Lead with: "we add live music to the weekend Ellsworth
-  already shows up for." (Confirm the Art-of-Ellsworth alignment with Heart of Ellsworth.)
-- Angle for all: FREE, family-friendly, downtown, gateway to Acadia, build-the-town's-culture, build-in-public.
+- **CONFIRMED (Zaal, 2026-06-23): ZAOstock is part of / coordinated with Art of Ellsworth weekend (Oct 2-5),
+  AND the team has a real Heart of Ellsworth relationship.** This makes the whole local avenue WARM, not cold.
+  Do NOT cold-pitch local sponsors one by one - work THROUGH Heart of Ellsworth + the Art-of-Ellsworth weekend,
+  which already has 50+ sponsors, visitors, and press in town that weekend.
+- **Banks + credit unions are the reliable local event sponsors here** - community-development (CRA) mandate,
+  highest yes-rate. But approach them via the HOE/Art-of-Ellsworth context ("part of the weekend you fund"),
+  not as a standalone cold ask.
+- Angle for all: FREE, family-friendly, downtown, gateway to Acadia, build-the-town's-culture, build-in-public,
+  and "live music added to the weekend Ellsworth already shows up for."
 
 ## Tier 1 - banks / credit unions (start here - they fund community events)
 
@@ -41,10 +44,11 @@ come from Zaal + the team.
 Acadia-area tourism (hotels, restaurants, breweries), downtown shops (boutiques, chocolatiers, jewelers).
 Best reached as a group through the Chamber + Heart of Ellsworth, not one-by-one cold.
 
-## Recommended first moves
+## Recommended first moves (given the warm HOE + Art-of-Ellsworth relationship)
 
-1. **Heart of Ellsworth first** - one warm relationship that unlocks the sponsor network + the Art-of-Ellsworth
-   weekend alignment. Highest leverage local move.
-2. **Then the banks** (Franklin Savings lead) - they have a community-event budget + mandate.
-3. Star 97.7 for media. Chamber for the business cluster.
-4. Everything here is a CANDIDATE - confirm which relationships the team already has before cold outreach.
+1. **Use the Heart of Ellsworth relationship to ask: which of their 50+ sponsors fit a free music festival on
+   Art-of-Ellsworth weekend?** Get a warm intro to 3-5 of them rather than cold-pitching. This is the unlock.
+2. **Pitch the banks (Franklin Savings lead) as "part of the Art of Ellsworth weekend you already support"** -
+   ride the existing context, not a standalone ask.
+3. Co-promote with the Art-of-Ellsworth weekend (shared visitors, press, Star 97.7 media).
+4. Specific sponsor names still come from Zaal/HOE - this is the framework + the warm channel, not a cold list.
