@@ -62,12 +62,22 @@ crowd, stage, lights. A GIF or short video performs best (Artizen's own guidance
 9. The ask + the funds we're in
 10. Links: zaostock.com/festivals
 
-## Submit to these funds (stack the match)
+## Submit to these funds (stack the match - the more the better)
+Core:
 - ZAO Fund for Emerging Culture (home fund)
 - Commons Fund for Public Goods Pioneers (community / public goods)
 - Apollo Fund for the New Renaissance (cultural builders, build-in-public)
 - Filecoin Fund for Cultural Preservation (archiving the sets / catalog)
-- (Plus any music/events/gatherings fund - the deeper funds research will add options.)
+
+Strong added fits (from the deeper funds research 2026-06-27 - verify each is open before curating):
+- **Third Place Fund for Community Hubs** (community gathering spaces - a festival IS a third place; top fit)
+- **Motherland Fund for Rising Voices** (emerging/underrepresented artists - bringing artists up)
+- **Creative Wellness Fund for Community Healing** (art for community impact)
+- **Expanding Horizons Fund** (frontier creativity)
+- **Constellation Fund for Explosive Creativity** (experimental music/art)
+- **Freedom of Art Fund** (art)
+
+That's up to 10 funds = a big stacked match on the same Artifact sales. Submit to all that fit + are open.
 
 ## Your to-do to submit
 1. Paste the fields above into artizen.fund/submit

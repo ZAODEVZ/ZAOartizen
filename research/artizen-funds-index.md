@@ -38,6 +38,30 @@ Slugs are from search/inference - VERIFY each by visiting artizen.fund/index/mf/
 **Top 3-fund stack for a ZAO music/art/community project:** ZAO Fund + Commons Fund + Apollo Fund.
 Add Filecoin for archival/heritage music; Cabin for regen-art-leaning work.
 
+## Additional funds (v3 - deeper research 2026-06-27, 20 funds total)
+
+Agent couldn't fully fetch pages (Bubble truncation) - slugs/details from search, verify before relying.
+
+| Fund | Slug | Focus | ZAO fit | Conf |
+|------|------|-------|---------|------|
+| **Third Place Fund for Community Hubs** | third-place-fund-for-community-hubs | Physical + digital community gathering spaces | STRONG - a festival is a third place | HIGH |
+| **Motherland Fund for Rising Voices** | motherland-fund-for-rising-voices | Underrepresented / emerging cultural voices | STRONG - bringing artists up | HIGH |
+| **Creative Wellness Fund for Community Healing** | creative-wellness-fund-for-community-healing | Arts for healing + community restoration | STRONG - art for community impact | HIGH |
+| **Expanding Horizons Fund** | expanding-horizons-fund | Frontier creativity | STRONG | HIGH |
+| **Catalyst Fund for American Renewal** | catalyst-fund-for-american-renewal | US cultural renewal + civic engagement | Maybe - depends on framing | HIGH |
+| **Film3 Fund for Independent Voices** | film3-fund-for-independent-voices | Independent film / video creators | Maybe - video content | HIGH |
+| **Cyberdelic Fund for Expanding Consciousness** | cyberdelic-fund-for-expanding-consciousness | Psychedelic / consciousness | Maybe - music-adjacent | MED |
+| **HyperDeSci Fund for Open Science** | hyperdesci-fund-for-open-science | Open science / DeSci | NO | HIGH |
+
+**The 3 prior LOW-confidence funds are now VERIFIED** (slugs confirmed): Constellation Fund for Explosive
+Creativity (strong - experimental music/art), Illuminate Fund for Citizen Scientists (science), Freedom of Art
+Fund (strong - art).
+
+**ZAO Festivals best-fit stack (up to 10):** ZAO + Commons + Apollo + Filecoin + Third Place + Motherland +
+Creative Wellness + Expanding Horizons + Constellation + Freedom of Art.
+
+(The live /matchfunds directory likely has even more - a Zaal screenshot would confirm the complete set.)
+
 **[FLAG] Season timing is unresolved.** The research pass said "Season 6 ended June 18, 2026"; the sponsor email
 said the drive ends June 25; Zaal's dashboard showed an ACTIVE "Crescendo Fund Drive." These conflict - do NOT
 treat any season/deadline as fact. Confirm the live drive + Season 7 timing from Zaal's dashboard or @ArtizenFund
