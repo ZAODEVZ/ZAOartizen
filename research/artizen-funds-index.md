@@ -43,13 +43,19 @@ said the drive ends June 25; Zaal's dashboard showed an ACTIVE "Crescendo Fund D
 treat any season/deadline as fact. Confirm the live drive + Season 7 timing from Zaal's dashboard or @ArtizenFund
 before acting on a deadline. Season 6 pool was reportedly ~$1.9M match + $250k prizes [MED].
 
-## ZAO project -> target funds (the apply map, v1)
+## ZAO project -> target funds (apply map, v2)
 
-- **ZAO Festivals / ZAOstock** (music festival, IRL) -> ZAO Fund + Edge City (gatherings) + any music/events fund.
-- **The Impact Concerts, HuRya** (impact/regen) -> ZAO Fund + Greenpill/Regen + any impact fund.
-- **POIDH, Creator Block** (web3 tooling/community) -> ZAO Fund + Juicebox + any web3 fund.
-- **Music projects** (InSync/HOPE, Marie Chain, COC Concertz) -> ZAO Fund + any music/culture-preservation fund (Filecoin for catalog/archival).
-- **BetterCallZaal Strategies** -> ZAO Fund (founder/entrepreneurship; check for a builder/accelerator fund).
+Submit each to its listed funds for stacked match (verify each fund is open this season first).
+
+| Project | Submit to | Why |
+|---------|-----------|-----|
+| **ZAO Festivals / ZAOstock** | ZAO + Commons + Apollo (+ Filecoin if archiving sets) | Music/community/IRL; public-goods + build-in-public angles |
+| **The Impact Concerts, HuRya** | ZAO + Commons + Cabin | Impact/regen/public goods |
+| **POIDH, Creator Block** | ZAO + Juicebox + Console + Commons | Web3 tooling + community builders |
+| **Music: InSync/HOPE, Marie Chain, COC Concertz** | ZAO + Apollo + Filecoin | Cultural builders; Filecoin for catalog/archival |
+| **BetterCallZaal Strategies** | ZAO + Apollo | Founder/educator building in public (Apollo rewards documenting + sharing) |
+
+Default 3-fund stack for any music/art/community project: **ZAO + Commons + Apollo.**
 
 ## Open / to verify
 - The full current list of Season 6 funds (Bubble-gated - need the live page or Zaal screenshot).
