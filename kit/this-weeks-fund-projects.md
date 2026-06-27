@@ -48,7 +48,11 @@ to a real practice. Every backer is both a supporter and a potential first clien
 
 ## PROJECT 2 - ZAO Festivals
 
-**One-liner:** Back the series of community-owned, artist-built music festivals. Flagship: ZAOstock 2026.
+**Purpose (Zaal, 2026-06-27): bring independent artists TO the stage.** The Artizen project funds bringing
+artists to ZAOstock/ZAO Festivals - fair-paid slots, travel/production support, and a recording + recap reel
+each artist takes home. Frame the story around artists-to-the-stage, not just "back the festival."
+
+**One-liner:** Bringing independent artists to real stages - free, community-owned music festivals.
 
 **Title:** ZAO Festivals
 
