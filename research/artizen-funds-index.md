@@ -16,18 +16,32 @@ research pass. Confidence-tagged. A screenshot of the live /matchfunds page from
 - Plus the Artizen Endowment adds $1+ on top -> ~$3+ per $1 baseline, more with multiple funds.
 - (Match per fund is capped; unused match rolls to next season.)
 
-## Funds (v1 - known)
+## Funds (v2 - 2026-06-27 research pass)
 
-| Fund | Slug | Focus | ZAO project fit | Conf |
-|------|------|-------|-----------------|------|
-| **ZAO Fund for Emerging Culture** | zao-fund-for-emerging-culture | Music/art/tech/community at the frontier; requires ZAO collaboration | ALL ZAO projects (home fund) | HIGH |
-| **Filecoin Fund for Cultural Preservation** | filecoin-fund-for-cultural-preservation | Decentralized-web / storage tech for cultural preservation | Archival/music-preservation, on-chain catalog, ArDrive-style projects | MED |
-| **Juicebox Project Accelerator Fund** | juicebox-project-accelerator-fund | On-chain, community-driven projects | Web3 community projects, tooling, DAOs | MED |
-| **Cabin Fund for Regenerative Art** | (verify) | Regenerative art | Regen-leaning art, eco/nature projects | MED |
-| **Greenpill / Regen Gatherings** | (verify) | Regen / public goods / community gatherings | Impact + regen projects (HuRya, Impact Concerts), gatherings | MED |
-| **Edge City - Touch Grass Residency** | (verify) | IRL gatherings / residency, community | Festival/gathering projects (ZAO Festivals), IRL activations | MED |
+Slugs are from search/inference - VERIFY each by visiting artizen.fund/index/mf/<slug> before submitting.
 
-(Background research pass is expanding this - more funds + verified slugs/eligibility to be appended.)
+| Fund | Slug | Focus | ZAO fit | Conf |
+|------|------|-------|---------|------|
+| **ZAO Fund for Emerging Culture** | zao-fund-for-emerging-culture | Music/art/tech/community; requires ZAO collaboration | ALL ZAO projects (home fund) | HIGH |
+| **Filecoin Fund for Cultural Preservation** | filecoin-fund-for-cultural-preservation | Cultural heritage + archival, decentralized storage (Protocol Labs) | Archival/music-catalog, heritage projects | HIGH |
+| **Juicebox Project Accelerator Fund** | juicebox-project-accelerator-fund | Web3-native / tokenized creator projects | Web3 tooling, DAOs (POIDH, if DeFi angle) | HIGH |
+| **Cabin Fund for Regenerative Art** | cabin-fund-for-regenerative-art | Regenerative + sustainable community art | Regen-leaning art, eco projects | HIGH |
+| **Apollo Fund for the New Renaissance** | apollo-fund-for-the-new-renaissance | Artists/technologists/educators; must document + share lessons | STRONG - cultural builders + build-in-public | MED |
+| **Commons Fund for Public Goods Pioneers** | commons-fund-for-public-goods-pioneers | Public goods, open-source, regen (Funding the Commons) | STRONG - ZAO's public-goods angle | MED |
+| **Console Fund for Community Builders** | console-fund-for-community-builders | Community projects co-creating via Console | Maybe - community focus | MED |
+| **Mona Match Fund for 3D Creators** | mona-fund-for-3d-creators | 3D / metaverse / interoperable assets | NO - unless a 3D/metaverse project | MED |
+| **Spark DeSci Fund for Radical Researchers** | spark-desci-fund-for-radical-researchers | Decentralized science research | NO - unless music x science | MED |
+| **Constellation Fund for Explosive Creativity** | constellation-fund-for-explosive-creativity | Boundary-pushing creative projects | Maybe (creative) - VERIFY | LOW |
+| **Illuminate Fund for Citizen Scientists** | illuminate-fund-for-citizen-scientists | Citizen science / community research | Unlikely - VERIFY | LOW |
+| **Freedom of Art Fund** | (unknown) | Art + freedom | Maybe (art) - VERIFY slug + details | LOW |
+
+**Top 3-fund stack for a ZAO music/art/community project:** ZAO Fund + Commons Fund + Apollo Fund.
+Add Filecoin for archival/heritage music; Cabin for regen-art-leaning work.
+
+**[FLAG] Season timing is unresolved.** The research pass said "Season 6 ended June 18, 2026"; the sponsor email
+said the drive ends June 25; Zaal's dashboard showed an ACTIVE "Crescendo Fund Drive." These conflict - do NOT
+treat any season/deadline as fact. Confirm the live drive + Season 7 timing from Zaal's dashboard or @ArtizenFund
+before acting on a deadline. Season 6 pool was reportedly ~$1.9M match + $250k prizes [MED].
 
 ## ZAO project -> target funds (the apply map, v1)
 
