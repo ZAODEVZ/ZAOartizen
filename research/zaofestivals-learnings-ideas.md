@@ -2,6 +2,38 @@
 
 A growing log from looping on ZAO Festivals. Each pass adds verified learnings + fresh ideas. Newest on top.
 
+## Pass 5 - 2026-06-28 (the ownership model, deepened)
+
+The differentiator: make "the crowd that funds it owns it" REAL, but light - a contributors' circle, not a legal
+coop (formalize later, maybe via the Colorado A-Corp vehicle the ZAO is already tracking). It runs on systems
+ZAO already has: the artist CRM (`volunteer_eligible`, `points_earned`, `cypher_role`) + ZOLs (ZAO contribution
+credits) + the fractal/Respect governance lineage.
+
+### Three contributor classes (who "owns" a piece)
+1. **Artist-owners** - anyone who plays or creates for a chapter. Standing = a slot in the run-of-show say + a
+   recap reel + a profile + priority for the next chapter.
+2. **Crew-owners** - volunteers/team. Standing earned through hours -> the CRM's `points_earned` already does
+   this. Points unlock a vote in lineup/ops decisions + recognition + ZOLs.
+3. **Backer-owners** - anyone who funds it (Artizen Artifacts, donations). Standing = name on the supporters
+   wall + the build-in-public updates + a say in one open decision per chapter (e.g. a community-pick slot).
+
+### How it works (light v1, no legal lift)
+- Points/ZOLs are the shared currency of standing across all three classes (already half-built in the CRM).
+- One **community-pick decision per chapter** (a lineup slot, the closing act, the charity) voted by everyone
+  with standing - the smallest real "ownership" that's true, not theater.
+- A public **contributors' wall** (artists + crew + backers together) - the festival's people ARE the brand.
+- Recognition compounds: standing carries to the next ZAO-[chapter], so the circle grows festival to festival.
+
+### Why it's a moat
+No corporate festival can copy "the people who built and funded it own it + decide it." It turns attendees into
+owners, makes the 4,000-resident awareness goal a recruitment funnel into the circle, and gives every Artizen
+backer a reason beyond charity (you get a say). Ties straight to ZAO's existing Respect/fractal DNA.
+
+### Open / to learn
+- PALOOZA/CHELLA poster designs (brand history) - NOT web-indexed; needs Zaal's actual files/screens. Gap.
+- Does the cypher feed the ownership model (cypher participants = artist-owners)?
+- Whether to map standing to ZOLs 1:1 or keep festival points separate.
+
 ## Pass 4 - 2026-06-28 (community-owned models + roster)
 
 ### Learnings
