@@ -2,6 +2,14 @@
 
 A growing log from looping on ZAO Festivals. Each pass adds verified learnings + fresh ideas. Newest on top.
 
+## Pass 3 - 2026-06-28 (brand book shipped)
+
+- Drafted the 1-page brand book -> `research/zaofestivals-brand-book.md` (naming system, palette, visual
+  language, two-register voice, logo to-build, do/don't). Closes the "no documented system" gap.
+- Still to learn: PALOOZA/CHELLA poster designs (brand history - need the actual files/screens), an existing
+  ZAO Festivals logo if any, comparable COMMUNITY-OWNED festival brands (not the Coachella tier) as closer
+  models, and the live artist roster (zaostock.com/artists, DB-gated).
+
 ## Pass 2 - 2026-06-28 (brand)
 
 ### Learnings
