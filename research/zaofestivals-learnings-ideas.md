@@ -2,6 +2,33 @@
 
 A growing log from looping on ZAO Festivals. Each pass adds verified learnings + fresh ideas. Newest on top.
 
+## Pass 4 - 2026-06-28 (community-owned models + roster)
+
+### Learnings
+- **zaostock.com/artists = the VISUAL-artist recruitment page** ("we are taking interest"), not the music
+  lineup. Music lineup is a separate surface (/musicians). The artist data is DB-backed but the public split is
+  visual vs music. (Zaal had earlier considered pulling the visual-artists page - it's still live.)
+- **Community-owned festival/coop models (verified):** cooperative ownership uses CLASSES - artist-owners,
+  worker-owners who earn lifelong membership through hours of service, each with elected board seats. The
+  guiding principle is **"with, not for"** - the platform is defined by its users, self-determination built in.
+  Free/DIY festivals run on negotiated venue deals + donations + **community crowdfunding** (validates the
+  Artizen play exactly). Peer references: Subvert.fm (collectively-owned music marketplace), Artisans
+  Cooperative (artist-owned Etsy alternative).
+
+### Ideas
+1. **"With, not for" as the brand principle** - sharper and more ownable than "community-owned." A festival
+   built WITH artists and the crowd, not FOR them.
+2. **Make "the crowd that funds it owns it" real with light ownership tiers:** artist-owners, crew-owners
+   (volunteer hours -> standing), backer-owners. The artist CRM already has `volunteer_eligible` + `points_earned`
+   - that is the SEED of worker-ownership. Formalize it even informally (a contributors' board, a say in the
+   lineup, ZOLs-style credits).
+3. **The Artizen crowdfund = the textbook "community crowdfunding a DIY festival"** - frame it that way to the
+   web3 crowd; it's a proven model, not a novelty.
+4. **Cite the peers** (Subvert, Artisans Coop) when pitching ZAO Festivals as artist-owned - shows it's a real
+   movement, not a one-off.
+5. **Resolve the /artists vs /musicians split** - one clear "artists" brand surface (music + visual), or clearly
+   labeled lanes, so the brand reads cleanly.
+
 ## Pass 3 - 2026-06-28 (brand book shipped)
 
 - Drafted the 1-page brand book -> `research/zaofestivals-brand-book.md` (naming system, palette, visual
