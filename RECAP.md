@@ -7,8 +7,10 @@ next. Last updated 2026-06-29. Style note: no spaced hyphen dashes anywhere (hou
 - **Two live Artizen projects** in Season 6:
   - **ZAO Festivals** (free community music festivals, flagship ZAOstock 2026, Oct 3 Ellsworth Maine). Goal $25k.
     Artifact: WaveWarZ at ZAO-CHELLA (square). Submitting into the music, festival, and gathering funds.
-  - **BetterCallZaal Strategies** (Zaal going full-time as a builder for builders, donate for free consulting
-    hours). Submitting into the builder and AI funds (Bonfires, Venture Miner, Mental Wealth, Apollo, etc).
+  - **BetterCallZaal Strategies** (Zaal going full-time as a builder for builders). The offer: **every Artifact
+    you buy is one hour with Zaal on anything you want, online or in person.** Buy three, get three hours.
+    Submitting into the builder and AI funds (Bonfires, Venture Miner, Mental Wealth, Apollo, etc). Copy:
+    `kit/bcz-hour-per-artifact` (clipboard) rebuilt around this offer.
 - **The ZAO Fund for Emerging Culture** is live (Zaal is curator). Logline updated to "For the artists and
   builders of The ZAO." Description and eligibility tightened, with the "collaborate with The ZAO" rule.
 - **The site** zaoartizen.vercel.app is a full Artizen funnel (see Website below).
