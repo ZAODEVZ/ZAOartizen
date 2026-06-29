@@ -53,6 +53,15 @@ Async: can't meet live? Send your thing and I'll record a full review or build i
 Gift it: buying for a friend or your team? Tell me who and I'll work with them.
 Scarcity: I can only take on so many hours this season, so the sooner you grab one, the sooner we build.
 
+## v3 layer (2026-06-29): value anchor, fast-action bonus, name the offer
+The remaining grand-slam-offer levers (Hormozi: stack value, add a bonus, reverse risk, add urgency). Applied:
+- **Name the offer:** "The $10 Hour." Memorable, repeatable, becomes the headline.
+- **Value anchor (no hard rate):** "An hour with a builder who has scaled a project past $60k and run festivals
+  in three cities. The kind of help people pay hundreds for. Here it is $10." Anchors $10 against real value.
+- **Fast-action bonus:** "The first backers this season also get a written teardown of their project before we
+  even talk, so we hit the ground running." Adds urgency without showing any tier as sold out.
+- These go at the top of the BCZ offer, above the tiers. Copy in kit/bcz-offer-v3-extras clipboard.
+
 ## ZAO Festivals rewards (tiered, applied 2026-06-29)
 Same tier logic, festival-appropriate perks (recognition up to experiences, per festival-crowdfunding research):
 - **BACKER ($10):** name on the ZAOstock supporters wall, livestream access, the recap reel, build-in-public
