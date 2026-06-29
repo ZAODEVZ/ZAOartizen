@@ -28,6 +28,20 @@ how ZAOville actually ran under DCoop.
 
 ---
 
+## Pass 8 - 2026-06-28 (the moment ZAO Festivals goes live - launch checklist)
+
+Do these in order right after submitting, because Boost Score is multiplicative - a coordinated open beats a
+slow trickle.
+1. **Curate into every open fund** (10 candidates): ZAO + Commons + Apollo + Filecoin + Third Place + Motherland
+   + Creative Wellness + Expanding Horizons + Constellation + Freedom of Art. Each fund = another 1:1 match pool.
+2. **Drop the 3x post** (clipboard `zao-fund-3x-post`) on X + Farcaster, and the Telegram version in the GCs.
+   Pin it.
+3. **Mobilize the bloc first** - the same crew that backs the ZAO Fund each buys one $10 Artifact + boosts
+   ZAO Festivals (cross-back). A clustered first hour moves the leaderboard.
+4. **Start the "Moments" cadence** - the photo + 3 sentences you just submitted as the Artifact becomes post #1;
+   keep one going every couple days, two-track (web3 vs local).
+5. **Tell the artists** - any confirmed artist reshares to their fans (distribution nodes). Lineup = channel.
+
 ## Pass 7 - 2026-06-28 (ZAO Festivals as a protocol / chapter-anywhere)
 
 "A festival as a protocol, not a product" is already the brand line - make it the growth engine. ZAOville
