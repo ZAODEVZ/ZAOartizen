@@ -31,10 +31,26 @@ verified badges), /sponsor (the two giving rails + credibility), /dashboard (liv
 (the ZAO Festivals umbrella with the ZAO-CHELLA reels), /rally, /apply, /leaderboard, /proposal. Share images
 (opengraph) on the key pages.
 
+## Latest state (2026-06-29, after launch + consulting work)
+- **BCZ reframed as a consulting launch.** The offer: every Artifact is one hour of consulting from Zaal,
+  online or in person. "The $10 Hour." Tiered (Hour / Deep Dive / Sprint), with a guarantee, async, gift, and a
+  fast-action bonus. Real material gathered (services, receipts, niches, bio) -> rebuilt showcase.
+  Files: `kit/bcz-showcase.md`, `kit/bcz-showcase-final` (clipboard), `research/bcz-consulting-material.md`,
+  `research/offer-optimization.md` (the full offer build).
+- **Launch assets ready:** `kit/launch-assets.md` (X/Farcaster threads for both projects, tiered DMs, per-fund
+  opening lines). Plus the testimonials (`bcz-testimonials`, the WaveWarZ proof) and fund-apply lists.
+- **Two gaps need Zaal's words** for BCZ: the client-engagement process and the "why now" story (starter drafts
+  in `kit/bcz-showcase.md`).
+- **ZAOOS PR cleanup:** 5 autonomous research/ZOE PRs merged; 7 left with merge conflicts (they edit shared
+  index files), parked for manual rebase.
+
 ## The research knowledge base (research/)
 The institutional memory. Most useful, in order:
 - `artizen-share-and-accept-playbook.md`: 13-agent playbook. The 48-hour launch plan, channels, the voting
   engine, fund-director outreach, per-fund framing, rewards, deck, sponsor pitches. THE execution doc.
+- `offer-optimization.md`: the full offer build (tiers, guarantee, social proof, async, gift, value anchor,
+  fast-action bonus) for BCZ and ZAO Festivals. Research-backed.
+- `bcz-consulting-material.md`: the real consulting material (services, receipts, niches, bio, gaps).
 - `artizen-funds-how-they-work.md`: how funds are framed and used (TL;DR at top). Short "For [X]" loglines,
   niche-by-community, $3+ match, within-fund curation, sponsor tiers, the Accelerator, success cases.
 - `artizen-funds-index.md` + `fund-directory.md` + `priority-funds.md`: the funds and which fit ZAO projects.
