@@ -2,6 +2,32 @@
 
 A growing log from looping on ZAO Festivals. Each pass adds verified learnings + fresh ideas. Newest on top.
 
+---
+
+## SUMMARY - the highest-leverage moves (distilled from passes 1-7, 2026-06-28)
+
+The 7 best moves, in rough priority:
+1. **Ship one Artifact in the "Moments" format** (a real event photo + 3 sentences from Zaal). It is the
+   Artizen Artifact AND a repeatable social post - the single cheapest, highest-frequency asset. Unblocks the
+   ZAO Festivals submission. (Pass 6)
+2. **Own the ZAO-[name] naming system + the navy/gold silhouette look** - the brand equity, now documented in
+   `zaofestivals-brand-book.md`. A 50-agent pass independently converged on the look. (Pass 2-3)
+3. **Make "the crowd owns it" real** - artist/crew/backer-owners earning standing on the existing points CRM,
+   with one community-pick decision per chapter. The moat no corporate festival can copy. (Pass 4-5)
+4. **Turn every confirmed artist into a distribution node** - the artist-spotlight series IS the marketing
+   channel (each artist reshares to their fans -> Artizen sales). (Pass 6)
+5. **Two-track comms** - web3/Artizen/3x for the crypto crowd; free-music/no-jargon for the 4,000 Ellsworth
+   residents. Never cross them. (Pass 2, 6)
+6. **Frame the Artizen ask as "fund the travel_booked pipeline"** and stack the 10 fitting funds for max match.
+   (Pass 1, + funds index)
+7. **Scale via the protocol** - enable ZAO-[city] hosts (ZAOville proved it); the chapter kit already exists in
+   the repo. Bigger than ZAOstock alone. (Pass 7)
+
+**Gated on Zaal (would unlock the most):** the lineup names, the PALOOZA/CHELLA posters, what the cypher is, and
+how ZAOville actually ran under DCoop.
+
+---
+
 ## Pass 7 - 2026-06-28 (ZAO Festivals as a protocol / chapter-anywhere)
 
 "A festival as a protocol, not a product" is already the brand line - make it the growth engine. ZAOville
