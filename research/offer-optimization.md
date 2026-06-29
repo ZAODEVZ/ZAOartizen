@@ -31,6 +31,27 @@ sooner we build." Demand-as-proof, no sold-out shown.
 - More Artifacts per backer = more sales = more match unlocked across every fund.
 - It still leads with the same simple, generous hook, so it does not lose the magic.
 
+## v2 layer (2026-06-29): guarantee, names, gifting, async, social proof
+Research adds four more levers, all applied to the offer copy:
+- **Risk reversal / guarantee** (biggest cheap win): a money-back-style promise reverses risk and lifts
+  conversion. Line: "If you don't leave with something useful, I'll make it right with another session, on me."
+- **Name the tiers** (productized, memorable): THE HOUR ($10), THE DEEP DIVE ($50), THE SPRINT ($100).
+- **Gifting**: "Buying for a friend or your team? Tell me who and I'll work with them." Widens the buyer base.
+- **Async option**: "Can't meet live? Send your thing and I'll record a full review or build it with you over
+  messages." Captures other timezones and async-preferring buyers.
+- **Social proof is the strongest lever and the one gap**: products with testimonials are ~270% more likely to
+  be bought; video testimonials beat text by ~80%. NEEDS ZAAL: 2 to 3 short real quotes from people he has
+  helped (name + what they built + one line). Add them near the buy. This is the highest-value add still open.
+
+## The full offer copy (v2, paste-ready)
+THE HOUR ($10, 1 Artifact): a full hour on anything you bring. You leave with a clear next step.
+THE DEEP DIVE ($50, 5 Artifacts): we go deep on one thing, and you keep a written action plan.
+THE SPRINT ($100, 10 Artifacts): a half day building it together, plus a month of async access.
+My promise: if you don't leave with something useful, I'll make it right with another session, on me.
+Async: can't meet live? Send your thing and I'll record a full review or build it with you over messages.
+Gift it: buying for a friend or your team? Tell me who and I'll work with them.
+Scarcity: I can only take on so many hours this season, so the sooner you grab one, the sooner we build.
+
 ## Note
 Could extend the same tier logic to ZAO Festivals rewards later, but BCZ is the offer-driven project, so it
 matters most there.
