@@ -50,4 +50,45 @@ split among curated projects. $1 Artifact sale unlocks $1 match per fund; the Ar
    ask).
 3. Consider applying to the Accelerator for up to $10k to seed the fund (an application, not a given).
 
-## (Agent pass appending: fund-copy examples, sponsor recruiting, more)
+## Real fund logline pattern (agent pass, HIGH) - the big one
+
+Funds use a SHORT "For [X]" logline, not a long sentence. Formula: **For [specific creator type] [+ outcome].**
+- Filecoin: "For Creatives Exploring Decentralized Web Technologies"
+- Console: "For Web3 Community Builders"
+- Cabin: "For Regenerative Art"
+- Apollo: "For the New Renaissance"
+- Mona: "For 3D Creators"
+- Juicebox: "For Community-Driven Projects"
+
+Takeaway: the ZAO Fund's current logline (a long maxed-out sentence) does NOT match the platform style. Switch to
+a short "For [X]" phrase that names the ZAO community. Candidates:
+- "For the artists and builders of The ZAO" (shortest, community-forward)
+- "For The ZAO's creators of emerging culture"
+- "For musicians and builders making community-owned culture"
+The full description/eligibility carries the detail; the logline just names WHO.
+
+## What makes a fund succeed (agent pass, HIGH)
+- **1:1 match + transparent unlocking** - a visible "unlocked $X / $3K" bar; simplicity beats clever formulas
+  (their quadratic-funding era confused people and was killed).
+- **Seasonal rhythm = FOMO** - curation -> competition -> payout cycles drive urgency.
+- **Storytelling + documentation** - Apollo literally requires "willingness to share lessons, document your
+  process." Build-in-public is rewarded (the ZAO already does this).
+- **Distributed, niche community funds** - 32+ funds; the magic is curation diversity, not an algorithm.
+
+## Sponsor tiers (agent pass, from the Console case - MED)
+- **Presenting Sponsor ~$20k+**: fund naming, voting power, dashboard, public shoutouts (the new Presenting
+  Sponsor feature).
+- **Supporting ~$5k**: voting power, brand listing on the fund page.
+- **Contributor ~$1k**: Artifacts + recognition.
+- Sponsors earn ~10 votes + 1 key per $1 (2x monthly). Per-project available match is typically ~$3,000.
+
+## Accelerator amount - DISCREPANCY [flag]
+The "Accelerator" post says up to **$10,000**; the "$1M for Community Funds" post says up to **$50,000**. Likely
+two programs or a changed figure. Do NOT cite one as fact - confirm on artizen.link/apply before relying.
+
+## Net recommendation for the ZAO Fund
+1. **Logline -> short "For [X]"** naming the ZAO community (biggest copy fix).
+2. Keep the tightened description + the "collaborate with The ZAO" eligibility (those match the substance funds
+   want).
+3. Lean on build-in-public (Apollo-style) - the ZAO already does it.
+4. Apply to the Accelerator (an application; amount unconfirmed $10k-$50k).
