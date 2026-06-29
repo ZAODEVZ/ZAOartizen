@@ -86,6 +86,25 @@ The full description/eligibility carries the detail; the logline just names WHO.
 The "Accelerator" post says up to **$10,000**; the "$1M for Community Funds" post says up to **$50,000**. Likely
 two programs or a changed figure. Do NOT cite one as fact - confirm on artizen.link/apply before relying.
 
+## Curation + voting - how to actually win (René, "Art and Chaos of Curation", HIGH)
+- **Curation happens WITHIN each fund** - projects compete only against others in the SAME fund, not the whole
+  platform. So every fund you stack into is a separate curation pool to win + separate competition. (Reinforces
+  multi-fund stacking - and means a small, aligned fund like ZAO's is easier to place in.)
+- **Voting:** new users get up to 100 points for filling a profile; $1 contributed = 10 votes; you earn votes by
+  showing up (events, quests). Every vote is clicked MANUALLY (even whales) - "time is the equalizer."
+- **The season-end airdrop flywheel:** raise $1,000 this season -> get 10,000 votes next season. Success compounds
+  into governance weight. So a strong drive buys curation power going forward.
+- **How to win curation for a ZAO project:** rally the community to VOTE (click) during the curation phase, not
+  just buy. Gamified (confetti, real-time leaderboard, Pro = 10x faster votes, streaks).
+- Top ~30% by votes (within the fund) advance to competition.
+
+## Endowment - grounded (René, "Largest Endowment in the World", HIGH) - resolves old confusion
+- The Artizen Endowment was **$4M (Oct 2025), growing ~161%/season, projected ~$10M by end of 2025.** Real and
+  fast-growing, mostly off-chain. (This settles the earlier $14M-displayed vs $96.96-on-chain confusion: the
+  endowment is a real, large, growing pool; the on-chain Revnet was a tiny slice.)
+- The **$1 trillion** goal is explicitly ASPIRATIONAL - René: "there's a good chance we won't make it." Do not
+  cite $1T as a real figure; cite the $4M->$10M actuals.
+
 ## Net recommendation for the ZAO Fund
 1. **Logline -> short "For [X]"** naming the ZAO community (biggest copy fix).
 2. Keep the tightened description + the "collaborate with The ZAO" eligibility (those match the substance funds
