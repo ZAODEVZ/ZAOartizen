@@ -4,6 +4,26 @@ Research to ground the ZAO Fund setup + project submissions. Sourced from Artize
 (news.artizen.fund). Confidence-tagged; the live fund pages are Bubble-gated so copy examples come from press +
 the newsletter. A deeper agent pass is appending more (fund-copy examples, sponsor recruiting). 2026-06-28.
 
+---
+
+## TL;DR - the 8 things that matter (use this; detail below)
+1. **Loglines are short "For [X]"** (Filecoin/Console/Cabin all do it). ZAO Fund -> "For the artists and
+   builders of The ZAO." The paragraph goes in the description.
+2. **Specific/niche wins.** ZAO's niche = the community + the "collaborate with The ZAO" eligibility rule. Keep it.
+3. **Match = ~$3+ per $1** ($1 fan + $1 per fund + $1+ endowment). Stack many funds.
+4. **Curation is WITHIN each fund** - you compete only against others in the same fund. So stacking funds = more
+   pools to win, and a small aligned fund is easier to place in.
+5. **Win curation by rallying VOTES** (manual clicks; $1 = 10 votes; raising $1k = 10k votes next season), not
+   just buys.
+6. **Mobilize like Artizen says:** post often + tag @ArtizenFund, personal DMs (not blasts), host events. Proof:
+   a creator raised ~$100k for a 9-city tour (ZAO Festivals' exact model).
+7. **Sponsors:** Presenting (~$20k+, naming + the new top-billing feature) / Supporting (~$5k) / Contributor
+   (~$1k). Build-in-public is rewarded (Apollo requires it; ZAO already does).
+8. **Endowment is real** ($4M -> ~$10M, fast-growing); the $1T is aspirational. The **$10k-$50k Accelerator** is a
+   real thing to APPLY to (amount unconfirmed).
+
+---
+
 ## The #1 principle: be SPECIFIC, not general [HIGH - René, verbatim]
 From the Accelerator post: "We're NOT looking for vague, general funds - we want highly SPECIFIC funds designed
 to support passionate, often NICHE creative communities. The more unique and well-defined, the better."
