@@ -43,10 +43,10 @@ interface FestEvent {
 const EVENTS: FestEvent[] = [
   {
     name: 'ZAOstock 2026',
-    when: 'October 2026',
-    where: 'Franklin St Parklet, Ellsworth, Maine',
+    when: 'October 3, 2026',
+    where: 'Ellsworth, Maine',
     blurb:
-      'The flagship - a one-day independent-artist festival where a crypto-native music community throws a real small-town Maine festival. Community-curated lineup, artists paid fairly, free and open.',
+      'The flagship. Ellsworth, Maine - the gateway to Acadia. A free, community-owned music festival where independent artists and a crypto-native music community gather to celebrate together. Community-curated, fairly paid.',
     flagship: true,
   },
   {
@@ -122,9 +122,7 @@ export default function FestivalsPage() {
           </p>
           <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">ZAO Festivals</h1>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base">
-            ZAO Festivals presents music festivals, concerts, and artist-led real-world activations -
-            ZAOstock, Zaoville, and more - and backs them with a community match fund so organizers get
-            funded without losing ownership. Artist-first, IRL, community-powered.
+            ZAO Festivals brings live culture to real places. Starting in Ellsworth, Maine (the gateway to Acadia) with ZAOstock - a free, community-owned festival where independent artists and a crypto community gather. Plus Zaoville, COC Concertz, and more. Each event gets backed by a community match fund so organizers stay independent. Artist-first, IRL, community-powered.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <a

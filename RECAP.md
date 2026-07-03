@@ -1,7 +1,7 @@
 # ZAO on Artizen, the full recap
 
 The complete record of the ZAO x Artizen effort: what was built, where it lives, what was decided, and what is
-next. Last updated 2026-06-29. Style note: no spaced hyphen dashes anywhere (house rule).
+next. Last updated 2026-07-03. Style note: no spaced hyphen dashes anywhere (house rule).
 
 ## Status at a glance
 - **Two live Artizen projects** in Season 6:
@@ -42,16 +42,20 @@ drive ends in ~2 days. Open items, all Zaal's to drive: submit BCZ to its funds,
 fresh testimonials, and decide on the 7 conflicting ZAOOS PRs. Everything built is documented here and in kit/
 and research/.
 
-## Latest state (2026-06-29, after launch + consulting work)
-- **BCZ reframed as a consulting launch.** The offer: every Artifact is one hour of consulting from Zaal,
-  online or in person. "The $10 Hour." Tiered (Hour / Deep Dive / Sprint), with a guarantee, async, gift, and a
-  fast-action bonus. Real material gathered (services, receipts, niches, bio) -> rebuilt showcase.
-  Files: `kit/bcz-showcase.md`, `kit/bcz-showcase-final` (clipboard), `research/bcz-consulting-material.md`,
-  `research/offer-optimization.md` (the full offer build).
-- **Launch assets ready:** `kit/launch-assets.md` (X/Farcaster threads for both projects, tiered DMs, per-fund
-  opening lines). Plus the testimonials (`bcz-testimonials`, the WaveWarZ proof) and fund-apply lists.
-- **Two gaps need Zaal's words** for BCZ: the client-engagement process and the "why now" story (starter drafts
-  in `kit/bcz-showcase.md`).
+## Patronage plan and post-launch (2026-06-29 through 07-03)
+- **BCZ Strategies launched as PATRONAGE (2026-06-29).** The offer is single and clear: "My fund to help artists
+  full-time. Back it if you would value me in your corner, and I will support however I can." One reward 
+  ("In Your Corner" at $10): "You back my work. I'm in yours: advice, intros to my 250-plus network, and my
+  tools and agent stack put to work on what you're building." Proof of the model: 80+ repos, WaveWarZ 459 SOL 
+  / 950 battles / 7.8 SOL to artists, The ZAO from 0 to 250+ artists in 3 years, FarHack 2026 Snap win,
+  $1.5M robotics.
+- **Improvement plan underway** (`kit/improvement-plan.md`): testing product/market fit with live patrons,
+  iterating on rewards and engagement.
+- **ZAO Fund curation plan live** (`kit/zao-fund-curation.md`): Zaal as curator, tightened eligibility
+  ("collaborate with The ZAO"), 188-member community as the voting engine.
+- **ZAO Festivals confirmed** (doc 919): ZAO-PALOOZA NYC NFT NYC 2024 (12 artists), ZAO-CHELLA Wynwood Miami 
+  Dec 6 2024 at Art Basel (10 musicians, WaveWarZ LIVE). Flagship ZAOstock Oct 3 2026, Ellsworth Maine (free, 
+  community-owned, $25k goal). Organizer proof: Steve Peer 430 house concerts since 1989.
 - **ZAOOS PR cleanup:** 5 autonomous research/ZOE PRs merged; 7 left with merge conflicts (they edit shared
   index files), parked for manual rebase.
 

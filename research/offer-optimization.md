@@ -1,6 +1,14 @@
-# Offer optimization, making the BCZ Strategies offer convert harder
+# Offer optimization - BCZ patronage model (pre-patronage research)
 
-Research-backed upgrade to the "1 Artifact = 1 hour with Zaal" offer. 2026-06-29.
+FRAMING NOTE (2026-07-03): this file contains pre-patronage offer research. The canonical BCZ model is
+PATRONAGE not consulting: "My fund to help artists full-time. Back it if you would value me in your corner."
+One reward, relationship not a services menu. The recommendations below (tiers, hours, priced levels) do not
+apply. Kept for historical reference + the conversion science insights (anchoring, outcomes vs time,
+testimonials, scarcity, guarantee). The patronage offer architecture needs its own pass.
+
+---
+
+Research-backed upgrade to the "1 Artifact = 1 hour with Zaal" offer (pre-patronage, 2026-06-29).
 
 ## What the research says (verified)
 - **Tiers win:** projects with 5 to 7 reward levels fund best. Three-option anchoring means ~70 to 80% pick the

@@ -25,8 +25,8 @@ annual). Redeem ART for USDC at a rising floor, minus a 10% exit tax.
 
 ## The targets (track these)
 
-- Endowment launched **$4M** (Oct 2025), **+$360K** in two weeks. As of Jun 2026: **~$14M** (past the $10M-EOY pace).
-- **$10M by end of 2026.**
+- Endowment launched **$4M** (Oct 2025, Artizen-reported), **+$360K** in two weeks. Artizen reports **~$14M** as of Jun 2026 (claimed to be past the $10M-EOY pace). See art-token-onchain.md for on-chain verification (Revnet holds <$100; Endowment figures are self-reported).
+- **$10M by end of 2026** (target).
 - "In less than five years ... **$10 billion**, overtaking Kickstarter as the largest funding platform for creators."
 - "By 2034 ... pass Novo Nordisk to become the largest endowment in the world."
 - "Around year twelve ... **$1 trillion.**"

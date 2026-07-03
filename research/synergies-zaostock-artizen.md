@@ -113,7 +113,7 @@ two real-world-gathering communities boosting each other compounds both Boost Sc
 ## Network in action - who to learn from + start with (grounds #9)
 
 The fund's top performers already cracked the sales+boost game - they are the playbooks to ask about, and the
-warmest first relationships:
+warmest first relationships. (Standings as of 2026-06-23; rankings shift per Artizen fund drive.)
 
 - **InfiniteZero Network (Abraham Nash) - #1, ~$46k sales.** The clearest "how do you win" case in the fund
   (also the DIN project, ZAOOS doc 760). First ask: how do you drive both sales AND boosts?
