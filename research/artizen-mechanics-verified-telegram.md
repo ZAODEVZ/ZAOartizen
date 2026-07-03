@@ -66,6 +66,38 @@ fund-manager controls, and adds mechanics no public doc carries.
   anything weird and flag Rene/Nate.
 - Zaal's papers page is live at thezao.xyz/papers (he referenced writing a paper alongside James).
 
+## Updates-channel intel (added 2026-07-03, from Rene's announcements, roughly mid-June onward)
+
+- **Artizen LIVE** (the weekly Showcase, renamed): Thursdays 10am PT. Produced by Wadooah Wali of New Canvas;
+  Rene publicly posted her email for slot requests: wadooah@newcanvas.co. Format: tight 5-minute pitch,
+  presentation, or performance. "Over $120,000 in prize money gets awarded live during the show."
+  ACTION: email for a slot; the next show lands on/near the July 9 season close.
+- **36 Cinema Creative Fund is live** (RZA / Wu-Tang, lead curator Abazar Khayami, via Sam Pressman):
+  "forging new worlds through film, sound, and future tools." ZAO Festivals fits the sound + film angle
+  (the ZAO-CHELLA reels, the festival documentary). Submit.
+  https://artizen.fund/index/mf/36-cinema-creative-fund
+- **Future Aesthetics Fund for Worlds Worth Building** (Foundation for Future Aesthetics, Olli): optimistic
+  futures, speculative fiction, science, design, architecture. The "festival as a protocol, owned by the
+  crowd that funds it" story fits the worlds-worth-building lens. Submit.
+  https://artizen.fund/index/mf/future-aesthetics-fund-for-worlds-worth-building
+- **Embodied Mastery Fund for Living Lineages** (with Guillermo): lifelong masters of embodied practice
+  passing work to the next generation. Weak fit for our two projects as framed; the only angle is the Maine
+  house-concert lineage (Steve Peer, 430 shows since 1989). Low priority, noted.
+- **Boost point airdrop precedent:** Rene airdropped 100,000 boost points to EVERY creator and fund director
+  during the Frontier drive, and when Jeff asked for another round Rene said "On it." Boost balances reset
+  each drive, so airdrops are per-drive gifts. CHECK the balance at each drive open (Zaal's header showed 0
+  on 2026-07-03); when an airdrop lands, deploy immediately - Boost Score is multiplicative.
+- **ART token relaunched** (~mid/late June): V6 migration, airdrop to existing holders, and per Rene "you
+  will be able to buy ART by donating to the endowment on our home page." Updates the dormant-token picture
+  in research/art-token-onchain.md; treasury caution stands until on-chain state is re-verified.
+- **Supporter emails are downloadable** from the project page supporters section (a Download/Email button;
+  it was bugged/commented out, Nate pushing a fix). Use it to thank early backers directly.
+- **Artizen Houses / IRL arm is growing:** Artizen House Zanzibar Jul 25-Aug 14 2026 alongside Zanzalu
+  (artizenhousezanzibar.com, selection announced Jun 16); an Edge City house; an Artizen House Ghana
+  (Volta region) floated for Season 7 December. Relevant to the ZAO travel-circuit thinking (zaotravelz).
+- Platform notes: Base network outage stalled USDC sends one day (funds safe); past fund-drive results have
+  no UI yet (Rene emails them); the community group itself is under-known ("we need to do a better job").
+
 ## What this changes for us (tactics)
 
 1. **Submit both projects to funds NOW.** Mid-drive curation can still apply during the finale, and the
