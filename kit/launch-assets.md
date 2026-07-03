@@ -14,12 +14,13 @@ The share kit for the Artizen drive. Threads, DMs, and per-fund opening lines. C
 4. Back ZAO Festivals now. Buy, boost, tag a friend who loves live music. [link] cc @ArtizenFund
 
 ## BetterCallZaal Strategies thread (4 parts)
-1. I am going full-time building, and every $10 Artifact you buy is one hour with me on anything you want. A
-   launch, a brand, a token, an AI agent, a pitch, or your stuck idea. Online or in person.
-2. The WaveWarZ testimonial (Hurric4n3Ike, $60k volume, "This is your GUY").
-3. The tiers: 1 = an hour. 5 = a deep dive plus a plan you keep. 10 = a half day building it together plus a
-   month of async. Plus the guarantee.
-4. BetterCallZaal Strategies is live on Artizen. Grab an hour. [link] cc @ArtizenFund
+1. Going full-time: backing this fund means I'm in your corner. You get my teardown on your work (async,
+   upfront), time to connect, intros to my 250-plus network, and my tools + agent stack on what you are building.
+2. The WaveWarZ testimonial (Hurric4n3Ike, "Without Zaal, WaveWarZ would not be dominating Web3 Music. This is
+   your GUY").
+3. What you get: I ship, I connect, I bring my full stack. Co-built WaveWarZ (459 SOL to artists), founded The
+   ZAO (250+ artists in 3 years), 80+ repos, FarHack 2026 Snap winner.
+4. BetterCallZaal Strategies is live on Artizen. Back my work. [link] cc @ArtizenFund
 
 ## DM tiers
 - Super core (24h before, personal, reference something they did): early buy in hour one signals momentum.

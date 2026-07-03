@@ -27,6 +27,9 @@ export default function CommunityPage() {
           <span className="rounded-full bg-[#f5a623]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#f5a623]">confirm</span>{' '}
           = project details still being nailed down. Tap any card to open it on Artizen.
         </p>
+        <p className="mt-2 text-xs text-white/35">
+          Notes verified as of June 26, 2026. Projects and details move - re-check before sharing.
+        </p>
       </header>
 
       <div className="grid gap-3 sm:grid-cols-2">

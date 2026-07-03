@@ -3,7 +3,7 @@
 The front door for anyone helping with the ZAO's Artizen effort. Read this first, then go to the kit
 (`kit/`) for copy-paste tools and `research/` for the deep dives.
 
-Updated 2026-06-21.
+Updated 2026-07-03.
 
 ## The mission
 
@@ -97,5 +97,5 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
 ## One caution
 
 Keep the ZAO treasury OFF the ART token. Ride the funding rail; the token/endowment layer is a reflexive
-bonding curve (Rene's own words) and the self-reported "$14M endowment" is thin on-chain. See
-`research/art-token-onchain.md`.
+bonding curve (Rene's own words) and any single endowment claim is unverified on-chain (Juicebox holds
+~34 ETH, dormant). See `research/art-token-onchain.md`.

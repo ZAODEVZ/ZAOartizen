@@ -9,22 +9,22 @@ So both projects must mobilize $10 Artifact buyers + boost points in the first 4
 
 ## PROJECT 1 - BetterCallZaal Strategies
 
-**One-liner:** Help me go full-time building - back the leap, and you get free consulting hours in return.
+**One-liner:** My fund to help artists full-time - back it if you would value me in your corner.
 
 **Title:** BetterCallZaal Strategies
 
-**Tagline:** Going full-time into entrepreneurship. Donate, and let's build your thing together - free.
+**Tagline:** My fund to help artists full-time. Back my work, and I'm in yours: advice, intros, tools.
 
 **Story / description (paste-ready):**
 > I'm Zaal. For years I've been building in the open - communities, festivals, music tech, AI agents - while
-> keeping one foot in the day-job world. This is me making the jump: BetterCallZaal Strategies, full-time.
+> keeping one foot in the day-job world. This is me making the jump: going full-time into helping builders and
+> artists ship.
 >
-> Here's the deal, and it's a real one: anyone who backs this project gets free consulting hours from me.
-> Email me your best times and what you want to work on - a launch, a brand, a token, an event, an agent, a
-> pitch - and we'll get on a call and blitzscale it together. No upsell. You give what you can; I give you the
-> work.
+> Here's the deal: if you would value me being a champion of your project, back this fund. You get: my teardown
+> on your work (async, upfront), time to connect and talk through what matters, intros to my 250-plus network
+> in web3 music and AI, and my tools and agent stack put to work on what you are building.
 >
-> Back it, then email zaal@bettercallzaal.com with (1) your best times and (2) what you want to build. That's it.
+> Back it, then email zaal@bettercallzaal.com with what you are working on. That's it.
 
 **Category:** Founder / entrepreneurship (or the closest Artizen category).
 
@@ -32,15 +32,16 @@ So both projects must mobilize $10 Artifact buyers + boost points in the first 4
 brand visual. $10 open edition, 100% to creator. Keep it iconic, not busy.
 
 **The offer mechanics (this is the hook that drives sales):**
-- Back at any level (buy a $10+ Artifact) -> you've unlocked a free working session.
-- Email zaal@bettercallzaal.com: best times + what you want to work on.
-- We book it, get on the call, and ship/plan the thing.
+- Back at any level (buy a $10+ Artifact) -> you've unlocked real support from Zaal.
+- Email zaal@bettercallzaal.com: what you are building.
+- Zaal sends back a teardown, then we find time to connect and work.
 
-**Why it converts:** people get tangible value ($X consulting) for a $10 Artifact - that's an easy yes, which
-drives the sales half of the Boost Score, and the "email me to claim" creates real leads + relationships.
+**Why it converts:** people value having a champion who ships, puts their full stack to work on your project, and
+has a 250-plus network. A $10 Artifact to get that in your corner is an easy yes, and the "email me" creates real
+relationships and work.
 
-**Funding framing:** this funds the full-time leap - the runway to take BCZ Strategies from nights-and-weekends
-to a real practice. Every backer is both a supporter and a potential first client.
+**Funding framing:** this funds the full-time leap - the runway to take BCZ from nights-and-weekends to going
+all-in on helping artists and builders ship. Every backer is both a supporter and someone Zaal cares about.
 
 **Zaal to-do before submit:** Artifact file, ETH wallet, pick funding goal, submit + curate.
 
@@ -93,7 +94,7 @@ abstract. The /festivals page (with the CHELLA reels) is the proof.
 1. Submit both on artizen.fund, curate so they're live for this week's Thu-Thu drive.
 2. First 48h is everything (Boost Score is multiplicative). Mobilize the ZAO crew to each buy one $10 Artifact +
    give boost points - a coordinated open, not a slow trickle.
-3. BCZ project: lead the post with the free-consulting offer (the hook). ZAO Festivals: lead with ZAOstock +
+3. BCZ project: lead the post with the patronage hook (back my work, I'm in yours). ZAO Festivals: lead with ZAOstock +
    the /festivals link.
 4. Pull the buyers/boosters from the warm channels (the ZAO bloc, Devz, the team) - same crew that backs the
    ZAO Fund.

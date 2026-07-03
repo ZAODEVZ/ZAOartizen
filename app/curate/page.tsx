@@ -32,7 +32,7 @@ interface MatchPart {
 const MATCH: MatchPart[] = [
   { k: '$1', v: 'from a fan buying your $10 Artifact (you keep 100%)' },
   { k: '+ $1', v: 'matched by each Fund backing you - including the ZAO Fund' },
-  { k: '+ $1', v: 'or more from the Artizen Endowment' },
+  { k: '+ $1+', v: 'matched by the Artizen platform (when available)' },
 ];
 
 export default function CuratePage() {
@@ -61,7 +61,7 @@ export default function CuratePage() {
           ))}
         </div>
         <p className="mt-3 text-xs text-white/40">
-          Get curated by multiple Funds and the match stacks - one $10 sale can unlock $20, $30, or more. Source:
+          Get curated by multiple Funds and the match stacks - one $10 sale can unlock $20, $30, or more depending on available platform support. Source:
           Artizen newsletter (news.artizen.fund).
         </p>
       </section>

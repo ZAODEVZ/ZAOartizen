@@ -61,7 +61,7 @@ export default function DashboardPage() {
           rally both buys and Boosts.
         </p>
         <p className="mt-2 text-xs text-white/40">
-          Updated {fundStats.lastUpdated} by {fundStats.updatedBy}. Edit{' '}
+          Snapshot from {fundStats.lastUpdated} (numbers move daily). Edit{' '}
           <code className="text-white/60">app/dashboard/data.ts</code> to update.
         </p>
       </header>

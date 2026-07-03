@@ -1,7 +1,8 @@
-# BetterCallZaal Strategies, consulting material
+# BetterCallZaal Strategies, patronage material
 
 Source material for the BCZ Strategies Artizen showcase, gathered 2026-06-29 (most pulled straight from
-bettercallzaal.com and verified public sources). The entity is BetterCallZaal Strategies LLC. Two gaps at the
+bettercallzaal.com and verified public sources). The entity is BetterCallZaal Strategies LLC. Framed as
+patronage (backing a builder you'd value in your corner), not consulting services. Two gaps at the
 bottom need Zaal's own words.
 
 ## 1. Services, what Zaal offers

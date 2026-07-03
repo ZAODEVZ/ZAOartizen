@@ -16,12 +16,12 @@ colliding with parallel sessions and stands on its own. Research provenance stil
 Web3 match-funding platform for art / science / tech / culture, founded by René Pinnell. Creators
 mint $10 open-edition "Artifact" NFTs (100% to creator, 0% platform fee, Ethereum mainnet). Every
 $1 of sales instantly unlocks $1 from each community Fund backing the project - match stacks across
-funds. Runs in seasons (Curate -> Compete). On top sits an ART token + a self-reported "$14M endowment"
-- but on-chain that token's Juicebox project holds ~34 ETH and is dormant, so treat the $14M as
-unverified (see [research/art-token-onchain.md](research/art-token-onchain.md)). Full deep-dive:
-[research/844](research/844-artizen-platform-deep-study/), [research/845](research/845-artizen-art-token-endowment-economics/).
+funds. Runs in seasons (Curate -> Compete). On top sits an ART token and claimed endowment
+- but on-chain that token's Juicebox project holds ~34 ETH and is dormant, so treat any single endowment
+number as unverified per-fund pool claim (see [research/art-token-onchain.md](research/art-token-onchain.md)). 
+Full deep-dive: [research/844](research/844-artizen-platform-deep-study/), [research/845](research/845-artizen-art-token-endowment-economics/).
 
-## The ZAO position (the strategy - updated 2026-06-14)
+## The ZAO position (the strategy - updated 2026-07-03)
 
 The ZAO already runs the **ZAO Fund for Emerging Culture** (Season 6). A full scan (79 funds) changed
 the plan - the proposal is now under team review ([/proposal](app/proposal/page.tsx)):
@@ -103,24 +103,24 @@ To deploy + share with the Artizen community:
 The homepage rotates a featured "Project of the day" automatically (server-side, by date), lists the
 full fund roster, shows the like-minded funds, and has a "join the fund" submit path.
 
-## Status (2026-06-14)
+## Status (2026-07-03)
 
 - Research: complete + audited (15 docs incl. full 79-fund directory + on-chain checks).
 - Site: live (`/`, `/festivals`, `/proposal`) at zaoartizen.vercel.app.
 - Kit: drafted, ready to use.
-- Strategy: pivoted to **curate-into existing funds** (proposal under team review at `/proposal`).
-- ZAO Fund: dormant this drive - needs its projects activated.
+- Strategy: **Two projects LIVE on Artizen (Season 6):** ZAO Festivals ($25k goal) and BetterCallZaal Strategies (patronage model). Both submitted into eligible funds; Crescendo drive ~July 9 close.
+- ZAO Fund: active curation underway, 188-member community as voting engine.
 
 ## Next steps
 
-1. **Get team input on the proposal** - share `/proposal` (zaoartizen.vercel.app/proposal) with ZAO Festivals teammates.
-2. **Activate the ZAO fund this drive** - rally the community to collect its projects (`kit/outreach-drafts.md` #4).
-3. **Stack the events** - submit ZAOstock + Zaoville (`kit/make-festivals-on-artizen.md`) into We're Loud + Global Music + Greenpill + ZAO Emerging Culture.
-4. **Put ZOE/Hermes in the Bonfires fund** (warm partner).
-5. **Send the René DM** (`kit/outreach-drafts.md` #1) - only pursue a dedicated Festivals Fund if the team wants to host other organizers.
+1. **Submit BCZ + ZAO Festivals to their best-fit funds** (lists in kit/ and research/). Stack multiplies both votes and match.
+2. **Line up first-hour buyers and mobilize community votes** (48-hour launch plan in `research/artizen-share-and-accept-playbook.md`).
+3. **Run the improvement loop** - test rewards, iterate engagement, log proof metrics for future Accelerator / Rene conversation.
+4. **Prepare fresh testimonials** and fund-apply lists for the full Season 6 close.
+5. **Make the Artifact move** (square video/clip, no text) when ready; stills work for now.
 
 ## Open questions
 
-- Team: Option A (create a fund) or Option B (curate into existing)? Weigh in at `/proposal`.
-- We're Loud Fund roster + curator contact (slug unresolved).
-- Verify the $14M endowment: render Juicebox project 587's full treasury (the ART token points there; it shows ~34 ETH on-chain).
+- Season 6 Finale close date + final match allocation mechanics (est. ~July 9).
+- Verify per-fund match pool mechanics: confirm each fund's 90% match / 10% prize split.
+- Track recurring metrics: distinct buyers mobilized, projects curated, match deployed (for future Accelerator pitch).

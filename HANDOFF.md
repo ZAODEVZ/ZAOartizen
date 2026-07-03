@@ -1,4 +1,4 @@
-# ZArtizen - Handoff (current as of 2026-06-22)
+# ZArtizen - Handoff (current as of 2026-07-03)
 
 For whoever picks this up next (Zaal, a teammate, or a fresh session). Read TEAM-PLAYBOOK.md first, then
 README.md for the full picture; this is the "where it stands + what to do next" layer.
@@ -7,6 +7,7 @@ README.md for the full picture; this is the "where it stands + what to do next" 
 
 The ZAO's operating home for everything Artizen - research, strategy, a ready-to-use kit, and a live
 7-page site at **https://zaoartizen.vercel.app**. Graduated out of the ZAOOS monorepo (2026-06-13).
+Two projects are LIVE (Season 6): ZAO Festivals and BetterCallZaal Strategies (patronage model).
 
 ## Live site (deploy: `npx vercel --prod --yes`; or `scripts/refresh.sh` to scrape + update + deploy)
 
@@ -17,34 +18,39 @@ The ZAO's operating home for everything Artizen - research, strategy, a ready-to
 - **/apply** - artist-facing: what the fund backs, eligibility, how to get in. Send to applicants.
 - **/festivals** - ZAO Festivals umbrella. **/proposal** - create-a-fund vs curate-into decision page.
 
-## Strategy on record: permissionless-first, then René
+## Strategy on record: two live projects, stack and iterate
 
-Do everything permissionless first (mobilize the crew, curate ZAO artists in, run the bootstrap motion,
-log the proof on /dashboard), THEN take the track record to René (Accelerator: 20 spots, 3mo, up to $10k;
-ETH Boulder + Ven = warm intro). Don't rush a second fund - curate ZAOstock/Zaoville into existing funds
-(We're Loud, Global Music, Greenpill). Full reasoning: research 886 (ZAOOS).
+Both projects (ZAO Festivals + BetterCallZaal Strategies) are LIVE and submitted into eligible funds. 
+Patronage framing is set for BCZ ("My fund to help artists full-time"). Run the bootstrap motion each drive:
+line up first-hour buyers, mobilize community votes, log proof metrics (match deployed, distinct buyers, 
+leaderboard climb). Season 6 Finale ~July 9. After proof, approach René (Accelerator: 20 spots, 3mo, up to $10k)
+from a position of strength.
 
 ## Tasks to absorb (priority order)
 
-1. **Share /rally** with the crew + **/apply** with prospective artists.
-2. **Curate ZAO artists in** via the Discord vote: Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia.
-3. **Deploy the match** - ~$6.3k headroom on the Flourish drive (ends ~2026-06-24); rally buys + boosts.
-4. **Fill the dashboard TBDs** - projectsCurated, signups, multiplier from the logged-in curator view.
-5. **Ask Venus** (Artizen's AI bot) the exact boost/score formula + Season 7 timing; then the René path.
+1. **Submit to all eligible funds** - BCZ and ZAO Festivals each need per-fund opening lines (see kit/outreach-drafts.md).
+2. **Line up first-hour buyers** - 3-5 core people for each project, timed to drive start, for early velocity.
+3. **Mobilize community votes** - each member makes an Artizen profile (free 100-vote boost), votes in waves.
+4. **Deploy match and track proof metrics** - match deployed, distinct buyers, sales, leaderboard rank.
+5. **Prepare fund submissions, testimonials, and Rene pitch** (post-Season-6-close) with proof log.
 
-## Key findings / decisions on record (live, 2026-06-21)
+## Key findings / decisions on record (live, 2026-07-03)
 
 - **Win condition (official playbook): Boost Score = (sales + match) x boost points / 100.** Boosts MULTIPLY
   dollars - need BOTH. A project that sold the most but had few boosts finished LAST. Lever = the crowd buying
-  $10 Artifacts AND casting Boosts (free). Boost points from holding ART / Endowment / profile / events.
-  Winning Artifact = square, video/GIF, no text. (Doc 887 corrected the earlier "most sales wins" claim.)
-- ZAO Fund (scraped live): rank **#11**, pool **$10,547**, match deployed **$4,262**, remaining **$6,331**.
-  Standings move daily - re-scrape (`scripts/refresh.sh`) before quoting.
-- PolyRaiders = HuRya Empowerment Foundation (Moses), **#22, ~$1,200** (call's "#17/$14k" was misheard).
-- Payouts are reliable (creators confirm); the speculative risk is only the ART token/endowment - keep treasury OFF it.
-- Artizen is client-rendered (Bubble.io) - use the headless `browse` scraper, not WebFetch, for live data.
-- The "$14M endowment" is self-reported - on-chain, the ART token's Juicebox project (587) holds ~34 ETH
-  and is dormant. Do NOT cite $14M as fact; keep ZAO treasury off the ART token. (research/art-token-onchain.md)
+  $10 Artifacts AND casting Boosts (free). Boost points from holding ART / profile complete / events / Endowment.
+  Winning Artifact = square, video/GIF, no text. (Doc 887.)
+- **BCZ Strategies = PATRONAGE, not consulting.** Tagline: "My fund to help artists full-time. Back it if 
+  you would value me in your corner, and I will support however I can." One reward ("In Your Corner" / $10).
+  Proof: 80+ repos, WaveWarZ 459 SOL / 950 battles / 7.8 SOL to artists, The ZAO 0 to 250+ in 3y, FarHack 2026 
+  Snap, $1.5M robotics.
+- **ZAO Festivals = PLACE + PROVEN ORGANIZERS.** Ellsworth, Maine, the gateway to Acadia. Steve Peer 430 
+  house concerts since 1989. ZAO-PALOOZA NYC NFT NYC 2024 (12 artists). ZAO-CHELLA Wynwood Miami Dec 6 2024 
+  at Art Basel (10 musicians, WaveWarZ LIVE). Flagship ZAOstock Oct 3 2026 Ellsworth (free, community-owned, $25k).
+- **Endowment claims are unverified.** Artizen's self-reported endowment varies; on-chain ART token Juicebox 
+  (587) holds ~34 ETH and is dormant. Treat any single number as a per-fund pool claim, not fact. Keep ZAO 
+  treasury OFF the ART token. (research/art-token-onchain.md)
+- Artizen is client-rendered (Bubble.io) - use headless `browse` scraper or hand-check, not WebFetch, for live data.
 - Ecosystem allies run funds: Bonfires (our partner), Edge City (Telamon), DeSci Asia, Pressman Film.
 
 ## Open items
@@ -52,8 +58,9 @@ ETH Boulder + Ven = warm intro). Don't rush a second fund - curate ZAOstock/Zaov
 - **Auto-deploy is NOT wired.** Git pushes do NOT trigger Vercel builds - deploys have been manual
   (`npx vercel --prod` as bettercallzaal). Fix with `vercel git connect` so pushes ship themselves.
   Until then, after any change, run a manual deploy or the live site lags the repo.
-- We're Loud Fund slug unresolved (couldn't render its roster); curator = Pete Menchetti (We're Loud Fest).
-- Verify the $14M: render Juicebox project 587's full treasury (browser/subgraph) to settle it.
+- Season 6 Finale close and final match allocation date (est. ~July 9).
+- Confirm per-fund match pool mechanics: verify 90% match / 10% prize split across all submitted funds.
+- We're Loud Fund slug unresolved (couldn't render roster); curator = Pete Menchetti (We're Loud Fest).
 
 ## Repo layout
 

@@ -29,7 +29,7 @@ export default function CurateOG() {
             Every $1 becomes $3+
           </div>
           <div style={{ display: 'flex', marginTop: 16, fontSize: 30, color: 'rgba(255,255,255,0.72)' }}>
-            Your dollar + a sponsor&apos;s + the Artizen endowment - stacked on every $10 Artifact.
+            Your dollar + a sponsor&apos;s + platform match - stacked on every $10 Artifact.
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>

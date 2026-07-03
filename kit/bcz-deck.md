@@ -5,7 +5,7 @@ minimal text, one idea each. Tell the story, do not write an essay. Built from t
 
 ## Slide 1, Title
 - Visual: Zaal building (hands on the keyboard, screens glowing) or a clean BCZ mark.
-- Text: "BetterCallZaal Strategies" / "The $10 Hour."
+- Text: "BetterCallZaal Strategies" / "Back my work. I'm in yours."
 
 ## Slide 2, The problem
 - Visual: an artist on a small stage, or a stat card.
@@ -27,13 +27,14 @@ minimal text, one idea each. Tell the story, do not write an essay. Built from t
   co-founder, WaveWarZ.
 
 ## Slide 6, The offer
-- Visual: a clean tier graphic.
-- Text: "Every Artifact is an hour with me. 1 = an hour. 5 = a deep dive + a plan. 10 = a build sprint. The kind
-  of help people pay hundreds for, for $10."
+- Visual: a handshake, a network diagram, or a screen showing open-source repos + agents.
+- Text: "Back this fund. You get: my teardown on your work, time to connect and build, intros to my 250+ network,
+  and my tools and agent stack put to work on what matters to you."
 
-## Slide 7, The guarantee
-- Visual: simple, bold.
-- Text: "If you do not leave with something useful, the next session is on me."
+## Slide 7, How it works
+- Visual: a timeline or a loop (send your thing -> get teardown -> connect -> build).
+- Text: "Send me your thing. I teardown async. We connect and focus on what moves the needle. You get a plan and
+  I am in your corner going forward."
 
 ## Slide 8, Who I help
 - Visual: a grid of four worlds.
@@ -46,7 +47,7 @@ minimal text, one idea each. Tell the story, do not write an essay. Built from t
 
 ## Slide 10, The ask
 - Visual: the project page or a simple CTA.
-- Text: "Back the launch. Grab an hour. Let's build your thing. [Artizen link] / zaal@bettercallzaal.com"
+- Text: "Back this fund. You get my teardown, my time, my network, my stack. [Artizen link] / zaal@bettercallzaal.com"
 
 ## Optional credibility slide (if you want 11)
 - Appearances: Let's Talk About Ethereum (weekly live show), BCZ YapZ (interview show), daily Twitch streams.

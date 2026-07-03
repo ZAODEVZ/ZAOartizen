@@ -56,7 +56,7 @@ const FINDINGS: string[] = [
   'Artizen has ~79 community funds right now - a fast-moving, crowded field.',
   'Music + festival funds already exist: We\'re Loud Fund for DIY Music Festivals, Global Music Fund, Greenpill Regen Gatherings, plus several more. The "no fund for music festivals" idea was wrong.',
   'Cross-curation already happens for us: six ZAO-fund music projects (Voices of the Land, Gaian Temple, HERITAGE, Sonic Sanctuary, International Artists Project, MOTHERLand) are also in the Global Music Fund.',
-  'Our ZAO Fund for Emerging Culture is dormant this drive (rank ~#23, ~$188) - it only ranks when our projects actually sell.',
+  'Our ZAO Fund for Emerging Culture was dormant this drive as of June 22 (rank ~#23, ~$188 at that snapshot) - it only ranks when our projects actually sell.',
   'Friendly funds are run by people we know: the Bonfires Fund (our knowledge-graph partner) already hosts Arun\'s DreamStarter and Abraham Nash\'s project.',
   'Platform caution: Artizen\'s "$14M endowment" is not visible on-chain in the Juicebox project its token points to (~34 ETH, dormant a year+). Keep ZAO treasury out of the ART token for now.',
 ];
