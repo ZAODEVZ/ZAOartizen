@@ -111,3 +111,13 @@ From the playbook. Execute in order.
 Start here (RECAP.md). For execution, open `research/artizen-share-and-accept-playbook.md`. For copy to paste,
 open the `kit/` files. For what is true vs aspirational, open `kit/zaostock-grounded-reality.md`. The website
 code is in `app/`.
+
+## Consolidation (2026-07-03)
+
+The repo's operating surface collapsed to three plans (see README): PLAN-1-MEET-PROJECTS (the north star:
+meet as many projects on Artizen as possible), PLAN-2-PROJECTS (run BCZ + ZAO Festivals), PLAN-3-ZAO-FUND
+(run the fund). Launch-era and absorbed kit files moved to kit/archive/. The reconcile PR #1 merged the same
+day. New ground truth from the Artizen TG group (Venus + Rene) lives in
+research/artizen-mechanics-verified-telegram.md: directors can edit funds, S6 funds and projects carry into
+S7, weekly Thursday drives, multiplicative Boost Score, new Artifact required each season, Artizen LIVE
+pitch slots via Wadooah Wali, and the fund-prize flywheel.

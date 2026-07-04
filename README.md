@@ -8,7 +8,22 @@ Graduated out of the ZAOOS monorepo (2026-06-13) into its own repo under ZADEVZ 
 colliding with parallel sessions and stands on its own. Research provenance still lives in ZAOOS
 (PR #844); this repo is the operating home.
 
-> **New to this? Start with [TEAM-PLAYBOOK.md](TEAM-PLAYBOOK.md)** - how Artizen works, how we win
+## Start here: the three plans (consolidated 2026-07-03)
+
+The operating surface is THREE plans. Everything else in the repo is reference behind them.
+The north star: **meet as many projects on Artizen as possible** - the fundraise follows the relationships.
+
+| Plan | What it runs |
+|---|---|
+| [PLAN-1-MEET-PROJECTS.md](PLAN-1-MEET-PROJECTS.md) | The north star. Five circles (fund roster, TG group, directors, Artizen LIVE, IRL), the reciprocity engine, the weekly rhythm, the meet tracker. |
+| [PLAN-2-PROJECTS.md](PLAN-2-PROJECTS.md) | The two live projects (BetterCallZaal Strategies + ZAO Festivals): the Thursday drive loop, page upkeep, canonical proof numbers, Season 7 artifacts. |
+| [PLAN-3-ZAO-FUND.md](PLAN-3-ZAO-FUND.md) | The ZAO Fund for Emerging Culture: engagement rule, curation pipeline, the flywheel (boost the fund), sponsors. |
+
+Launch-era and absorbed kit files moved to `kit/archive/` (nothing deleted). Mechanics ground truth:
+[research/artizen-mechanics-verified-telegram.md](research/artizen-mechanics-verified-telegram.md).
+Fund targets + director DMs: [kit/fund-targets-and-directors.md](kit/fund-targets-and-directors.md).
+
+> Background reading: [TEAM-PLAYBOOK.md](TEAM-PLAYBOOK.md) - how Artizen works, how we win
 > (Boost Score = (sales + match) x boost points - buy AND boost), our permissionless-first strategy, and who does what.
 
 ## What Artizen is (60 seconds)
