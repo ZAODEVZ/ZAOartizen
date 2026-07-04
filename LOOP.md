@@ -17,7 +17,7 @@ drafted, targets mapped, artifacts prepped, signals watched. Questions for Zaal 
 ## BUILD backlog (one per wake, priority order)
 
 1. DONE 2026-07-03: meet-outreach pack (warm-six nudges + remaining director DMs) -> kit/meet-outreach-pack.md
-2. BCZ pitch deck: turn kit/bcz-deck.md into a clean 8-slide HTML -> PDF for the deck upload slot
+2. DONE 2026-07-03: BCZ pitch deck -> kit/bcz-deck.html + kit/bcz-deck.pdf (10 slides, 117KB, ready for the Artizen deck slot)
 3. Season 7 Artifact prep: shortlist + briefs for both projects (new artifact REQUIRED per season)
 4. Festivals teaser cut list: 15-30s square, shots from the CHELLA/PALOOZA reels, no text
 5. Testimonial ask drafts (Hurric4n3Ike, Moses, Gneric, KOSBAAR, WaveWarZ crew) - one-line asks
