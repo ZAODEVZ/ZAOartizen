@@ -18,7 +18,7 @@ drafted, targets mapped, artifacts prepped, signals watched. Questions for Zaal 
 
 1. DONE 2026-07-03: meet-outreach pack (warm-six nudges + remaining director DMs) -> kit/meet-outreach-pack.md
 2. DONE 2026-07-03: BCZ pitch deck -> kit/bcz-deck.html + kit/bcz-deck.pdf (10 slides, 117KB, ready for the Artizen deck slot)
-3. Season 7 Artifact prep: shortlist + briefs for both projects (new artifact REQUIRED per season)
+3. DONE 2026-07-03: Season 7 Artifact plan -> kit/season7-artifact-plan.md (hands-loop for BCZ, raw crowd clip for Festivals, weekend checklist)
 4. Festivals teaser cut list: 15-30s square, shots from the CHELLA/PALOOZA reels, no text
 5. Testimonial ask drafts (Hurric4n3Ike, Moses, Gneric, KOSBAAR, WaveWarZ crew) - one-line asks
 6. zaoartizen.vercel.app community-page spotlight refresh (feature met projects, Plan 1 give)
@@ -41,3 +41,4 @@ Stop rule: Zaal says stop, or the backlog is empty and all signals are quiet.
 2. Send the warm-six nudges (drafted this wake)
 3. BCZ page: 45s video, testimonials, goal decision
 4. Artizen LIVE slot email to Wadooah (drafted)
+5. Weekend shoot: hands loop (BCZ video slot + S7) + AttaBotty archive ask (unblocks 3 deliverables)
