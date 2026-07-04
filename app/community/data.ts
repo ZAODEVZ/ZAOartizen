@@ -28,3 +28,18 @@ export const communityProjects: CommunityProject[] = [
   { name: 'Baraza TV', owner: 'Motomoto (Aziz)', slug: 'baraza-tv', note: 'Africa-focused media network out of Nairobi; pays African creators. ZAO Fund supporter.', verified: true },
   { name: "Marie Chain's New Album", owner: 'Marie Chain', slug: 'marie-chain-new-album', note: 'Berlin soul/pop/jazz singer-songwriter (German Songwriting Award winner) completing a new album.', verified: true },
 ];
+
+// Artizen neighbors - projects we met in the Artizen creator community (the private TG group) and back
+// as part of the meet-projects push (PLAN-1). Not ZAO-member projects; good people building adjacent
+// things. Slugs taken from links they shared themselves (2026-07-03). Backing neighbors is the give
+// that opens doors: boost first, ask second.
+export const neighborProjects: CommunityProject[] = [
+  { name: 'CALMA', owner: 'G3R', slug: 'calma', note: 'Sound library from Misiones, Argentina - a creative and educational trigger. Active voice in the creator community.', verified: true },
+  { name: 'Tune In Show', owner: 'Brooke', slug: 'tune-in-show', note: 'Show + companion book with a standout artifact video; running an NYC sweepstakes with magazine tie-ins.', verified: true },
+  { name: 'Reset and Rise', owner: 'community creator', slug: 'reset-and-rise', note: 'Live group emotional-transformation experiences in community.', verified: true },
+  { name: 'Back to School', owner: 'Chidi', slug: 'back-to-school', note: 'Sponsoring out-of-school children in Nigeria back into classrooms.', verified: true },
+  { name: 'Solar-Powered Clean Water', owner: 'Chidi', slug: 'solar-powered-clean-water-project', note: 'Clean-water access for 17 communities; $5,000 covers one community.', verified: true },
+  { name: 'Crystal Sovereigns', owner: 'community creator', slug: 'crystal-sovereigns', note: 'Mythic future where five elemental guardians stop humanity from unplugging itself amid the rise of AI.', verified: true },
+  { name: "The Oracle: The Earth's Guardian", owner: 'Paloma', slug: 'the-oracle-the-earths-guardian-1', note: 'Presented at Artizen LIVE; earth-guardian storytelling.', verified: true },
+  { name: 'Uganda Web3 Revolution', owner: 'community creator', slug: 'strengthening-community-resilience-through-environmental-conservation-soci', note: 'Ugandan communities restoring ecosystems while earning crypto rewards.', verified: true },
+];

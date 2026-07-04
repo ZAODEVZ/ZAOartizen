@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { communityProjects, ARTIZEN_PROJECT_BASE } from './data';
+import { communityProjects, neighborProjects, ARTIZEN_PROJECT_BASE } from './data';
 
 // /community - the ZAO bloc: every Artizen project run by a ZAO member. Back them all (buy + boost).
 // Provenance: research 886 (cross-backing) + member list from Zaal 2026-06-23.
@@ -68,6 +68,36 @@ export default function CommunityPage() {
           </a>
         ))}
       </div>
+
+      <section className="mt-12">
+        <h2 className="text-2xl font-bold">Artizen neighbors we back</h2>
+        <p className="mt-2 text-white/70">
+          Projects we met in the Artizen creator community. Not ZAO-run, just good people building adjacent
+          things. Boosting is free - back a neighbor and the whole ecosystem gets warmer.
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          {neighborProjects.map((p) => (
+            <a
+              key={p.slug}
+              href={`${ARTIZEN_PROJECT_BASE}${p.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-[#f5a623]/50 hover:bg-[#f5a623]/5"
+            >
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="font-semibold">{p.name}</span>
+              </div>
+              <div className="mt-0.5 text-sm text-[#f5a623]/80">{p.owner}</div>
+              <div className="mt-1 text-sm text-white/55">{p.note}</div>
+              <div className="mt-2 flex items-center justify-end">
+                <span className="text-[11px] uppercase tracking-wide text-[#f5a623] opacity-0 transition group-hover:opacity-100">
+                  open on Artizen &rarr;
+                </span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
 
       <footer className="mt-8 border-t border-white/10 pt-6 text-xs text-white/40">
         Tap any card to open it on Artizen. Curate these into the{' '}

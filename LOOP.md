@@ -21,7 +21,7 @@ drafted, targets mapped, artifacts prepped, signals watched. Questions for Zaal 
 3. DONE 2026-07-03: Season 7 Artifact plan -> kit/season7-artifact-plan.md (hands-loop for BCZ, raw crowd clip for Festivals, weekend checklist)
 4. Festivals teaser cut list: 15-30s square, shots from the CHELLA/PALOOZA reels, no text
 5. DONE 2026-07-03: testimonial asks -> kit/testimonial-asks.md (7 people, one line each, reciprocal trade, placement map)
-6. zaoartizen.vercel.app community-page spotlight refresh (feature met projects, Plan 1 give)
+6. DONE 2026-07-03: /community neighbors section - 8 TG-met projects featured (verified slugs only), typecheck passed
 7. Meet-tracker upkeep: log meets as Zaal reports them, keep PLAN-1 table current
 
 ## UPDATE (every wake)
