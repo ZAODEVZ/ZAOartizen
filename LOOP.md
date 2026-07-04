@@ -20,7 +20,7 @@ drafted, targets mapped, artifacts prepped, signals watched. Questions for Zaal 
 2. DONE 2026-07-03: BCZ pitch deck -> kit/bcz-deck.html + kit/bcz-deck.pdf (10 slides, 117KB, ready for the Artizen deck slot)
 3. DONE 2026-07-03: Season 7 Artifact plan -> kit/season7-artifact-plan.md (hands-loop for BCZ, raw crowd clip for Festivals, weekend checklist)
 4. Festivals teaser cut list: 15-30s square, shots from the CHELLA/PALOOZA reels, no text
-5. Testimonial ask drafts (Hurric4n3Ike, Moses, Gneric, KOSBAAR, WaveWarZ crew) - one-line asks
+5. DONE 2026-07-03: testimonial asks -> kit/testimonial-asks.md (7 people, one line each, reciprocal trade, placement map)
 6. zaoartizen.vercel.app community-page spotlight refresh (feature met projects, Plan 1 give)
 7. Meet-tracker upkeep: log meets as Zaal reports them, keep PLAN-1 table current
 
