@@ -42,3 +42,7 @@ Stop rule: Zaal says stop, or the backlog is empty and all signals are quiet.
 3. BCZ page: 45s video, testimonials, goal decision
 4. Artizen LIVE slot email to Wadooah (drafted)
 5. Weekend shoot: hands loop (BCZ video slot + S7) + AttaBotty archive ask (unblocks 3 deliverables)
+
+## PAUSED 2026-07-05
+
+Artizen watch-loop paused by Zaal to spin up a dedicated terminal for Year of the ZAO Festivals 2027 (the event circuit / repping work, in the zaotravelz repo). Nothing lost: all three plans + the meet-outreach pack + fund targets + BCZ deck + S7 artifact plan are committed. Everything blocked on Zaal (submit + DM the funds, the crew push, the weekend shoot). To resume the Artizen watch, re-run the /loop with LOOP.md. Buildable backlog was empty; only the AttaBotty archive gated item 4.
