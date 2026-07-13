@@ -71,6 +71,7 @@ A full scan (79 funds) changed the plan - the proposal is now under team review 
 | `research/849` | Execution build plan + kit overview |
 | `research/850` | Create + run the ZAO Festivals Fund (manager playbook) |
 | `research/760` | InfiniteZero / DIN (the #1 project in the ZAO fund - context) |
+| `kit/season7-transition-checklist.md` | Copy-paste to-do list for the Season 6->7 handoff (payouts, Artifact refresh, fund-director comp, Funders Forum) |
 | `kit/fund-proposal.md` | Ready-to-submit ZAO Festivals Fund proposal + 3 Qs for René |
 | `kit/make-festivals-on-artizen.md` | Step-by-step: submit ZAOstock + Zaoville today, create the fund after the call |
 | `kit/artifact-briefs.md` | Paste-ready submissions for WaveWarZ, SongJam, COC, Thy Revolution |
