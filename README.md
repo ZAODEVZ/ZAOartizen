@@ -36,10 +36,12 @@ funds. Runs in seasons (Curate -> Compete). On top sits an ART token and claimed
 number as unverified per-fund pool claim (see [research/art-token-onchain.md](research/art-token-onchain.md)). 
 Full deep-dive: [research/844](research/844-artizen-platform-deep-study/), [research/845](research/845-artizen-art-token-endowment-economics/).
 
-## The ZAO position (the strategy - updated 2026-07-03)
+## The ZAO position (the strategy - updated 2026-07-03; season facts refreshed 2026-07-13, see [research/851](research/851-artizen-season6-close-season7-launch/))
 
-The ZAO already runs the **ZAO Fund for Emerging Culture** (Season 6). A full scan (79 funds) changed
-the plan - the proposal is now under team review ([/proposal](app/proposal/page.tsx)):
+The ZAO already runs the **ZAO Fund for Emerging Culture**. Season 6 closed July 9, 2026 (creators raised
+$8.3M platform-wide); **Season 7 is live now**, running through roughly Dec 2026/Jan 2027. Curated projects
+carry over automatically into Season 7 - only a fresh per-project Artifact is required, no resubmission.
+A full scan (79 funds) changed the plan - the proposal is now under team review ([/proposal](app/proposal/page.tsx)):
 
 1. **Curate into existing funds, don't rush to build a second one.** The "music white space" is gone -
    We're Loud Fund (DIY music festivals), Global Music Fund, and Greenpill already fund music events,
@@ -118,24 +120,36 @@ To deploy + share with the Artizen community:
 The homepage rotates a featured "Project of the day" automatically (server-side, by date), lists the
 full fund roster, shows the like-minded funds, and has a "join the fund" submit path.
 
-## Status (2026-07-03)
+## Status (updated 2026-07-13, see [research/851](research/851-artizen-season6-close-season7-launch/))
 
-- Research: complete + audited (15 docs incl. full 79-fund directory + on-chain checks).
+- Research: complete + audited (16 docs incl. full 79-fund directory, on-chain checks, and a deep
+  fund-director-Telegram pass covering Season 6 close / Season 7 launch).
 - Site: live (`/`, `/festivals`, `/proposal`) at zaoartizen.vercel.app.
 - Kit: drafted, ready to use.
-- Strategy: **Two projects LIVE on Artizen (Season 6):** ZAO Festivals ($25k goal) and BetterCallZaal Strategies (patronage model). Both submitted into eligible funds; Crescendo drive ~July 9 close.
-- ZAO Fund: active curation underway, 188-member community as voting engine.
+- Strategy: **Two projects on Artizen carried into Season 7 automatically:** ZAO Festivals ($25k goal) and
+  BetterCallZaal Strategies (patronage model). Season 6 closed July 9, 2026; Season 7 is live now (through
+  roughly Dec 2026/Jan 2027). Each project needs a fresh Season 7 Artifact - no resubmission required.
+- ZAO Fund: active curation underway, 188-member community as voting engine. Fund director is entitled to
+  20% of sponsor dollars raised for the fund (Telegram-confirmed by Venus/René, not yet in writing - follow
+  up before relying on it).
+- Season 6 payouts: run through the new Grow app (grow.artizen.fund) - complete the payout form there for
+  every ZAO-fund-backed project.
 
 ## Next steps
 
-1. **Submit BCZ + ZAO Festivals to their best-fit funds** (lists in kit/ and research/). Stack multiplies both votes and match.
-2. **Line up first-hour buyers and mobilize community votes** (48-hour launch plan in `research/artizen-share-and-accept-playbook.md`).
-3. **Run the improvement loop** - test rewards, iterate engagement, log proof metrics for future Accelerator / Rene conversation.
-4. **Prepare fresh testimonials** and fund-apply lists for the full Season 6 close.
-5. **Make the Artifact move** (square video/clip, no text) when ready; stills work for now.
+1. **Complete the Season 6 payout form in the Grow app** for every ZAO-fund-backed project.
+2. **Refresh the Season 7 Artifact** for BCZ + ZAO Festivals (square, GIF/video, no text) - projects stay
+   curated automatically, only the Artifact needs updating.
+3. **Attend the weekly Funders Forum** (Mondays, 11am PT) - Season 7 curation/match-cap policy is being
+   decided live with fund directors.
+4. **Line up first-hour buyers and mobilize community votes** (48-hour launch plan in `research/artizen-share-and-accept-playbook.md`).
+5. **Run the improvement loop** - test rewards, iterate engagement, log proof metrics for future Accelerator / Rene conversation.
 
 ## Open questions
 
-- Season 6 Finale close date + final match allocation mechanics (est. ~July 9).
+- Whether the ART token contract at `0x59fbbc...5b58d63de` is still the live one - on-chain trace found it
+  deployed Oct 2023, conflicting with Doc 845's "launched Oct 2025" claim. Ask Venus/René directly.
+- The $17M-$100M endowment claim is now contradicted by an on-chain read of that same contract (linked
+  Juicebox project holds ~0.01 ETH) - treat as unconfirmed until resolved.
 - Verify per-fund match pool mechanics: confirm each fund's 90% match / 10% prize split.
 - Track recurring metrics: distinct buyers mobilized, projects curated, match deployed (for future Accelerator pitch).
