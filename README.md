@@ -154,3 +154,46 @@ full fund roster, shows the like-minded funds, and has a "join the fund" submit 
   Juicebox project holds ~0.01 ETH) - treat as unconfirmed until resolved.
 - Verify per-fund match pool mechanics: confirm each fund's 90% match / 10% prize split.
 - Track recurring metrics: distinct buyers mobilized, projects curated, match deployed (for future Accelerator pitch).
+
+## What happened today (2026-07-13 research push)
+
+A DEEP-tier Artizen refresh, most of it via direct sources rather than web search (Artizen is a Bubble.io
+app - plain WebFetch/WebSearch mostly returns empty JS shells). Seven PRs merged to main:
+
+1. **[research/851](research/851-artizen-season6-close-season7-launch/)** - the season framing was wrong:
+   Season 6 closed July 9, 2026 (creators raised a corrected $8,331,351 platform-wide - a season-counter
+   bug had been undercounting by $1.4M+); Season 7 is live now, running to roughly Dec 2026/Jan 2027.
+2. **Read the fund-director Telegram directly** (266-member private group, "Artizen ✨") - the highest-signal
+   source available, well ahead of the newsletter (dormant since Feb 2026). A 2.5-week scroll through its
+   General channel (June 25 - July 13) surfaced: the fund-drive pacing playbook straight from Venus, a
+   correction that Boost Points never expire (only the weekly leaderboard resets - Venus had told the
+   community the opposite for a few days and got corrected by René), confirmation that fund directors earn
+   **20% of sponsor dollars raised** (never previously documented), and the Season 7 rule that curated
+   projects carry over automatically (only a fresh Artifact is needed, no resubmission).
+3. **On-chain endowment check upgraded from "unverified" to "contradicted."** Tracing the ART token
+   contract's own code found it hardcodes Juicebox project #587 (treasury ~0.01 ETH) - not a wrong lead as
+   first assumed. Also surfaced an unresolved Oct 2023 vs. Oct 2025 deployment-date conflict. The
+   $17M-$100M endowment figure is Artizen's own self-reported number (also shown in-app); it does not
+   reconcile with the on-chain treasury for the contract this research identified.
+4. **Confirmed no Artizen MCP server or agent API exists** (Venus, direct in the Telegram) - `play.artizen.fund`
+   (the Playbook) is Artizen's own recommended machine-readable source for future research/tooling.
+5. **A live render finally got through to artizen.fund directly**, via the repo's own
+   `scripts/refresh-fund.mjs` (gstack `browse` headless Chromium - separate from the Chrome extension,
+   which is blocked by site permissions). This resolved every remaining research gap in one pass: Global
+   Music Fund (#80) and Bonfires Fund for Agentic Creativity (#79) are both confirmed real; the ZAO Fund's
+   live Season 7 standing is rank **#19** of ~82+ funds, 36 projects curated in, mid "Daybreak Fund Drive
+   #7" (ends July 16). Only one curated project (Poly Raiders) has real traction so far.
+6. **Fixed a real bug in `scripts/refresh-fund.mjs`** - it was scraping the wrong page (the ZAO Fund's own
+   page never shows its own rank/score; that only exists on the platform-wide leaderboard) and grabbing the
+   first regex match anywhere on the page, which could silently return a different fund's numbers. It now
+   verifies it landed on the right page and anchors parsing to the ZAO Fund's specific text block, and
+   aborts loudly instead of trusting stale content when the headless session misbehaves.
+7. **[kit/season7-transition-checklist.md](kit/season7-transition-checklist.md)** added - the copy-paste
+   version of all of the above (payout claiming, Artifact refresh, fund-director comp follow-up, boost-point
+   clarification for creators) - and `kit/standings-tracker.md` filled in with today's live numbers.
+
+Net effect: CLAUDE.md, this README, `research/851`, `research/research-audit.md`, and the kit are now all
+internally consistent on Season 7 being live - nothing in the repo should still say "Season 6" as the
+active season after this push. The three concrete follow-ups that need Zaal, not more research: confirm the
+20% fund-director compensation in writing, ask Venus/René about the ART contract date conflict, and rally
+the fund's 35 zero-dollar projects before Daybreak Drive #7 closes July 16.
