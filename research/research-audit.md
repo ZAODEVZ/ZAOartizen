@@ -95,12 +95,17 @@ that was premature - re-anchor on Season 6 -> Season 7.
 grow.artizen.fund (KYC + bank/USDC payout), not the old flow. Any creator outreach about getting paid
 should point here.
 
-**CORRECTION 5 (medium) - the endowment on-chain check still hasn't found the real vehicle.** Doc 845's
-JBv4 Revnet claim (ART contract `0x59fbbc7d9c579547b47f3669aab2aec5b58d63de`) and this pass's on-chain
-search (which found an unrelated JBv2 project, "Artizen Fund" #587, treasury 0.01 ETH) are two different
-projects. Venus states the endowment is "on track to hit ~$17M" (Season 6 close) heading to "$100M+"
-(Season 7 target) - self-reported, still not independently verified on-chain. Don't call it "punctured";
-call it "unresolved."
+**CORRECTION 5 (high) - the endowment claim is contradicted by on-chain evidence, not merely unverified.**
+A follow-up trace read the ART token contract's own code directly (not a Juicebox name search) and found
+its mint/burn/transfer functions hardcode Juicebox project ID 587 - the SAME project (treasury 0.01 ETH,
+JBv2, deployed Oct 2023) that an earlier pass had dismissed as "probably the wrong one." No JBv4 project or
+alternate multi-million-dollar treasury is linked to this contract. There is also an unresolved date
+conflict: this contract deployed Oct 2023, not Oct 2025 as Doc 845 states for the "ART/Revnet launch" -
+either that date is wrong or a second/newer ART contract exists that no pass has found yet. Venus states
+the endowment is "on track to hit ~$17M" (Season 6 close) heading to "$100M+" (Season 7 target) -
+self-reported, and now directly contradicted by the on-chain read of the contract this research has been
+able to identify. Get this confirmed or corrected by Venus/René directly before repeating either the
+endowment figures or the Oct 2025 launch date as fact.
 
 **Also flagged, unresolved:** whether "Venus" (previously understood as Artizen's in-platform AI bot) is
 now formally Co-founder & CEO as an AI persona, or a human posting under that account - ambiguous in the
