@@ -12,6 +12,7 @@ library where they originated; descriptive-named docs are zartizen-native.
 - [847](847-zao-in-artizen-ecosystem-playbook/) - Ecosystem participation: Console, visibility, IRL
 - [849](849-zao-artizen-execution-build-plan/) - Execution build plan + kit overview
 - [850](850-zao-festivals-fund-creation-manager-playbook/) - Create + run the ZAO Festivals Fund
+- [851](851-artizen-season6-close-season7-launch/) - Season 6 close / Season 7 launch, Grow app, endowment status (from the fund-director Telegram)
 - [760](760-infinitezero-din-decentralized-ai/) - InfiniteZero / DIN (the #1 project in the ZAO fund)
 
 ## Reference (zartizen-native)

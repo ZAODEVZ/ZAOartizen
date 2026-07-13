@@ -1,4 +1,4 @@
-# Research audit - 2026-06-13
+# Research audit - 2026-06-13 (updated 2026-07-13, see addendum at bottom)
 
 A critical pass over the zartizen research set after the full 79-fund Artizen search. Goal: flag what's
 now wrong, stale, or missing - not rubber-stamp it. Two high-impact corrections.
@@ -78,3 +78,30 @@ The research is broad, well-sourced, and the kit is genuinely actionable. But th
 enough that two load-bearing claims (white-space, fund-strength) went stale within a day. Corrected here.
 The strategy still holds - run the fund, stack across many funds - it's the specific numbers + the
 "unique music fund" framing that needed fixing.
+
+## ADDENDUM - 2026-07-13 corrections pass (see [Doc 851](851-artizen-season6-close-season7-launch/) for full detail)
+
+A DEEP-tier refresh one month after the June 13 audit. Six web-research agents mostly hit a JS wall
+(Artizen is Bubble.io; the newsletter has gone quiet since Feb 12 2026). The live signal came from
+reading the fund-director Telegram directly. Three more corrections:
+
+**CORRECTION 3 (high) - the season count moved: it's Season 6 closing, Season 7 starting, not 7/8.**
+Season 6 wrapped July 9 2026 (creators raised a corrected $8,331,351 - a platform season-counter bug had
+been undercounting by $1.4M+ since a May upgrade). Season 7 started July 9, runs ~5 months, targets $20M
+raised / $100M+ endowment. If any doc or conversation referenced "Season 7 ending / Season 8 starting,"
+that was premature - re-anchor on Season 6 -> Season 7.
+
+**CORRECTION 4 (medium) - a new payout system launched: the Grow app.** Season 6 payouts now run through
+grow.artizen.fund (KYC + bank/USDC payout), not the old flow. Any creator outreach about getting paid
+should point here.
+
+**CORRECTION 5 (medium) - the endowment on-chain check still hasn't found the real vehicle.** Doc 845's
+JBv4 Revnet claim (ART contract `0x59fbbc7d9c579547b47f3669aab2aec5b58d63de`) and this pass's on-chain
+search (which found an unrelated JBv2 project, "Artizen Fund" #587, treasury 0.01 ETH) are two different
+projects. Venus states the endowment is "on track to hit ~$17M" (Season 6 close) heading to "$100M+"
+(Season 7 target) - self-reported, still not independently verified on-chain. Don't call it "punctured";
+call it "unresolved."
+
+**Also flagged, unresolved:** whether "Venus" (previously understood as Artizen's in-platform AI bot) is
+now formally Co-founder & CEO as an AI persona, or a human posting under that account - ambiguous in the
+Telegram post, needs Zaal's own read before it appears in any public ZAO copy.
