@@ -63,17 +63,35 @@ The ZAO-CHELLA recap or a 30-60s festival sizzle.
 Square 1:1, NO text or graphic overlays, $10 open edition. A frame from the CHELLA / PALOOZA / WaveWarZ footage -
 crowd, stage, lights. A GIF or short video performs best (Artizen's own guidance).
 
-## Pitch deck outline (optional, 8-12 slides - big images, few words)
-1. ZAO Festivals - bringing independent artists to real stages
-2. The gap: independent artists lack stages + fair pay
-3. The model: free, artist-built, community-owned (protocol not product)
-4. The lineage: ZAO-PALOOZA (NYC) + ZAO-CHELLA (Miami)
-5. The flagship: ZAOstock 2026 - Oct 3, Ellsworth, Maine (free, Art of Ellsworth weekend, gateway to Acadia)
-6. What your dollars do: fair-paid slots, travel + production, a recording + recap reel per artist
-7. Emerging tech: livestream, on-chain attendance, WaveWarZ
-8. The community + the 27-person team
-9. The ask + the funds we're in
-10. Links: zaostock.com/festivals
+## Pitch deck - full slide copy (fleshed out 2026-07-13, big images/few words is still the design rule)
+
+1. **Title.** "ZAO Festivals - Bringing independent artists to real stages." Visual: the Artifact image
+   (crowd/stage/lights, no text overlay).
+2. **The gap.** "Independent artists build the culture. They rarely get a real stage, and even more
+   rarely get paid fairly for playing one." One strong stat or photo, not a wall of text.
+3. **The model.** "We treat a festival as a protocol, not a product: free to attend, artists paid
+   fairly and transparently, and the crowd that funds it owns it."
+4. **The lineage.** "ZAO-PALOOZA, New York (NFT NYC, 12 artists, the community's first IRL meetup).
+   ZAO-CHELLA, Miami (Art Basel, Wynwood - WaveWarZ LIVE + AR art)." Visual: CHELLA/PALOOZA stills or
+   the recap reel (instagram.com/reel/DDa-oPBJ7G7/).
+5. **The flagship.** "ZAOstock 2026. Saturday, October 3. Downtown Ellsworth, Maine - the gateway to
+   Acadia. Free, all-day, part of the 9th Annual Art of Ellsworth during Maine Craft Weekend."
+6. **What your dollars do.** "A fair-paid slot for an independent artist. Travel and production
+   support. A recording, photos, and a recap reel every artist takes home." No internal budget figures
+   on this slide - it's about what backing unlocks, not a P&L.
+7. **Emerging tech.** "A livestream of the whole festival (target 1K+ viewers). On-chain attendance
+   collectibles for the people who show up. WaveWarZ music battles as a live, on-chain element.
+   Build-in-public: the team, lineup, and standings are all public at zaostock.com."
+8. **The community + the numbers.** "27-person team, building in public. WaveWarZ: 950 live battles,
+   459+ SOL traded (~$60k), payouts straight to artists. The ZAO: 0 to 250+ artists in 3 years, 188
+   members onchain, 100+ weekly governance meetings, 80+ open-source repos, 400+ newsletters, FarHack
+   2026 Snap winner."
+9. **[PLACEHOLDER - testimonial, do not ship without a real quote].** Reserved for AttaBotty, DaNici,
+   Thy Rev, or Steve Peer - asks are drafted in testimonial-asks.md, none received as of 2026-07-13.
+   Ship as a 9-slide deck if none land in time; add back in the moment one does. Format once received:
+   "[their sentence]" - [Name, what they build].
+10. **The ask.** "Back ZAO Festivals. Every $10 unlocks match funding from the funds backing this
+    project - your buy multiplies straight into an artist's pay." Link: zaostock.com/festivals.
 
 ## Submit to these funds (stack the match - the more the better)
 Core:
