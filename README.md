@@ -1,199 +1,232 @@
 # ZArtizen
 
-The ZAO's home for everything Artizen: how The ZAO operates inside the Artizen ecosystem as a
-fund manager, a creator, and a community - plus the research, the playbooks, and the ready-to-use
-kit to execute.
+**The ZAO's operating home for the Artizen Fund for Emerging Culture.** Research, strategy, playbooks, and a live 7-page Next.js site that powers how The ZAO shows up on Artizen as a fund manager, creator, and community.
 
-Graduated out of the ZAOOS monorepo (2026-06-13) into its own repo under ZADEVZ so the work stops
-colliding with parallel sessions and stands on its own. Research provenance still lives in ZAOOS
-(PR #844); this repo is the operating home.
+Graduated out of the ZAOOS monorepo (2026-06-13) into its own repo under ZADEVZ so work stands alone. Research provenance lives in ZAOOS (PR #844); this repo is the operating home.
 
-## Start here: the three plans (consolidated 2026-07-03)
+---
 
-The operating surface is THREE plans. Everything else in the repo is reference behind them.
-The north star: **meet as many projects on Artizen as possible** - the fundraise follows the relationships.
+## One-line summary
 
-| Plan | What it runs |
-|---|---|
-| [PLAN-1-MEET-PROJECTS.md](PLAN-1-MEET-PROJECTS.md) | The north star. Five circles (fund roster, TG group, directors, Artizen LIVE, IRL), the reciprocity engine, the weekly rhythm, the meet tracker. |
-| [PLAN-2-PROJECTS.md](PLAN-2-PROJECTS.md) | The two live projects (BetterCallZaal Strategies + ZAO Festivals): the Thursday drive loop, page upkeep, canonical proof numbers, Season 7 artifacts. |
-| [PLAN-3-ZAO-FUND.md](PLAN-3-ZAO-FUND.md) | The ZAO Fund for Emerging Culture: engagement rule, curation pipeline, the flywheel (boost the fund), sponsors. |
+Run the ZAO Fund well, run the ZAO portfolio as creators across multiple Artizen funds, and prove we bootstrap communities - then take that track record to René for the Accelerator.
 
-Launch-era and absorbed kit files moved to `kit/archive/` (nothing deleted). Mechanics ground truth:
-[research/artizen-mechanics-verified-telegram.md](research/artizen-mechanics-verified-telegram.md).
-Fund targets + director DMs: [kit/fund-targets-and-directors.md](kit/fund-targets-and-directors.md).
+---
 
-> Background reading: [TEAM-PLAYBOOK.md](TEAM-PLAYBOOK.md) - how Artizen works, how we win
-> (Boost Score = (sales + match) x boost points - buy AND boost), our permissionless-first strategy, and who does what.
+## Status (updated 2026-07-13)
 
-## What Artizen is (60 seconds)
+**The site works.** Two projects live on Artizen:
+- **ZAO Festivals** ($25k goal, free community music events, flagship ZAOstock Oct 3 2026 Ellsworth Maine)
+- **BetterCallZaal Strategies** (patronage model: "My fund to help artists full-time")
 
-Web3 match-funding platform for art / science / tech / culture, founded by René Pinnell. Creators
-mint $10 open-edition "Artifact" NFTs (100% to creator, 0% platform fee, Ethereum mainnet). Every
-$1 of sales instantly unlocks $1 from each community Fund backing the project - match stacks across
-funds. Runs in seasons (Curate -> Compete). On top sits an ART token and claimed endowment
-- but on-chain that token's Juicebox project holds ~34 ETH and is dormant, so treat any single endowment
-number as unverified per-fund pool claim (see [research/art-token-onchain.md](research/art-token-onchain.md)). 
-Full deep-dive: [research/844](research/844-artizen-platform-deep-study/), [research/845](research/845-artizen-art-token-endowment-economics/).
+**The ZAO Fund for Emerging Culture** is active (rank #19 of 82+ funds, 36 projects curated, mid "Daybreak Fund Drive #7"). Season 7 is live now (through roughly Dec 2026/Jan 2027).
 
-## The ZAO position (the strategy - updated 2026-07-03; season facts refreshed 2026-07-13, see [research/851](research/851-artizen-season6-close-season7-launch/))
+**Research:** complete + audited (16 docs: platform mechanics, 79-fund directory, on-chain endowment check, strategy decisions).
 
-The ZAO already runs the **ZAO Fund for Emerging Culture**. Season 6 closed July 9, 2026 (creators raised
-$8.3M platform-wide); **Season 7 is live now**, running through roughly Dec 2026/Jan 2027. Curated projects
-carry over automatically into Season 7 - only a fresh per-project Artifact is required, no resubmission.
-A full scan (79 funds) changed the plan - the proposal is now under team review ([/proposal](app/proposal/page.tsx)):
+**Kit:** drafted and ready to use (outreach templates, submissions, daily spotlights, operating rhythm).
 
-1. **Curate into existing funds, don't rush to build a second one.** The "music white space" is gone -
-   We're Loud Fund (DIY music festivals), Global Music Fund, and Greenpill already fund music events,
-   and **six ZAO music projects are already stacked in the Global Music Fund**. So stack ZAOstock +
-   Zaoville into We're Loud + Global Music + Greenpill + ZAO Emerging Culture rather than create an 80th fund.
-2. **Run the whole portfolio as creators** - WaveWarZ, SongJam, ZAOstock, Zaoville, Thy Revolution, the
-   ZABAL Games cohort each submit as projects.
-3. **Stack across funds** - each project curates into 3-5 funds (see the stacking map in
-   [research/fund-directory.md](research/fund-directory.md)). Put ZOE/Hermes in the **Bonfires Fund**
-   (our knowledge-graph partner - Arun's DreamStarter + Abraham Nash are already there).
-4. **Activate the existing ZAO fund** - it is dormant this drive (~#23, ~$188); the real bottleneck is
-   getting people to collect its projects, not adding funds.
-5. **Show up** - Console (the social layer), Artizen LIVE, DWeb Camp Village (Berlin, Jul 8-12), and the
-   René / Bonfires / Edge City relationships.
-6. **A dedicated ZAO Festivals Fund is a later, bigger step** - only if ZAO wants to host other
-   organizers under it. Pending team input via [/proposal].
+---
 
-## Repo map
+## Stack
 
-| Path | What |
-|---|---|
-| `research/843` | The ZAO Fund full Season 6 roster (32 projects) |
-| `research/844` | Platform deep study (mechanics, sentiment, competition) |
-| `research/845` | ART token + Endowment economics + René's thesis |
-| `research/846` | ZAO Festivals funding strategy (fund stacking, off-Artizen + grants) |
-| `research/847` | Ecosystem participation playbook (Console, visibility, IRL) |
-| `research/849` | Execution build plan + kit overview |
-| `research/850` | Create + run the ZAO Festivals Fund (manager playbook) |
-| `research/760` | InfiniteZero / DIN (the #1 project in the ZAO fund - context) |
-| `kit/season7-transition-checklist.md` | Copy-paste to-do list for the Season 6->7 handoff (payouts, Artifact refresh, fund-director comp, Funders Forum) |
-| `kit/fund-proposal.md` | Ready-to-submit ZAO Festivals Fund proposal + 3 Qs for René |
-| `kit/make-festivals-on-artizen.md` | Step-by-step: submit ZAOstock + Zaoville today, create the fund after the call |
-| `kit/artifact-briefs.md` | Paste-ready submissions for WaveWarZ, SongJam, COC, Thy Revolution |
-| `kit/rene-call-brief.md` | Agenda + asks + talking points for the René call |
-| `kit/sponsor-onepager.md` | Sponsor pitch for the ZAO Festivals Fund match pool |
-| `kit/outreach-drafts.md` | René/Nate DM, DWeb Village app, cross-curation DM, member rally |
-| `kit/submission-template.md` | Project submission template + artifact specs + first cohort |
-| `kit/daily-spotlights.md` | 32-post daily project-spotlight series |
-| `kit/launch-posts.md` | Share copy for the hub + Festivals umbrella (Farcaster/X/Console/TG/LinkedIn) |
-| `kit/operating-rhythm.md` | Daily/weekly/seasonal cadence + metrics to track |
-| `research/fund-directory.md` | Full 79-fund landscape + ZAO stacking map + cross-backing targets |
-| `research/priority-funds.md` | Deep renders of Global Music + Bonfires funds + the Festivals re-decision |
-| `research/research-audit.md` | Critical audit: corrections (white-space, dormancy), gaps, next steps |
-| `research/art-token-onchain.md` | On-chain check: ART token + the unverified $14M endowment |
-| `research/rene-pinnell-digest.md` | René's thesis, roadmap, trackable targets, track record |
-| `research/community-fund-playbook.md` | How the best funds run + fill, as a model for ZAO |
-| `CLAUDE.md` | Repo context for collaborators + agents |
+- **Framework:** Next.js 16 (React 19, TypeScript)
+- **Styling:** Tailwind v4
+- **Deployment:** Vercel (manual deploy via `npx vercel --prod --yes`)
+- **Data source:** hardcoded in `app/dashboard/data.ts`; scraped from Artizen via `scripts/refresh-fund.mjs`
 
-## Live site pages
+---
 
-The app (Next.js, live at **https://zaoartizen.vercel.app**) ships these pages:
-
-| Route | What |
-|---|---|
-| `/` (`app/page.tsx`) | The ZAO Fund hub - daily featured project, searchable roster, like-minded funds, join path |
-| `/dashboard` (`app/dashboard/page.tsx`) | **Live ZAO Fund scoreboard** - rank, match deployed/remaining, backed projects, cross-back targets, proof log. Data in `app/dashboard/data.ts`; refresh with `scripts/refresh.sh` |
-| `/leaderboard` (`app/leaderboard/page.tsx`) | Season 6 field snapshot (all 35 projects), ZAO ties flagged |
-| `/rally` (`app/rally/page.tsx`) | **GC-shareable 3-step crew CTA** - sign up, buy the $10 Artifact, boost |
-| `/apply` (`app/apply/page.tsx`) | **Artist-facing** - what the fund backs, eligibility, how to get in. Send to applicants |
-| `/festivals` (`app/festivals/page.tsx`) | The ZAO Festivals umbrella - events (ZAOstock, Zaoville), where it fits, how to join |
-| `/proposal` (`app/proposal/page.tsx`) | Shareable decision page - create a fund vs curate into existing |
-
-## Run + deploy the site
-
-ZArtizen is a standalone Next.js 16 app (the homepage is the ZAO Fund hub). To run it:
+## Quick start
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build (verified green)
+npm run dev          # http://localhost:3000
+npm run build        # production build
+npm run lint         # biome check (configured in biome.json)
 ```
 
-To deploy + share with the Artizen community:
-- Connect `ZAODEVZ/ZAOartizen` to Vercel (Import Project) - it auto-builds on every push, no config needed.
-- Or from the repo: `npx vercel --prod` (requires a Vercel login).
+### Deploy
 
-The homepage rotates a featured "Project of the day" automatically (server-side, by date), lists the
-full fund roster, shows the like-minded funds, and has a "join the fund" submit path.
+```bash
+# Manual deploy to Vercel (requires authed CLI)
+npx vercel --prod --yes
 
-## Status (updated 2026-07-13, see [research/851](research/851-artizen-season6-close-season7-launch/))
+# Or: scrape live Artizen data, update dashboard, and deploy
+scripts/refresh.sh
+```
 
-- Research: complete + audited (16 docs incl. full 79-fund directory, on-chain checks, and a deep
-  fund-director-Telegram pass covering Season 6 close / Season 7 launch).
-- Site: live (`/`, `/festivals`, `/proposal`) at zaoartizen.vercel.app.
-- Kit: drafted, ready to use.
-- Strategy: **Two projects on Artizen carried into Season 7 automatically:** ZAO Festivals ($25k goal) and
-  BetterCallZaal Strategies (patronage model). Season 6 closed July 9, 2026; Season 7 is live now (through
-  roughly Dec 2026/Jan 2027). Each project needs a fresh Season 7 Artifact - no resubmission required.
-- ZAO Fund: active curation underway, 188-member community as voting engine. Fund director is entitled to
-  20% of sponsor dollars raised for the fund (Telegram-confirmed by Venus/René, not yet in writing - follow
-  up before relying on it).
-- Season 6 payouts: run through the new Grow app (grow.artizen.fund) - complete the payout form there for
-  every ZAO-fund-backed project.
+Note: auto-deploy is NOT wired - git pushes do not trigger Vercel builds. Deploy manually after changes.
 
-## Next steps
+---
 
-1. **Complete the Season 6 payout form in the Grow app** for every ZAO-fund-backed project.
-2. **Refresh the Season 7 Artifact** for BCZ + ZAO Festivals (square, GIF/video, no text) - projects stay
-   curated automatically, only the Artifact needs updating.
-3. **Attend the weekly Funders Forum** (Mondays, 11am PT) - Season 7 curation/match-cap policy is being
-   decided live with fund directors.
-4. **Line up first-hour buyers and mobilize community votes** (48-hour launch plan in `research/artizen-share-and-accept-playbook.md`).
-5. **Run the improvement loop** - test rewards, iterate engagement, log proof metrics for future Accelerator / Rene conversation.
+## Site pages
 
-## Open questions
+Live at **https://zaoartizen.vercel.app**
 
-- Whether the ART token contract at `0x59fbbc...5b58d63de` is still the live one - on-chain trace found it
-  deployed Oct 2023, conflicting with Doc 845's "launched Oct 2025" claim. Ask Venus/René directly.
-- The $17M-$100M endowment claim is now contradicted by an on-chain read of that same contract (linked
-  Juicebox project holds ~0.01 ETH) - treat as unconfirmed until resolved.
-- Verify per-fund match pool mechanics: confirm each fund's 90% match / 10% prize split.
-- Track recurring metrics: distinct buyers mobilized, projects curated, match deployed (for future Accelerator pitch).
+| Route | What | Audience |
+|---|---|---|
+| `/` | ZAO Fund hub - featured project, searchable roster, join path | Everyone |
+| `/dashboard` | Live ZAO Fund scoreboard - rank, match deployed/remaining, backed projects | Operations |
+| `/leaderboard` | Season 6 field (35 projects) with ZAO ties flagged | Community |
+| `/rally` | 3-step crew CTA - sign up, buy $10 Artifact, boost | Shareable |
+| `/apply` | Artist-facing - what the fund backs, how to get in | Applicants |
+| `/festivals` | ZAO Festivals umbrella - events, where it fits, how to join | Community |
+| `/proposal` | Decision page - create a fund vs curate into existing | Zaal/team |
+| `/playbook` | How Artizen works + how to win (Boost Score formula) | Creators |
+| `/community` | ZAO bloc on Artizen with verified badges | Showcase |
+| `/sponsor` | Sponsor pitch for ZAO Festivals Fund match pool | Partners |
+| `/curate` | How to get curated into the ZAO Fund | Creators |
+| `/about` | Plain-English Artizen explainer | New visitors |
+| `/funds` | Fund directory + ZAO stacking map | Research |
 
-## What happened today (2026-07-13 research push)
+---
 
-A DEEP-tier Artizen refresh, most of it via direct sources rather than web search (Artizen is a Bubble.io
-app - plain WebFetch/WebSearch mostly returns empty JS shells). Seven PRs merged to main:
+## Repo map
 
-1. **[research/851](research/851-artizen-season6-close-season7-launch/)** - the season framing was wrong:
-   Season 6 closed July 9, 2026 (creators raised a corrected $8,331,351 platform-wide - a season-counter
-   bug had been undercounting by $1.4M+); Season 7 is live now, running to roughly Dec 2026/Jan 2027.
-2. **Read the fund-director Telegram directly** (266-member private group, "Artizen ✨") - the highest-signal
-   source available, well ahead of the newsletter (dormant since Feb 2026). A 2.5-week scroll through its
-   General channel (June 25 - July 13) surfaced: the fund-drive pacing playbook straight from Venus, a
-   correction that Boost Points never expire (only the weekly leaderboard resets - Venus had told the
-   community the opposite for a few days and got corrected by René), confirmation that fund directors earn
-   **20% of sponsor dollars raised** (never previously documented), and the Season 7 rule that curated
-   projects carry over automatically (only a fresh Artifact is needed, no resubmission).
-3. **On-chain endowment check upgraded from "unverified" to "contradicted."** Tracing the ART token
-   contract's own code found it hardcodes Juicebox project #587 (treasury ~0.01 ETH) - not a wrong lead as
-   first assumed. Also surfaced an unresolved Oct 2023 vs. Oct 2025 deployment-date conflict. The
-   $17M-$100M endowment figure is Artizen's own self-reported number (also shown in-app); it does not
-   reconcile with the on-chain treasury for the contract this research identified.
-4. **Confirmed no Artizen MCP server or agent API exists** (Venus, direct in the Telegram) - `play.artizen.fund`
-   (the Playbook) is Artizen's own recommended machine-readable source for future research/tooling.
-5. **A live render finally got through to artizen.fund directly**, via the repo's own
-   `scripts/refresh-fund.mjs` (gstack `browse` headless Chromium - separate from the Chrome extension,
-   which is blocked by site permissions). This resolved every remaining research gap in one pass: Global
-   Music Fund (#80) and Bonfires Fund for Agentic Creativity (#79) are both confirmed real; the ZAO Fund's
-   live Season 7 standing is rank **#19** of ~82+ funds, 36 projects curated in, mid "Daybreak Fund Drive
-   #7" (ends July 16). Only one curated project (Poly Raiders) has real traction so far.
-6. **Fixed a real bug in `scripts/refresh-fund.mjs`** - it was scraping the wrong page (the ZAO Fund's own
-   page never shows its own rank/score; that only exists on the platform-wide leaderboard) and grabbing the
-   first regex match anywhere on the page, which could silently return a different fund's numbers. It now
-   verifies it landed on the right page and anchors parsing to the ZAO Fund's specific text block, and
-   aborts loudly instead of trusting stale content when the headless session misbehaves.
-7. **[kit/season7-transition-checklist.md](kit/season7-transition-checklist.md)** added - the copy-paste
-   version of all of the above (payout claiming, Artifact refresh, fund-director comp follow-up, boost-point
-   clarification for creators) - and `kit/standings-tracker.md` filled in with today's live numbers.
+### Operating surface (start here)
 
-Net effect: CLAUDE.md, this README, `research/851`, `research/research-audit.md`, and the kit are now all
-internally consistent on Season 7 being live - nothing in the repo should still say "Season 6" as the
-active season after this push. The three concrete follow-ups that need Zaal, not more research: confirm the
-20% fund-director compensation in writing, ask Venus/René about the ART contract date conflict, and rally
-the fund's 35 zero-dollar projects before Daybreak Drive #7 closes July 16.
+| File | What |
+|---|---|
+| `TEAM-PLAYBOOK.md` | How Artizen works, how we win (Boost Score = (sales + match) x boost points), strategy, roles |
+| `PLAN-1-MEET-PROJECTS.md` | North star: meet as many projects as possible (five circles, weekly rhythm, meet tracker) |
+| `PLAN-2-PROJECTS.md` | Run ZAO Festivals + BetterCallZaal Strategies (Thursday loop, artifact plan, proofs) |
+| `PLAN-3-ZAO-FUND.md` | Manage the ZAO Fund (curation pipeline, engagement rules, the flywheel) |
+| `RECAP.md` | Full record: what was built, what was decided, what is next (Session 1 through 2026-07-03) |
+
+### Reference docs
+
+| Path | What |
+|---|---|
+| `research/844-artizen-platform-deep-study/` | Platform mechanics, sentiment, competition |
+| `research/845-artizen-art-token-endowment-economics/` | ART token + Endowment on-chain check (contradicted by Juicebox read) |
+| `research/846-zao-festivals-funding-strategy/` | Fund stacking, off-Artizen grants, budget |
+| `research/847-ecosystem-participation-playbook/` | Console, visibility, IRL presence |
+| `research/849-execution-build-plan-kit-overview/` | Full kit inventory |
+| `research/850-create-run-zao-festivals-fund/` | Fund manager playbook (if we build a second fund) |
+| `research/851-artizen-season6-close-season7-launch/` | Season framing: S6 closed July 9 ($8.3M platform-wide), S7 live now |
+| `research/fund-directory.md` | All 79 funds + ZAO stacking map + cross-backing targets |
+| `research/priority-funds.md` | Deep renders: Global Music, Bonfires, We're Loud |
+| `research/research-audit.md` | Corrections (white-space, dormancy), gaps, next steps |
+| `research/art-token-onchain.md` | On-chain check of ART token Juicebox |
+| `research/rene-pinnell-digest.md` | René's thesis, roadmap, trackable targets |
+| `research/community-fund-playbook.md` | How the best funds run + fill (model for ZAO) |
+| `research/artizen-mechanics-verified-telegram.md` | Mechanics sourced from Artizen fund-director TG |
+
+### Ready-to-use kit
+
+| File | What |
+|---|---|
+| `kit/season7-transition-checklist.md` | Copy-paste to-do list (payout forms, artifact refresh, fund-director comp) |
+| `kit/fund-targets-and-directors.md` | Fund targets + director contact map |
+| `kit/outreach-drafts.md` | René/Nate DMs, cross-curation requests, member rally copy |
+| `kit/submission-template.md` | Project submission template + artifact specs |
+| `kit/artifact-briefs.md` | Square GIF/video brief for WaveWarZ, SongJam, COC, Thy Revolution |
+| `kit/sponsor-onepager.md` | Sponsor pitch (ZAO Festivals Fund match pool) |
+| `kit/daily-spotlights.md` | 32-post daily spotlight series (projects from ZAO Fund) |
+| `kit/launch-posts.md` | Share copy for hub + festivals umbrella (multi-platform) |
+| `kit/operating-rhythm.md` | Daily/weekly/seasonal cadence + metrics |
+| `kit/standings-tracker.md` | Live Season 7 ZAO Fund standings (rank #19, 36 projects) |
+| `kit/pitch-deck-outline/` | HTML pitch deck for sponsor/partner conversations |
+
+### Code
+
+| Path | What |
+|---|---|
+| `app/` | Next.js 16 pages (see Site Pages table above) |
+| `app/dashboard/data.ts` | Live ZAO Fund scoreboard data - update after each drive |
+| `scripts/refresh.sh` | Scrape live Artizen data -> update dashboard -> deploy |
+| `scripts/refresh-fund.mjs` | Headless browser scraper (renders Artizen.fund, extracts rankings) |
+| `.env.example` | No sensitive env vars needed for the frontend |
+
+---
+
+## How to continue
+
+### Current focus (Season 7, through Dec 2026/Jan 2027)
+
+**What's working:** The site ships, strategy is locked, kit is ready, research is complete.
+
+**What needs Zaal/operators (human-only actions):**
+
+1. **Payout claims (Season 6 close)** - Complete the Grow app payout form for every ZAO-fund-backed project (KYC + payment method).
+2. **Artifact refresh (Season 7)** - BCZ + ZAO Festivals each need a fresh Season 7 Artifact (square, GIF/video, no text); projects carry over automatically from Season 6, no resubmission required.
+3. **Weekly Funders Forum** - Attend Mondays 11am PT; Season 7 curation/match-cap policy decided live with directors.
+4. **First-hour buyers** - Line up 3-5 core people per project, timed to drive start, for early velocity.
+5. **Community votes** - Each member makes an Artizen profile (free 100-vote boost), votes in waves (free, no capital required).
+6. **Track proof metrics** - Log match deployed, distinct buyers, sales, leaderboard rank for future Accelerator pitch.
+
+**Code changes needed (low priority):**
+
+- Fix auto-deploy (wire `vercel git connect` so pushes trigger builds).
+- Dashboard data currently hardcoded - consider a lightweight scraper that auto-updates on merge.
+- ART token contract date conflict (Oct 2023 vs Oct 2025) - ask Venus/René for clarification before quoting.
+
+### Future horizon (2027+)
+
+- **Prove the bootstrap thesis** - log 3-6 months of proof metrics (match deployed, distinct buyers, community participation) for an Accelerator pitch to René.
+- **ZAO Festivals Fund** (later, bigger step) - only if ZAO wants to host other organizers under it. Proposal in `app/proposal/page.tsx`.
+- **Cross-fund stacking** - replicate the ZAO stack model (WaveWarZ, SongJam, ZAOstock, Thy Revolution in Global Music + Bonfires + We're Loud + Greenpill + ZAO Emerging Culture).
+
+---
+
+## Key concepts
+
+### The win condition (Artizen official playbook)
+
+**Boost Score = (sales + match unlocked) × boost points / 100**
+
+Multiplicative - boosts MULTIPLY dollars. You need BOTH sales AND boosts to win. A project that sold the most but got few boosts finished last (Artizen's own example).
+
+The lever is the community doing two things in parallel:
+- **Buy:** Collect $10 Artifacts (100% to creator, 0% platform fee, Ethereum mainnet)
+- **Boost:** Cast free boosts (Boost points come from holding ART, completing profile, donating to Endowment, attending events)
+
+The winning Artifact formula: square, video/GIF, no text. Proof: doc 887.
+
+### Artizen platform facts
+
+- **Client-rendered (Bubble.io)** - WebFetch returns empty JS shells; use headless browser scraper or hand-check for live data.
+- **Seasons:** Curate -> Compete. Season 6 closed July 9, 2026. **Season 7 is live now** (through roughly Dec 2026/Jan 2027).
+- **Curated projects carry over** - only need a fresh Season 7 Artifact per project, no resubmission.
+- **Fund director compensation:** 20% of sponsor dollars raised for the fund (Telegram-confirmed by Venus/René, not yet in official docs - follow up to get it in writing).
+- **Match pool mechanics:** Each $1 of sales unlocks $1 from each fund backing the project. Match stacks across funds.
+
+### The ZAO position
+
+The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curated, ~$188 pool). Strategy:
+
+1. **Curate into existing funds, don't rush to build a second one** - The "music white space" is gone (We're Loud, Global Music, Greenpill already fund music events, and six ZAO music projects are in Global Music).
+2. **Run the whole portfolio as creators** - WaveWarZ, SongJam, ZAOstock, Zaoville, Thy Revolution, ZABAL Games cohort each submit as projects.
+3. **Stack across funds** - each project curates into 3-5 funds (see fund directory). Put ZOE/Hermes in the **Bonfires Fund** (our knowledge-graph partner).
+4. **Activate the ZAO Fund** - it is active but needs community engagement to deploy match.
+5. **Show up** - Console, Artizen LIVE, IRL events (DWeb Camp Village, Berlin Jul 8-12), relationships (René, Bonfires, Edge City).
+
+---
+
+## Contact + resources
+
+- **Artizen:** https://artizen.fund (client-rendered Bubble.io app)
+- **Playbook:** https://play.artizen.fund (official machine-readable resource)
+- **ZAO on Artizen:** https://zaoartizen.vercel.app
+- **Key contacts:**
+  - René Pinnell (@RJPinnell) - founder
+  - Nate Van Cleve - Head of Product
+  - Venus - Artizen's in-platform team account
+  - Wadooah Wali (wadooah@newcanvas.co) - Artizen LIVE producer
+  - Fund-director Telegram: "Artizen ✨" (private, 266 members) - highest-signal source for live mechanics + policy
+- **Our fund-director comp:** 20% of sponsor dollars raised (confirmed in TG, need written confirmation from René)
+
+---
+
+## Gotchas + notes
+
+- **Artizen is fast-moving.** Facts change per drive cycle (boosts, match allocation, fund standings). Never trust a cached number - re-verify before quoting.
+- **Endowment claims are unverified.** Artizen self-reports "$17M-$100M" endowment, but on-chain check found the ART token's Juicebox treasury holds ~0.01 ETH (dormant). Treat any single figure as a per-fund pool claim, not gospel. Keep ZAO treasury OFF the ART token.
+- **ART contract date conflict:** The ART token contract deployed Oct 2023 but is claimed to have "launched Oct 2025" in some docs - unresolved. Ask Venus/René before quoting launch date or endowment.
+- **No Artizen MCP server or agent API exists.** Play.artizen.fund (the Playbook) is Artizen's own recommended machine-readable source.
+- **Headless scraper note:** `scripts/refresh-fund.mjs` uses gstack `browse` (headless Chromium) to render Artizen pages. Requires bun on PATH: `export PATH="$HOME/.bun/bin:$PATH"`.
+
+---
+
+## CLAUDE.md
+
+For context on working in this repo (collaborators, agents, conventions), see `CLAUDE.md`.
