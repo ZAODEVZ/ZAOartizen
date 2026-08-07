@@ -81,9 +81,9 @@ up to $10k). ETH Boulder + Ven is a warm intro path. See TEAM-PLAYBOOK.md + rese
   conversation, CC Venus), and a six-category Quest system (Karma, Outreach, Network, Sprint, Raffle,
   Event) with cash pots - hourly raffle vault pots start at $500, Collector's Cup pays top 3 up to
   $12,000, winnings paid as Venus buying the winners' Artifacts. Grow is Vite/React + Supabase, NOT
-  Bubble - its bundle is readable with curl + grep for future verification. "Crew mandatory for every
-  project" (from Artizen LIVE #85, 2026-08-06) is NOT yet confirmed in any written source - the app
-  ships a 5-slot collaborators section per claim; verify the rule in the replay/Telegram before quoting.
+  Bubble - its bundle is readable with curl + grep for future verification. "Get a crew for every
+  project" (Artizen LIVE #85, 2026-08-06) was a SUGGESTION by guest Ben Erwin, not an Artizen rule -
+  nothing enforces it in the app, but claims ship a 5-slot collaborators section, so fill it.
 - Fund director compensation: 20% of sponsor dollars raised for the fund (match/prize excluded) - confirmed
   by Venus/René in the fund-director Telegram, not yet found in any official written doc.
 - Boost Points never expire - only the weekly leaderboard resets, not the point balance (Venus initially
