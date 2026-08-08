@@ -75,6 +75,15 @@ up to $10k). ETH Boulder + Ven is a warm intro path. See TEAM-PLAYBOOK.md + rese
   only a fresh per-project Artifact is needed for Season 7, no resubmission.
 - Season 6 payouts run through the new Grow app (grow.artizen.fund) - sign in with the Artizen account
   email, complete the payout form per funded project (KYC + payment method: USD to bank or USDC to wallet).
+- Grow expanded far beyond payouts (verified 2026-08-07 by reading its production JS bundle, see
+  research/852): built-in CRM (contacts earn Boost Points), staged submission/claims pipeline (Venus
+  reviews, Rene approves), Venus-assisted personalized email outreach (Boost Points per verified
+  conversation, CC Venus), and a six-category Quest system (Karma, Outreach, Network, Sprint, Raffle,
+  Event) with cash pots - hourly raffle vault pots start at $500, Collector's Cup pays top 3 up to
+  $12,000, winnings paid as Venus buying the winners' Artifacts. Grow is Vite/React + Supabase, NOT
+  Bubble - its bundle is readable with curl + grep for future verification. "Get a crew for every
+  project" (Artizen LIVE #85, 2026-08-06) was a SUGGESTION by guest Ben Erwin, not an Artizen rule -
+  nothing enforces it in the app, but claims ship a 5-slot collaborators section, so fill it.
 - Fund director compensation: 20% of sponsor dollars raised for the fund (match/prize excluded) - confirmed
   by Venus/René in the fund-director Telegram, not yet found in any official written doc.
 - Boost Points never expire - only the weekly leaderboard resets, not the point balance (Venus initially
