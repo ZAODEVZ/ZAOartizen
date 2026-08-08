@@ -4,6 +4,8 @@
 
 import { RosterExplorer } from './roster-explorer';
 import { fundStats } from './dashboard/data';
+import { featuredVideo } from './videos/data';
+import { VideoEmbed } from './videos/video-embed';
 
 const FUND_URL = 'https://artizen.thezao.com/';
 const SNAPSHOT_DATE = 'June 11, 2026';
@@ -123,6 +125,7 @@ export default function ArtizenPage() {
             <a href="/festivals" className="transition hover:text-[#f5a623]">Festivals</a>
             <a href="/dashboard" className="transition hover:text-[#f5a623]">Dashboard</a>
             <a href="/leaderboard" className="hidden transition hover:text-[#f5a623] sm:inline">Leaderboard</a>
+            <a href="/videos" className="transition hover:text-[#f5a623]">Videos</a>
             <a href="/rally" className="transition hover:text-[#f5a623]">Rally</a>
             <a href="/community" className="transition hover:text-[#f5a623]">Community</a>
             <a href="/sponsor" className="transition hover:text-[#f5a623]">Sponsor</a>
@@ -248,6 +251,24 @@ export default function ArtizenPage() {
             >
               Collect on Artizen
             </a>
+          </div>
+        </section>
+
+        {/* Featured video - episode 1 of the ZAO Artizen series. Full series on /videos. */}
+        <section className="mb-12">
+          <div className="mb-3 flex items-baseline justify-between">
+            <h2 className="text-lg font-bold sm:text-xl">Watch</h2>
+            <a href="/videos" className="text-xs text-[#f5a623] underline-offset-2 hover:underline">
+              All videos
+            </a>
+          </div>
+          <VideoEmbed video={featuredVideo} />
+          <div className="mt-3">
+            <h3 className="text-base font-bold leading-snug">{featuredVideo.title}</h3>
+            <p className="mt-1 text-sm text-white/50">
+              {featuredVideo.guest} - {featuredVideo.date}
+            </p>
+            <p className="mt-2 text-sm leading-relaxed text-white/70">{featuredVideo.blurb}</p>
           </div>
         </section>
 
