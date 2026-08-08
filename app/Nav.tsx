@@ -10,6 +10,7 @@ const LINKS: { href: string; label: string }[] = [
   { href: '/funds', label: 'Funds' },
   { href: '/playbook', label: 'Playbook' },
   { href: '/community', label: 'Projects' },
+  { href: '/videos', label: 'Videos' },
   { href: '/sponsor', label: 'Sponsor' },
   { href: '/dashboard', label: 'Dashboard' },
 ];
