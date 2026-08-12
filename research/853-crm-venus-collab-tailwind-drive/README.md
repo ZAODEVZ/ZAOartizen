@@ -188,12 +188,29 @@ Fund Drive #7 numbers in [[851-artizen-season6-close-season7-launch]]
 specified there) - re-verify current prize structure before quoting either
 figure publicly, drives evidently vary drive-to-drive.
 
+## Decisions - 2026-08-12 grill
+
+Quick-grill with Zaal, direct answers, standing defaults going forward not just
+this drive:
+
+- **Boost Points + outreach target = the ZAO Fund overall, not one project.**
+  "Let's use it on the fund" / "always do the fund as overall support." Don't
+  pick between ZAO Festivals and BetterCallZaal Strategies per drive - spread
+  support across the Fund's curated roster generally. Consistent with
+  CLAUDE.md's money mechanic: supporting a project and supporting the fund are
+  the same action, so this is really "spread it, don't concentrate it."
+- **Prize-figure conflict ($66,666 vs $184,970) - not worth chasing.** New
+  drive numbers every week, reconciling last week's figures is wasted effort.
+  Dropped from Next Actions below.
+- **Top-30 targeted outreach list - deprioritized.** Default is general CRM
+  growth (add/enrich contacts broadly) over curating a shortlist. Revisit if
+  Zaal asks for it directly later.
+
 ## Next actions
 
 | Action | Owner | By when |
 |---|---|---|
-| Reply to Venus with the tagging taxonomy + top-30 signal criteria above, ask her to batch-apply | Zaal | before next CRM session |
+| Reply to Venus with the tagging taxonomy above, ask her to batch-apply | Zaal | before next CRM session |
 | Export newsletter subscribers, Discord/Telegram members, Google Contacts, Luma attendees for Venus to import | Zaal | this week |
-| Spend Boost Points on ZAO Festivals / BetterCallZaal Strategies | Zaal | before Thu Aug 13 11am PT |
+| Spend Boost Points across the ZAO Fund's curated roster generally (not one project) | Zaal | before Thu Aug 13 11am PT |
 | Fill in [[standings-tracker]] Running proof log with Tailwind Drive result once it closes | Zaal/Claude | after Thu Aug 13 close |
-| Confirm current drive prize structure (this doc says $66,666 top, doc 851 says $184,970 platform total for a different drive) - reconcile | Zaal/Claude | next research pass |
