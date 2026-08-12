@@ -13,6 +13,7 @@ library where they originated; descriptive-named docs are zartizen-native.
 - [849](849-zao-artizen-execution-build-plan/) - Execution build plan + kit overview
 - [850](850-zao-festivals-fund-creation-manager-playbook/) - Create + run the ZAO Festivals Fund
 - [851](851-artizen-season6-close-season7-launch/) - Season 6 close / Season 7 launch, Grow app, endowment status (from the fund-director Telegram)
+- [852](852-crm-venus-collab-tailwind-drive/) - CRM build with Venus (tagging, top-30 outreach, weekly routine), live Tailwind Fund Drive context
 - [760](760-infinitezero-din-decentralized-ai/) - InfiniteZero / DIN (the #1 project in the ZAO fund)
 
 ## Reference (zartizen-native)
