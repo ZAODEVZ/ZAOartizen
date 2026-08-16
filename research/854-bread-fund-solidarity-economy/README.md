@@ -3,6 +3,11 @@
 Researched 2026-08-16, from an announcement Zaal forwarded (dated 2026-08-06) plus open-web search.
 Companion kit file: `kit/bread-fund-submission-pack.md` (the copy-paste submission + rally material).
 
+**Follow-on: `research/855-solidarity-economy-funding-rail/`** - this fund turns out to be the door rather
+than the room. Bread Cooperative runs a recurring 30-day member-voted funding stream with no culture
+project in its network, and the wider co-op world (Ampled, Resonate, Groupmuse, the New Economy Coalition's
+350+ funder library) is a rail we qualify for on structure alone. Read 855 after this.
+
 ## Executive summary
 
 A fund appeared on Artizen Season 7 that we are not in and should be: the **Bread Fund for the
