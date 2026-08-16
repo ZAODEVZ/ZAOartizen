@@ -84,6 +84,13 @@ up to $10k). ETH Boulder + Ven is a warm intro path. See TEAM-PLAYBOOK.md + rese
   Bubble - its bundle is readable with curl + grep for future verification. "Get a crew for every
   project" (Artizen LIVE #85, 2026-08-06) was a SUGGESTION by guest Ben Erwin, not an Artizen rule -
   nothing enforces it in the app, but claims ship a 5-slot collaborators section, so fill it.
+- **Bread Fund for the Solidarity Economy** (new on Season 7, researched 2026-08-16, see research/854): funds
+  cooperatives, collectives and commons-builders. Gates: cooperative / non-profit / democratic collective,
+  3+ members, no VC funding, built to last - so it selects on our STRUCTURE, not our genre, and The ZAO fits
+  cleanly while our solo artists (Marie Chain, InSync, Heritage) fail the 3+ member gate. Almost certainly run
+  by Bread Cooperative (bread.coop, co-founder Joshua Davila / The Blockchain Socialist) - high-confidence
+  inference, NOT confirmed. The "$60K closes today" deadline in the Aug 6 announcement expired 2026-08-06
+  18:00 UTC; the fund itself runs through Season 7.
 - Fund director compensation: 20% of sponsor dollars raised for the fund (match/prize excluded) - confirmed
   by Venus/René in the fund-director Telegram, not yet found in any official written doc.
 - Boost Points never expire - only the weekly leaderboard resets, not the point balance (Venus initially

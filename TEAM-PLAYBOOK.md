@@ -47,6 +47,10 @@ intros up front, earn the conversation.
 2. **Bring artists in.** Run the Discord curation vote and curate our people into the ZAO Fund: Marie Chain,
    COC Concertz, PolyRaiders, WaveWarZ Zambia. Help each mint a winning Artifact (square, video, no text).
    Submit each to every other fitting Fund too (We're Loud, Global Music, Greenpill) so match stacks.
+2b. **Apply to the Bread Fund for the Solidarity Economy** (new, Season 7). Its gates are member-owned /
+   non-profit / democratic collective, 3+ members, no VC funding - which describes The ZAO itself, not just
+   our genre. Four of our projects qualify; our solo artists do not. See `research/854-bread-fund-solidarity-economy/`
+   and `kit/bread-fund-submission-pack.md`.
 3. **Run the bootstrap motion.** Each drive, pick ONE project to push for the prize (most Artifacts sold).
    Aim the whole crew at it. Climb the leaderboard. Document it.
 4. **Build the proof.** Track what Rene actually cares about (below).
@@ -85,6 +89,8 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
   - `kit/new-artist-briefs.md` - submission briefs for Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia.
   - `kit/crew-mobilization.md` - the GC-ready "sign up, buy, boost" rally + how to run one.
   - `kit/standings-tracker.md` - the ZAO Fund scoreboard to update each drive (the proof we bring to Rene).
+  - `kit/bread-fund-submission-pack.md` - submissions + crew rally + director-to-director message for the
+    Bread Fund for the Solidarity Economy (research 854).
 - `scripts/refresh.sh` - one command to re-scrape the live ZAO Fund numbers, update the dashboard, and redeploy
   (`bash scripts/refresh.sh`). Keeps `/dashboard` current without hand-editing. `scripts/refresh-fund.mjs --write`
   does just the scrape+update if you want to review before deploying.
