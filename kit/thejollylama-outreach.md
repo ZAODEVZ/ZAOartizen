@@ -65,8 +65,11 @@ If you have a warmer handle from the Artizen call, use that instead and cut the 
 - **Do not mention Stephen Reid** or propose any introduction between them until Stephen has replied to
   your 2026-08-17 email. If both land, the shape is obvious - Stephen is the data, Jolly is the
   surface, we're the fund-director's view in the middle - but that is a second conversation.
-- **Do not quote a live ZAO Fund rank or score.** The matchfunds leaderboard could not be rendered on
-  2026-08-17 by any of three tools; the last figure on file is from June and is Season-6-era.
+- **Do not quote a live ZAO Fund rank or score.** The reason changed mid-session. It is no longer that
+  we cannot verify it - we finally rendered the board on 2026-08-17 and the ZAO Fund is **rank #45 of
+  101 funds in Season 7, with $0 sales and $0 match deployed** (the lowest numbered rank on the board).
+  Nothing in the draft needs a number, and opening a first contact with that one trades away the
+  credibility the rest of the note earns. Fix the number, then quote it.
 - **"Happy to hand you the script" commits us to sharing `scripts/refresh-fund.mjs`.** It is
   public-safe - no keys, no auth, reads a public page - but confirm you want it public before offering.
 - The Boost Score formula is from `play.artizen.fund` via `TEAM-PLAYBOOK.md` / ZAOOS doc 887. If Venus

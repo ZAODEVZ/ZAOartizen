@@ -64,8 +64,11 @@ director comp. That is a genuinely good position to be in.
 - Do not treat 20% as confirmed in any sponsor-facing material until this comes back in writing.
 - Do not ask for a different percentage in the same message. One ask. Getting the current one on paper
   is the win; anything else muddies it and invites a renegotiation you did not want.
-- Do not quote a live ZAO Fund rank or score alongside this - the leaderboard could not be rendered on
-  2026-08-17 (see the tooling note in ZAOOS research doc 2309) and the last figure on file is from June.
+- Do not quote a live ZAO Fund rank or score alongside this. We rendered the board on 2026-08-17: the
+  ZAO Fund is **rank #45 of 101 funds in Season 7, $0 sales, $0 match deployed** - the lowest numbered
+  rank on the board. That number does not belong in a compensation conversation, and it is a live
+  argument for getting the Season 7 Artifacts minted before Fund Drive #12 closes Thursday 2026-08-20
+  at 2:00pm. (Evidence and the parse caveat: ZAOOS research doc 2309.)
 
 ## Done when
 
