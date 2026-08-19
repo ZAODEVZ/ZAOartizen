@@ -7,36 +7,64 @@ was written for has changed.
 
 ## Why this is urgent, with the numbers
 
-Read live off `artizen.fund/index/leaderboard/?season=7` on 2026-08-17 (raw Playwright, 26,186 chars
-captured; evidence and the parse caveat are in ZAOOS research doc 2309):
+**Corrected 2026-08-18.** An earlier version of this card said the fund had "$0 sales, $0 match
+deployed" in Season 7. That was a scope error - those leaderboard columns are scoped to the current
+DRIVE, not the season. The real picture is narrower and more uncomfortable.
+
+Fund page (`artizen.fund/index/mf/zao-fund-for-emerging-culture?season=7`), rendered 2026-08-18:
 
 | | |
 |---|---|
-| ZAO Fund for Emerging Culture | **rank #45 of 101 funds** |
-| Score | 0.01 |
-| **Sales** | **$0** |
-| **Match deployed** | **$0** |
-| Prize / Raised | $100 / $100 |
-| Projects / Sponsors | 12 / 22 |
+| ZAO Fund, Season 7 total | **$15,431** |
+| Rank | #55 of 101 funds (57 ranked) |
+| **Current drive (#12 Flywheel)** | **$0 sales, $0 match unlocked** |
+| Match sitting unused | **$1,272** |
+| Prize | $100 |
 
-45 of the 101 funds carry a numbered rank; 56 show "-". **#45 is the lowest numbered rank on the
-board** - the ZAO Fund is the last fund with any recorded Season 7 activity at all.
+**The fund is not dormant. It raises real money - for other people.**
 
-**Fund drive #12, the "Flywheel Fund Drive", ends Thursday August 20th at 2:00pm.** Pot: $2,709,753 in
-match funding, $288,980 in cash prizes. Drive-wide raised so far $900,897 against a $2.1M goal.
+| # | Project | Creator | Match | Sales |
+|---|---|---|---|---|
+| 1 | HOPE | JED XO | $10,693 | $4,540 |
+| 2 | HERITAGE COLLECTION | Gneric | $12,600 | $3,750 |
+| 3 | The Creator Block | KOSBAAR | $4,529 | $1,500 |
+| 4 | Building Tomorrow | Poly Raiders (HuRya) | $1,170 | $360 |
 
-The page does not state a timezone. Artizen runs on PT elsewhere (the Funders Forum is 11am PT), so
-**assume 2:00pm PT and treat anything after Wednesday night as late.** Do not gamble the drive on a
-timezone this lane could not verify.
+**The ZAO's own projects are the bottom of the ZAO's own fund:**
+
+| # | Project | Match | Sales |
+|---|---|---|---|
+| 11 | ZAO Festivals | $40 | $10 |
+| 12 | COCConcertZ | $0 | $0 |
+| 13 | Baraza TV | $0 | $0 |
+| 14 | Memethology | $0 | $0 |
+| 15 | WaveWarZ | $0 | $0 |
+
+Five ZAO projects, **$10 between them**, four at exactly zero. **BCZ Strategies is not in the fund's
+roster at all** - worth checking whether that is deliberate.
+
+**Fund drive #12, the "Flywheel Fund Drive", ends Thursday August 20th at 2:00pm.** The page's own
+countdown read `1d 15h` when checked late Tuesday 2026-08-18, which resolves the timezone question the
+earlier version of this card flagged: 2:00pm is displayed in local time, so **Thursday ~2:00pm EDT**.
+Pot: $2,713,547 match, $288,960 cash prizes; drive-wide $952,410 raised against a $2.1M goal.
+
+There is **$1,272 of match sitting unused** on this fund. Every $10 artifact collected pulls $1 of it
+out. Nobody is collecting because there is nothing new to collect.
 
 ## The one-sentence version
 
-Season 7 has been open for five weeks, neither project has a Season 7 Artifact, so there has been
-nothing for anyone to buy - which is the entire reason sales and deployed match are both $0. Two
-Artifacts is the whole unblock.
+The ZAO runs a fund that works, and does not use it: its own five projects have raised $10 between them
+while the fund has moved $15,431 for everyone else. Two fresh Artifacts before Thursday is the cheapest
+available fix.
 
-Match deployed is the single metric `TEAM-PLAYBOOK.md` calls "the true KPI of a good fund" and the proof
-we intended to take to René. Right now that proof reads as a dormant fund.
+Match deployed is the metric `TEAM-PLAYBOOK.md` calls "the true KPI of a good fund" and the proof we
+intended to take to René. The proof is real - it just is not ours. A fund director whose own community
+does not collect from their own fund is a harder story to tell than a slow quarter.
+
+**Caveat worth resolving before Thursday:** ZAO Festivals shows $10 in sales for Season 7, so it may
+already have a Season 7 Artifact. This lane cannot see artifact-level detail without an authenticated
+session. Check the project page before re-minting - if it has one, the job is the other four projects
+and BCZ Strategies, not this one.
 
 ## Spec (do not deviate - doc 887, René-confirmed)
 
