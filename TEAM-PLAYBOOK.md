@@ -85,6 +85,8 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
   - `kit/new-artist-briefs.md` - submission briefs for Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia.
   - `kit/crew-mobilization.md` - the GC-ready "sign up, buy, boost" rally + how to run one.
   - `kit/standings-tracker.md` - the ZAO Fund scoreboard to update each drive (the proof we bring to Rene).
+  - `kit/interview-drive.md` - media-first curation: book the interview, then curate in. Per-project
+    openers for all 40 projects on the curation tab (7 submitted, 33 removed) plus the send order and tracker.
 - `scripts/refresh.sh` - one command to re-scrape the live ZAO Fund numbers, update the dashboard, and redeploy
   (`bash scripts/refresh.sh`). Keeps `/dashboard` current without hand-editing. `scripts/refresh-fund.mjs --write`
   does just the scrape+update if you want to review before deploying.
