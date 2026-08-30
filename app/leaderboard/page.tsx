@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { leaderboard, snapshotDate } from './data';
+import { leaderboard, scrapedAt } from './data';
+import { DataStamp } from '../data-stamp';
 
 // /leaderboard - Season 6 field snapshot (scraped). Shows where every project stands and
 // flags ZAO-tied ones. Rank = Boost Score = (sales + match) x boost points / 100. Provenance: research 887.
@@ -25,10 +26,10 @@ export default function LeaderboardPage() {
           multiply dollars, so dollars shown here are only half the picture. {zaoCount} projects are ZAO-tied
           (gold). Use this to spot cross-back targets and who the crowd should buy AND boost.
         </p>
-        <p className="mt-2 text-xs text-white/40">
-          Snapshot {snapshotDate} (Flourish Fund Drive). Numbers move daily - re-scrape before quoting. Edit{' '}
+        <DataStamp scrapedAt={scrapedAt} className="mt-2">
+          Flourish Fund Drive snapshot - re-scrape before quoting. Edit{' '}
           <code className="text-white/60">app/leaderboard/data.ts</code>.
-        </p>
+        </DataStamp>
       </header>
 
       <div className="overflow-x-auto rounded-xl border border-white/10">

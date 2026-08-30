@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { fundStats, horse, backedProjects } from '../dashboard/data';
+import { DataStamp } from '../data-stamp';
 
 // /rally - the "what do I do right now" surface. Drop this URL in the GC. Shows the live
 // drive + unspent match (urgency), who to back, and the 3-step crew CTA. Provenance: research 886 + kit/crew-mobilization.md.
@@ -50,6 +51,7 @@ export default function RallyPage() {
             {fundStats.activeDrive ? `${fundStats.activeDrive}` : 'Active drive'}
             {fundStats.driveDeadline ? ` - ${fundStats.driveDeadline}` : ''}. Spend before it closes.
           </div>
+          <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-3" />
         </div>
       ) : null}
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { fundStats, backedProjects, horse, proofLog, crossbackFunds } from './data';
+import { DataStamp } from '../data-stamp';
 
 // /dashboard - the ZAO Fund scoreboard. Tracks the proof metrics (match DEPLOYED,
 // buyers moved, projects climbed) that become the Phase 2 pitch to Rene. Data lives
@@ -60,10 +61,9 @@ export default function DashboardPage() {
           bring to Rene. Win = Boost Score = (sales + match) x boost points / 100 - boosts multiply dollars, so
           rally both buys and Boosts.
         </p>
-        <p className="mt-2 text-xs text-white/40">
-          Snapshot from {fundStats.lastUpdated} (numbers move daily). Edit{' '}
-          <code className="text-white/60">app/dashboard/data.ts</code> to update.
-        </p>
+        <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-2">
+          Edit <code className="text-white/60">app/dashboard/data.ts</code> to update.
+        </DataStamp>
       </header>
 
       {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0 ? (

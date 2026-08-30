@@ -4,6 +4,7 @@
 
 import { RosterExplorer } from './roster-explorer';
 import { fundStats } from './dashboard/data';
+import { DataStamp } from './data-stamp';
 import { featuredVideo } from './videos/data';
 import { VideoEmbed } from './videos/video-embed';
 
@@ -211,14 +212,13 @@ export default function ArtizenPage() {
           <Stat label="Fund pool" value={FUND_POOL} />
           <Stat label="Match available" value={FUND_AVAILABLE} />
         </section>
-        <p className="mb-12 text-xs text-white/40">
-          Fund rank + pool as of {fundStats.lastUpdated} (they move daily). Live standings + match headroom on
-          the{' '}
+        <DataStamp scrapedAt={fundStats.scrapedAt} className="mb-12">
+          Live standings + match headroom on the{' '}
           <a href="/dashboard" className="text-[#f5a623] underline-offset-2 hover:underline">
             dashboard
           </a>
           .
-        </p>
+        </DataStamp>
 
         {/* Featured project of the day */}
         <section className="mb-12">
