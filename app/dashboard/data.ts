@@ -44,20 +44,26 @@ export interface ProofEntry {
 
 // --- EDIT BELOW ---
 
-// Live numbers from artizen.thezao.com, confirmed 2026-06-22 (re-check before quoting; they move daily).
+// Live numbers scraped from https://artizen.fund/index/mf/zao-fund-for-emerging-culture?season=7 on 2026-08-20 by scripts/refresh-fund.mjs.
+// Standings move daily - re-scrape before quoting. poolUsd is the figure the fund page
+// labels "Total" ($15431); the page does not say whether that is deposits or
+// cumulative raised, so treat it as "the fund's headline total", not a verified pool size.
+// matchDeployedUsd is the page's RAISED. The CURRENT DRIVE figures (sales $0, match
+// unlocked $0) are deliberately NOT written here - drive scope and season
+// scope are different things, and conflating them is a bug this repo has already shipped once.
 export const fundStats: FundStats = {
-  rank: 13,
-  scoreLabel: '873.62',
-  prizeUsd: 2432,
-  poolUsd: 10547,
-  matchDeployedUsd: 2432, // "RAISED" on Artizen
-  matchRemainingUsd: 6331, // "AVAILABLE" on Artizen
-  projectsCurated: null, // confirm from the logged-in curator view
+  rank: 67,
+  scoreLabel: '0.01',
+  prizeUsd: 100,
+  poolUsd: 15431,
+  matchDeployedUsd: 100, // "RAISED" on Artizen
+  matchRemainingUsd: 1273, // "AVAILABLE" on Artizen
+  projectsCurated: 16, // confirm from the logged-in curator view
   signupsDriven: null,
-  activeDrive: 'Flourish Fund Drive',
+  activeDrive: 'Flywheel Fund Drive',
   driveMultiplier: null, // confirm current multiplier
-  driveDeadline: 'ends in ~3 days (≈2026-06-25)',
-  lastUpdated: '2026-06-22',
+  driveDeadline: 'Ends in 30 minutes (as of 2026-08-20)',
+  lastUpdated: '2026-08-20',
   updatedBy: 'auto-refresh',
 };
 
