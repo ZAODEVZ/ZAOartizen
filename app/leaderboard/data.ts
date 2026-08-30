@@ -14,6 +14,10 @@ export interface LeaderRow {
 
 export const snapshotDate = '2026-06-21';
 
+// ISO 8601 UTC instant of the scrape above - feeds the "Data as of" stamp + stale warning
+// (see app/data-stamp.tsx). Date-only scrapes use T00:00:00Z.
+export const scrapedAt = '2026-06-21T00:00:00Z';
+
 export const leaderboard: LeaderRow[] = [
   { rank: 1, name: 'InfiniteZero Network', creator: 'Abraham Nash', salesUsd: 46021, matchUsd: 502, category: 'AI / Decentralized', zaoTie: 'in ZAO Fund (doc 760)' },
   { rank: 2, name: 'Edge Esmeralda 2026', creator: 'Telamon Ardavanis', salesUsd: 30569, matchUsd: 2677, category: 'Human Flourishing', zaoTie: 'Telamon (doc 674)' },
