@@ -1,5 +1,7 @@
 # How Artizen funds are set up, framed, and used
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 Research to ground the ZAO Fund setup + project submissions. Sourced from Artizen's own newsletter
 (news.artizen.fund). Confidence-tagged; the live fund pages are Bubble-gated so copy examples come from press +
 the newsletter. A deeper agent pass is appending more (fund-copy examples, sponsor recruiting). 2026-06-28.

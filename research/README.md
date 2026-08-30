@@ -3,6 +3,14 @@
 The research behind The ZAO's Artizen strategy. Numbered docs (843-850, 760) mirror the ZAOOS research
 library where they originated; descriptive-named docs are zartizen-native.
 
+## Start here
+
+- [**mechanics-canonical.md**](mechanics-canonical.md) - **the mechanics source of truth.** The Boost
+  Score, match ratio, season dates and rollover rules, prize rules, payouts, fund-director pay, the
+  Artifact spec - each with its source and date, plus a TODO-VERIFY register of what is still
+  unconfirmed and a supersession log. Every other doc here is a dated record that feeds it. If a doc
+  below disagrees with the canonical file, the canonical file wins.
+
 ## Strategy + platform
 
 - [843](843-zao-fund-artizen-roster-june2026/) - ZAO Fund full Season 6 roster (32 projects)

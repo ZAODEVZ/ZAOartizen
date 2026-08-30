@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
 
 // /playbook - a creator-facing page to send Artizen project owners to. Explains how Artizen works,
-// how to finish the season strong, and how the ZAO Fund + Zaal add value. Sourced from Rene Pinnell's
-// official Artizen Playbook + Guide (news.artizen.fund) - verified 2026-06-27. See research/bloc-projects.md.
+// how to finish the season strong, and how the ZAO Fund + Zaal add value.
+//
+// MECHANICS SOURCE: research/mechanics-canonical.md. Do not change a number or a rule on this page
+// without changing it there first - that file carries the source and date for every claim, and the
+// TODO-VERIFY register for the ones this repo cannot confirm (the match ratio is conflict M1; the
+// "top ~30% by votes" curation step in STEPS below is conflict M4, unconfirmed since 2026-06-28).
 
 const FUND_URL = 'https://artizen.thezao.com/';
 const CONTACT = 'mailto:zaal@thezao.com?subject=ZAO%20Fund%20on%20Artizen';
@@ -25,7 +29,7 @@ const STEPS: Step[] = [
   { n: '3', t: 'The community curates', b: 'Everyone votes. The top ~30% of projects by votes get curated into the competition.' },
   { n: '4', t: 'Fans buy $10 Artifacts', b: 'Your Artifact is a $10 open-edition collectible. You keep 100% of every sale.' },
   { n: '5', t: 'Each sale unlocks match', b: 'Every $10 in Artifact sales unlocks $10 of match - from EACH Fund backing you - while the pool lasts.' },
-  { n: '6', t: 'Top sellers win prizes', b: 'At season end you get one payout: your sales + match + any cash prize. 10% of each Fund is a prize for its top seller.' },
+  { n: '6', t: 'The top-ranked project wins the prize', b: 'At season end you get one payout: your sales + match + any cash prize. 10% of each Fund is a prize for its top-ranked project - and rank is (sales + match) x boosts, not sales alone. Sell AND get boosted.' },
 ];
 
 interface Tactic {

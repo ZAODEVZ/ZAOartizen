@@ -3,7 +3,12 @@
 The front door for anyone helping with the ZAO's Artizen effort. Read this first, then go to the kit
 (`kit/`) for copy-paste tools and `research/` for the deep dives.
 
-Updated 2026-07-03.
+Updated 2026-08-30.
+
+> **Mechanics live in one file.** Formulas, match ratios, season dates, prize rules and every
+> open question about them: [`research/mechanics-canonical.md`](research/mechanics-canonical.md).
+> This playbook covers strategy and who does what; it does not restate mechanics, because a
+> second copy is a second thing to get wrong. Quote the canonical file, not this one.
 
 ## The mission
 
@@ -21,18 +26,17 @@ mix them up:
 - **Curator** - picks Projects into a Fund based on taste. Does NOT supply the money - the Fund does.
 - **Fund** - the money pool. Sponsors deposit; it unlocks as curated Projects sell Artifacts.
 
-The money: every $1 a fan spends on an Artifact unlocks $1 from EACH Fund backing that Project (it stacks
-across Funds). Of a Fund's capital, 90% is match, 10% is an end-of-season cash prize for its top Project.
+The money, in one line: a fan's Artifact spend unlocks match from EACH Fund backing that Project, so match
+stacks across Funds. Exact ratio, the Endowment's cut, and the 90/10 match-vs-prize split:
+[`research/mechanics-canonical.md`](research/mechanics-canonical.md) section 2.
 
-**How you WIN (confirmed from the official playbook, play.artizen.fund):** rank = **Boost Score = (sales +
-match unlocked) x boost points received / 100**. It is MULTIPLICATIVE - boosts multiply your dollars, so you
+**How you WIN:** rank is the **Boost Score**, and it is MULTIPLICATIVE - boosts multiply your dollars, so you
 need BOTH. The playbook's own example: a project that sold the most dollars finished LAST because it had
 almost no boosts; a project with fewer dollars but a boost-rich crowd took #1. So rally your people to do
-TWO free-or-cheap things: **buy $10 Artifacts AND cast Boosts** (boosting is free). Boost points come from
-holding ART, donating to the Endowment, completing your profile, and attending events. (This corrects the
-earlier "most sales wins" framing - see ZAOOS research doc 887.)
+TWO free-or-cheap things: **buy $10 Artifacts AND cast Boosts** (boosting is free). The formula, what feeds
+boost points, and what is still unverified: canonical file section 1 and section 4.
 
-**Winning Artifact spec:** square 1:1 (min 1000x1000), video/GIF performs best, NO text or graphic overlay.
+**Winning Artifact spec:** canonical file section 10.
 
 ## Our strategy: permissionless-first, then Rene
 
@@ -47,8 +51,9 @@ intros up front, earn the conversation.
 2. **Bring artists in.** Run the Discord curation vote and curate our people into the ZAO Fund: Marie Chain,
    COC Concertz, PolyRaiders, WaveWarZ Zambia. Help each mint a winning Artifact (square, video, no text).
    Submit each to every other fitting Fund too (We're Loud, Global Music, Greenpill) so match stacks.
-3. **Run the bootstrap motion.** Each drive, pick ONE project to push for the prize (most Artifacts sold).
-   Aim the whole crew at it. Climb the leaderboard. Document it.
+3. **Run the bootstrap motion.** Each drive, pick ONE project to push for the prize. Aim the whole crew at
+   both levers - buys AND boosts, since the prize goes to the top Boost Score, not the top seller. Climb the
+   leaderboard. Document it.
 4. **Build the proof.** Track what Rene actually cares about (below).
 
 ### The proof metrics that matter
@@ -75,7 +80,7 @@ curator-network intros (Sundance / SXSW / Tribeca / Venice programmers, 36 Cinem
 
 ## Cadence
 
-See `kit/operating-rhythm.md` - daily (one spotlight + one boost), weekly (rally to the drive close +
+See `kit/archive/operating-rhythm.md` - daily (one spotlight + one boost), weekly (rally to the drive close +
 cross-back 2-3 projects), per season (curate the cohort, then drive sales, then document).
 
 ## Where everything is
@@ -83,13 +88,14 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
 - `kit/` - copy-paste tools: outreach drafts, submission template, daily spotlights, artifact briefs,
   launch posts, sponsor one-pager, Rene call brief, operating rhythm. New this round:
   - `kit/new-artist-briefs.md` - submission briefs for Marie Chain, COC Concertz, PolyRaiders, WaveWarZ Zambia.
-  - `kit/crew-mobilization.md` - the GC-ready "sign up, buy, boost" rally + how to run one.
+  - `kit/archive/crew-mobilization.md` - the GC-ready "sign up, buy, boost" rally + how to run one.
   - `kit/standings-tracker.md` - the ZAO Fund scoreboard to update each drive (the proof we bring to Rene).
 - `scripts/refresh.sh` - one command to re-scrape the live ZAO Fund numbers, update the dashboard, and redeploy
   (`bash scripts/refresh.sh`). Keeps `/dashboard` current without hand-editing. `scripts/refresh-fund.mjs --write`
   does just the scrape+update if you want to review before deploying.
 - Live site: **https://zaoartizen.vercel.app** - `/dashboard` (scoreboard), `/leaderboard` (the field),
   `/rally` (the GC-shareable 3-step crew CTA).
+- `research/mechanics-canonical.md` - **the mechanics source of truth.** Everything else links here.
 - `research/` - the deep dives: platform study (844), ART/endowment economics (845), funding strategy (846),
   ecosystem playbook (847), fund-creation playbook (850), fund directory + stacking map (fund-directory.md),
   Rene digest, on-chain token reality check (art-token-onchain.md).
@@ -97,5 +103,6 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
 ## One caution
 
 Keep the ZAO treasury OFF the ART token. Ride the funding rail; the token/endowment layer is a reflexive
-bonding curve (Rene's own words) and any single endowment claim is unverified on-chain (Juicebox holds
-~34 ETH, dormant). See `research/art-token-onchain.md`.
+bonding curve (Rene's own words) and the endowment figures are contradicted by the on-chain trace, not just
+unverified. See conflict M3 in [`research/mechanics-canonical.md`](research/mechanics-canonical.md) and
+`research/art-token-onchain.md`. The caution stands however that conflict resolves.
