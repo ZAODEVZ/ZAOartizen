@@ -1,7 +1,7 @@
 # ZAO on Artizen, the full recap
 
 The complete record of the ZAO x Artizen effort: what was built, where it lives, what was decided, and what is
-next. Last updated 2026-07-03. Style note: no spaced hyphen dashes anywhere (house rule).
+next. Last updated 2026-08-30. Style note: no spaced hyphen dashes anywhere (house rule).
 
 ## Status at a glance
 - **Two live Artizen projects** in Season 6:
@@ -121,3 +121,72 @@ day. New ground truth from the Artizen TG group (Venus + Rene) lives in
 research/artizen-mechanics-verified-telegram.md: directors can edit funds, S6 funds and projects carry into
 S7, weekly Thursday drives, multiplicative Boost Score, new Artifact required each season, Artizen LIVE
 pitch slots via Wadooah Wali, and the fund-prize flywheel.
+
+## Mechanics consolidation and the staleness guard (2026-08-30)
+
+Three things changed. One requested task could not be started.
+
+### 1. One canonical mechanics file
+
+`research/mechanics-canonical.md` is now the single source of truth for Artizen mechanics: the Boost Score,
+the money mechanics, drives, Boost Points, the season timeline and rollover rules, curation, payouts,
+Grow/Quests, fund-director economics, the Artifact spec. Every claim carries its source and date and is
+tagged CONFIRMED or TODO-VERIFY, and the file ends with a supersession log of every mechanics claim this
+repo has had to correct.
+
+Mechanics were previously restated in roughly 30 files and the copies had drifted. Those files now link to
+the canonical file instead: CLAUDE.md (mechanics bullets removed from Key facts), TEAM-PLAYBOOK.md,
+`/playbook`, `/about`, `research/README.md`, and a header banner on the nine mechanics-bearing research docs.
+The research docs keep their original text - they are dated records the canonical file cites, so rewriting
+them would destroy the provenance trail.
+
+Contradictions found and fixed:
+
+- TEAM-PLAYBOOK and `/playbook` both said the prize goes to the top SELLER, contradicting their own Boost
+  Score sections. It goes to the top Boost Score. Fixed in both.
+- TEAM-PLAYBOOK cited a dormant Juicebox treasury of ~34 ETH, superseded by the 2026-07-13 contract trace.
+  Replaced with a pointer to the open conflict; the "keep the ZAO treasury off ART" caution stands regardless.
+- Fund-director pay: 2026-06-28 research called the 20% figure outdated, the 2026-07-13 Funders Forum recap
+  reinstates it. The later source wins; the conflict is recorded.
+- Drive window moved from Thursday-Thursday to Friday-Thursday for Season 7.
+- Broken `kit/` links in TEAM-PLAYBOOK (those files moved to `kit/archive/`).
+
+### 2. Staleness guard on the live site
+
+`app/dashboard/data.ts` and `app/leaderboard/data.ts` now carry a `scrapedAt` ISO timestamp, and every page
+showing rank, match or funding numbers - `/`, `/dashboard`, `/rally`, `/leaderboard` - renders a "Data as of
+[date]" stamp via the shared `app/data-stamp.tsx`. Past 48 hours it turns into a red STALE warning telling
+the reader to re-check the live fund. Age is computed in the browser, not at build time, so a statically
+built page cannot claim to be fresh forever. `scripts/refresh-fund.mjs --write` writes `scrapedAt`, so the
+stamp resets on each scrape. As of this entry the site's own numbers are a 2026-06-22 snapshot and every one
+of those pages is showing the STALE warning - re-run `scripts/refresh.sh`.
+
+### 3. NOT DONE: the meeting knowledge base
+
+The requested `meetings/INDEX.md` and `meetings/mechanics-changelog.md` were not created, because
+`meetings/raw/` is not in this repo. It is absent from the working tree, from every branch, and from the
+whole git history - so there was nothing to ingest and nothing was invented. The mechanics audit above was
+therefore run against the existing research set only, NOT against the Monday Momentum and Funders Forum
+notes. When those notes land, re-run the audit against `research/mechanics-canonical.md` and update its
+supersession log.
+
+### TODO-VERIFY - open, do not quote publicly
+
+Full detail in `research/mechanics-canonical.md` section 11.
+
+- **M1, the match ratio.** CLAUDE.md said a $10 Artifact unlocks $1 of match per fund; the research,
+  TEAM-PLAYBOOK, `/playbook`, `/about`, `/rally` and `/dashboard` all say 1:1, so $10 unlocks $10. Note that
+  $1 per $10 is exactly the documented 10% Endowment fee, so the two figures may have been conflated. The
+  canonical file carries 1:1 because that is where the dated sources point, but the entire crew pitch ("your
+  $10 becomes $20+") rests on it. **Verify this one first** - it is on public pages.
+- **M2** the boost-point source list (holding ART, Endowment donations, profile, events) has no dated
+  primary source in this repo.
+- **M3** the ART token and Endowment figures, contradicted by the on-chain trace and an unresolved
+  Oct 2023 vs Oct 2025 deployment conflict.
+- **M4** whether Season 7 still runs a distinct curation phase, and the "top ~30% by votes" rule with it -
+  sourced to 2026-06-28 and never reconfirmed. This one is live on `/playbook`.
+- **M5** the meeting notes themselves. Curation ethics, match caps and the prize-curve rework were all
+  explicitly "being decided on the weekly calls," which makes those calls the missing primary source.
+
+Check all of these against the live Artizen Playbook at play.artizen.fund, or ask Venus in the fund-director
+Telegram, then update the canonical file and delete the conflict entry.
