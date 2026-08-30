@@ -1,5 +1,7 @@
 # Artizen share + accept playbook (13-agent research, 2026-06-29)
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 Strategy doc for getting ZAO Festivals (and BCZ Strategies) shared and curated. This is a PLAYBOOK, not a list of facts: some tactics are proposed, test before relying. Mechanics are grounded; specific reward names or numbers in examples are illustrative.
 
 # ZAO Festivals Artizen Playbook

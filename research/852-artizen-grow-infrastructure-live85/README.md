@@ -10,6 +10,8 @@ tier: DEEP
 
 # 852 - Artizen Grow Is Now a Full Growth Stack: CRM, Pipeline, Quests, and Provably-Fair Prize Draws
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](../mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 > **Goal:** Verify and expand the ZAO meeting notes from Artizen LIVE #85 (2026-08-06, https://youtube.com/live/d0pMPoK9zsY, guests Ben Erwin and Dolce Wang, hosted by Rene Pinnell). Method: Artizen's public pages are JS shells to scrapers, but Grow (grow.artizen.fund) turned out to be a Vite/React + Supabase app - NOT Bubble - so its full production JS bundle was downloaded and read directly (`/assets/index-7yGTabQD.js`, ~1.2MB, fetched 2026-08-07). Every UI string quoted below is verbatim from that bundle: this is primary-source verification of what is actually shipped, ahead of any announcement copy.
 
 ## The headline

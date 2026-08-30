@@ -1,5 +1,7 @@
 # ART token - on-chain reality check
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 Primary-source verification of Artizen's ART token against Etherscan, to sanity-check the marketing
 (the "$14M endowment -> $1T" narrative). Fetched 2026-06-13 from the token contract.
 

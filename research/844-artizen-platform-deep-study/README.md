@@ -10,6 +10,8 @@ tier: DISPATCH
 
 # 844 — Artizen: Deep Platform Study (model, ART token, team, sentiment, competition)
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](../mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 > **Goal:** Go past the fund roster ([Doc 843](../843-zao-fund-artizen-roster-june2026/)) into Artizen the platform - how the money actually moves, the new ART/Endowment machine, who runs it, what people say, and where it sits vs Gitcoin/Juicebox/the ReFi world. The canonical "what is Artizen, really" doc for ZAO.
 
 > **Method:** DISPATCH - 5 parallel research agents (company, mechanics, 2026 relaunch, sentiment, competition), each climbing the fetch ladder, synthesized here. One agent (company/funding history) died mid-run; its ground is covered by the sentiment + relaunch agents.

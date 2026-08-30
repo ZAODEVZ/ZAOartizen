@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
 
+// /about - the sponsor/donor-facing explainer. Plain English on purpose.
+// MECHANICS SOURCE: research/mechanics-canonical.md - change a rule or a ratio there first.
+// The "$1 unlocks $1+" line below rests on conflict M1 in that file (unverified against the live
+// Artizen Playbook); verify before putting it in front of a paying sponsor.
+
 // /about - plain-language explainer for first-time visitors (esp. sponsors/donors who've never heard
 // of Artizen). What this is, what Artizen is, how backing works, + a short FAQ. Provenance: doc 887.
 
