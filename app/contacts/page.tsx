@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: 'ZAO Fund contact book - who owns every project and who we have talked to',
   description:
     'Every project curated into the ZAO Fund for Emerging Culture, its owner, how to reach them, and the honest outreach status.',
+  // This page holds contact routes for 40 real people alongside our own internal
+  // notes on each of them. It is gated by Basic auth in middleware.ts and left
+  // out of app/sitemap.ts; noindex is the third layer, so a mistake in either of
+  // the other two does not put a private CRM into search results.
+  robots: { index: false, follow: false },
 };
 
 const STATS = [
