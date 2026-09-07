@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   title: 'ZAO Fund contact book - who owns every project and who we have talked to',
   description:
     'Every project curated into the ZAO Fund for Emerging Culture, its owner, how to reach them, and the honest outreach status.',
-  // This page holds contact routes for 40 real people alongside our own internal
-  // notes on each of them. It is gated by Basic auth in middleware.ts and left
-  // out of app/sitemap.ts; noindex is the third layer, so a mistake in either of
-  // the other two does not put a private CRM into search results.
+  // The rows are no longer in this repo - they moved to the private vault on
+  // 2026-09-07. The Basic auth in middleware.ts, the sitemap omission and this
+  // noindex all stay, because they are the guardrails that let the rows ever come
+  // back to a deployed page. Do not remove them and do not re-add the people.
   robots: { index: false, follow: false },
 };
 
@@ -46,8 +46,8 @@ export default function ContactsPage() {
           barely started the relationship half.
         </p>
         <p className="mt-2 max-w-2xl text-sm text-white/45">
-          Four days into Season 7, {roster.length - 1} of the fund&apos;s projects showed $0 in sales and only
-          Poly Raiders was moving. That is the direct cost of a roster we have never talked to.
+          The fund does the curation half of its job well and has barely started the relationship half.
+          That is the direct cost of a roster we have never talked to.
         </p>
       </header>
 
@@ -84,7 +84,18 @@ export default function ContactsPage() {
         </dl>
       </section>
 
-      <ContactsExplorer roster={roster} />
+      {roster.length === 0 ? (
+        <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-6 text-sm text-white/60">
+          <p className="font-semibold text-white/80">The roster is not in this repository.</p>
+          <p className="mt-2">
+            This repo is public, and the contact book holds real people - their names, how to reach them,
+            and our own notes about them. The rows live in the private vault instead. This page keeps the
+            schema and the guardrails so the ledger can be rebuilt privately, not so it can be published.
+          </p>
+        </div>
+      ) : (
+        <ContactsExplorer roster={roster} />
+      )}
 
       <footer className="mt-10 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/40">
         Compiled {SNAPSHOT} from research/843 (Season 6 roster), research/851 (Season 7 roster),
