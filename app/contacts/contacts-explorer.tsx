@@ -58,8 +58,7 @@ export function ContactsExplorer({ roster }: Props) {
         r.project.toLowerCase().includes(q) ||
         r.owner.toLowerCase().includes(q) ||
         r.category.toLowerCase().includes(q) ||
-        r.contacts.join(' ').toLowerCase().includes(q) ||
-        (r.research ?? '').toLowerCase().includes(q)
+        r.contacts.join(' ').toLowerCase().includes(q)
       );
     });
   }, [roster, query, status, season, shortlistOnly]);
@@ -130,7 +129,7 @@ export function ContactsExplorer({ roster }: Props) {
       </div>
 
       <p className="mb-3 text-xs text-white/35">
-        Showing {filtered.length} of {roster.length}. Open a row for contact routes and what research found.
+        Showing {filtered.length} of {roster.length}. Open a row for contact routes.
       </p>
 
       <div className="flex flex-col gap-2">
@@ -166,9 +165,7 @@ export function ContactsExplorer({ roster }: Props) {
             </summary>
 
             <div className="border-t border-white/[0.08] px-4 py-3 text-sm">
-              <p className="text-white/70">{r.statusNote}</p>
-
-              <div className="mt-3 flex flex-wrap items-baseline gap-x-2 gap-y-1">
+              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                 <span className="text-[11px] uppercase tracking-wide text-white/35">Reach them</span>
                 {r.contacts.length === 0 ? (
                   <span className="text-[13px] text-rose-400/80">
@@ -198,10 +195,6 @@ export function ContactsExplorer({ roster }: Props) {
                   })
                 )}
               </div>
-
-              {r.research ? (
-                <p className="mt-3 text-[13px] leading-relaxed text-white/55">{r.research}</p>
-              ) : null}
 
               <p className="mt-3 text-[11px] text-white/30">
                 {r.category} &middot; Season {r.seasons.join(' and ')}
