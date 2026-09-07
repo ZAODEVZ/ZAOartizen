@@ -4,9 +4,52 @@ Update this each drive. It is the proof we bring to Rene in Phase 2: not how muc
 match we DEPLOYED and how big a crowd we moved. Numbers come from the live Artizen dashboard - re-check before
 quoting (standings move daily).
 
-Last updated: `2026-07-13` by `Claude (live render via scripts/refresh-fund.mjs)`.
 
-## ZAO Fund - current (Season 7, Daybreak Fund Drive #7, ends Thu Jul 16 2pm)
+## ZAO Fund - current (Season 7, Flywheel Fund Drive #12)
+
+Last updated: `2026-08-20 17:33 UTC` by `zao-artizen lane (scripts/refresh-fund.mjs --json, live render)`.
+Previous entry below was `2026-07-13` and read rank #19 of ~82 - that was Daybreak Drive #7 and is now
+five weeks stale. Superseded, kept for trend.
+
+| Field | Value |
+|-------|-------|
+| Fund rank (among all funds) | `#67` |
+| Score | `0.01` |
+| Fund total (page labels it "Total") | `$15,431` |
+| Prize | `$100` |
+| Raised | `$100` |
+| **Match still AVAILABLE (undeployed)** | **`$1,273`** |
+| Drive sales (this drive) | `$0` |
+| Drive match unlocked (this drive) | `$0` |
+| Projects in fund | `16` |
+| Drive | `Flywheel Fund Drive` (#12) |
+
+**Rank trend, same method each day: `#45` (8/17) -> `#55` (8/18) -> `#57` (8/19) -> `#67` (8/20).**
+The fund lost nothing across that slide. Ranked funds grew from 45 to 57+ over the same window - it was
+passed by funds that recorded drive activity while ours recorded none.
+
+### The ZAO's own projects in its own fund
+
+| # | Project | Match | Sales |
+|---|---|---|---|
+| 5 | ZAO Festivals | `$1,040` | `$510` |
+| 13 | COCConcertZ | `$0` | `$0` |
+| 14 | Baraza TV | `$0` | `$0` |
+| 15 | Memethology | `$0` | `$0` |
+| 16 | WaveWarZ | `$0` | `$0` |
+
+**Correction worth recording:** on 2026-08-18/19 this roster showed ZAO Festivals at #11 with `$40`
+match / `$10` sales, and this lane reported "the ZAO's five projects have $10 between them". Today the
+same page shows `$1,040` / `$510` - which is exactly what Stephen Reid's artizen.fyi showed on 8/19
+while the fund page did not. So **his tool was carrying the fuller figure all along**, and the fund
+page's roster was showing something narrower. This resolves an open question in
+`kit/stephen-reid-call-brief.md` in his favour - worth telling him on the 8/27 call.
+
+Four of the five are still at exactly zero. That part has not changed.
+
+## Superseded entry (2026-07-13, Daybreak Fund Drive #7)
+
+### As captured then
 
 | Field | Value |
 |-------|-------|

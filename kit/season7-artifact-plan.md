@@ -1,5 +1,13 @@
 # Season 7 Artifact plan (loop wake 3, 2026-07-03)
 
+> **SUPERSEDED FOR EXECUTION, 2026-08-18.** The picks and concepts below still stand and are still
+> correct. The timing does not: this was written 2026-07-03 for "this weekend", Season 7 has now been
+> open five weeks, and neither Artifact was ever made. The live deadline is **Fund Drive #12, closing
+> Thursday 2026-08-20 at 2:00pm**, and the fund is currently rank #45 of 101 with $0 sales.
+> Execute from **[kit/artifact-sprint-2026-08-20.md](artifact-sprint-2026-08-20.md)**, which carries the
+> deadline, kills the AE-composite upgrade path as out-of-time, and sequences the taps. Keep reading
+> here for the concepts and the creator-credit calls.
+
 Rene-confirmed: every project needs a NEW Artifact each season, no reuse. Season 6 closes ~July 9, so both
 S7 Artifacts should be captured THIS WEEKEND. Rules unchanged: square 1:1, NO text, no logos unless integral
 graphic art, image or GIF up to 10MB, optional square video up to 45s / 90MB. Motion beats static.
