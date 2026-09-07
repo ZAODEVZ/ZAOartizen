@@ -6,7 +6,6 @@ import {
   identifiedOwners,
   SNAPSHOT,
   S6_SNAPSHOT,
-  UNCAPTURED_S7,
   STATUS_BLURB,
   FUND_URL,
 } from './data';
@@ -86,49 +85,6 @@ export default function ContactsPage() {
       </section>
 
       <ContactsExplorer roster={roster} />
-
-      <section className="mt-12">
-        <h2 className="text-2xl font-bold tracking-tight">Do these five this week</h2>
-        <p className="mt-2 max-w-2xl text-white/70">
-          The warm six in{' '}
-          <code className="rounded bg-white/10 px-1 py-0.5 text-[13px]">kit/meet-outreach-pack.md</code> have
-          been drafted since July 3 and are still unsent. Swap the real Cal link in for the placeholder and
-          fire them. Then add these five cold opens, where research already gives you a specific first line.
-        </p>
-        <ul className="mt-4 flex flex-col gap-2 text-[15px]">
-          {[
-            ['Dr. Abraham Nash', 'Top all-time seller in the fund. Oxford CS page and a public GitHub.'],
-            ['Trish Gianakis', "Artizen's own standout win of the season, 10,000 attendees, in our fund."],
-            ['Colton', 'Sold out a physical card game twice, over $70,000. Knows how to sell to this crowd.'],
-            ['Jeff Desom', 'BAFTA-nominated, Everything Everywhere All at Once. Most credentialed name here.'],
-            ['Eska', "The Owl's Nest is the closest structural match to ZAO Festivals in the whole fund."],
-          ].map(([who, why]) => (
-            <li key={who} className="rounded-lg border border-white/10 bg-white/[0.03] px-4 py-3">
-              <span className="font-semibold text-[#f5a623]">{who}</span>
-              <span className="mt-0.5 block text-sm text-white/60">{why}</span>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className="mt-10">
-        <h2 className="text-2xl font-bold tracking-tight">Resolve before sending</h2>
-        <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-5 text-[15px] text-white/70">
-          <li>
-            The Impact Concerts: EZinCrypto vs EDInCrypto vs Jose Acabrera. Three entities, earlier notes
-            conflated them.
-          </li>
-          <li>
-            Baraza TV: the drafted email states something unconfirmed. Baraza Media Lab is a different
-            organisation. Ask Aziz directly.
-          </li>
-          <li>HOPE vs InSync vs the &quot;JBS RG&quot; credit. Confirm the real project and creator.</li>
-          <li>
-            {UNCAPTURED_S7} of the 36 Season 7 projects were never captured in the live render. Kismet Casa
-            ranks number 2 in the fund and has no notes anywhere.
-          </li>
-        </ul>
-      </section>
 
       <footer className="mt-10 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/40">
         Compiled {SNAPSHOT} from research/843 (Season 6 roster), research/851 (Season 7 roster),
