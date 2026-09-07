@@ -119,7 +119,7 @@ Live at **https://zaoartizen.vercel.app**
 | `kit/fund-targets-and-directors.md` | Fund targets + director contact map |
 | `kit/outreach-drafts.md` | René/Nate DMs, cross-curation requests, member rally copy |
 | `kit/submission-template.md` | Project submission template + artifact specs |
-| `kit/artifact-briefs.md` | Square GIF/video brief for WaveWarZ, SongJam, COC, Thy Revolution |
+| `kit/artifact-briefs.md` | Square GIF/video brief for WaveWarZ, COC, Thy Revolution |
 | `kit/sponsor-onepager.md` | Sponsor pitch (ZAO Festivals Fund match pool) |
 | `kit/daily-spotlights.md` | 32-post daily spotlight series (projects from ZAO Fund) |
 | `kit/launch-posts.md` | Share copy for hub + festivals umbrella (multi-platform) |
@@ -164,7 +164,7 @@ Live at **https://zaoartizen.vercel.app**
 
 - **Prove the bootstrap thesis** - log 3-6 months of proof metrics (match deployed, distinct buyers, community participation) for an Accelerator pitch to René.
 - **ZAO Festivals Fund** (later, bigger step) - only if ZAO wants to host other organizers under it. Proposal in `app/proposal/page.tsx`.
-- **Cross-fund stacking** - replicate the ZAO stack model (WaveWarZ, SongJam, ZAOstock, Thy Revolution in Global Music + Bonfires + We're Loud + Greenpill + ZAO Emerging Culture).
+- **Cross-fund stacking** - replicate the ZAO stack model (WaveWarZ, ZAOstock, Thy Revolution in Global Music + Bonfires + We're Loud + Greenpill + ZAO Emerging Culture).
 
 ---
 
@@ -195,7 +195,7 @@ The winning Artifact formula: square, video/GIF, no text. Proof: doc 887.
 The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curated, ~$188 pool). Strategy:
 
 1. **Curate into existing funds, don't rush to build a second one** - The "music white space" is gone (We're Loud, Global Music, Greenpill already fund music events, and six ZAO music projects are in Global Music).
-2. **Run the whole portfolio as creators** - WaveWarZ, SongJam, ZAOstock, Zaoville, Thy Revolution, ZABAL Games cohort each submit as projects.
+2. **Run the whole portfolio as creators** - WaveWarZ, ZAOstock, Zaoville, Thy Revolution, ZABAL Gamez cohort each submit as projects.
 3. **Stack across funds** - each project curates into 3-5 funds (see fund directory). Put ZOE/Hermes in the **Bonfires Fund** (our knowledge-graph partner).
 4. **Activate the ZAO Fund** - it is active but needs community engagement to deploy match.
 5. **Show up** - Console, Artizen LIVE, IRL events (DWeb Camp Village, Berlin Jul 8-12), relationships (René, Bonfires, Edge City).

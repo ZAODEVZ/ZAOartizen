@@ -53,7 +53,11 @@ corrects the earlier "most sales wins" framing.)
 ## Working conventions
 
 - Never use emojis or em dashes. Plain hyphens, text labels.
-- Brand spellings are exact: The ZAO, WaveWarZ, ZABAL, ZAOstock, COC Concertz, SongJam, Thy Revolution.
+- Brand spellings are exact: The ZAO, WaveWarZ, ZABAL, ZAOstock, COC Concertz, Thy Revolution.
+- RETIRED 2026-07-31, do not write into new material: **Magnetiq** and **SongJam** (and SANG, which
+  was only SongJam's token). The ZAO no longer works with them. Existing research docs keep the
+  names so old work stays readable; nothing new should cite them as a partner, portfolio project
+  or sponsor target.
 - Artizen facts move daily mid-drive. It is a Bubble.io app - curl/exa return empty shells; render
   with a headless browser to read live fund rosters/standings. Re-verify any number before quoting.
 - Money mechanic (keep accurate): collecting a project's $10 Artifact unlocks $1 of match from each
