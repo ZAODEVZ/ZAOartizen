@@ -45,7 +45,7 @@ crowd that already exists.
 ## How to FILL the match pool (recruit sponsors)
 
 - Start with the $50K Artizen seed (community-fund program) + a ZAO-treasury Founding Sponsor stake.
-- Recruit brand sponsors: music/event brands (Restream, Magnetiq, labels, festival-infra), Web3 orgs
+- Recruit brand sponsors: music/event brands (Restream, labels, festival-infra), Web3 orgs
   wanting cultural credibility. Pitch: "your dollars become community-directed match; you don't pick
   winners, the crowd does" (kit/sponsor-onepager.md).
 - 100% of sponsor dollars go to the fund (10% top-project prize, 90% even match); Artizen takes 0%.
