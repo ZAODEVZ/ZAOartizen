@@ -39,7 +39,7 @@ Built after the "Levitt grant" slip (I cited a doc recommendation as a real gran
   discovery. Pitch it as "the ZAO music community brings its artists to a real Maine stage." Makes the
   artists-as-Artifacts synergy stronger.
 - **[CONFIRMED from repo] Sat Oct 3, 2026, Franklin St Parklet, downtown Ellsworth. Free, outdoor, all-day.**
-  27-person team, 8 circles, production w/ ENTERACT. ("501(c)(3) via Fractured Atlas" removed 2026-09-10 -
+  27-person team, 8 circles. ("501(c)(3) via Fractured Atlas" removed 2026-09-10 -
   Fractured Atlas is out and there is NO fiscal sponsor for 2026.) Targets 200-400 in person /
   1K+ livestream.
 
