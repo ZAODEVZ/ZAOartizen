@@ -100,16 +100,38 @@ function main() {
   console.log('\nParsed (from the ZAO Fund drive card):');
   for (const [k, v] of Object.entries(found)) console.log(`  ${k}: ${v ?? '(not found)'}`);
   console.log('\nNot written: `totalUsd` (lifetime "Total" - not verified to equal poolUsd), `boosts`, `bonusUsd`,');
-  console.log('`inCuration`, `endsIn`. Printed so a human can carry them into kit/standings-tracker.md.');
+  console.log('`inCuration` (= submitted + removed, NOT curated), `endsIn`. Printed so a human can carry them into kit/standings-tracker.md.');
 
   if (!WRITE) {
     console.log('\nDry run. Re-run with --write to update app/dashboard/data.ts.');
     process.exit(0);
   }
 
-  // Non-destructive update: only replace fields we confidently parsed.
-  let src = readFileSync(DATA_FILE, 'utf8');
   const now = new Date();
+  const updated = applyToDataFile(found, readFileSync(DATA_FILE, 'utf8'), now);
+  if (updated === null) {
+    console.error('`export const fundStats` not found in', DATA_FILE, '- not writing.');
+    process.exit(1);
+  }
+  writeFileSync(DATA_FILE, updated);
+  const today = now.toISOString().slice(0, 10);
+  const nowIso = `${now.toISOString().slice(0, 19)}Z`;
+  if (found.rank === null) console.log('\nRANK is "-" (no activity yet this drive) - rank, prize and raised set to null (TBD).');
+  console.log('\nUpdated', DATA_FILE, `(lastUpdated ${today}, scrapedAt ${nowIso}).`);
+  console.log('Review the diff, then: npx next build && npx vercel --prod --yes');
+}
+
+// Exported for testing: apply parsed fields to the text of app/dashboard/data.ts and return the new
+// text, or null if the fundStats object is missing. Pure - no file or network access.
+export function applyToDataFile(found, whole, now = new Date()) {
+  // Non-destructive update: only replace fields we confidently parsed.
+  // Every replacement is confined to the `fundStats` object literal. The interface above it declares
+  // the same keys, and a comment containing a comma there once let the regex rewrite the TYPE
+  // instead of the value (caught 2026-09-10 on scoreLabel).
+  const anchor = whole.indexOf('export const fundStats');
+  if (anchor === -1) return null;
+  const head = whole.slice(0, anchor);
+  let src = whole.slice(anchor);
   const today = now.toISOString().slice(0, 10);
   // Whole-second ISO instant - the site's "Data as of" stamp reads this to flag data over 48h old.
   const nowIso = `${now.toISOString().slice(0, 19)}Z`;
@@ -124,7 +146,7 @@ function main() {
     if (re.test(src)) src = src.replace(re, '$1null$3');
   };
   // RANK "-" means the fund has no activity yet this drive: RAISED and PRIZE read 0 because the
-  // drive just opened, not because nothing was ever deployed. Keep the last drive's numbers then.
+  // drive just opened, not because nothing was ever deployed.
   const driveActive = found.rank !== null;
   if (driveActive) {
     repl('rank', found.rank);
@@ -134,7 +156,6 @@ function main() {
     // Do NOT keep the old numbers: scrapedAt below would then vouch for values from an earlier
     // drive. Null renders as "TBD" on the page, which is the true state until the fund ranks.
     for (const key of ['rank', 'prizeUsd', 'matchDeployedUsd']) setNull(key);
-    console.log('\nRANK is "-" (no activity yet this drive) - rank, prize and raised set to null (TBD).');
   }
   // Fields this scraper cannot vouch for must not sit under a fresh scrapedAt:
   // scoreLabel - Artizen retired the score when rank became money raised (Playbook v21).
@@ -143,14 +164,15 @@ function main() {
   setNull('poolUsd');
   if (found.endsIn) repl('driveDeadline', `${found.endsIn.toLowerCase()} (read ${today})`);
   repl('matchRemainingUsd', found.availableUsd); // "AVAILABLE" on the fund's drive card
+  // "Competition" is the curated roster. "Curation" is NOT: its tab lists submissions awaiting a
+  // decision plus removed projects (measured 2026-09-10: 41 = 8 Submitted + 33 Removed, 0 curated).
+  // Playbook v34 says the same of the Curation count. So projectsCurated takes Competition.
   repl('projectsCurated', found.inCompetition);
   repl('activeDrive', found.activeDrive);
   repl('lastUpdated', today);
   repl('scrapedAt', nowIso);
   src = src.replace(/(\n\s*updatedBy:\s*)'[^']*'/, `$1'auto-refresh'`);
-  writeFileSync(DATA_FILE, src);
-  console.log('\nUpdated', DATA_FILE, `(lastUpdated ${today}, scrapedAt ${nowIso}).`);
-  console.log('Review the diff, then: npx next build && npx vercel --prod --yes');
+  return head + src;
 }
 
 // Exported shape for testing: parseFundPage(text) -> fields, or null if the anchor is missing.

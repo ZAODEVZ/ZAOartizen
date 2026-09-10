@@ -57,13 +57,13 @@ export const fundStats: FundStats = {
   poolUsd: null,
   matchDeployedUsd: null, // "RAISED" on Artizen
   matchRemainingUsd: 1236, // "AVAILABLE" on Artizen
-  projectsCurated: 18, // confirm from the logged-in curator view
+  projectsCurated: 19, // the fund page's "Competition" count = curated projects. NOT its "Curation" count, which is submitted + removed (41 = 8 + 33 on 2026-09-10)
   signupsDriven: null,
   activeDrive: 'Limitless Fund Drive',
   driveMultiplier: null, // confirm current multiplier
   driveDeadline: 'ends in 6 days (read 2026-09-10)',
   lastUpdated: '2026-09-10',
-  scrapedAt: '2026-09-10T19:16:44Z',
+  scrapedAt: '2026-09-10T20:15:00Z',
   updatedBy: 'auto-refresh',
 };
 

@@ -12,7 +12,8 @@ two of the figures below changed inside 24 hours (boosts 23 -> 29, bonus $664.95
 > Fund Drive card for the fund race (RANK, PRIZE, BOOSTS, BONUS, drive name, RAISED, AVAILABLE, plus the
 > lifetime Total and the Competition/Curation counts). So fund rank IS measurable again, whenever the fund
 > has activity in the current drive. At a drive's open it reads `RANK -`, and the scraper writes TBD, not
-> an old number. Dry run: `node scripts/refresh-fund.mjs`. Everything below this line is the 2026-09-08
+> an old number. **"Projects curated" is the page's Competition count; the Curation count is submitted
+> plus removed projects, not curated ones** (41 = 8 + 33 on 2026-09-10). Dry run: `node scripts/refresh-fund.mjs`. Everything below this line is the 2026-09-08
 > diagnosis, kept as history.
 >
 > **`scripts/refresh-fund.mjs` IS BROKEN AND DID NOT PRODUCE THIS UPDATE. Read this before running it.**
@@ -36,7 +37,7 @@ two of the figures below changed inside 24 hours (boosts 23 -> 29, bonus $664.95
 | Fund total | **`$20,563`** |
 | Match DEPLOYED so far | **`$0` raised this drive** <- the KPI, and it is zero |
 | Match remaining (undeployed) | **`$2,561`** |
-| Projects curated in | **`40`** (was 36 in July). `18` in competition this drive |
+| Projects curated in | **`19`** - the fund page's **Competition** count (live 2026-09-10 16:15 EDT; the scraper read 18 an hour earlier). **CORRECTED 2026-09-10: this row said `40`, which was the Curation count - that tab lists 8 submissions awaiting a decision plus 33 removed projects, not curated ones.** |
 | Boosts received (fund-level) | **`29`** - was 23 on 09-07. Near zero either way |
 | Bonus (estimated) | **`$688.42`** - was $664.95 on 09-07 |
 | Active drive + multiplier | **Resonance Fund Drive, `3x` match** |
