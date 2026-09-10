@@ -5,9 +5,11 @@
   "description": "The ZAO on Artizen - the ZAO Fund for Emerging Culture hub.",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-retired-names.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:names": "node scripts/check-retired-names.mjs"
   },
   "dependencies": {
     "next": "16.2.9",
