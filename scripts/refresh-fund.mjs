@@ -23,6 +23,20 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
 
+// BROKEN 2026-09-08 - READ THIS BEFORE TRUSTING THIS SCRIPT.
+// Artizen moved the leaderboard. `index/matchfunds` now 302s to `index/leaderboard/?season=7`,
+// so the URL guard below correctly aborts with "URL mismatch after goto". THE GUARD IS RIGHT -
+// do not remove it to make the script "work"; it is what stops a silent wrong answer.
+//
+// The deeper problem is that the destination is the PROJECT leaderboard, one row per project.
+// `?tab=funds`, `index/funds` and `index/matchfunds/?season=7` all redirect to the same project
+// view, and "ZAO Fund" appears on none of them. The fund-vs-fund leaderboard this script parses
+// could not be found at all on 2026-09-08, so fund rank/score may simply not be published any
+// more. Fixing the URL is not enough - find the fund leaderboard first, or retire the rank field.
+//
+// Until then kit/standings-tracker.md is maintained by hand off the fund's own page, which does
+// carry total, match remaining, boosts, bonus, curation count and the project roster.
+// RE-CHECK BY: 2026-10-01, or whenever Artizen next changes its URLs.
 const LEADERBOARD_URL = 'https://artizen.fund/index/matchfunds';
 const FUND_NAME = 'ZAO Fund for Emerging Culture';
 const DATA_FILE = new URL('../app/dashboard/data.ts', import.meta.url).pathname;
