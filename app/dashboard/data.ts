@@ -4,7 +4,7 @@
 
 export interface FundStats {
   rank: number | null; // rank among all Artizen funds
-  scoreLabel: string | null; // the fund's SCORE as shown on Artizen
+  scoreLabel: string | null; // RETIRED - Artizen dropped the score when rank became money raised (Playbook v21, 2026-08-21). Unused; kept null.
   prizeUsd: number | null; // current prize for the fund's top project
   poolUsd: number | null; // total deposited into the fund
   matchDeployedUsd: number | null; // THE KPI - match actually unlocked by sales (the "raised" figure)
