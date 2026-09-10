@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "check:names": "node scripts/check-retired-names.mjs"
+    "check:names": "node scripts/check-retired-names.mjs",
+    "check:playbook": "node scripts/playbook-changelog.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

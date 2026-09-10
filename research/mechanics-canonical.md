@@ -24,6 +24,10 @@ section content in `playbook_content`, and a **dated changelog in `playbook_vers
 edit, with a one-line summary). Rendering the page in a headless browser shows the same text. The
 changelog is the fastest check: read the newest versions and see whether anything below moved.
 
+**One command:** `npm run check:playbook` (or `node scripts/playbook-changelog.mjs 15` for the newest 15).
+It reads the public key from the live page bundle at run time and prints version, date and summary.
+If the newest version is above 34, something below may be stale.
+
 ## How to read this
 
 | Tag | Meaning |
