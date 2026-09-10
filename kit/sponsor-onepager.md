@@ -11,13 +11,13 @@ music festivals, concerts, pop-up shows, residencies, and cultural activations. 
 the Web3 match-funding platform that has awarded $2.3M+ to creators.
 
 As a sponsor, your dollars become a **match pool**: every $1 a festival raises from its own fans
-unlocks $1 from your sponsorship, paid straight to the creator. You don't pick winners - the
+unlocks match from your sponsorship, at a weekly match rate Artizen sets, paid straight to the creator. You don't pick winners - the
 community does, by showing up and buying. Your money goes where real support already is.
 
 ## Why it works
 
-- **1:1 match, community-directed.** No grant committee. Fans vote with collections; you amplify them.
-- **0% platform fee.** 100% of artifact sales go to creators; 100% of your sponsorship goes to the fund (10% to the top project as a prize, 90% split as match).
+- **Matched, community-directed.** No grant committee. Fans vote with collections; you amplify them.
+- **Where the money goes.** Artists keep their full $10 per artifact; Artizen adds a 10% fee on top at checkout, for both artifacts and sponsorships. Of your sponsorship, 80% goes into the fund's match pool and 20% to the fund director (Artizen's published rule, Playbook v3).
 - **Real distribution.** The ZAO is a 188-member, 4-year music + culture community that actually turns out to back its people.
 - **The open lane.** No other Artizen fund owns music + artist-led IRL festivals. You're sponsoring the category leader on day one.
 

@@ -58,8 +58,8 @@ export default function DashboardPage() {
             ZAO Fund for Emerging Culture
           </a>
           . We measure match <strong>deployed</strong> (not deposited) and the crowd we move - the proof we
-          bring to Rene. Win = Boost Score = (sales + match) x boost points / 100 - boosts multiply dollars, so
-          rally both buys and Boosts.
+          bring to Rene. Rank = money raised (sales + match unlocked); boosts win a share of the weekly Boost
+          Bonus pot - so rally both buys and Boosts.
         </p>
         <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-2">
           Edit <code className="text-white/60">app/dashboard/data.ts</code> to update.
@@ -74,8 +74,8 @@ export default function DashboardPage() {
             {fundStats.driveDeadline ? ` (${fundStats.driveDeadline})` : ''}
           </div>
           <p className="mt-1 text-sm text-white/70">
-            This is the live lever. Every $10 the crew buys on a curated project unlocks $1-for-$1 from this
-            pool before the drive closes. Pick one horse, rally everyone, deploy the match. See{' '}
+            This is the live lever. Every $10 the crew buys on a curated project unlocks match from this pool,
+            at that week&apos;s Match Multiple, before the drive closes. Pick one horse, rally everyone, deploy the match. See{' '}
             <a href="/leaderboard" className="text-[#f5a623] underline">
               the field
             </a>{' '}
@@ -209,7 +209,7 @@ export default function DashboardPage() {
           Cross-back targets
         </h2>
         <p className="mb-3 text-sm text-white/60">
-          Get our projects curated into these funds too - each one adds another $1-for-$1 match stream on every
+          Get our projects curated into these funds too - each one adds its own slice of match to every
           Artifact sale (stacking). Pools from research; re-check live.
         </p>
         <div className="overflow-x-auto rounded-xl border border-white/10">

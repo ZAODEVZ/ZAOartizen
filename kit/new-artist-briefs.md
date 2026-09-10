@@ -5,8 +5,9 @@ Submission-ready Artizen briefs for the artists coming into the ZAO Fund this ro
 `[confirm]` - do not publish those until the artist signs off.
 
 **Artifact spec (all):** square 1:1, min 1000x1000px, NO text overlay, video/GIF performs best. $10
-open-edition, 0% fees, 100% to the creator, ETH wallet for payout. Rank = Boost Score = (sales + match) x
-boost points / 100 (official playbook), so the brief's job is to make a fan want to BOTH buy + boost + share.
+open-edition, 0% fees, 100% to the creator, ETH wallet for payout. Rank = money raised
+(sales + match), and boosts win a share of the weekly Boost Bonus pot (live Playbook v34, see
+`research/mechanics-canonical.md`), so the brief's job is to make a fan want to BOTH buy + boost + share.
 
 ---
 

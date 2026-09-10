@@ -1,5 +1,6 @@
 // Season 6 leaderboard - snapshot scraped from artizen.fund 2026-06-21 (Flourish Fund Drive).
-// "Sales" = dollar value of Artifacts sold (the rank metric: most sales wins). Numbers move daily.
+// "Sales" = dollar value of Artifacts sold. Numbers move daily. Rank today is money raised (sales + match);
+// see research/mechanics-canonical.md section 1.
 // zaoTie marks projects connected to the ZAO Fund / ecosystem.
 
 export interface LeaderRow {

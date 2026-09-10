@@ -3,7 +3,7 @@
 The front door for anyone helping with the ZAO's Artizen effort. Read this first, then go to the kit
 (`kit/`) for copy-paste tools and `research/` for the deep dives.
 
-Updated 2026-08-30.
+Updated 2026-09-10 (win condition corrected to the live Playbook v34).
 
 > **Mechanics live in one file.** Formulas, match ratios, season dates, prize rules and every
 > open question about them: [`research/mechanics-canonical.md`](research/mechanics-canonical.md).
@@ -27,14 +27,15 @@ mix them up:
 - **Fund** - the money pool. Sponsors deposit; it unlocks as curated Projects sell Artifacts.
 
 The money, in one line: a fan's Artifact spend unlocks match from EACH Fund backing that Project, so match
-stacks across Funds. Exact ratio, the Endowment's cut, and the 90/10 match-vs-prize split:
-[`research/mechanics-canonical.md`](research/mechanics-canonical.md) section 2.
+stacks across Funds. How much match a dollar unlocks (the weekly Match Multiple), how a Fund's slice is
+sized, and the fees: [`research/mechanics-canonical.md`](research/mechanics-canonical.md) section 2.
 
-**How you WIN:** rank is the **Boost Score**, and it is MULTIPLICATIVE - boosts multiply your dollars, so you
-need BOTH. The playbook's own example: a project that sold the most dollars finished LAST because it had
-almost no boosts; a project with fewer dollars but a boost-rich crowd took #1. So rally your people to do
-TWO free-or-cheap things: **buy $10 Artifacts AND cast Boosts** (boosting is free). The formula, what feeds
-boost points, and what is still unverified: canonical file section 1 and section 4.
+**How you WIN (changed 2026-08-21):** rank is **money raised - sales plus the match those sales unlock** -
+and prizes follow rank. Boosts no longer multiply rank; they win a share of a **separate weekly Boost Bonus
+pot**. So rally your people to do TWO things, for two different payouts: **buy $10 Artifacts** (that moves
+rank, the prize and the match) AND **cast Boosts** (that moves the Boost Bonus share). The retired
+multiplicative formula, what feeds Boost Points, and what is still unverified: canonical file sections 1
+and 4.
 
 **Winning Artifact spec:** canonical file section 10.
 
@@ -52,8 +53,8 @@ intros up front, earn the conversation.
    COC Concertz, PolyRaiders, WaveWarZ Zambia. Help each mint a winning Artifact (square, video, no text).
    Submit each to every other fitting Fund too (We're Loud, Global Music, Greenpill) so match stacks.
 3. **Run the bootstrap motion.** Each drive, pick ONE project to push for the prize. Aim the whole crew at
-   both levers - buys AND boosts, since the prize goes to the top Boost Score, not the top seller. Climb the
-   leaderboard. Document it.
+   both levers - buys for rank and the prize (rank is money raised), boosts for the Boost Bonus share.
+   Climb the leaderboard. Document it.
 4. **Build the proof.** Track what Rene actually cares about (below).
 
 ### The proof metrics that matter

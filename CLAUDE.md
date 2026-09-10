@@ -34,9 +34,10 @@ does what. The front door for humans and agents.
 
 ## How we win
 
-Rank = **Boost Score**, and it is multiplicative - boosts multiply dollars, you need BOTH. A project that
-sells the most dollars but gets few boosts LOSES (the playbook's own example). So the lever is the crowd
-doing two things: buy $10 Artifacts AND cast Boosts (free).
+Rank = **money raised: sales + match unlocked**, and prizes follow rank. Boosts no longer multiply
+rank - they win a share of a **separate weekly Boost Bonus pot**. (Live Playbook v21 onward, 2026-08-21;
+the old multiplicative `Boost Score` formula is retired.) So the crowd still does two things, for two
+different payouts: **buy $10 Artifacts** (rank, prize, match) AND **cast Boosts** (the Boost Bonus share).
 
 **The formula, the match ratio, season rules, prize rules and every open question about them live in
 one file: `research/mechanics-canonical.md`.** Do not restate mechanics here or in any other doc - link
@@ -60,12 +61,13 @@ register of what this repo cannot confirm.
   was only SongJam's token). The ZAO no longer works with them. Existing research docs keep the
   names so old work stays readable; nothing new should cite them as a partner, portfolio project
   or sponsor target.
-- Artizen facts move daily mid-drive. It is a Bubble.io app - curl/exa return empty shells; render
-  with a headless browser to read live fund rosters/standings. Re-verify any number before quoting.
-- Money mechanic: collecting a project's Artifact unlocks match from each fund backing it, so supporting
-  a project and supporting the fund are the same action. The exact ratio is DISPUTED between this repo's
-  docs - see conflict M1 in `research/mechanics-canonical.md`. Verify at play.artizen.fund before
-  quoting a number to anyone.
+- Artizen facts move daily mid-drive. artizen.fund is a Bubble.io app - curl/exa return empty shells;
+  render with a headless browser to read live fund rosters/standings. Re-verify any number before
+  quoting. The Playbook (play.artizen.fund) is NOT Bubble - its text and a dated changelog are readable;
+  see "How to re-verify" in `research/mechanics-canonical.md`.
+- Money mechanic: collecting a project's Artifact unlocks match from the Endowment and from each fund
+  backing it, at that week's Match Multiple (set by Artizen, changes weekly), up to the project's cap.
+  So supporting a project and supporting the fund are the same action. Never hardcode a multiple.
 - Human-only actions (sending DMs, submitting projects, Console, buying artifacts, IRL) are the
   operator's - the repo gives the copy + the plan.
 
@@ -93,4 +95,6 @@ Read that file before quoting any of them. What follows is ZAO-specific context 
   Feb 2026) or GitHub. No official Artizen MCP server or agent API exists; `play.artizen.fund` (the
   Playbook) is Artizen's own recommended machine-readable source.
 - Contacts: René Pinnell (@RJPinnell), Nate Van Cleve (Head of Product). News: news.artizen.fund (dormant).
-  Live channel: the private fund-director Telegram ("Artizen ✨").
+  Live channel: was the private fund-director Telegram ("Artizen"). **Artizen closed its Telegram group
+  on 2026-09-01 and moved the community chat into the Grow app** (Playbook v29) - whether that was the
+  same group is unconfirmed; see `research/mechanics-canonical.md` section 8.

@@ -34,11 +34,11 @@ export default function RallyPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-bold sm:text-4xl">Rally for our artists</h1>
         <p className="mt-2 text-white/60">
-          3 minutes. Every $10 you spend gets matched $1-for-$1 from the{' '}
+          3 minutes. Every $10 you spend unlocks extra match from the{' '}
           <a href={FUND_URL} className="text-[#f5a623] underline">
             ZAO Fund
           </a>
-          . Rank = (sales + match) x boosts, so buying AND boosting both count. We win by showing up together.
+          . Buying lifts the rank (money raised) and boosting wins a share of the weekly Boost Bonus, so both count. We win by showing up together.
         </p>
       </header>
 

@@ -16,6 +16,11 @@
 >
 > **The email copy and the collection method below are still good.** It is the numbers that rotted.
 >
+> **Mechanics corrected 2026-09-10.** Two lines below used to say boosts multiply dollars and that a
+> $10 Artifact unlocks $1 of match per fund. Both were wrong against the live Playbook v34: rank is
+> money raised (sales + match), boosts win a separate Boost Bonus pot, and match runs at a weekly
+> Match Multiple. Fixed in place; source `research/mechanics-canonical.md`.
+>
 > **Also still true and easy to get wrong:** do **not** send this as a mass BCC. Grow pays Boost
 > Points per contact and per *verified* conversation with Venus CC'd, so individual sends earn and
 > one blast earns nothing. Card `84098316` is worded "send a mass email"; the wording is wrong.
@@ -62,8 +67,8 @@ routes, and the order matters:
 
 1. **Load every one of these into the Grow CRM first** (`grow.artizen.fund`). Verbatim from the app:
    *"Every contact you add to your CRM earns points. The more complete the profile, the more you earn."*
-   Boost Points multiply dollars in the Boost Score formula, so this is free score for admin you were
-   going to do anyway. (Doc 852.)
+   Boost Points buy your projects a bigger share of the weekly Boost Bonus pot, so this is free bonus
+   money for admin you were going to do anyway. (Doc 852.)
 2. **Send through Grow's Venus-assisted outreach flow, CC'ing Venus** - *"Email a sponsor prospect about
    your fund, CC [Venus], and every verified conversation earns Boost Points."* Per verified
    conversation. Fifteen individually-sent, CC'd emails earn; one BCC blast earns nothing.
@@ -103,9 +108,10 @@ Subject: **The ZAO Fund - one call, 45 minutes, Wednesday**
 >
 > - Everyone knows who else is in the fund and what they're building. There are 15 projects in here and
 >   the overlap is real - the music ones alone could be cross-promoting each other and aren't.
-> - The mechanics, plainly. Collecting a $10 Artifact unlocks $1 of match from every fund backing that
->   project, so it stacks - and boosts multiply the whole thing and cost nothing. Most people are
->   leaving half of that on the floor because nobody explained the second half.
+> - The mechanics, plainly. Collecting a $10 Artifact unlocks match from the Endowment and from every
+>   fund backing that project, at that week's match multiple, so it stacks - and your rank is simply the
+>   money you raise. Boosts are the second half: they win a share of a separate weekly bonus pot. Most
+>   people are leaving that half on the floor because nobody explained it.
 > - Which other funds each of you should be submitting to. I've been mapping the board and there are
 >   funds that would obviously back your work that you're not in.
 >
