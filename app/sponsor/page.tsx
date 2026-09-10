@@ -1,8 +1,11 @@
 import type { Metadata } from 'next';
 
-// /sponsor - the sponsor/donor-facing page. Explains what the ZAO Fund backs, the two giving rails
-// (tax-deductible 501c3 OR matched Artizen sponsorship - one or the other, per Rene 2026-06-22),
-// what a gift does, recognition, and how to give. Provenance: research/synergies + doc 887.
+// /sponsor - the sponsor-facing page. Explains what the ZAO Fund backs, how a sponsorship works,
+// recognition, and how to give. Provenance: research/synergies + doc 887.
+//
+// NO TAX-DEDUCTIBLE CLAIMS, ANYWHERE. Until 2026-09-10 this page offered a "tax-deductible" rail via a
+// 501(c)(3) partner (Fractured Atlas). There is no fiscal sponsor: Zaal dropped the 501c3 route for
+// 2026 on 2026-09-07 - sponsorship only. Do not re-add a tax claim unless a fiscal sponsor is signed.
 
 const FUND_URL = 'https://artizen.thezao.com/';
 const CONTACT = 'mailto:zaal@thezao.com?subject=Sponsoring%20the%20ZAO%20Fund';
@@ -10,7 +13,7 @@ const CONTACT = 'mailto:zaal@thezao.com?subject=Sponsoring%20the%20ZAO%20Fund';
 export const metadata: Metadata = {
   title: 'Sponsor the ZAO Fund - back emerging culture',
   description:
-    'Back independent artists through the ZAO Fund for Emerging Culture on Artizen. Two ways to give: tax-deductible, or matched with top billing.',
+    'Back independent artists through the ZAO Fund for Emerging Culture on Artizen. Your sponsorship is matched, and it earns top billing.',
 };
 
 interface Rail {
@@ -22,16 +25,16 @@ interface Rail {
 
 const RAILS: Rail[] = [
   {
-    tag: 'Rail A',
-    title: 'Tax-deductible',
-    body: 'Give through our 501(c)(3) partner (Fractured Atlas / New Media Commons). A standard charitable donation with a tax receipt.',
-    best: 'Best if the write-off matters most - foundations, businesses, larger gifts.',
-  },
-  {
-    tag: 'Rail B',
+    tag: 'How it works',
     title: 'Matched + top billing',
     body: 'Sponsor the ZAO Fund on Artizen. Your gift unlocks matching funds from the platform endowment and deepens the pool behind every artist we back - and the top contributor is featured as Presenting Sponsor on the fund.',
     best: 'Best if amplified impact + brand visibility matter most.',
+  },
+  {
+    tag: 'Good to know',
+    title: 'Not a charitable donation',
+    body: 'The ZAO has no 501(c)(3) or fiscal sponsor in 2026, so a sponsorship is not tax-deductible and comes with no tax receipt. It is a sponsorship with real brand placement.',
+    best: 'Ask your own accountant how a sponsorship applies to you.',
   },
 ];
 
@@ -43,7 +46,7 @@ interface Fact {
 const FACTS: Fact[] = [
   { k: '100%', v: 'of every Artifact sale goes to the creator' },
   { k: '0%', v: 'platform fee taken from creators' },
-  { k: '$1 : $1+', v: 'every dollar raised unlocks matching funds' },
+  { k: 'Matched', v: 'every dollar raised unlocks matching funds, at a rate Artizen sets each week' },
   { k: '$10', v: 'the price of an Artifact - anyone can back an artist' },
 ];
 
@@ -134,7 +137,6 @@ export default function SponsorPage() {
           {[
             'The ZAO - a 4-year independent music community',
             '27-person team + local crew building ZAOstock 2026',
-            '501(c)(3)-backed (Fractured Atlas / New Media Commons)',
             'Track record: prior festivals in NYC + Miami',
           ].map((c) => (
             <div key={c} className="flex gap-2 rounded-lg border border-white/10 bg-white/5 p-3 text-sm text-white/70">

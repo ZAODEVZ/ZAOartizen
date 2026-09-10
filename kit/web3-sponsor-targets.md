@@ -26,7 +26,6 @@ IRL activation, and **streaming/livestream**.
 
 ## Tier 3 - warm ZAO-ecosystem (lowest $, highest yes-rate)
 
-- **Web3Metal (Shawn)** - already ZAOstock's first official partner (time, not cash today).
 - **Empire Builder (Jordan)**, **deez/Clanker-world**, the **ZAO bloc** - partners who'd co-promote.
 
 ## Honest calibration (so we don't oversell)

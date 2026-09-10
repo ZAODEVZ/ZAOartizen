@@ -28,18 +28,17 @@ What are you making? (max 250):
 ZAOstock 2026 is a free, one-day, artist-built music festival in downtown Ellsworth, Maine on Saturday October 3 - independent artists on one stage, free to listen from the sidewalk in the town every Acadia visitor drives through. Built by The ZAO and the local crew.
 
 How will it impact the world? (max 250):
-We turn festivals into community-owned culture: artists paid fairly, the crowd that funds it standing in it, and a digital music community throwing a real small-town Maine festival. Free to attend, 501(c)(3)-backed, and a repeatable model other organizers can run.
+We turn festivals into community-owned culture: artists paid fairly, the crowd that funds it standing in it, and a digital music community throwing a real small-town Maine festival. Free to attend, and a repeatable model other organizers can run.
 
 What progress have you made? (max 250):
-Locked: Sat Oct 3 2026, downtown Ellsworth. 27 teammates plus 100+ ZAO community and a local crew across 8 working circles. 501(c)(3) fiscal sponsorship via Fractured Atlas / New Media Commons. 5 confirmed local partners and an open-call lineup in motion. Lineage: prior festivals in NYC + Miami.
+Locked: Sat Oct 3 2026, downtown Ellsworth. 27 teammates plus 100+ ZAO community and a local crew across 8 working circles. 5 confirmed local partners and an open-call lineup in motion. Lineage: prior festivals in NYC + Miami.
 
 Why are you the right person? (max 250):
 Zaal directs The ZAO and runs the ZAO Fund for Emerging Culture on Artizen. Four years building a crypto-native music community with a fair-pay artist ethos, plus a 27-person team and Ellsworth locals already building ZAOstock in public.
 ```
 
 **Submission asset advantages to lean on (from the audit):** it is FREE + sidewalk-accessible (gateway to
-Acadia, ~4M annual through-traffic), 501(c)(3) tax-deductible giving (Fractured Atlas / New Media Commons -
-this is also the fiscal-sponsorship path René flagged), a real 27-person team, and a verifiable lineage
+Acadia; the "~4M annual through-traffic" figure is unverified - re-check before quoting), a real 27-person team, and a verifiable lineage
 (prior NYC + Miami festivals). These make the project read as real and de-risked - emphasize them.
 
 ## 2. Reward tiers (offer 3-5; only promise what's deliverable)
