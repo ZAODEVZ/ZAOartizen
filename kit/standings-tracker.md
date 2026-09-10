@@ -8,6 +8,13 @@ quoting (standings move daily).
 **RE-CHECK BY: the next drive close, or before quoting any figure here.** Artizen numbers move mid-drive;
 two of the figures below changed inside 24 hours (boosts 23 -> 29, bonus $664.95 -> $688.42).
 
+> **FIXED 2026-09-10: `scripts/refresh-fund.mjs` now reads the fund's own page.** That page carries a
+> Fund Drive card for the fund race (RANK, PRIZE, BOOSTS, BONUS, drive name, RAISED, AVAILABLE, plus the
+> lifetime Total and the Competition/Curation counts). So fund rank IS measurable again, whenever the fund
+> has activity in the current drive. At a drive's open it reads `RANK -`, and the scraper writes TBD, not
+> an old number. Dry run: `node scripts/refresh-fund.mjs`. Everything below this line is the 2026-09-08
+> diagnosis, kept as history.
+>
 > **`scripts/refresh-fund.mjs` IS BROKEN AND DID NOT PRODUCE THIS UPDATE. Read this before running it.**
 >
 > **Artizen moved the leaderboard.** `index/matchfunds` now 302s to `index/leaderboard/?season=7`, and the

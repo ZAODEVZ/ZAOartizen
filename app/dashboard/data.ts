@@ -48,21 +48,22 @@ export interface ProofEntry {
 
 // --- EDIT BELOW ---
 
-// Live numbers from artizen.thezao.com, confirmed 2026-06-22 (re-check before quoting; they move daily).
+// Written by scripts/refresh-fund.mjs from the fund's own Artizen page (see scrapedAt). Null = TBD: the
+// scraper nulls anything it cannot vouch for rather than leave an older value under a fresh date.
 export const fundStats: FundStats = {
-  rank: 13,
-  scoreLabel: '873.62',
-  prizeUsd: 2432,
-  poolUsd: 10547,
-  matchDeployedUsd: 2432, // "RAISED" on Artizen
-  matchRemainingUsd: 6331, // "AVAILABLE" on Artizen
-  projectsCurated: null, // confirm from the logged-in curator view
+  rank: null,
+  scoreLabel: null,
+  prizeUsd: null,
+  poolUsd: null,
+  matchDeployedUsd: null, // "RAISED" on Artizen
+  matchRemainingUsd: 1236, // "AVAILABLE" on Artizen
+  projectsCurated: 18, // confirm from the logged-in curator view
   signupsDriven: null,
-  activeDrive: 'Flourish Fund Drive',
+  activeDrive: 'Limitless Fund Drive',
   driveMultiplier: null, // confirm current multiplier
-  driveDeadline: 'ends in ~3 days (≈2026-06-25)',
-  lastUpdated: '2026-06-22',
-  scrapedAt: '2026-06-22T00:00:00Z',
+  driveDeadline: 'ends in 6 days (read 2026-09-10)',
+  lastUpdated: '2026-09-10',
+  scrapedAt: '2026-09-10T19:16:44Z',
   updatedBy: 'auto-refresh',
 };
 
