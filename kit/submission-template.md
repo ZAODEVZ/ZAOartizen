@@ -31,7 +31,6 @@ Funds to target: ZAO Fund for Emerging Culture + [ZAO Festivals Fund / Greenpill
 | Project | One-liner draft | Stack into |
 |---|---|---|
 | WaveWarZ | Music meets prediction markets meets gaming - bet on the artists you believe in | ZAO Fund + Funding the Commons |
-| SongJam | Tooling that turns X Spaces into searchable, ownable music sessions | ZAO Fund + Funding the Commons |
 | ZAOstock | A music gathering in Ellsworth, Maine - festival as community prototype | ZAO Festivals Fund + Greenpill + Emerging Culture |
 | Thy Revolution | Music with a justice spine, from the ZAO incubator | ZAO Festivals + Greenpill + Collective Women's |
 

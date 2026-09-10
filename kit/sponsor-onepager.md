@@ -34,7 +34,7 @@ community does, by showing up and buying. Your money goes where real support alr
 ## Who this is for
 
 Music + event brands (streaming, audio, gear, ticketing, merch), labels and artist guilds, and
-Web3 orgs wanting genuine cultural credibility. Target shortlist: Restream, Magnetiq, [label /
+Web3 orgs wanting genuine cultural credibility. Target shortlist: Restream, [label /
 guild partners], [event-infra brands], Protocol Labs / ConsenSys ecosystem (already fund Artizen).
 
 ## The ask
