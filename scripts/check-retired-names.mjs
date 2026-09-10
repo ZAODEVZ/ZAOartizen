@@ -1,10 +1,16 @@
 #!/usr/bin/env node
-// Retired-names guard. Fails the build if a retired partner name reappears anywhere new.
+// Retired-names guard. Fails the build if a name Zaal ruled out reappears anywhere new.
 //
-// Why: Zaal, 2026-07-31 - "no longer working with magnetiq please do not reference it again or
-// songjam". The retirement had to land twice in this repo (PR #29, then PR #33 for the three kit
-// files #29 missed), and the rule itself was once lost from CLAUDE.md. A second manual pass is not a
-// control; this is.
+// Two rulings, both Zaal's:
+// - 2026-07-31, RETIRED: "no longer working with magnetiq please do not reference it again or
+//   songjam" (plus SANG, SongJam's token). Recorded in CLAUDE.md "Retired - do not reference".
+//   The retirement had to land twice in this repo (PR #29, then PR #33 for the three kit files #29
+//   missed), and the rule itself was once lost from CLAUDE.md.
+// - 2026-09-10, NOT PARTNERS: "enteract is not a partner neither is we 3 metal". Recorded in
+//   zao-vault decisions/enteract-and-we3metal-are-not-partners.md, covering ENTERACT, Enteract,
+//   Web3Metal, We3 Metal and We3Metal. PR #37 removed the last two claims ("production w/ ENTERACT",
+//   "Web3Metal - ZAOstock's first official partner"); this stops them coming back.
+// A second manual pass is not a control; this is.
 //
 // How it works: some files keep the names ON PURPOSE - CLAUDE.md states the rule, and research/ plus
 // kit/archive/ keep old work readable. Each of those matching LINES is frozen below as a short hash
@@ -30,10 +36,11 @@ import { fileURLToPath } from 'node:url';
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const SELF = 'scripts/check-retired-names.mjs';
 
-// Magnetiq and SongJam, any case. SANG only in caps as a whole word: it was SongJam's token, and the
-// lowercase word is ordinary English.
-const PATTERN = /magnetiq|songjam|\bSANG\b/i;
-const matches = (line) => /magnetiq|songjam/i.test(line) || /\bSANG\b/.test(line);
+// Magnetiq, SongJam, Enteract, Web3Metal/We3Metal (with or without a space), any case. SANG only in
+// caps as a whole word: it was SongJam's token, and the lowercase word is ordinary English.
+const CASELESS = /magnetiq|songjam|enteract|web3\s?metal\b|we3\s?metal\b/i;
+const PATTERN = new RegExp(`${CASELESS.source}|\\bSANG\\b`, 'i'); // cheap per-file prefilter
+const matches = (line) => CASELESS.test(line) || /\bSANG\b/.test(line);
 
 // path -> hashes of the matching lines allowed (frozen 2026-09-10 at main 2ea6179)
 const FROZEN = {
@@ -104,8 +111,11 @@ for (const file of listFiles()) {
 }
 
 if (problems.length > 0) {
-  console.error('\nRETIRED NAMES FOUND - Magnetiq, SongJam and SANG are retired (Zaal, 2026-07-31).');
-  console.error('Do not cite them as a partner, portfolio project or sponsor target.\n');
+  console.error('\nRULED-OUT NAMES FOUND.');
+  console.error('  Magnetiq, SongJam, SANG - retired (Zaal, 2026-07-31; CLAUDE.md).');
+  console.error('  Enteract, Web3Metal / We3 Metal - not partners (Zaal, 2026-09-10;');
+  console.error('    zao-vault decisions/enteract-and-we3metal-are-not-partners.md).');
+  console.error('Do not cite them as a partner, portfolio project, sponsor target or producer.\n');
   for (const { file, allowed, hits } of problems) {
     console.error(`  ${file}  (${hits.length} unfrozen line(s); ${allowed} frozen for this file)`);
     for (const [n, l] of hits) console.error(`    ${n}: ${l.trim().slice(0, 140)}`);
