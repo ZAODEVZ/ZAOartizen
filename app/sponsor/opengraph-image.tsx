@@ -40,7 +40,7 @@ export default function SponsorOG() {
             wave of culture
           </div>
           <div style={{ display: 'flex', marginTop: 28, fontSize: 32, color: 'rgba(255,255,255,0.72)' }}>
-            Sponsor the ZAO Fund. Two ways to give: tax-deductible, or matched with top billing.
+            Sponsor the ZAO Fund. Matched giving, with top billing.
           </div>
         </div>
         <div

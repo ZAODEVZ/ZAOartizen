@@ -24,11 +24,11 @@ interface QA {
 const FAQ: QA[] = [
   {
     q: 'Is my gift tax-deductible?',
-    a: 'It can be. We offer two separate paths: give through our 501(c)(3) partner for a tax-deductible donation, OR sponsor on Artizen where your gift is matched and you get top billing. Same dollar can only do one - we will point you to the right one for your goals.',
+    a: 'No. The ZAO has no 501(c)(3) or fiscal sponsor in 2026, so there is no tax receipt. A sponsorship on Artizen is matched, and it earns top billing on the fund. Ask your own accountant how a sponsorship applies to you.',
   },
   {
     q: 'Where does my money actually go?',
-    a: 'Into the ZAO Fund as matching funds. When a fan buys a $10 collectible from an artist we back, your match unlocks on top - so you are doubling the artist’s own fundraising, not paying for overhead. Creators keep 100% of their sales; the platform takes 0% from them.',
+    a: 'Into the ZAO Fund. Under Artizen\'s published rules, 80% of a sponsorship goes into the fund\'s match pool and 20% to the fund director. When a fan buys a $10 collectible from an artist we back, your match unlocks on top of their purchase, at a rate Artizen sets each week - so you amplify the artist\'s own fundraising instead of paying for overhead. Creators keep their full $10; Artizen adds its fee at checkout.',
   },
   {
     q: 'What do I get as a sponsor?',
