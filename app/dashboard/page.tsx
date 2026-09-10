@@ -89,7 +89,6 @@ export default function DashboardPage() {
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           <StatCard label="Match deployed" value={usd(fundStats.matchDeployedUsd)} hero />
           <StatCard label="Fund rank" value={fundStats.rank === null ? 'TBD' : `#${fundStats.rank}`} />
-          <StatCard label="Score" value={txt(fundStats.scoreLabel)} />
           <StatCard label="Prize" value={usd(fundStats.prizeUsd)} />
           <StatCard label="Pool (deposited)" value={usd(fundStats.poolUsd)} />
           <StatCard label="Match remaining" value={usd(fundStats.matchRemainingUsd)} />
