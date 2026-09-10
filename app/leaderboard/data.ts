@@ -1,5 +1,6 @@
 // Season 6 leaderboard - snapshot scraped from artizen.fund 2026-06-21 (Flourish Fund Drive).
-// "Sales" = dollar value of Artifacts sold (the rank metric: most sales wins). Numbers move daily.
+// "Sales" = dollar value of Artifacts sold. Numbers move daily. Rank today is money raised (sales + match);
+// see research/mechanics-canonical.md section 1.
 // zaoTie marks projects connected to the ZAO Fund / ecosystem.
 
 export interface LeaderRow {
@@ -13,6 +14,10 @@ export interface LeaderRow {
 }
 
 export const snapshotDate = '2026-06-21';
+
+// ISO 8601 UTC instant of the scrape above - feeds the "Data as of" stamp + stale warning
+// (see app/data-stamp.tsx). Date-only scrapes use T00:00:00Z.
+export const scrapedAt = '2026-06-21T00:00:00Z';
 
 export const leaderboard: LeaderRow[] = [
   { rank: 1, name: 'InfiniteZero Network', creator: 'Abraham Nash', salesUsd: 46021, matchUsd: 502, category: 'AI / Decentralized', zaoTie: 'in ZAO Fund (doc 760)' },

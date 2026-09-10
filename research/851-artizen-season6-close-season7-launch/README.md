@@ -10,6 +10,8 @@ tier: DEEP
 
 # 851 — Artizen: Season 6 Close, Season 7 Launch, and What the Fund-Director Telegram Actually Shows
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](../mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 > **Goal:** Refresh the Artizen research set against current reality (2026-07-13). Six background web-research agents were dispatched first and mostly hit a JS wall (Artizen is a Bubble.io app; scraping/search returns empty shells and a dormant newsletter). The live, current picture came instead from reading the private Artizen fund-director Telegram (Fractalgram client, "Artizen ✨", 266 members) directly - this is now the highest-signal source available, ahead of news.artizen.fund.
 
 ## Key Decisions

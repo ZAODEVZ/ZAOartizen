@@ -17,8 +17,8 @@ export default function CommunityPage() {
         <h1 className="text-3xl font-bold sm:text-4xl">The ZAO bloc on Artizen</h1>
         <p className="mt-3 text-white/70">
           {communityProjects.length} projects run by ZAO members - people who have shown up for The ZAO. Back
-          the whole set: a project&apos;s rank = (sales + match) x boost points, so the move is to
-          <strong> buy a $10 Artifact AND boost</strong> (boosting is free). When we back each other, the whole
+          the whole set: a project&apos;s rank is the money it raises (sales + match), and boosts win it a share
+          of the weekly Boost Bonus pot, so the move is to <strong>buy a $10 Artifact AND boost</strong>. When we back each other, the whole
           bloc climbs together.
         </p>
         <p className="mt-2 text-sm text-white/45">

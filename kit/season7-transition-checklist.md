@@ -17,10 +17,10 @@ This file is the fast, copy-paste-ready to-do list - the research doc has the re
 - [ ] **Attend a Funders Forum** (Mondays, 11am PT, luma.com/funders-forum-N). This is where Season 7
       curation rules, match caps, and the "association" definition are being decided WITH fund directors
       live. Attending also pays: 25,000 Boost Points just for showing up, plus a recording link after.
-- [ ] **Follow up on the 20% fund-director compensation.** Confirmed verbally by Venus/René in the Telegram
-      (20% of sponsor dollars raised for the fund, match/prize excluded, payable as contractor payment /
-      nonprofit donation / crypto / check) but not yet found in any official written doc - ask for it in
-      writing at the next Funders Forum before counting on it.
+- [x] **Follow up on the 20% fund-director compensation.** DONE 2026-09-10 - it is now in writing in the
+      live Playbook (v3, 2026-07-22): 20% of fresh sponsor dollars brought into the fund ($1,000 = $200
+      director + $800 match pool), none on launch capital, Endowment match or prizes. See
+      `research/mechanics-canonical.md` section 9.
 - [ ] **Tell ZAO creators and curators: Boost Points never expire.** Only the weekly leaderboard resets,
       not the point balance. (Venus told the community the opposite for a few days in early July - that was
       wrong and got corrected. If anyone's still operating on "spend before the drive closes," clear it up.)

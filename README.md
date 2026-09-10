@@ -71,7 +71,7 @@ Live at **https://zaoartizen.vercel.app**
 | `/apply` | Artist-facing - what the fund backs, how to get in | Applicants |
 | `/festivals` | ZAO Festivals umbrella - events, where it fits, how to join | Community |
 | `/proposal` | Decision page - create a fund vs curate into existing | Zaal/team |
-| `/playbook` | How Artizen works + how to win (Boost Score formula) | Creators |
+| `/playbook` | How Artizen works + how to win (rank = money raised; boosts win the Boost Bonus) | Creators |
 | `/community` | ZAO bloc on Artizen with verified badges | Showcase |
 | `/sponsor` | Sponsor pitch for ZAO Festivals Fund match pool | Partners |
 | `/curate` | How to get curated into the ZAO Fund | Creators |
@@ -86,7 +86,7 @@ Live at **https://zaoartizen.vercel.app**
 
 | File | What |
 |---|---|
-| `TEAM-PLAYBOOK.md` | How Artizen works, how we win (Boost Score = (sales + match) x boost points), strategy, roles |
+| `TEAM-PLAYBOOK.md` | How Artizen works, how we win, strategy, roles (mechanics link to `research/mechanics-canonical.md`) |
 | `PLAN-1-MEET-PROJECTS.md` | North star: meet as many projects as possible (five circles, weekly rhythm, meet tracker) |
 | `PLAN-2-PROJECTS.md` | Run ZAO Festivals + BetterCallZaal Strategies (Thursday loop, artifact plan, proofs) |
 | `PLAN-3-ZAO-FUND.md` | Manage the ZAO Fund (curation pipeline, engagement rules, the flywheel) |
@@ -109,7 +109,8 @@ Live at **https://zaoartizen.vercel.app**
 | `research/art-token-onchain.md` | On-chain check of ART token Juicebox |
 | `research/rene-pinnell-digest.md` | René's thesis, roadmap, trackable targets |
 | `research/community-fund-playbook.md` | How the best funds run + fill (model for ZAO) |
-| `research/artizen-mechanics-verified-telegram.md` | Mechanics sourced from Artizen fund-director TG |
+| `research/mechanics-canonical.md` | **The one source for platform mechanics**, reconciled against the live Playbook v34 (2026-09-04) |
+| `research/artizen-mechanics-verified-telegram.md` | Mechanics sourced from Artizen fund-director TG (2026-07-03, partly superseded) |
 
 ### Ready-to-use kit
 
@@ -170,25 +171,25 @@ Live at **https://zaoartizen.vercel.app**
 
 ## Key concepts
 
-### The win condition (Artizen official playbook)
+### The win condition (live Artizen Playbook, v34, 2026-09-04)
 
-**Boost Score = (sales + match unlocked) × boost points / 100**
+**Rank = money raised: sales + match unlocked. Prizes follow rank.** Boosts win a share of a separate weekly
+Boost Bonus pot. This replaced the multiplicative `Boost Score = (sales + match) x boost points / 100` on
+2026-08-21 (Playbook v21). Full detail, sources and open questions: `research/mechanics-canonical.md`.
 
-Multiplicative - boosts MULTIPLY dollars. You need BOTH sales AND boosts to win. A project that sold the most but got few boosts finished last (Artizen's own example).
-
-The lever is the community doing two things in parallel:
-- **Buy:** Collect $10 Artifacts (100% to creator, 0% platform fee, Ethereum mainnet)
-- **Boost:** Cast free boosts (Boost points come from holding ART, completing profile, donating to Endowment, attending events)
+The lever is still the community doing two things, now for two different payouts:
+- **Buy:** Collect $10 Artifacts (plus a 10% fee added at checkout) - moves rank, the prize and the match
+- **Boost:** Cast boosts - moves the project's share of the Boost Bonus pot. Boost Points come from donating to the Endowment ($1 = 100) and holding ART (balance / 10 each drive)
 
 The winning Artifact formula: square, video/GIF, no text. Proof: doc 887.
 
 ### Artizen platform facts
 
-- **Client-rendered (Bubble.io)** - WebFetch returns empty JS shells; use headless browser scraper or hand-check for live data.
-- **Seasons:** Curate -> Compete. Season 6 closed July 9, 2026. **Season 7 is live now** (through roughly Dec 2026/Jan 2027).
+- **Client-rendered (Bubble.io)** - WebFetch returns empty JS shells; use headless browser scraper or hand-check for live data. (The Playbook at play.artizen.fund is not Bubble and is readable - see the canonical file.)
+- **Seasons:** Season 6 closed July 9, 2026. **Season 7 is live now**, ending around January 7, 2027 (Playbook FAQ).
 - **Curated projects carry over** - only need a fresh Season 7 Artifact per project, no resubmission.
-- **Fund director compensation:** 20% of sponsor dollars raised for the fund (Telegram-confirmed by Venus/René, not yet in official docs - follow up to get it in writing).
-- **Match pool mechanics:** Each $1 of sales unlocks $1 from each fund backing the project. Match stacks across funds.
+- **Fund director compensation:** 20% of fresh sponsor dollars brought into the fund - now written in the Playbook (v3, 2026-07-22). None on launch capital, Endowment match or prizes.
+- **Match mechanics:** each $1 of sales unlocks match from the Endowment and every fund backing the project, at that week's Match Multiple (set by Artizen, changes weekly), up to the project's cap. Match stacks across funds.
 
 ### The ZAO position
 
@@ -212,8 +213,8 @@ The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curate
   - Nate Van Cleve - Head of Product
   - Venus - Artizen's in-platform team account
   - Wadooah Wali (wadooah@newcanvas.co) - Artizen LIVE producer
-  - Fund-director Telegram: "Artizen ✨" (private, 266 members) - highest-signal source for live mechanics + policy
-- **Our fund-director comp:** 20% of sponsor dollars raised (confirmed in TG, need written confirmation from René)
+  - Fund-director Telegram: "Artizen" (private, 266 members) - was the highest-signal source. **Artizen closed its Telegram group on 2026-09-01** and moved the community chat into the Grow app (Playbook v29); unconfirmed whether this was the same group
+- **Our fund-director comp:** 20% of fresh sponsor dollars raised - in writing in the Playbook since v3 (2026-07-22)
 
 ---
 

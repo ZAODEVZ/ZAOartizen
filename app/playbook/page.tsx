@@ -1,8 +1,13 @@
 import type { Metadata } from 'next';
 
 // /playbook - a creator-facing page to send Artizen project owners to. Explains how Artizen works,
-// how to finish the season strong, and how the ZAO Fund + Zaal add value. Sourced from Rene Pinnell's
-// official Artizen Playbook + Guide (news.artizen.fund) - verified 2026-06-27. See research/bloc-projects.md.
+// how to finish the season strong, and how the ZAO Fund + Zaal add value.
+//
+// MECHANICS SOURCE: research/mechanics-canonical.md. Do not change a number or a rule on this page
+// without changing it there first - that file carries the source and date for every claim, and the
+// TODO-VERIFY register for the ones this repo cannot confirm. Reconciled against the live Playbook v34
+// (2026-09-04): rank is money raised, boosts win the Boost Bonus pot, match runs at a weekly Match
+// Multiple, and the vote-based curation step is gone.
 
 const FUND_URL = 'https://artizen.thezao.com/';
 const CONTACT = 'mailto:zaal@thezao.com?subject=ZAO%20Fund%20on%20Artizen';
@@ -20,12 +25,12 @@ interface Step {
 }
 
 const STEPS: Step[] = [
-  { n: '1', t: 'Sponsors fund the pools', b: 'Brands + people back "Funds" - shared pools of match money. 100% goes to the Funds; Artizen takes no cut.' },
+  { n: '1', t: 'Sponsors fund the pools', b: 'Brands + people back "Funds" - pools of match money. A Fund director earns 20% of fresh sponsor dollars; the rest goes into the match pool.' },
   { n: '2', t: 'You submit your project', b: 'Submit to every Fund you qualify for. The more Funds back you, the more match you can unlock.' },
-  { n: '3', t: 'The community curates', b: 'Everyone votes. The top ~30% of projects by votes get curated into the competition.' },
-  { n: '4', t: 'Fans buy $10 Artifacts', b: 'Your Artifact is a $10 open-edition collectible. You keep 100% of every sale.' },
-  { n: '5', t: 'Each sale unlocks match', b: 'Every $10 in Artifact sales unlocks $10 of match - from EACH Fund backing you - while the pool lasts.' },
-  { n: '6', t: 'Top sellers win prizes', b: 'At season end you get one payout: your sales + match + any cash prize. 10% of each Fund is a prize for its top seller.' },
+  { n: '3', t: 'Funds curate', b: 'Each Fund\'s admins review submissions and curate the projects that fit. Every approved project also gets baseline match from the Artizen Endowment.' },
+  { n: '4', t: 'Fans buy $10 Artifacts', b: 'Your Artifact is a $10 open-edition collectible (Artizen adds its fee on top at checkout).' },
+  { n: '5', t: 'Each sale unlocks match', b: 'Every $1 of sales unlocks match from the Endowment and from EACH Fund backing you, at that week\'s Match Multiple, up to your cap.' },
+  { n: '6', t: 'Rank wins prizes, boosts win the bonus', b: 'Your rank is your money raised: sales + match. Prizes follow rank, every week and at season end. Boosts win you a share of a separate weekly Boost Bonus pot. Sell AND get boosted.' },
 ];
 
 interface Tactic {
@@ -34,7 +39,7 @@ interface Tactic {
 }
 
 const TACTICS: Tactic[] = [
-  { t: 'Qualify for multiple Funds', b: 'This is the biggest lever. One $10 sale matched by 3 Funds = $30 unlocked. Submit to every Fund you fit - the ZAO Fund included.' },
+  { t: 'Qualify for multiple Funds', b: 'This is the biggest lever. Every Fund that curates you adds its own slice of match to the same sales. Submit to every Fund you fit - the ZAO Fund included.' },
   { t: 'Make the Artifact amazing', b: 'Square, NO text or graphic overlays, and a GIF or video performs best. It is the single thing buyers see - make it iconic.' },
   { t: 'Say it simply', b: 'Few words, no jargon. Clearly: what it is and why it matters.' },
   { t: 'Promote in the first push', b: 'Bring your own fans AND the Artizen community. Early momentum compounds - a coordinated open beats a slow trickle.' },

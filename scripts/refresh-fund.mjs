@@ -120,7 +120,10 @@ if (!WRITE) {
 
 // Non-destructive update: only replace fields we confidently parsed.
 let src = readFileSync(DATA_FILE, 'utf8');
-const today = new Date().toISOString().slice(0, 10);
+const now = new Date();
+const today = now.toISOString().slice(0, 10);
+// Whole-second ISO instant - the site's "Data as of" stamp reads this to flag data over 48h old.
+const nowIso = `${now.toISOString().slice(0, 19)}Z`;
 const repl = (key, value) => {
   if (value === null || value === undefined) return;
   const valStr = typeof value === 'string' ? `'${value}'` : String(value);
@@ -134,7 +137,8 @@ repl('poolUsd', found.poolUsd);
 repl('matchDeployedUsd', found.matchDeployedUsd);
 repl('matchRemainingUsd', found.matchRemainingUsd);
 repl('lastUpdated', today);
+repl('scrapedAt', nowIso);
 src = src.replace(/(\n\s*updatedBy:\s*)'[^']*'/, `$1'auto-refresh'`);
 writeFileSync(DATA_FILE, src);
-console.log('\nUpdated', DATA_FILE, `(lastUpdated ${today}).`);
+console.log('\nUpdated', DATA_FILE, `(lastUpdated ${today}, scrapedAt ${nowIso}).`);
 console.log('Review the diff, then: npx next build && npx vercel --prod --yes');

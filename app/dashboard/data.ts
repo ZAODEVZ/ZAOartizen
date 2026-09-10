@@ -14,7 +14,11 @@ export interface FundStats {
   activeDrive: string | null; // e.g. "Frontier Fund Drive"
   driveMultiplier: string | null; // e.g. "2x"
   driveDeadline: string | null; // e.g. "2026-07-09"
-  lastUpdated: string; // YYYY-MM-DD
+  lastUpdated: string; // YYYY-MM-DD (human-facing date of the last edit)
+  // ISO 8601 UTC instant the numbers were scraped. Drives the "Data as of" stamp and the
+  // stale warning on every page that shows rank/match/funding. When only the date is known,
+  // use T00:00:00Z - that reads older than reality, which is the safe direction for a guard.
+  scrapedAt: string;
   updatedBy: string;
 }
 
@@ -58,6 +62,7 @@ export const fundStats: FundStats = {
   driveMultiplier: null, // confirm current multiplier
   driveDeadline: 'ends in ~3 days (≈2026-06-25)',
   lastUpdated: '2026-06-22',
+  scrapedAt: '2026-06-22T00:00:00Z',
   updatedBy: 'auto-refresh',
 };
 
