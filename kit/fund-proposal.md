@@ -22,7 +22,7 @@ ZAO-ecosystem projects (ZAOstock, Zaoville, COC Concertz, ZABAL Games activation
 plus aligned outside organizers who want a fund that gets live culture.
 
 **Why ZAO:** A 4-year, 188-member music + culture community that already runs the ZAO Fund for
-Emerging Culture, incubates artist projects (WaveWarZ, SongJam), and is producing ZAOstock
+Emerging Culture, incubates artist projects (WaveWarZ), and is producing ZAOstock
 (Oct 2026, Ellsworth ME). We bring the crowd that buys + boosts.
 
 ## The white space (why organizers join ours, not the others)
@@ -38,7 +38,7 @@ Emerging Culture, incubates artist projects (WaveWarZ, SongJam), and is producin
 
 - $50K Artizen seed on approval.
 - ZAO treasury as a "Founding Sponsor" (confirm with René).
-- Target sponsors: Restream, Magnetiq, music labels/guilds, festival-infra brands (ticketing, gear, merch).
+- Target sponsors: Restream, music labels/guilds, festival-infra brands (ticketing, gear, merch).
 
 ## 3 open questions to settle on the René call
 
