@@ -8,7 +8,8 @@ export interface FundStats {
   prizeUsd: number | null; // current prize for the fund's top project
   poolUsd: number | null; // total deposited into the fund
   matchDeployedUsd: number | null; // THE KPI - match actually unlocked by sales (the "raised" figure)
-  matchRemainingUsd: number | null; // undeployed match still in the pool (the "available" figure)
+  matchRemainingUsd: number | null; // the fund's drive card AVAILABLE - match left THIS DRIVE (resets each Thursday). NOT a season figure
+  offeredThisSeasonUsd: number | null; // the fund page's "Total": this season's sponsorship into the fund (Venus, 2026-09-11). Offered, NOT unlocked
   projectsCurated: number | null;
   signupsDriven: number | null; // community signups we drove onto Artizen
   activeDrive: string | null; // e.g. "Frontier Fund Drive"
@@ -57,6 +58,7 @@ export const fundStats: FundStats = {
   poolUsd: null,
   matchDeployedUsd: null, // "RAISED" on Artizen
   matchRemainingUsd: 1236, // "AVAILABLE" on Artizen
+  offeredThisSeasonUsd: 21145, // "Total" on the fund page, same read as scrapedAt
   projectsCurated: 19, // the fund page's "Competition" count = curated projects. NOT its "Curation" count, which is submitted + removed (41 = 8 + 33 on 2026-09-10)
   signupsDriven: null,
   activeDrive: 'Limitless Fund Drive',

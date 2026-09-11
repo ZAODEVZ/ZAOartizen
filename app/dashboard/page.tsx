@@ -90,6 +90,36 @@ export default function DashboardPage() {
         </div>
       ) : null}
 
+      {fundStats.offeredThisSeasonUsd !== null || fundStats.matchRemainingUsd !== null ? (
+        <section className="mb-8 rounded-xl border border-white/10 bg-white/5 p-4">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">The gap, stated plainly</h2>
+          <p className="mt-2 text-white/80">
+            {fundStats.offeredThisSeasonUsd !== null ? (
+              <>
+                Offered into the fund this season: <strong>{usd(fundStats.offeredThisSeasonUsd)}</strong> (fund page).{' '}
+              </>
+            ) : null}
+            {fundStats.matchRemainingUsd !== null ? (
+              <>
+                Available this drive: <strong>{usd(fundStats.matchRemainingUsd)}</strong>.{' '}
+              </>
+            ) : null}
+            {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0
+              ? 'The fund still has match to give this drive; every Artifact bought on a ZAO Fund project draws on it while that project\'s match lasts.'
+              : fundStats.matchRemainingUsd === 0
+                ? // Drive timing source: research/mechanics-canonical.md section 3 (lines ~92-96; conflict M7 closed by
+                  // Venus 2026-09-10). Drives CLOSE Thursday 11:00 AM Pacific and the next opens as soon as possible
+                  // after - not at a fixed minute. This prose has no scrapedAt stamp: re-check there if drives change.
+                  'This drive\'s match is fully unlocked. Drives run Thursday to Thursday - the next opens shortly after 11 AM Pacific Thursday; buys until then still count as sales.'
+                : null}
+          </p>
+          <p className="mt-2 text-xs text-white/40">
+            Both figures are read from the fund&apos;s public Artizen page. A season-to-date &quot;match unlocked&quot;
+            figure for one fund is not published on Artizen yet, so this page does not show one.
+          </p>
+        </section>
+      ) : null}
+
       <section className="mb-10">
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/50">Fund - now</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
