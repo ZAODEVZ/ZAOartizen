@@ -106,7 +106,9 @@ export default function DashboardPage() {
             ) : null}
             {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0
               ? 'The fund still has match to give this drive; every Artifact bought on a ZAO Fund project draws on it while that project\'s match lasts.'
-              : null}
+              : fundStats.matchRemainingUsd === 0
+                ? 'This drive\'s match is fully unlocked. The next drive opens Thursday at 11 AM Pacific; buys until then still count as sales.'
+                : null}
           </p>
           <p className="mt-2 text-xs text-white/40">
             Both figures are read from the fund&apos;s public Artizen page. A season-to-date &quot;match unlocked&quot;
