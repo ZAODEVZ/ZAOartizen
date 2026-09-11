@@ -254,7 +254,7 @@ export default function ArtizenPage() {
           </div>
         </section>
 
-        {/* Featured video - episode 1 of the ZAO Artizen series. Full series on /videos. */}
+        {/* Featured video = videos[0] in app/videos/data.ts - festival footage, per Venus review round one. Full series on /videos. */}
         <section className="mb-12">
           <div className="mb-3 flex items-baseline justify-between">
             <h2 className="text-lg font-bold sm:text-xl">Watch</h2>

@@ -18,7 +18,7 @@ Run the ZAO Fund well, run the ZAO portfolio as creators across multiple Artizen
 - **ZAO Festivals** ($25k goal, free community music events, flagship ZAOstock Oct 3 2026 Ellsworth Maine)
 - **BetterCallZaal Strategies** (patronage model: "My fund to help artists full-time")
 
-**The ZAO Fund for Emerging Culture** is active (rank #19 of 82+ funds, 36 projects curated, mid "Daybreak Fund Drive #7"). Season 7 is live now (through roughly Dec 2026/Jan 2027).
+**The ZAO Fund for Emerging Culture** is active in Season 7 (ending around January 7, 2027). Live numbers - rank, projects curated, match remaining, the current drive - live in one place: `/dashboard`, under its "Data as of" stamp. This README carries no dated figures on purpose.
 
 **Research:** complete + audited (16 docs: platform mechanics, 79-fund directory, on-chain endowment check, strategy decisions).
 
@@ -31,7 +31,7 @@ Run the ZAO Fund well, run the ZAO portfolio as creators across multiple Artizen
 - **Framework:** Next.js 16 (React 19, TypeScript)
 - **Styling:** Tailwind v4
 - **Deployment:** Vercel (manual deploy via `npx vercel --prod --yes`)
-- **Data source:** hardcoded in `app/dashboard/data.ts`; scraped from Artizen via `scripts/refresh-fund.mjs`
+- **Data source:** `app/dashboard/data.ts`, written by the scraper `scripts/refresh-fund.mjs` (reads the fund's own Fund Drive card on Artizen; `node scripts/refresh-fund.mjs --write`). Each run stamps `scrapedAt`, and every page with numbers shows it.
 
 ---
 
@@ -66,7 +66,7 @@ Live at **https://zaoartizen.vercel.app**
 |---|---|---|
 | `/` | ZAO Fund hub - featured project, searchable roster, join path | Everyone |
 | `/dashboard` | Live ZAO Fund scoreboard - rank, match deployed/remaining, backed projects | Operations |
-| `/leaderboard` | Season 6 field (35 projects) with ZAO ties flagged | Community |
+| `/leaderboard` | Season 6 field snapshot with ZAO ties flagged (historical; S7 ranks are on Artizen) | Community |
 | `/rally` | 3-step crew CTA - sign up, buy $10 Artifact, boost | Shareable |
 | `/apply` | Artist-facing - what the fund backs, how to get in | Applicants |
 | `/festivals` | ZAO Festivals umbrella - events, where it fits, how to join | Community |
@@ -125,7 +125,7 @@ Live at **https://zaoartizen.vercel.app**
 | `kit/daily-spotlights.md` | 32-post daily spotlight series (projects from ZAO Fund) |
 | `kit/launch-posts.md` | Share copy for hub + festivals umbrella (multi-platform) |
 | `kit/operating-rhythm.md` | Daily/weekly/seasonal cadence + metrics |
-| `kit/standings-tracker.md` | Live Season 7 ZAO Fund standings (rank #19, 36 projects) |
+| `kit/standings-tracker.md` | Season 7 ZAO Fund standings, updated each drive (dated inside) |
 | `kit/pitch-deck-outline/` | HTML pitch deck for sponsor/partner conversations |
 
 ### Code
@@ -133,7 +133,7 @@ Live at **https://zaoartizen.vercel.app**
 | Path | What |
 |---|---|
 | `app/` | Next.js 16 pages (see Site Pages table above) |
-| `app/dashboard/data.ts` | Live ZAO Fund scoreboard data - update after each drive |
+| `app/dashboard/data.ts` | ZAO Fund scoreboard data, written by `scripts/refresh-fund.mjs` |
 | `scripts/refresh.sh` | Scrape live Artizen data -> update dashboard -> deploy |
 | `scripts/refresh-fund.mjs` | Headless browser scraper (renders Artizen.fund, extracts rankings) |
 | `.env.example` | No sensitive env vars needed for the frontend |
@@ -158,7 +158,7 @@ Live at **https://zaoartizen.vercel.app**
 **Code changes needed (low priority):**
 
 - Fix auto-deploy (wire `vercel git connect` so pushes trigger builds).
-- Dashboard data currently hardcoded - consider a lightweight scraper that auto-updates on merge.
+- The scraper runs by hand (`bash scripts/refresh.sh` scrapes, builds and deploys); a scheduled run is a possible next step.
 - ART token contract date conflict (Oct 2023 vs Oct 2025) - ask Venus/René for clarification before quoting.
 
 ### Future horizon (2027+)
@@ -193,7 +193,7 @@ The winning Artifact formula: square, video/GIF, no text. Proof: doc 887.
 
 ### The ZAO position
 
-The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curated, ~$188 pool). Strategy:
+The ZAO runs the **ZAO Fund for Emerging Culture** (live standing on `/dashboard`). Strategy:
 
 1. **Curate into existing funds, don't rush to build a second one** - The "music white space" is gone (We're Loud, Global Music, Greenpill already fund music events, and six ZAO music projects are in Global Music).
 2. **Run the whole portfolio as creators** - WaveWarZ, ZAOstock, Zaoville, Thy Revolution, ZABAL Gamez cohort each submit as projects.
