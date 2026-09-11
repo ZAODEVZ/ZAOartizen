@@ -24,7 +24,7 @@ export const videos: Video[] = [
     title: 'Hurric4n3Ike live at ZAO-PALOOZA',
     guest: 'Hurric4n3Ike, ZAO Festivals',
     blurb:
-      'A full performance from ZAO-PALOOZA, the first ZAO Festivals event, in NYC. This is what the ZAO Fund backs: an independent artist on a real stage, in front of the community that funds the night.',
+      'A full performance from ZAO-PALOOZA, the first ZAO Festivals event, in NYC. The kind of night the ZAO Fund exists to back: an independent artist on a real stage, in front of the community that turned out for it.',
     date: 'April 3, 2024',
     zaoTie: 'Featured on the hub (Venus review, round one): festival footage speaks to the crew, fund directors and sponsors at once.',
   },
