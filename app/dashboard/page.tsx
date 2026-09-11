@@ -53,16 +53,22 @@ export default function DashboardPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-bold sm:text-4xl">ZAO Fund Dashboard</h1>
         <p className="mt-2 max-w-2xl text-white/60">
-          The scoreboard for the{' '}
+          The{' '}
           <a href={FUND_URL} className="text-[#f5a623] underline">
             ZAO Fund for Emerging Culture
           </a>
-          . We measure match <strong>deployed</strong> (not deposited) and the crowd we move - the proof we
-          bring to Rene. Rank = money raised (sales + match unlocked); boosts win a share of the weekly Boost
-          Bonus pot - so rally both buys and Boosts.
+          {' '}is a community fund on Artizen, run by The ZAO, a music-first community of independent artists
+          and builders. It curates independent artists and cultural projects, and every $10 Artifact a fan buys
+          on one of them can unlock match from the fund, while its match lasts. This page is its scoreboard: what the fund has put to
+          work, what is still available, and where it ranks - read from the fund&apos;s public Artizen page.
+        </p>
+        <p className="mt-2 max-w-2xl text-sm text-white/50">
+          How ranking works: rank is money raised (sales + match unlocked); boosts win a share of the weekly
+          Boost Bonus pot. We measure match <strong>deployed</strong>, not deposited.
         </p>
         <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-2">
-          Edit <code className="text-white/60">app/dashboard/data.ts</code> to update.
+          Read from the fund&apos;s public Artizen page by{' '}
+          <code className="text-white/60">scripts/refresh-fund.mjs</code>.
         </DataStamp>
       </header>
 
