@@ -97,5 +97,6 @@ Read that file before quoting any of them. What follows is ZAO-specific context 
 - Contacts: René Pinnell (@RJPinnell), Nate Van Cleve (Head of Product). News: news.artizen.fund (dormant).
   Where mechanics changes are announced (Venus, 2026-09-10): Funders Forum (Mondays 11:00 AM PT), the
   Playbook version history (`npm run check:playbook`), and Venus's email to fund directors; Grow Chat
-  for everyone. The public Artizen Telegram closed 2026-09-01, and there was never a separate private
-  fund-director Telegram. See `research/mechanics-canonical.md` section 8.
+  for everyone. The public Artizen Telegram closed 2026-09-01. Venus says there was never a separate
+  private fund-director Telegram, only a topic inside the community group (Venus, 2026-09-10). See
+  `research/mechanics-canonical.md` section 8.

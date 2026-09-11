@@ -199,8 +199,10 @@ CONFIRMED - Playbook v7, v12, v20, v32, all current at v34.
 ## 8. Grow, CRM, Quests and the community chat
 
 - **The public Artizen Telegram group closed on 2026-09-01**, and community chat moved into the Grow
-  app (Playbook v29). **There was never a separate private fund-director Telegram**: directors had a
-  topic inside the community group, retired in July. **Where directors hear about mechanics changes
+  app (Playbook v29). **Venus says there was never a separate private fund-director Telegram**:
+  directors had a topic inside the community group, retired in July (Venus, 2026-09-10). This repo's
+  earlier notes describe a private director group ("Artizen", ~250-266 members); read those as that
+  topic, by her account. **Where directors hear about mechanics changes
   now:** Funders Forum (Mondays 11:00 AM Pacific, after Monday Momentum), the Playbook version history
   (`npm run check:playbook`), and Venus's email to the fund-director list; Grow Chat carries the same
   announcements for everyone. CONFIRMED - Venus, email 2026-09-10 17:22 UTC.
@@ -280,7 +282,7 @@ source overrides an earlier one.
 | 2026-07-13 | Fund director pay | "20% is outdated, it's tips + Artifacts" (2026-06-28) | 20% of sponsor dollars raised, match and prize excluded | Venus, Funders Forum recap (doc 851); written into Playbook v3, 2026-07-22 |
 | 2026-08-07 | "Every project must have a crew" | Reported as a new Artizen requirement from LIVE #85 | A guest's suggestion, not policy; claims ship 5 collaborator slots | Grow bundle read (doc 852) |
 | 2026-08-21 | How rank is decided | Boost Score, multiplicative | **Rank = money raised (sales + match unlocked); prizes follow rank; boosts win a share of a separate Boost Bonus pot** | Playbook v21, still the rule at v34 (2026-09-04) - M6 |
-| 2026-09-01 | Live community channel | "The private fund-director Telegram" | The public Artizen Telegram closed; chat is in Grow. There never was a separate director Telegram | Playbook v29; Venus 2026-09-10 |
+| 2026-09-01 | Live community channel | "The private fund-director Telegram" | The public Artizen Telegram closed; chat is in Grow. Venus says there was never a separate director Telegram, only a topic in the community group | Playbook v29; Venus 2026-09-10 |
 | 2026-09-10 | ART token | `0x59fbbc7d...` (Juicebox #587) traced as ART | Current ART is `0x44c4...f8Ec` on Base; the traced contract is not ART | Venus 2026-09-10; Playbook Endowment section |
 | 2026-09-10 | Funders Forum reward | 25,000 BP | 10,000 BP (amounts are per-quest, read in Grow) | Venus 2026-09-10 |
 | 2026-09-10 | Fund prizes | 10% of fund capital as season-end prize | Weekly Endowment prizes + Boost Bonus; Season Finale paid in ART | Venus 2026-09-10 |

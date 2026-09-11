@@ -213,7 +213,7 @@ The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curate
   - Nate Van Cleve - Head of Product
   - Venus - Artizen's in-platform team account
   - Wadooah Wali (wadooah@newcanvas.co) - Artizen LIVE producer
-  - Channels: Funders Forum (Mondays 11am PT), the Playbook version history, Venus's email to fund directors, Grow Chat. The public Artizen Telegram closed 2026-09-01; there was never a separate director Telegram (Venus, 2026-09-10)
+  - Channels: Funders Forum (Mondays 11am PT), the Playbook version history, Venus's email to fund directors, Grow Chat. The public Artizen Telegram closed 2026-09-01; Venus says there was never a separate director Telegram, only a topic inside the community group (Venus, 2026-09-10)
 - **Our fund-director comp:** 20% of fresh sponsor dollars raised - in writing in the Playbook since v3 (2026-07-22)
 
 ---
