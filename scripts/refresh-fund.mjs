@@ -99,7 +99,7 @@ function main() {
 
   console.log('\nParsed (from the ZAO Fund drive card):');
   for (const [k, v] of Object.entries(found)) console.log(`  ${k}: ${v ?? '(not found)'}`);
-  console.log('\nNot written: `totalUsd` (lifetime "Total" - not verified to equal poolUsd), `boosts`, `bonusUsd`,');
+  console.log('\nNot written: `boosts`, `bonusUsd`,');
   console.log('`inCuration` (= submitted + removed, NOT curated), `endsIn`. Printed so a human can carry them into kit/standings-tracker.md.');
 
   if (!WRITE) {
@@ -164,6 +164,9 @@ export function applyToDataFile(found, whole, now = new Date()) {
   setNull('poolUsd');
   if (found.endsIn) repl('driveDeadline', `${found.endsIn.toLowerCase()} (read ${today})`);
   repl('matchRemainingUsd', found.availableUsd); // "AVAILABLE" on the fund's drive card
+  // "Total" next to the curator line = this season's sponsorship into the fund, scoped by the season
+  // selector and excluding the director's own contributions (Venus, 2026-09-11). Offered, not unlocked.
+  repl('offeredThisSeasonUsd', found.totalUsd);
   // "Competition" is the curated roster. "Curation" is NOT: its tab lists submissions awaiting a
   // decision plus removed projects (measured 2026-09-10: 41 = 8 Submitted + 33 Removed, 0 curated).
   // Playbook v34 says the same of the Curation count. So projectsCurated takes Competition.
