@@ -65,7 +65,9 @@ for Emerging Culture, so every director conversation is reciprocal, their projec
 
 - Submit on each fund page, THEN DM the director with the one-line pitch (Venus: a nudge beats waiting; the
   platform notifies nobody). Template in the TG-messages clipboard.
-- No response is not rejection; curation is rolling and everything carries into Season 7.
+- Silence is not a verdict either way yet: whether no response means rejection is TODO-VERIFY (a review
+  window exists; see research/mechanics-canonical.md section 6). Follow up with the director; curated
+  projects carry into the next season.
 - Mention the reciprocal door every time: "I curate the ZAO Fund for Emerging Culture."
 - Venus's matchmaking reply (pending) gets merged into these tables when it lands; expect overlap plus a few
   we missed.
