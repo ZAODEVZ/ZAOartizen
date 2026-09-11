@@ -240,7 +240,7 @@ export default function ArtizenPage() {
             ) : null}
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               One of the best ways to back {featured.creator}: collect their Artifact. Because they are
-              part of the ZAO Fund, every dollar they raise unlocks matching from the fund, paid
+              part of the ZAO Fund, every dollar they raise can unlock matching from the fund, at that week's Match Multiple, paid
               straight to the creator. Support the project, support the fund.
             </p>
             <a

@@ -69,7 +69,7 @@ Fastest path: pull a clean 10-20s clip from existing ZAO event footage, crop squ
 
 ## 4. Funds to curate into (after submitting)
 
-Submit/curate into all that fit so match stacks (each $1 sale unlocks match from every backing fund):
+Submit/curate into all that fit so match stacks (each $1 sale can unlock match from every backing fund, at the weekly match rate):
 - **ZAO Fund for Emerging Culture** (home - you control it)
 - **We're Loud Fund** (DIY music festivals - the cleanest fit)
 - **Greenpill Fund** (regenerative gatherings - frame the community/regen angle)

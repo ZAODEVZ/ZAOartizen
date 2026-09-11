@@ -26,7 +26,7 @@ export default function CurateOG() {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'flex', fontSize: 88, fontWeight: 800, lineHeight: 1.05 }}>Get curated</div>
           <div style={{ display: 'flex', marginTop: 24, fontSize: 40, fontWeight: 700, color: '#f5a623' }}>
-            Every $1 becomes $3+
+            Every $1 gets matched
           </div>
           <div style={{ display: 'flex', marginTop: 16, fontSize: 30, color: 'rgba(255,255,255,0.72)' }}>
             Your dollar + a sponsor&apos;s + platform match - stacked on every $10 Artifact.
