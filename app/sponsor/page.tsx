@@ -27,7 +27,7 @@ const RAILS: Rail[] = [
   {
     tag: 'How it works',
     title: 'Matched + top billing',
-    body: 'Sponsor the ZAO Fund on Artizen. Your gift unlocks matching funds from the platform endowment at that week's rate and deepens the pool behind every artist we back - and the top contributor is featured as Presenting Sponsor on the fund.',
+    body: 'Sponsor the ZAO Fund on Artizen. Your gift unlocks matching funds from the platform endowment at that week\'s rate and deepens the pool behind every artist we back - and the top contributor is featured as Presenting Sponsor on the fund.',
     best: 'Best if amplified impact + brand visibility matter most.',
   },
   {
