@@ -5,7 +5,7 @@ Full context: ../research/849-zao-artizen-execution-build-plan/README.md
 
 ## Confirmed Artifact specs (build to these)
 
-- Image (required): square 1:1, min 1000x1000px, .jpg/.png, <10MB, NO text/logo overlays.
+- Image (required): square 1:1 (1000x1000px or larger recommended), .jpg/.png, <10MB, NO text/logo overlays.
 - GIF (optional): square, min 500px, <50MB, loopable.
 - Video (optional): square, <=45s, <100MB, .mp4, loopable, no overlays.
 - The Artifact is the creative essence of the project, not a marketing flyer. Video/GIF outperform static in voting.
