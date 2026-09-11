@@ -95,6 +95,7 @@ Read that file before quoting any of them. What follows is ZAO-specific context 
   Feb 2026) or GitHub. No official Artizen MCP server or agent API exists; `play.artizen.fund` (the
   Playbook) is Artizen's own recommended machine-readable source.
 - Contacts: René Pinnell (@RJPinnell), Nate Van Cleve (Head of Product). News: news.artizen.fund (dormant).
-  Live channel: was the private fund-director Telegram ("Artizen"). **Artizen closed its Telegram group
-  on 2026-09-01 and moved the community chat into the Grow app** (Playbook v29) - whether that was the
-  same group is unconfirmed; see `research/mechanics-canonical.md` section 8.
+  Where mechanics changes are announced (Venus, 2026-09-10): Funders Forum (Mondays 11:00 AM PT), the
+  Playbook version history (`npm run check:playbook`), and Venus's email to fund directors; Grow Chat
+  for everyone. The public Artizen Telegram closed 2026-09-01, and there was never a separate private
+  fund-director Telegram. See `research/mechanics-canonical.md` section 8.

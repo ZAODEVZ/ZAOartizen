@@ -213,7 +213,7 @@ The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curate
   - Nate Van Cleve - Head of Product
   - Venus - Artizen's in-platform team account
   - Wadooah Wali (wadooah@newcanvas.co) - Artizen LIVE producer
-  - Fund-director Telegram: "Artizen" (private, 266 members) - was the highest-signal source. **Artizen closed its Telegram group on 2026-09-01** and moved the community chat into the Grow app (Playbook v29); unconfirmed whether this was the same group
+  - Channels: Funders Forum (Mondays 11am PT), the Playbook version history, Venus's email to fund directors, Grow Chat. The public Artizen Telegram closed 2026-09-01; there was never a separate director Telegram (Venus, 2026-09-10)
 - **Our fund-director comp:** 20% of fresh sponsor dollars raised - in writing in the Playbook since v3 (2026-07-22)
 
 ---
@@ -221,8 +221,7 @@ The ZAO runs the **ZAO Fund for Emerging Culture** (rank #19, 36 projects curate
 ## Gotchas + notes
 
 - **Artizen is fast-moving.** Facts change per drive cycle (boosts, match allocation, fund standings). Never trust a cached number - re-verify before quoting.
-- **Endowment claims are unverified.** Artizen self-reports "$17M-$100M" endowment, but on-chain check found the ART token's Juicebox treasury holds ~0.01 ETH (dormant). Treat any single figure as a per-fund pool claim, not gospel. Keep ZAO treasury OFF the ART token.
-- **ART contract date conflict:** The ART token contract deployed Oct 2023 but is claimed to have "launched Oct 2025" in some docs - unresolved. Ask Venus/René before quoting launch date or endowment.
+- **Endowment claims are self-reported.** The old "on-chain check" traced a Juicebox contract that Venus confirmed (2026-09-10) was never ART; current ART is `0x44c4...f8Ec` on Base, per the Playbook. Re-trace before quoting any endowment figure. Treat any single figure as a per-fund pool claim, not gospel. Keep ZAO treasury OFF the ART token.
 - **No Artizen MCP server or agent API exists.** Play.artizen.fund (the Playbook) is Artizen's own recommended machine-readable source.
 - **Headless scraper note:** `scripts/refresh-fund.mjs` uses gstack `browse` (headless Chromium) to render Artizen pages. Requires bun on PATH: `export PATH="$HOME/.bun/bin:$PATH"`.
 
