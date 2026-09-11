@@ -96,7 +96,7 @@ export default function DashboardPage() {
           <p className="mt-2 text-white/80">
             {fundStats.offeredThisSeasonUsd !== null ? (
               <>
-                Offered this season: <strong>{usd(fundStats.offeredThisSeasonUsd)}</strong> (fund page).{' '}
+                Offered into the fund this season: <strong>{usd(fundStats.offeredThisSeasonUsd)}</strong> (fund page).{' '}
               </>
             ) : null}
             {fundStats.matchRemainingUsd !== null ? (
@@ -105,7 +105,7 @@ export default function DashboardPage() {
               </>
             ) : null}
             {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0
-              ? 'The fund still has match to give this drive; every Artifact bought on a ZAO Fund project draws on it.'
+              ? 'The fund still has match to give this drive; every Artifact bought on a ZAO Fund project draws on it while that project\'s match lasts.'
               : null}
           </p>
           <p className="mt-2 text-xs text-white/40">
