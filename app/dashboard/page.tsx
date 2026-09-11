@@ -107,7 +107,10 @@ export default function DashboardPage() {
             {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0
               ? 'The fund still has match to give this drive; every Artifact bought on a ZAO Fund project draws on it while that project\'s match lasts.'
               : fundStats.matchRemainingUsd === 0
-                ? 'This drive\'s match is fully unlocked. The next drive opens Thursday at 11 AM Pacific; buys until then still count as sales.'
+                ? // Drive timing source: research/mechanics-canonical.md section 3 (lines ~92-96; conflict M7 closed by
+                  // Venus 2026-09-10). Drives CLOSE Thursday 11:00 AM Pacific and the next opens as soon as possible
+                  // after - not at a fixed minute. This prose has no scrapedAt stamp: re-check there if drives change.
+                  'This drive\'s match is fully unlocked. Drives run Thursday to Thursday - the next opens shortly after 11 AM Pacific Thursday; buys until then still count as sales.'
                 : null}
           </p>
           <p className="mt-2 text-xs text-white/40">
