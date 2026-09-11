@@ -1,5 +1,11 @@
 # ART token - on-chain reality check
 
+> **SUPERSEDED 2026-09-10 - the contract traced below is NOT ART.** Venus confirmed in writing that the
+> contract this doc traced (Juicebox project #587, deployed Oct 2023) was never ART. Current ART on Base is
+> `0x44c4516768e47cd97cfF2561B81a74699F23f8Ec` (deprecated: `0x794FDDbe0609CD704d7920eB3f950a57D4661193`),
+> as listed in the Playbook's Endowment section. The conclusions below ("treasury ~0.01 ETH", "endowment not
+> visible on-chain") do not describe ART. Kept as history. See `mechanics-canonical.md` M3.
+
 > **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
 
 Primary-source verification of Artizen's ART token against Etherscan, to sanity-check the marketing
