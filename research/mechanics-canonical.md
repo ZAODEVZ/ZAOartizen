@@ -41,6 +41,11 @@ If the newest version is above 34, something below may be stale.
 Artizen changes mechanics mid-season - version 21 even shipped as a "one-week experiment" and then
 stayed. A claim here is only as good as its date. Check the date before you quote it.
 
+**Where Venus's emails live.** Her written answers are cited here by date and time. The ZAO keeps their
+text verbatim in its private vault (her 2026-09-11 01:04 UTC check is `projects/venus-mechanics-check-2026-09-11.md`),
+so a citation can be re-read without opening anyone's inbox. Before quoting one of her answers outside the
+ZAO, re-check it against the live Playbook.
+
 ---
 
 ## 1. How you win: rank is money raised
