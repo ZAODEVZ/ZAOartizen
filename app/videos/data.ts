@@ -20,6 +20,15 @@ export interface Video {
 
 export const videos: Video[] = [
   {
+    youtubeId: 'zOFSaRw24JM',
+    title: 'Hurric4n3Ike live at ZAO-PALOOZA',
+    guest: 'Hurric4n3Ike, ZAO Festivals',
+    blurb:
+      'A full performance from ZAO-PALOOZA, the first ZAO Festivals event, in NYC. The kind of night the ZAO Fund exists to back: an independent artist on a real stage, in front of the community that turned out for it.',
+    date: 'April 3, 2024',
+    zaoTie: 'Featured on the hub (Venus review, round one): festival footage speaks to the crew, fund directors and sponsors at once.',
+  },
+  {
     youtubeId: '25ZoAcP23es',
     title: 'ZABAL GAMEZ w/ Arun from DreamStarter',
     guest: 'Arun Philips, DreamStarter',
