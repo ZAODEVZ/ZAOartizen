@@ -59,7 +59,7 @@ export default function DashboardPage() {
           </a>
           {' '}is a community fund on Artizen, run by The ZAO, a music-first community of independent artists
           and builders. It curates independent artists and cultural projects, and every $10 Artifact a fan buys
-          on one of them unlocks match from the fund. This page is its scoreboard: what the fund has put to
+          on one of them can unlock match from the fund, while its match lasts. This page is its scoreboard: what the fund has put to
           work, what is still available, and where it ranks - read from the fund&apos;s public Artizen page.
         </p>
         <p className="mt-2 max-w-2xl text-sm text-white/50">
