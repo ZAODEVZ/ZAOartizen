@@ -11,7 +11,7 @@ const CONTACT = 'mailto:zaal@thezao.com?subject=ZAO%20Fund%20-%20get%20curated';
 export const metadata: Metadata = {
   title: 'Get curated by the ZAO Fund for Emerging Culture',
   description:
-    'What the ZAO Fund backs, who qualifies, and how to get curated. Every $1 becomes $3+ through fan, sponsor, and endowment match on Artizen.',
+    'What the ZAO Fund backs, who qualifies, and how to get curated. Every $1 of sales can unlock match on Artizen, at a rate set each week.',
 };
 
 const CRITERIA: string[] = [
@@ -30,9 +30,9 @@ interface MatchPart {
 }
 
 const MATCH: MatchPart[] = [
-  { k: '$1', v: 'from a fan buying your $10 Artifact (you keep 100%)' },
-  { k: '+ $1', v: 'matched by each Fund backing you - including the ZAO Fund' },
-  { k: '+ $1+', v: 'matched by the Artizen platform (when available)' },
+  { k: '$1', v: 'from a fan buying your $10 Artifact (you keep the full $10)' },
+  { k: '+ match', v: 'from each Fund that curates you - including the ZAO Fund - sized by your recent sales' },
+  { k: '+ match', v: 'from the Artizen Endowment, at that week\'s Match Multiple, up to your cap' },
 ];
 
 export default function CuratePage() {
@@ -45,13 +45,13 @@ export default function CuratePage() {
         <h1 className="mt-2 text-3xl font-bold sm:text-4xl">Get curated</h1>
         <p className="mt-3 text-white/70">
           The ZAO Fund backs creators building collaborative culture at the intersection of art, emerging tech,
-          and community - and who collaborate with The ZAO to do it. Get curated and your sales unlock match.
+          and community - and who collaborate with The ZAO to do it. Get curated and your sales can unlock match, at that week's Match Multiple.
         </p>
       </header>
 
       {/* The match math */}
       <section className="mb-12">
-        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/50">Every $1 becomes $3+</h2>
+        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/50">How your $1 gets matched</h2>
         <div className="grid gap-3 sm:grid-cols-3">
           {MATCH.map((m) => (
             <div key={m.v} className="rounded-xl border border-white/10 bg-white/5 p-4">

@@ -90,7 +90,7 @@ crowd, stage, lights. A GIF or short video performs best (Artizen's own guidance
    Thy Rev, or Steve Peer - asks are drafted in testimonial-asks.md, none received as of 2026-07-13.
    Ship as a 9-slide deck if none land in time; add back in the moment one does. Format once received:
    "[their sentence]" - [Name, what they build].
-10. **The ask.** "Back ZAO Festivals. Every $10 unlocks match funding from the funds backing this
+10. **The ask.** "Back ZAO Festivals. Every $10 can unlock match funding from the funds backing this
     project - your buy multiplies straight into an artist's pay." Link: zaostock.com/festivals.
 
 ## Submit to these funds (stack the match - the more the better)

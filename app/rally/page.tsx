@@ -9,7 +9,7 @@ const FUND_URL = 'https://artizen.thezao.com/';
 
 export const metadata: Metadata = {
   title: 'Rally - back our artists on Artizen',
-  description: 'The 3-step crew rally: sign up, buy a $10 Artifact, boost. Every $10 unlocks matched funding.',
+  description: 'The 3-step crew rally: sign up, buy a $10 Artifact, boost. Every $10 can unlock matched funding.',
 };
 
 function usd(n: number | null): string {
@@ -34,7 +34,7 @@ export default function RallyPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-bold sm:text-4xl">Rally for our artists</h1>
         <p className="mt-2 text-white/60">
-          3 minutes. Every $10 you spend unlocks extra match from the{' '}
+          3 minutes. Every $10 you spend can unlock extra match from the{' '}
           <a href={FUND_URL} className="text-[#f5a623] underline">
             ZAO Fund
           </a>

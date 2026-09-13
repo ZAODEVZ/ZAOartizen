@@ -232,9 +232,9 @@ export default function FestivalsPage() {
           <h2 className="text-lg font-bold sm:text-xl">How the match works</h2>
           <p className="mt-3 text-sm leading-relaxed text-white/70">
             On Artizen, supporters collect a project&apos;s $10 open-edition Artifact (100% to the
-            creator). Every dollar of sales unlocks a matching dollar from each fund backing the
-            project. Curate your festival into the ZAO Festivals Fund and other aligned funds, and the
-            same sale multiplies. The ZAO community shows up to collect and boost - that is the edge.
+            creator). Every dollar of sales can unlock match from each fund backing the project, at that
+            week&apos;s Match Multiple. Curate your festival into the ZAO Festivals Fund and other aligned
+            funds, and the same sale draws on more pools. The ZAO community shows up to collect and boost - that is the edge.
           </p>
         </section>
 

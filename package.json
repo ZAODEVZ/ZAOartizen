@@ -5,12 +5,13 @@
   "description": "The ZAO on Artizen - the ZAO Fund for Emerging Culture hub.",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/check-retired-names.mjs",
+    "prebuild": "node scripts/check-retired-names.mjs && node scripts/check-mechanics-claims.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "check:names": "node scripts/check-retired-names.mjs",
-    "check:playbook": "node scripts/playbook-changelog.mjs"
+    "check:playbook": "node scripts/playbook-changelog.mjs",
+    "check:claims": "node scripts/check-mechanics-claims.mjs"
   },
   "dependencies": {
     "next": "16.2.9",
