@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 import { leaderboard } from './data';
 
@@ -47,7 +48,7 @@ export default function LeaderboardOG() {
           </div>
         </div>
         <div style={{ display: 'flex', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          zaoartizen.vercel.app/leaderboard
+          {SITE_HOST}/leaderboard
         </div>
       </div>
     ),

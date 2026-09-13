@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'Rally for our artists on Artizen - 3 steps, $10, doubled';
@@ -52,7 +53,7 @@ export default function RallyOG() {
             color: 'rgba(255,255,255,0.55)',
           }}
         >
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/rally</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/rally</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>0% fees. 100% to the artist.</div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { SITE_HOST } from './site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'ZArtizen - The ZAO Fund for Emerging Culture on Artizen';
@@ -35,7 +36,7 @@ export default function OpengraphImage() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>artizen.thezao.com</div>
         </div>
       </div>

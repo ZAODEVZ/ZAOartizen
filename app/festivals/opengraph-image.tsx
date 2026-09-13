@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'ZAO Festivals - back live culture on Artizen';
@@ -35,7 +36,7 @@ export default function FestivalsOpengraphImage() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/festivals</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/festivals</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>The ZAO</div>
         </div>
       </div>

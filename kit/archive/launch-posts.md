@@ -1,5 +1,8 @@
 # Launch posts - share the ZArtizen hub + Festivals umbrella
 
+> **ARCHIVE, and the URLs below are DEAD.** These posts name `zaoartizen.vercel.app`, retired 2026-09-13 along
+> with `za-oartizen.vercel.app`. Do not copy a link out of this file: take the current domain from `app/site.ts`.
+
 Copy-paste announcements. No emojis, no em dashes. Swap [brackets]. Links:
 zaoartizen.vercel.app and zaoartizen.vercel.app/festivals.
 

@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'Sponsor the ZAO Fund for Emerging Culture';
@@ -52,7 +53,7 @@ export default function SponsorOG() {
             color: 'rgba(255,255,255,0.55)',
           }}
         >
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/sponsor</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/sponsor</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>100% to creators. 0% fees.</div>
         </div>
       </div>

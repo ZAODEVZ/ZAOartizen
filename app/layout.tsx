@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Nav } from './Nav';
+import { SITE_URL } from './site';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://zaoartizen.vercel.app'),
+  metadataBase: new URL(SITE_URL),
   title: 'ZArtizen - The ZAO on Artizen',
   description:
     'The ZAO Fund for Emerging Culture on Artizen - a community match fund backing artists and technologists building collaborative cultural experiences.',

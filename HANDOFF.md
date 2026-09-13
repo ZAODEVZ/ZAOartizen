@@ -6,7 +6,7 @@ README.md for the full picture; this is the "where it stands + what to do next" 
 ## What this is
 
 The ZAO's operating home for everything Artizen - research, strategy, a ready-to-use kit, and a live
-7-page site at **https://zaoartizen.vercel.app**. Graduated out of the ZAOOS monorepo (2026-06-13).
+7-page site, deployed from this repo (its URL is `SITE_URL` in `app/site.ts`). Graduated out of the ZAOOS monorepo (2026-06-13).
 Two projects are LIVE (Season 6): ZAO Festivals and BetterCallZaal Strategies (patronage model).
 
 ## Live site (deploy: `npx vercel --prod --yes`; or `scripts/refresh.sh` to scrape + update + deploy)

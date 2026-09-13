@@ -1,5 +1,8 @@
 # Make ZAO Festivals real on Artizen - the setup
 
+> **ARCHIVE, and the URLs below are DEAD.** These posts name `zaoartizen.vercel.app`, retired 2026-09-13 along
+> with `za-oartizen.vercel.app`. Do not copy a link out of this file: take the current domain from `app/site.ts`.
+
 Two things to stand up, in order. Part A you can do TODAY. Part B needs the René call.
 
 ---

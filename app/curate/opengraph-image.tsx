@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'Get curated by the ZAO Fund for Emerging Culture';
@@ -33,7 +34,7 @@ export default function CurateOG() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/curate</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/curate</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>Collaborate with The ZAO</div>
         </div>
       </div>

@@ -16,7 +16,7 @@ Season 7 strategy: launch the patronage fund on Artizen with authentic proof (re
 - **Season 7 Artifact** (square, 1:1, no text) - submitted per platform requirements; visual: a new artists-thriving visual or building clip (per kit/season7-artifact-plan.md).
 
 ### Proof and Credibility Layer
-- **Receipts documented and live** (kit/bcz-showcase.md, TEAM-PLAYBOOK.md, zaoartizen.vercel.app):
+- **Receipts documented and live** (kit/bcz-showcase.md, TEAM-PLAYBOOK.md, the ZAO Artizen site):
   - Co-built WaveWarZ: 459 SOL volume, 950 live battles, 7.8 SOL paid directly to artists.
   - Founded The ZAO: 0 to 250+ artists in 3 years, 100+ weekly governance meetings, 188 members on-chain (Base).
   - 80+ open-source repos (publicly auditable in ZADEVZ and related orgs).

@@ -17,7 +17,7 @@ next. Last updated 2026-08-30. Style note: no spaced hyphen dashes anywhere (hou
     - Copy lineage in kit/: bcz-final-make, bcz-true-framing, bcz-showcase.md, bcz-reward-one, bcz-deck.md.
 - **The ZAO Fund for Emerging Culture** is live (Zaal is curator). Logline updated to "For the artists and
   builders of The ZAO." Description and eligibility tightened, with the "collaborate with The ZAO" rule.
-- **The site** zaoartizen.vercel.app is a full Artizen funnel (see Website below).
+- **The site** in `app/` is a full Artizen funnel (see Website below).
 - The Crescendo drive ends in roughly 3 days from the live date. Match unlocks on sales during the drive.
 
 ## The two projects (operational packets)
@@ -27,7 +27,7 @@ next. Last updated 2026-08-30. Style note: no spaced hyphen dashes anywhere (hou
 - The Artifact decision: a real festival photo or short clip, square, NO text or logo. The WaveWarZ frame (logo
   is integrated graphic art) was used for ZAO Festivals; a builder shot fits BCZ.
 
-## The website (zaoartizen.vercel.app)
+## The website (deployed from `app/`; its URL is `SITE_URL` in `app/site.ts`)
 A connected funnel that pushes visitors toward Artizen. Shared nav on every page plus a "Back the fund" CTA.
 Pages: home, /about (plain-English explainer), /curate (how to get curated, the $3+ match), /funds (the funds
 map + the ZAO 3-fund stack), /playbook (how Artizen works + finish strong), /community (the ZAO bloc with

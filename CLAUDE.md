@@ -22,7 +22,8 @@ does what. The front door for humans and agents.
 
 ## Repo layout
 
-- `app/` - the live Next.js 16 site (https://zaoartizen.vercel.app). Pages: `/` (hub), `/dashboard`
+- `app/` - the live Next.js 16 site. **Its own URL lives in ONE place, `app/site.ts`** (or the
+  `NEXT_PUBLIC_SITE_URL` env var) - never hard-code it again. Pages: `/` (hub), `/dashboard`
   (live ZAO Fund scoreboard - data in `app/dashboard/data.ts`), `/leaderboard` (Season 6 field,
   `app/leaderboard/data.ts`), `/rally` (crew CTA), `/apply` (artist-facing), `/festivals`, `/proposal`.
 - `scripts/` - `refresh.sh` (scrape live numbers -> update dashboard -> deploy); `refresh-fund.mjs`
@@ -46,7 +47,10 @@ register of what this repo cannot confirm.
 
 ## Live site + deploy
 
-- Live: **https://zaoartizen.vercel.app** (the old zartizen.vercel.app is dead).
+- Live: **the domain set on the Vercel project for this repo**; the value the build uses is `SITE_URL` in
+  `app/site.ts`. **Both 2026 vercel.app hosts are retired: `zaoartizen.vercel.app` and `za-oartizen.vercel.app`.**
+  They were two separate Vercel projects serving builds months apart, and the no-hyphen one served a false
+  tax-deductible answer for three days after the repo had fixed it (2026-09-13). `zartizen.vercel.app` died earlier.
 - Deploy: `cd ~/Desktop/repos/ZAOartizen && npx vercel --prod --yes` (CLI authed as bettercallzaal).
   Auto-deploy is NOT wired - redeploy manually after changes.
 - Commit as: `git -c user.email=zaalp99@gmail.com -c user.name=bettercallzaal commit ...`

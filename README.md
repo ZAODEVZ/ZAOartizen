@@ -60,7 +60,7 @@ Note: auto-deploy is NOT wired - git pushes do not trigger Vercel builds. Deploy
 
 ## Site pages
 
-Live at **https://zaoartizen.vercel.app**
+Live at **the domain set on this repo's Vercel project** (the build reads `SITE_URL` from `app/site.ts`)
 
 | Route | What | Audience |
 |---|---|---|
@@ -207,7 +207,7 @@ The ZAO runs the **ZAO Fund for Emerging Culture** (live standing on `/dashboard
 
 - **Artizen:** https://artizen.fund (client-rendered Bubble.io app)
 - **Playbook:** https://play.artizen.fund (official machine-readable resource)
-- **ZAO on Artizen:** https://zaoartizen.vercel.app
+- **ZAO on Artizen:** the site in this repo (`app/`), deployed to the domain in `app/site.ts`
 - **Key contacts:**
   - René Pinnell (@RJPinnell) - founder
   - Nate Van Cleve - Head of Product

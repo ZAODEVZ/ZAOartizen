@@ -39,7 +39,7 @@ Cinema) + Sam Pressman, Olli (Future Aesthetics), Mars Robertson, Guillermo (rel
 ## The reciprocity engine (what we uniquely have)
 
 Zaal is one of the few people on the platform who is creator + fund director + IRL organizer. The trade
-stack: curate their project into the ZAO Fund / boost publicly / feature on zaoartizen.vercel.app community
+stack: curate their project into the ZAO Fund / boost publicly / feature on the ZAO Artizen site community
 page / a ZABAL Gamez workshop slot / an Artizen LIVE-style spotlight at a ZAO event. Every meet should end
 with one concrete give.
 

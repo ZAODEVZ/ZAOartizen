@@ -1,6 +1,7 @@
+import { SITE_URL } from './site';
 import type { MetadataRoute } from 'next';
 
-const BASE = 'https://zaoartizen.vercel.app';
+const BASE = SITE_URL;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // /contacts is deliberately NOT here. It is the creator contact book - 40 real

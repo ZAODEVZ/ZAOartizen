@@ -94,7 +94,7 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
 - `scripts/refresh.sh` - one command to re-scrape the live ZAO Fund numbers, update the dashboard, and redeploy
   (`bash scripts/refresh.sh`). Keeps `/dashboard` current without hand-editing. `scripts/refresh-fund.mjs --write`
   does just the scrape+update if you want to review before deploying.
-- Live site: **https://zaoartizen.vercel.app** - `/dashboard` (scoreboard), `/leaderboard` (the field),
+- Live site: **the domain on this repo's Vercel project** (`SITE_URL` in `app/site.ts`) - `/dashboard` (scoreboard), `/leaderboard` (the field),
   `/rally` (the GC-shareable 3-step crew CTA).
 - `research/mechanics-canonical.md` - **the mechanics source of truth.** Everything else links here.
 - `research/` - the deep dives: platform study (844), ART/endowment economics (845), funding strategy (846),

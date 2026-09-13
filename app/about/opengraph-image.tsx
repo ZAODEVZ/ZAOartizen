@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'How it works - back real artists on Artizen';
@@ -44,7 +45,7 @@ export default function AboutOG() {
           </div>
         </div>
         <div style={{ display: 'flex', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          zaoartizen.vercel.app/about
+          {SITE_HOST}/about
         </div>
       </div>
     ),

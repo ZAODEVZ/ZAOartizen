@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'ZAO Festivals on Artizen - proposal for team input';
@@ -35,7 +36,7 @@ export default function ProposalOpengraphImage() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/proposal</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/proposal</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>ZAO Festivals</div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'Apply to the ZAO Fund for Emerging Culture on Artizen';
@@ -53,7 +54,7 @@ export default function ApplyOG() {
             color: 'rgba(255,255,255,0.55)',
           }}
         >
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/apply</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/apply</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>0% fees. 100% to you.</div>
         </div>
       </div>

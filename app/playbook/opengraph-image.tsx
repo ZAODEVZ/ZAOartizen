@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 
 export const alt = 'The ZAO Fund on Artizen - the creator playbook';
@@ -31,7 +32,7 @@ export default function PlaybookOG() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app/playbook</div>
+          <div style={{ display: 'flex' }}>{SITE_HOST}/playbook</div>
           <div style={{ display: 'flex', color: '#f5a623' }}>Keep 100% of your sales</div>
         </div>
       </div>

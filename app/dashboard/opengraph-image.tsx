@@ -1,3 +1,4 @@
+import { SITE_HOST } from '../site';
 import { ImageResponse } from 'next/og';
 import { fundStats } from './data';
 
@@ -52,7 +53,7 @@ export default function DashboardOG() {
           </div>
         </div>
         <div style={{ display: 'flex', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          zaoartizen.vercel.app/dashboard
+          {SITE_HOST}/dashboard
         </div>
       </div>
     ),
