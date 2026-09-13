@@ -49,7 +49,7 @@ export default function VideosPage() {
       <section className="mt-12 rounded-2xl border border-[#f5a623]/40 bg-[#f5a623]/10 p-6">
         <h2 className="text-lg font-bold">Back the work you just watched</h2>
         <p className="mt-2 text-sm leading-relaxed text-white/80">
-          Every $10 Artifact collected on a ZAO Fund project unlocks matching from the fund, paid
+          Every $10 Artifact collected on a ZAO Fund project can unlock matching from the fund, while its match lasts, paid
           straight to the creator. Supporting a project and supporting the fund are the same action.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
