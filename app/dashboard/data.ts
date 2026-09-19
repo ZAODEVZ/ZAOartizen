@@ -57,15 +57,15 @@ export const fundStats: FundStats = {
   prizeUsd: null,
   poolUsd: null,
   matchDeployedUsd: null, // "RAISED" on Artizen
-  matchRemainingUsd: 1236, // "AVAILABLE" on Artizen
-  offeredThisSeasonUsd: 21145, // "Total" on the fund page, same read as scrapedAt
-  projectsCurated: 19, // the fund page's "Competition" count = curated projects. NOT its "Curation" count, which is submitted + removed (41 = 8 + 33 on 2026-09-10)
+  matchRemainingUsd: 2601, // "AVAILABLE" on Artizen
+  offeredThisSeasonUsd: 21797, // "Total" on the fund page, same read as scrapedAt
+  projectsCurated: 21, // the fund page's "Competition" count = curated projects. NOT its "Curation" count, which is submitted + removed
   signupsDriven: null,
-  activeDrive: 'Limitless Fund Drive',
+  activeDrive: 'Beyond Fund Drive',
   driveMultiplier: null, // confirm current multiplier
-  driveDeadline: 'ends in 6 days (read 2026-09-10)',
-  lastUpdated: '2026-09-10',
-  scrapedAt: '2026-09-10T20:15:00Z',
+  driveDeadline: 'ends in 4 days (read 2026-09-19)',
+  lastUpdated: '2026-09-19',
+  scrapedAt: '2026-09-19T21:19:32Z',
   updatedBy: 'auto-refresh',
 };
 

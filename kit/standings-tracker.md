@@ -4,6 +4,34 @@ Update this each drive. It is the proof we bring to Rene in Phase 2: not how muc
 match we DEPLOYED and how big a crowd we moved. Numbers come from the live Artizen dashboard - re-check before
 quoting (standings move daily).
 
+## ZAO Fund - current (Season 7, Beyond Fund Drive)
+
+Last updated: `2026-09-19 21:19 UTC` by `scripts/refresh-fund.mjs --write`, read live off the fund's own
+page (`https://artizen.fund/index/mf/zao-fund-for-emerging-culture?season=7`).
+
+| Field | Value |
+|-------|-------|
+| Fund rank (among all funds) | **TBD** - RANK reads `-`; the Beyond Fund Drive has no recorded activity yet, so rank/prize/raised are not measurable this drive (see `scripts/refresh-fund.mjs` comments) |
+| Fund total (page labels it "Total") | `$21,797` |
+| Raised this drive | `$0` - no activity yet, not a deployed-then-drained $0 |
+| **Match still AVAILABLE (undeployed)** | **`$2,601`** |
+| Projects curated (Competition count) | `21` |
+| Boosts (fund-level) | `73` |
+| Bonus (estimated) | `$1,619.59` |
+| Active drive | `Beyond Fund Drive` |
+| Drive deadline | `ends in 4 days (read 2026-09-19)` -> approx. 2026-09-23 |
+
+**Trend since the last two renders:** total `$15,431` (8/20) -> `$21,797` (9/19); match available
+`$1,273` (8/20) -> `$2,561` (9/10) -> `$2,601` (9/19), still climbing, still undeployed; boosts `29` (9/08)
+-> `73` (9/19); Competition count `16` (8/20) -> `19` (9/10) -> `21` (9/19). The drive name has changed
+three times (Flywheel -> Resonance/Limitless -> Beyond) - these are weekly drives, not the same race.
+
+**Not re-verified this render** (the scraper is fund-level only, not per-project): the "ZAO's own
+projects" table and the "Projects we back" roster below are still the 2026-09-08 read. Re-scrape the
+leaderboard before quoting either.
+
+## Superseded entry (2026-09-08/09-10, Resonance/Limitless Fund Drive)
+
 **Last updated: `2026-09-08` by the artizen lane, read live off the fund page.**
 **RE-CHECK BY: the next drive close, or before quoting any figure here.** Artizen numbers move mid-drive;
 two of the figures below changed inside 24 hours (boosts 23 -> 29, bonus $664.95 -> $688.42).
@@ -28,8 +56,6 @@ two of the figures below changed inside 24 hours (boosts 23 -> 29, bonus $664.95
 > project view, and **"ZAO Fund" does not appear on any of them.** The fund-vs-fund leaderboard the old
 > `#19 of ~82` number came from **could not be found on 2026-09-08.** Until someone finds it or Artizen
 > restores it, **fund rank is not measurable** - do not carry the old number forward as if it still holds.
-
-## ZAO Fund - current (Season 7, Resonance Fund Drive, ends Thu 10 Sept 11:00 PT)
 
 | Field | Value |
 |-------|-------|

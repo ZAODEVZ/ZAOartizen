@@ -4,9 +4,20 @@
 #
 # Usage: bash scripts/refresh.sh
 #
-# Requires: node, the gstack `browse` binary (~/.claude/skills/gstack/browse), and vercel CLI
-# authed as bettercallzaal. Review the data.ts diff before it deploys if you want - comment out
-# the deploy line.
+# Requires: node, Playwright (see below), and vercel CLI authed as bettercallzaal.
+#
+# Playwright: NOT a dependency of this repo (it would pull a browser download into a
+# Next.js app). refresh-fund.mjs resolves it from, in order: normal node resolution,
+# $PLAYWRIGHT_PATH, then ~/Documents/ZAO OS V1/node_modules/playwright. If none
+# resolve it aborts with install instructions rather than guessing.
+#
+# It does NOT use the gstack `browse` binary any more - browse mis-detects a busy
+# headless server as dead and silently swaps in a blank page (ZAOOS#3065, three
+# instances, root-caused; rule: .claude/rules/liveness-probe-guard.md).
+#
+# `set -e` plus refresh-fund.mjs's exit-1 guards mean a failed or partial scrape
+# stops here and never reaches build or deploy. Review the data.ts diff before it
+# deploys if you want - comment out the deploy line.
 set -e
 cd "$(dirname "$0")/.."
 
