@@ -4,6 +4,7 @@
 
 import { RosterExplorer } from './roster-explorer';
 import { fundStats } from './dashboard/data';
+import { DataStamp } from './data-stamp';
 import { featuredVideo } from './videos/data';
 import { VideoEmbed } from './videos/video-embed';
 
@@ -211,14 +212,13 @@ export default function ArtizenPage() {
           <Stat label="Fund pool" value={FUND_POOL} />
           <Stat label="Match available" value={FUND_AVAILABLE} />
         </section>
-        <p className="mb-12 text-xs text-white/40">
-          Fund rank + pool as of {fundStats.lastUpdated} (they move daily). Live standings + match headroom on
-          the{' '}
+        <DataStamp scrapedAt={fundStats.scrapedAt} className="mb-12">
+          Live standings + match headroom on the{' '}
           <a href="/dashboard" className="text-[#f5a623] underline-offset-2 hover:underline">
             dashboard
           </a>
           .
-        </p>
+        </DataStamp>
 
         {/* Featured project of the day */}
         <section className="mb-12">
@@ -240,7 +240,7 @@ export default function ArtizenPage() {
             ) : null}
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               One of the best ways to back {featured.creator}: collect their Artifact. Because they are
-              part of the ZAO Fund, every dollar they raise unlocks matching from the fund, paid
+              part of the ZAO Fund, every dollar they raise can unlock matching from the fund, at that week's Match Multiple, paid
               straight to the creator. Support the project, support the fund.
             </p>
             <a
@@ -254,7 +254,7 @@ export default function ArtizenPage() {
           </div>
         </section>
 
-        {/* Featured video - episode 1 of the ZAO Artizen series. Full series on /videos. */}
+        {/* Featured video = videos[0] in app/videos/data.ts - festival footage, per Venus review round one. Full series on /videos. */}
         <section className="mb-12">
           <div className="mb-3 flex items-baseline justify-between">
             <h2 className="text-lg font-bold sm:text-xl">Watch</h2>

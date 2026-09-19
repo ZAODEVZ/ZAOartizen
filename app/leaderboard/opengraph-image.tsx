@@ -43,7 +43,7 @@ export default function LeaderboardOG() {
             the field
           </div>
           <div style={{ display: 'flex', marginTop: 24, fontSize: 32, color: 'rgba(255,255,255,0.72)' }}>
-            {leaderboard.length} projects, ranked by Artifact sales. {zaoCount} ZAO-tied. Most sales wins.
+            {leaderboard.length} projects, Season 6 snapshot. {zaoCount} ZAO-tied.
           </div>
         </div>
         <div style={{ display: 'flex', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>

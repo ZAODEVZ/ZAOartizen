@@ -58,7 +58,7 @@ const FINDINGS: string[] = [
   'Cross-curation already happens for us: six ZAO-fund music projects (Voices of the Land, Gaian Temple, HERITAGE, Sonic Sanctuary, International Artists Project, MOTHERLand) are also in the Global Music Fund.',
   'Our ZAO Fund for Emerging Culture was dormant this drive as of June 22 (rank ~#23, ~$188 at that snapshot) - it only ranks when our projects actually sell.',
   'Friendly funds are run by people we know: the Bonfires Fund (our knowledge-graph partner) already hosts Arun\'s DreamStarter and Abraham Nash\'s project.',
-  'Platform caution: Artizen\'s "$14M endowment" is not visible on-chain in the Juicebox project its token points to (~34 ETH, dormant a year+). Keep ZAO treasury out of the ART token for now.',
+  'Treasury policy: keep the ZAO treasury out of the ART token for now. The endowment size is Artizen\'s own figure - check the Base addresses in the Playbook\'s Endowment section before quoting it.',
 ];
 
 function NavBar() {

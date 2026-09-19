@@ -1,5 +1,7 @@
 # Artizen mechanics, verified from the Telegram group (Venus bot + Rene)
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 Captured 2026-07-03 from the private Artizen Telegram group (249 members, "select creators and fund
 directors" - Zaal is in it). Source: Venus (the Artizen bot) answering G3R, Adam Chew, Paloma, Afo, and
 Rene Pinnell answering directly. This SUPERSEDES the "unverified" flags in kit/zao-fund-curation.md on

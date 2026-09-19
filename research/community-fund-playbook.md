@@ -1,5 +1,7 @@
 # Community-fund playbook - how the best funds run, and how ZAO copies them
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 How successful communities run + fill their Artizen funds, distilled into a model for the ZAO Fund(s).
 From research/846, /847, the fund directory, and the live fund renders. Snapshot 2026-06-13.
 
@@ -45,7 +47,7 @@ crowd that already exists.
 ## How to FILL the match pool (recruit sponsors)
 
 - Start with the $50K Artizen seed (community-fund program) + a ZAO-treasury Founding Sponsor stake.
-- Recruit brand sponsors: music/event brands (Restream, Magnetiq, labels, festival-infra), Web3 orgs
+- Recruit brand sponsors: music/event brands (Restream, labels, festival-infra), Web3 orgs
   wanting cultural credibility. Pitch: "your dollars become community-directed match; you don't pick
   winners, the crowd does" (kit/sponsor-onepager.md).
 - 100% of sponsor dollars go to the fund (10% top-project prize, 90% even match); Artizen takes 0%.

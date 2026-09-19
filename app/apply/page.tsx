@@ -32,7 +32,7 @@ const STEPS: Step[] = [
   { n: 1, title: 'Submit your project', body: 'Create your project on Artizen and submit it to the ZAO Fund for Emerging Culture.' },
   { n: 2, title: 'Get curated in', body: 'The ZAO community votes projects in during the curation phase (the vote runs in our Discord). Strong community fit + a clear public outcome win.' },
   { n: 3, title: 'Mint your Artifact', body: 'Publish a $10 open-edition Artifact - square, video/GIF, no text overlay performs best. 0% fees, 100% to you.' },
-  { n: 4, title: 'Rally + sell', body: 'Every $1 a fan spends unlocks $1 of match from the ZAO Fund (and stacks across any other fund backing you). The more people who buy, the higher you climb.' },
+  { n: 4, title: 'Rally + sell', body: 'Every $1 a fan spends unlocks match from the ZAO Fund and the Artizen Endowment, at that week\'s Match Multiple (and stacks across any other fund backing you). Your rank is the money you raise, so the more people who buy, the higher you climb.' },
 ];
 
 export default function ApplyPage() {

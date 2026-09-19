@@ -6,6 +6,13 @@ an Artizen artifact/project for the ZAO Fund for Emerging Culture.
 
 ## Read this before doing either part
 
+> **MECHANICS CORRECTED 2026-09-10** (`research/mechanics-canonical.md`, Playbook v34, confirmed by
+> Venus). Since Playbook v21 (2026-08-21) rank is simply **money raised = sales + match unlocked**, not
+> the old `(sales + match) x boost points / 100` formula this file was drafted against - that formula is
+> retired. Boosts now win a share of a **separate weekly Boost Bonus pot**; they do not multiply match or
+> sales. Both cast drafts below are corrected in place; do not restate the old formula if you edit them
+> further.
+
 **Do not fire the cast yet.** As of 2026-08-18 the ZAO Fund for Emerging Culture is **rank #55 of 101
 funds**, and the current drive (#12 Flywheel) is at **$0 sales, $0 match unlocked**, with **$1,272 of
 match sitting unused**.
@@ -31,27 +38,27 @@ Post after the Artifacts are live. Fill the two bracketed links before posting.
 
 > On Artizen, collecting a $10 artifact doesn't just pay the artist.
 >
-> It unlocks $1 of match from every fund backing that project. Stack a few funds and a $10 collect moves
-> a lot more than $10.
+> It unlocks match from every fund backing that project, at that week's Match Multiple. Stack a few
+> funds and a $10 collect moves more than $10.
 >
 > The ZAO Fund for Emerging Culture backs 12 projects. Two new ones just went up:
 > [ZAO Festivals link] · [BCZ Strategies link]
 >
-> Collect one. Then boost it - boosting is free and it multiplies the whole thing.
+> Collect one. Then boost it - boosting is free and wins a share of this week's bonus pot.
 
 **Draft B - shorter, for a reply or a recast:**
 
-> $10 collect = $1 unlocked from every fund backing the project. Boosts multiply it, and boosting costs
-> nothing.
+> $10 collect = match unlocked from every fund backing the project, at that week's Match Multiple.
+> Boosting is free and wins a share of the weekly Boost Bonus pot.
 >
 > Two new artifacts live in the ZAO Fund for Emerging Culture: [links]
 >
-> Collect + boost. Both, or it doesn't compound.
+> Collect + boost. Both - they pay from different pots.
 
-**Why both drafts end on "boost too":** rank is `(sales + match unlocked) x boost points / 100` -
-**multiplicative** (doc 887 via `TEAM-PLAYBOOK.md`). Asking for a collect without a boost leaves most of
-the value on the floor, and a second cast to ask for the boost will not get the same reach. One message,
-both asks.
+**Why both drafts end on "boost too":** rank is simply **money raised (sales + match unlocked)**
+(`research/mechanics-canonical.md`, Playbook v34) - a collect without a boost still raises rank, but
+skips the separate weekly Boost Bonus pot entirely. Asking for both in one message gets more of the
+available upside than a second cast asking for the boost later, which will not get the same reach.
 
 **Do not put in the cast:** the current rank, the score, or "$0 raised". All true, all verified, none of
 it recruits anyone. There is no dishonesty in leading with the mechanic instead of the standing.

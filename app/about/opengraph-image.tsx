@@ -34,7 +34,7 @@ export default function AboutOG() {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'flex', fontSize: 72, fontWeight: 800, lineHeight: 1.05 }}>
-            $10 becomes $20+
+            $10, matched
           </div>
           <div style={{ display: 'flex', fontSize: 72, fontWeight: 800, lineHeight: 1.05, color: '#f5a623' }}>
             for the artist

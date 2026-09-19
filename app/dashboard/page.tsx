@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { fundStats, backedProjects, horse, proofLog, crossbackFunds } from './data';
+import { DataStamp } from '../data-stamp';
 
 // /dashboard - the ZAO Fund scoreboard. Tracks the proof metrics (match DEPLOYED,
 // buyers moved, projects climbed) that become the Phase 2 pitch to Rene. Data lives
@@ -52,18 +53,23 @@ export default function DashboardPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-bold sm:text-4xl">ZAO Fund Dashboard</h1>
         <p className="mt-2 max-w-2xl text-white/60">
-          The scoreboard for the{' '}
+          The{' '}
           <a href={FUND_URL} className="text-[#f5a623] underline">
             ZAO Fund for Emerging Culture
           </a>
-          . We measure match <strong>deployed</strong> (not deposited) and the crowd we move - the proof we
-          bring to Rene. Win = Boost Score = (sales + match) x boost points / 100 - boosts multiply dollars, so
-          rally both buys and Boosts.
+          {' '}is a community fund on Artizen, run by The ZAO, a music-first community of independent artists
+          and builders. It curates independent artists and cultural projects, and every $10 Artifact a fan buys
+          on one of them can unlock match from the fund, while its match lasts. This page is its scoreboard: what the fund has put to
+          work, what is still available, and where it ranks - read from the fund&apos;s public Artizen page.
         </p>
-        <p className="mt-2 text-xs text-white/40">
-          Snapshot from {fundStats.lastUpdated} (numbers move daily). Edit{' '}
-          <code className="text-white/60">app/dashboard/data.ts</code> to update.
+        <p className="mt-2 max-w-2xl text-sm text-white/50">
+          How ranking works: rank is money raised (sales + match unlocked); boosts win a share of the weekly
+          Boost Bonus pot. We measure match <strong>deployed</strong>, not deposited.
         </p>
+        <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-2">
+          Read from the fund&apos;s public Artizen page by{' '}
+          <code className="text-white/60">scripts/refresh-fund.mjs</code>.
+        </DataStamp>
       </header>
 
       {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0 ? (
@@ -74,8 +80,8 @@ export default function DashboardPage() {
             {fundStats.driveDeadline ? ` (${fundStats.driveDeadline})` : ''}
           </div>
           <p className="mt-1 text-sm text-white/70">
-            This is the live lever. Every $10 the crew buys on a curated project unlocks $1-for-$1 from this
-            pool before the drive closes. Pick one horse, rally everyone, deploy the match. See{' '}
+            This is the live lever. Every $10 the crew buys on a curated project unlocks match from this pool,
+            at that week&apos;s Match Multiple, before the drive closes. Pick one horse, rally everyone, deploy the match. See{' '}
             <a href="/leaderboard" className="text-[#f5a623] underline">
               the field
             </a>{' '}
@@ -84,12 +90,41 @@ export default function DashboardPage() {
         </div>
       ) : null}
 
+      {fundStats.offeredThisSeasonUsd !== null || fundStats.matchRemainingUsd !== null ? (
+        <section className="mb-8 rounded-xl border border-white/10 bg-white/5 p-4">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">The gap, stated plainly</h2>
+          <p className="mt-2 text-white/80">
+            {fundStats.offeredThisSeasonUsd !== null ? (
+              <>
+                Offered into the fund this season: <strong>{usd(fundStats.offeredThisSeasonUsd)}</strong> (fund page).{' '}
+              </>
+            ) : null}
+            {fundStats.matchRemainingUsd !== null ? (
+              <>
+                Available this drive: <strong>{usd(fundStats.matchRemainingUsd)}</strong>.{' '}
+              </>
+            ) : null}
+            {fundStats.matchRemainingUsd !== null && fundStats.matchRemainingUsd > 0
+              ? 'The fund still has match to give this drive; every Artifact bought on a ZAO Fund project draws on it while that project\'s match lasts.'
+              : fundStats.matchRemainingUsd === 0
+                ? // Drive timing source: research/mechanics-canonical.md section 3 (lines ~92-96; conflict M7 closed by
+                  // Venus 2026-09-10). Drives CLOSE Thursday 11:00 AM Pacific and the next opens as soon as possible
+                  // after - not at a fixed minute. This prose has no scrapedAt stamp: re-check there if drives change.
+                  'This drive\'s match is fully unlocked. Drives run Thursday to Thursday - the next opens shortly after 11 AM Pacific Thursday; buys until then still count as sales.'
+                : null}
+          </p>
+          <p className="mt-2 text-xs text-white/40">
+            Both figures are read from the fund&apos;s public Artizen page. A season-to-date &quot;match unlocked&quot;
+            figure for one fund is not published on Artizen yet, so this page does not show one.
+          </p>
+        </section>
+      ) : null}
+
       <section className="mb-10">
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/50">Fund - now</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           <StatCard label="Match deployed" value={usd(fundStats.matchDeployedUsd)} hero />
           <StatCard label="Fund rank" value={fundStats.rank === null ? 'TBD' : `#${fundStats.rank}`} />
-          <StatCard label="Score" value={txt(fundStats.scoreLabel)} />
           <StatCard label="Prize" value={usd(fundStats.prizeUsd)} />
           <StatCard label="Pool (deposited)" value={usd(fundStats.poolUsd)} />
           <StatCard label="Match remaining" value={usd(fundStats.matchRemainingUsd)} />
@@ -209,7 +244,7 @@ export default function DashboardPage() {
           Cross-back targets
         </h2>
         <p className="mb-3 text-sm text-white/60">
-          Get our projects curated into these funds too - each one adds another $1-for-$1 match stream on every
+          Get our projects curated into these funds too - each one adds its own slice of match to every
           Artifact sale (stacking). Pools from research; re-check live.
         </p>
         <div className="overflow-x-auto rounded-xl border border-white/10">

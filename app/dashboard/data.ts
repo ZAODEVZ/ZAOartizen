@@ -4,17 +4,22 @@
 
 export interface FundStats {
   rank: number | null; // rank among all Artizen funds
-  scoreLabel: string | null; // the fund's SCORE as shown on Artizen
+  scoreLabel: string | null; // RETIRED - Artizen dropped the score when rank became money raised (Playbook v21, 2026-08-21). Unused; kept null.
   prizeUsd: number | null; // current prize for the fund's top project
   poolUsd: number | null; // total deposited into the fund
   matchDeployedUsd: number | null; // THE KPI - match actually unlocked by sales (the "raised" figure)
-  matchRemainingUsd: number | null; // undeployed match still in the pool (the "available" figure)
+  matchRemainingUsd: number | null; // the fund's drive card AVAILABLE - match left THIS DRIVE (resets each Thursday). NOT a season figure
+  offeredThisSeasonUsd: number | null; // the fund page's "Total": this season's sponsorship into the fund (Venus, 2026-09-11). Offered, NOT unlocked
   projectsCurated: number | null;
   signupsDriven: number | null; // community signups we drove onto Artizen
   activeDrive: string | null; // e.g. "Frontier Fund Drive"
   driveMultiplier: string | null; // e.g. "2x"
   driveDeadline: string | null; // e.g. "2026-07-09"
-  lastUpdated: string; // YYYY-MM-DD
+  lastUpdated: string; // YYYY-MM-DD (human-facing date of the last edit)
+  // ISO 8601 UTC instant the numbers were scraped. Drives the "Data as of" stamp and the
+  // stale warning on every page that shows rank/match/funding. When only the date is known,
+  // use T00:00:00Z - that reads older than reality, which is the safe direction for a guard.
+  scrapedAt: string;
   updatedBy: string;
 }
 
@@ -44,26 +49,23 @@ export interface ProofEntry {
 
 // --- EDIT BELOW ---
 
-// Live numbers scraped from https://artizen.fund/index/mf/zao-fund-for-emerging-culture?season=7 on 2026-08-20 by scripts/refresh-fund.mjs.
-// Standings move daily - re-scrape before quoting. poolUsd is the figure the fund page
-// labels "Total" ($15431); the page does not say whether that is deposits or
-// cumulative raised, so treat it as "the fund's headline total", not a verified pool size.
-// matchDeployedUsd is the page's RAISED. The CURRENT DRIVE figures (sales $0, match
-// unlocked $0) are deliberately NOT written here - drive scope and season
-// scope are different things, and conflating them is a bug this repo has already shipped once.
+// Written by scripts/refresh-fund.mjs from the fund's own Artizen page (see scrapedAt). Null = TBD: the
+// scraper nulls anything it cannot vouch for rather than leave an older value under a fresh date.
 export const fundStats: FundStats = {
-  rank: 67,
-  scoreLabel: '0.01',
-  prizeUsd: 100,
-  poolUsd: 15431,
-  matchDeployedUsd: 100, // "RAISED" on Artizen
-  matchRemainingUsd: 1273, // "AVAILABLE" on Artizen
-  projectsCurated: 16, // confirm from the logged-in curator view
+  rank: null,
+  scoreLabel: null,
+  prizeUsd: null,
+  poolUsd: null,
+  matchDeployedUsd: null, // "RAISED" on Artizen
+  matchRemainingUsd: 2601, // "AVAILABLE" on Artizen
+  offeredThisSeasonUsd: 21797, // "Total" on the fund page, same read as scrapedAt
+  projectsCurated: 21, // the fund page's "Competition" count = curated projects. NOT its "Curation" count, which is submitted + removed
   signupsDriven: null,
-  activeDrive: 'Flywheel Fund Drive',
+  activeDrive: 'Beyond Fund Drive',
   driveMultiplier: null, // confirm current multiplier
-  driveDeadline: 'Ends in 30 minutes (as of 2026-08-20)',
-  lastUpdated: '2026-08-20',
+  driveDeadline: 'ends in 4 days (read 2026-09-19)',
+  lastUpdated: '2026-09-19',
+  scrapedAt: '2026-09-19T21:19:32Z',
   updatedBy: 'auto-refresh',
 };
 

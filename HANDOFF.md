@@ -36,10 +36,10 @@ from a position of strength.
 
 ## Key findings / decisions on record (live, 2026-07-03)
 
-- **Win condition (official playbook): Boost Score = (sales + match) x boost points / 100.** Boosts MULTIPLY
-  dollars - need BOTH. A project that sold the most but had few boosts finished LAST. Lever = the crowd buying
-  $10 Artifacts AND casting Boosts (free). Boost points from holding ART / profile complete / events / Endowment.
-  Winning Artifact = square, video/GIF, no text. (Doc 887.)
+- **Win condition - SUPERSEDED 2026-08-21.** This line used to read "Boost Score = (sales + match) x boost
+  points / 100". Since Playbook v21, **rank = money raised (sales + match unlocked), prizes follow rank, and
+  boosts win a share of a separate weekly Boost Bonus pot.** Current mechanics, with sources and dates:
+  `research/mechanics-canonical.md`. Winning Artifact = square, video/GIF, no text.
 - **BCZ Strategies = PATRONAGE, not consulting.** Tagline: "My fund to help artists full-time. Back it if 
   you would value me in your corner, and I will support however I can." One reward ("In Your Corner" / $10).
   Proof: 80+ repos, WaveWarZ 459 SOL / 950 battles / 7.8 SOL to artists, The ZAO 0 to 250+ in 3y, FarHack 2026 

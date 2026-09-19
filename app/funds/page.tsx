@@ -41,8 +41,8 @@ export default function FundsPage() {
         <h1 className="mt-2 text-3xl font-bold sm:text-4xl">The Artizen funds map</h1>
         <p className="mt-3 text-white/70">
           The biggest lever on Artizen: get your project curated by <strong>more than one fund</strong>. Every
-          $10 Artifact sale unlocks $10 of match from <em>each</em> fund backing you - so a project in 3 funds
-          matches 3x on the same sales. Here&apos;s where ZAO-type projects fit.
+          fund that curates you adds its own slice of match, unlocked by your sales at that week&apos;s Match
+          Multiple - so the same sales draw on three pools instead of one. Here&apos;s where ZAO-type projects fit.
         </p>
       </header>
 

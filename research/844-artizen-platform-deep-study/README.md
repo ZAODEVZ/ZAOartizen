@@ -10,6 +10,8 @@ tier: DISPATCH
 
 # 844 — Artizen: Deep Platform Study (model, ART token, team, sentiment, competition)
 
+> **Mechanics: this is a point-in-time record, not the source of truth.** Any formula, ratio, season date or prize rule below is superseded by [`mechanics-canonical.md`](../mechanics-canonical.md) if the two disagree - that file carries the source and date for every mechanics claim in this repo, plus the TODO-VERIFY register. This doc stays as written so the canonical file can cite it.
+
 > **Goal:** Go past the fund roster ([Doc 843](../843-zao-fund-artizen-roster-june2026/)) into Artizen the platform - how the money actually moves, the new ART/Endowment machine, who runs it, what people say, and where it sits vs Gitcoin/Juicebox/the ReFi world. The canonical "what is Artizen, really" doc for ZAO.
 
 > **Method:** DISPATCH - 5 parallel research agents (company, mechanics, 2026 relaunch, sentiment, competition), each climbing the fetch ladder, synthesized here. One agent (company/funding history) died mid-run; its ground is covered by the sentiment + relaunch agents.
@@ -26,7 +28,7 @@ tier: DISPATCH
 
 ## What Artizen is (one paragraph)
 
-Web3 match-funding platform for art / science / technology / culture, founded by **René Pinnell**. Creators mint **open-edition "Artifact" NFTs ($10, on Ethereum mainnet, 100% to the creator, 0% platform fee)**. Every $1 of artifact sales instantly unlocks $1 from each community **Fund** backing that project (match stacks across multiple funds, until each pool drains). Runs in **seasons** with a **Curation** phase (community votes projects in) then a **Competition** phase (sell artifacts, climb the leaderboard, win cash prizes). On top of this sits a newer **ART token + Endowment** treasury machine. Built and rebuilt ~10 times on **Bubble.io** (no-code).
+Web3 match-funding platform for art / science / technology / culture, founded by **René Pinnell**. Creators mint **open-edition "Artifact" NFTs ($10, on Ethereum mainnet, 100% to the creator, 0% platform fee)** *[corrected 2026-09-11: the Playbook does not name the Artifact chain - ART and the Endowment run on Base - and Artizen now adds a 10% fee at checkout; see [`mechanics-canonical.md`](../mechanics-canonical.md) section 2]*. Every $1 of artifact sales instantly unlocks $1 from each community **Fund** backing that project (match stacks across multiple funds, until each pool drains). Runs in **seasons** with a **Curation** phase (community votes projects in) then a **Competition** phase (sell artifacts, climb the leaderboard, win cash prizes). On top of this sits a newer **ART token + Endowment** treasury machine. Built and rebuilt ~10 times on **Bubble.io** (no-code).
 
 ## The fund-drive cadence (current)
 
@@ -45,7 +47,7 @@ Artizen runs weekly "fund drives" with escalating match multiples to create urge
 
 | Element | Detail | Confidence |
 |---|---|---|
-| Artifact | Open-edition NFT, **$10**, 100% to creator, **Ethereum mainnet** (~$25-30 to buyer w/ gas). Likely ERC-1155, not explicitly confirmed. | [FULL] price/payout; [PARTIAL] token standard |
+| Artifact | Open-edition NFT, **$10**, 100% to creator, **Ethereum mainnet** (~$25-30 to buyer w/ gas). Likely ERC-1155, not explicitly confirmed. **[Corrected 2026-09-11: the chain is NOT confirmed - the Playbook does not name it for Artifacts; see [`mechanics-canonical.md`](../mechanics-canonical.md) section 2.]** | [FULL] price/payout; **[NONE] chain** (was [FULL]); [PARTIAL] token standard |
 | Platform fee | **0%.** Artizen takes no cut of artifact sales, sponsor dollars, or match. | [FULL] |
 | Match | 1:1 instant. $1 sale unlocks $1 from each backing fund, while that fund's pool lasts. | [FULL] |
 | Multi-fund stacking | A project curated into N funds gets matched by all N independently. The whole incentive to seek broad backing. | [FULL] |

@@ -165,8 +165,8 @@ open-source, which this lane cannot confirm.
 ## Before any submission
 
 - **Fresh per-project Season 7 Artifact must exist first.** A curated project with nothing to collect
-  cannot unlock match, so a successful submission into five funds still yields $0. See
-  `kit/artifact-sprint-2026-08-20.md`.
+  cannot unlock match at any Match Multiple, so a successful submission into five funds still yields
+  $0. See `kit/artifact-sprint-2026-08-20.md`.
 - Every fund's eligibility text should be re-read on its own page before submitting - the one-line
   missions above are what the board shows, not the full eligibility criteria.
 - Fund rosters and names move. Re-run `node scripts/refresh-fund.mjs --json` or re-render the board if
