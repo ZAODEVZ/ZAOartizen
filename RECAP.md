@@ -170,6 +170,28 @@ therefore run against the existing research set only, NOT against the Monday Mom
 notes. When those notes land, re-run the audit against `research/mechanics-canonical.md` and update its
 supersession log.
 
+### Where this actually stands (the honest line, 2026-09-20)
+
+Asked directly in the grill whether the bootstrap motion has run, Zaal's answer was that it has not
+really happened yet. Recording it here because the rest of this file reads like it has:
+
+- `proofLog` in `app/dashboard/data.ts` is **empty**. Zero drives logged, `horse` is null. The
+  dashboard says so plainly on the page, which is correct.
+- The last recorded numbers are a 2026-06-22 snapshot: $2,432 of match deployed against a $10,547
+  pool, through a whole Season 6 to Season 7 boundary.
+- So the kit, the site, the research set and the fund are built; **the crew rally has not run at
+  scale.** The two are not the same thing and this repo has sometimes read as though they were.
+
+What follows from that: Phase 2 is further off than the earlier sections of this file imply. The
+pitch to Rene is "a repeatable motion shown across more than one drive," and there is currently no
+drive to show. Nothing in the strategy changes - permissionless-first is still right - but nobody
+should take the volume of material here as evidence of traction. One logged drive with real buyers
+moved is worth more than everything added in this session.
+
+Also note the earlier sections of this file are Season 6 era (they reference the Crescendo drive and
+"two live projects in Season 6"). Season 7 has been live since 2026-07-09. Read anything above the
+2026-09-20 entries as a historical record, not current status.
+
 ### TODO-VERIFY - open, do not quote publicly
 
 Full detail in `research/mechanics-canonical.md` section 11.
@@ -186,10 +208,15 @@ Full detail in `research/mechanics-canonical.md` section 11.
   primary source in this repo.
 - **M3** the ART token and Endowment figures, contradicted by the on-chain trace and an unresolved
   Oct 2023 vs Oct 2025 deployment conflict.
-- **M4** whether Season 7 still runs a distinct curation phase, and the "top ~30% by votes" rule with it -
-  sourced to 2026-06-28 and never reconfirmed. This one is live on `/playbook`.
-- **M5** the meeting notes themselves. Curation ethics, match caps and the prize-curve rework were all
-  explicitly "being decided on the weekly calls," which makes those calls the missing primary source.
+- **M4** whether Season 7 still runs a distinct curation phase. The "top ~30% by votes" threshold was
+  REMOVED from `/playbook` on 2026-09-20 rather than left in front of creators - same call as the match
+  ratio. Still unresolved: whether a gated curation phase exists at all now, and what the vote economy does.
+- **M5** the meeting notes. The Apr-Aug 2026 window was never written down and is lost - do not reconstruct
+  it. `meetings/` now has an intake pipeline (`meetings/README.md`): a Funders Forum recording link goes
+  through Descript to a transcript, into `meetings/raw/`, then into the index, the changelog and the
+  canonical file. The Telegram capture bot is scoped but not built. The fix is forward-looking - capture the
+  next Funders Forum, not the last twenty. Curation ethics, match caps and the prize-curve rework were all
+  "being decided on the weekly calls," which is why this matters.
 
 Check all of these against the live Artizen Playbook at play.artizen.fund, or ask Venus in the fund-director
 Telegram, then update the canonical file and delete the conflict entry.
