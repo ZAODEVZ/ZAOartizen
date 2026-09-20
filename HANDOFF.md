@@ -1,4 +1,8 @@
-# ZArtizen - Handoff (current as of 2026-07-03)
+# ZArtizen - Handoff (current as of 2026-09-20)
+
+> **Read the 2026-09-20 section at the bottom first.** Everything above it is the 2026-07-03
+> handoff, kept as a record. It is Season 6 era and some of it is now wrong - the match ratio it
+> implies does not exist, and it reads as though the bootstrap motion has run. It has not.
 
 For whoever picks this up next (Zaal, a teammate, or a fresh session). Read TEAM-PLAYBOOK.md first, then
 README.md for the full picture; this is the "where it stands + what to do next" layer.
@@ -76,3 +80,67 @@ from a position of strength.
 - Standings change per-drive; never trust a cached number.
 - Contacts: René Pinnell (@RJPinnell), Nate Van Cleve; Bonfires team (our partner); Pete Menchetti (We're Loud).
 - Human-only actions (send DMs, submit projects, collect/boost, Console) are the operator's; the kit has the copy.
+
+---
+
+# 2026-09-20 handoff
+
+One session, ten commits, all on `claude/zaoartizen-meetings-mechanics-wroeeu` and pushed. No PR
+opened. `npx next build` is clean. Nothing is deployed - auto-deploy is still not wired.
+
+## Do these first
+
+1. **Merge the branch.** The Telegram bot's workflow cannot run until it is on `main` - GitHub
+   ignores schedules on other branches.
+2. **Stand the bot up** - `meetings/telegram-bot.md`, about 10 minutes. BotFather token into repo
+   secrets, chat id and your username into repo variables, then run the workflow by hand with
+   `dry_run` checked before letting the schedule take over.
+3. **Re-run `scripts/refresh.sh` and redeploy.** The site's numbers are a 2026-06-22 snapshot, ~90
+   days old across a season boundary, and every page showing them now says STALE in red. That is the
+   guard working, but it is a live public site.
+
+## What changed
+
+**The match ratio does not exist.** This is the important one. Two different fixed ratios were in
+circulation (1:1, and $1 per $10 Artifact); both were wrong in kind. The rate is set per drive by the
+**Match Multiple** and changes weekly - which was already recorded from Venus on 2026-07-03 and never
+joined up. Every fixed figure is gone from `/funds`, `/apply`, `/rally`, `/playbook`, `/dashboard`
+and `/about`; they state the mechanic and the lever instead. `refresh-fund.mjs` now scrapes the
+multiple, and it is the one field the scraper CLEARS on a miss rather than carrying forward.
+
+**One canonical mechanics file.** `research/mechanics-canonical.md` is the source of truth - every
+claim carries a source and a date, plus a TODO-VERIFY register and a supersession log. Roughly 30
+files had drifting copies; they now link to it. Do not restate mechanics anywhere else.
+
+**Staleness guard.** `scrapedAt` in the data files, `app/data-stamp.tsx` renders "Data as of [date]"
+on every page showing rank, match or funding, and turns red past 48h. Age is computed in the browser,
+so a static build cannot claim to be fresh forever.
+
+**Meetings capture.** `meetings/` has the intake (`README.md`), an empty index and changelog, and the
+Telegram bot. The Apr-Aug 2026 calls were never written down and are lost - do not reconstruct them.
+The fix is forward-looking: capture the next Funders Forum.
+
+**The honest status.** `proofLog` is empty, `horse` is null, the bootstrap motion has not run at
+scale. RECAP.md says so now. Phase 2 is further off than the older sections of this file imply.
+
+## Open, and deliberately not guessed
+
+In `research/mechanics-canonical.md` section 11:
+
+- **M1 remainder** - does the Match Multiple scale a base rate or set it outright, and where does a
+  creator read the current drive's multiple?
+- **M2** boost-point sources. **M3** the ART/Endowment on-chain conflict. **M4** whether Season 7
+  runs a distinct curation phase at all (the "top ~30% by votes" claim was removed from `/playbook`
+  rather than left unverified in front of creators).
+- **The scraper's Match Multiple patterns are untested.** The `browse` binary is not installed in
+  every environment, so there was no live page to match against. If the script prints `(not found)`
+  while the multiple is visible on the page, fix `MULTIPLE_PATTERNS` rather than hand-editing
+  `data.ts` every week.
+
+## Conventions worth keeping
+
+- Mechanics go in the canonical file with a source and a date, and nowhere else.
+- Prefer deleting a stale claim over keeping a wrong one. Two claims were deleted this session rather
+  than hedged.
+- When two docs disagree on a constant, check whether the thing is a constant at all before picking a
+  winner. That is what the ratio turned out to be.
