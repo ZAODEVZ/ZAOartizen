@@ -66,23 +66,22 @@ A transcript is not a primary source about its own accuracy.
 
 Date is the date of the call the change was announced on, not the date it was ingested.
 
-## Phase 2: the Telegram capture bot (not built)
+## The Telegram capture bot (built - see telegram-bot.md)
 
 The pipeline above catches the calls. It does not catch the private fund-director Telegram
 ("Artizen ✨"), which is where Venus and Rene post most mechanics corrections between calls - the
 Boost Point expiry correction, the re-submission correction, and the Season 6 total correction all
 landed there first, and this repo only has them because someone read the group by hand.
 
-Scope, if and when it gets built:
+Built on 2026-09-20. Setup is in [telegram-bot.md](telegram-bot.md) - about 10 minutes, and it needs
+no server: `scripts/tg-capture.mjs` runs from a scheduled GitHub Action that commits what it finds.
 
-- A read-only bot or userbot in the group, capturing the Updates, Funders and Venus channels.
-- Filter to messages from Venus and Rene, plus anything matching mechanics keywords (match, boost,
-  season, drive, prize, curation, payout, multiple).
-- Append to `raw/telegram-YYYY-MM.md`, one file per month, and open a PR so nothing lands unreviewed.
-- Needs: group admin permission to add a bot (or a userbot on Zaal's account, which Telegram's ToS
-  treats differently - check before building), somewhere to host it, and a decision on whether a
-  private group's contents should sit in a public repo at all. That last one is a real question,
-  not a formality.
+It does **not** mirror the group. It captures only what a person deliberately hands it: `/note`, an
+`@`-mention, a reply to the bot, or a DM or forward. That is the answer to the question this section
+used to flag as real rather than a formality - whether a private group's contents belong in a public
+repo. With explicit handoff, a human chose every message that lands, and a `/note` replying to a
+Venus or Rene post grabs exactly that post without touching anyone else's messages.
 
-Until then, when Venus or Rene posts something that changes mechanics, paste it into
-`raw/telegram-YYYY-MM.md` by hand and run steps 4-6 above.
+Captured messages land in `raw/telegram-YYYY-MM.md`, one file per month, tagged
+`possible-mechanics-change` where the text looks relevant. That tag is a grep hint for a human, not
+a verdict - a capture is only ingested once steps 4 to 6 above have carried it into the canonical file.
