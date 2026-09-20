@@ -5,7 +5,7 @@ Every other doc, page, and kit file should LINK here instead of restating a form
 ratio, a season date, or a prize rule. If you find mechanics restated somewhere else, replace
 the restatement with a link to this file - one wrong copy is worse than one missing copy.
 
-Last reconciled: 2026-08-30. Reconciled against: `research/artizen-mechanics-verified-telegram.md`
+Last reconciled: 2026-09-20. Reconciled against: `research/artizen-mechanics-verified-telegram.md`
 (2026-07-03), `research/851-artizen-season6-close-season7-launch/README.md` (2026-07-13),
 `research/852-artizen-grow-infrastructure-live85/README.md` (2026-08-07),
 `research/artizen-funds-how-they-work.md` (2026-06-28), `CLAUDE.md`, `TEAM-PLAYBOOK.md`.

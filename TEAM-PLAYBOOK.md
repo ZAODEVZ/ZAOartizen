@@ -3,7 +3,7 @@
 The front door for anyone helping with the ZAO's Artizen effort. Read this first, then go to the kit
 (`kit/`) for copy-paste tools and `research/` for the deep dives.
 
-Updated 2026-08-30.
+Updated 2026-09-20.
 
 > **Mechanics live in one file.** Formulas, match ratios, season dates, prize rules and every
 > open question about them: [`research/mechanics-canonical.md`](research/mechanics-canonical.md).

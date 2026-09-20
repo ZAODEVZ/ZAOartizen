@@ -1,7 +1,7 @@
 # ZAO on Artizen, the full recap
 
 The complete record of the ZAO x Artizen effort: what was built, where it lives, what was decided, and what is
-next. Last updated 2026-08-30. Style note: no spaced hyphen dashes anywhere (house rule).
+next. Last updated 2026-09-20. Style note: no spaced hyphen dashes anywhere (house rule).
 
 ## Status at a glance
 - **Two live Artizen projects** in Season 6:
@@ -122,7 +122,7 @@ research/artizen-mechanics-verified-telegram.md: directors can edit funds, S6 fu
 S7, weekly Thursday drives, multiplicative Boost Score, new Artifact required each season, Artizen LIVE
 pitch slots via Wadooah Wali, and the fund-prize flywheel.
 
-## Mechanics consolidation and the staleness guard (2026-08-30)
+## Mechanics consolidation and the staleness guard (2026-09-20)
 
 Three things changed. One requested task could not be started.
 
