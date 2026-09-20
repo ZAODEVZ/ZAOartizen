@@ -5,8 +5,10 @@ import type { Metadata } from 'next';
 //
 // MECHANICS SOURCE: research/mechanics-canonical.md. Do not change a number or a rule on this page
 // without changing it there first - that file carries the source and date for every claim, and the
-// TODO-VERIFY register for the ones this repo cannot confirm (the match ratio is conflict M1; the
-// "top ~30% by votes" curation step in STEPS below is conflict M4, unconfirmed since 2026-06-28).
+// TODO-VERIFY register for the ones this repo cannot confirm. Two claims were REMOVED from this
+// page on 2026-09-20 rather than left unverified: a fixed match ratio (there is none - the rate is
+// set per drive) and the "top ~30% of projects by votes" curation threshold (conflict M4).
+// Do not reintroduce either without a dated source.
 
 const FUND_URL = 'https://artizen.thezao.com/';
 const CONTACT = 'mailto:zaal@thezao.com?subject=ZAO%20Fund%20on%20Artizen';
@@ -26,7 +28,7 @@ interface Step {
 const STEPS: Step[] = [
   { n: '1', t: 'Sponsors fund the pools', b: 'Brands + people back "Funds" - shared pools of match money. 100% goes to the Funds; Artizen takes no cut.' },
   { n: '2', t: 'You submit your project', b: 'Submit to every Fund you qualify for. The more Funds back you, the more match you can unlock.' },
-  { n: '3', t: 'The community curates', b: 'Everyone votes. The top ~30% of projects by votes get curated into the competition.' },
+  { n: '3', t: 'The community curates', b: 'Funds review submissions and curate the projects that fit their lens. Curation is rolling all season, and no answer does not mean no - a direct note to the fund director does more than waiting.' },
   { n: '4', t: 'Fans buy $10 Artifacts', b: 'Your Artifact is a $10 open-edition collectible. You keep 100% of every sale.' },
   { n: '5', t: 'Each sale unlocks match', b: 'Every Artifact sale unlocks match - from EACH Fund backing you - while the pool lasts. The rate is set per drive, so it varies week to week.' },
   { n: '6', t: 'The top-ranked project wins the prize', b: 'At season end you get one payout: your sales + match + any cash prize. 10% of each Fund is a prize for its top-ranked project - and rank is (sales + match) x boosts, not sales alone. Sell AND get boosted.' },

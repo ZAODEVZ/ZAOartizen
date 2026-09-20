@@ -131,9 +131,9 @@ guarantees - do not quote them as facts. See conflict M3 on the endowment.
 - **Curation happens WITHIN each fund.** A project competes only against others in the same fund, not
   the whole platform. So every fund you stack into is a separate curation pool AND a separate
   competition - and a small aligned fund is easier to place in.
-- **Top ~30% of projects by votes** advance from the curation phase into competition.
-  TODO-VERIFY - from `artizen-funds-how-they-work.md` (2026-06-28), no later confirmation; check
-  whether Season 7 still runs a distinct curation phase at all.
+- **A "top ~30% of projects by votes advance" threshold** appears in `artizen-funds-how-they-work.md`
+  (2026-06-28) and has no later confirmation. REMOVED from `/playbook` on 2026-09-20 rather than left
+  standing in front of creators - see M4. Do not restate it without a dated source.
 - **Voting:** new users get up to 100 points for completing a profile; $1 contributed = 10 votes; you
   earn votes by showing up (events, quests). Every vote is clicked manually, even by whales - "time is
   the equalizer." TODO-VERIFY - same 2026-06-28 source; the relationship between votes and Boost Points
@@ -231,9 +231,13 @@ Juicebox project #587, treasury ~0.01 ETH, deployed **October 2023** - conflicti
 Do not quote the endowment figure or the launch date. **Keep the ZAO treasury OFF ART regardless** -
 that caution stands independent of how the conflict resolves. See `research/art-token-onchain.md`.
 
-**M4 - curation phase in Season 7.** The "top ~30% by votes advance" model and the vote economy
-(section 6) are all sourced to 2026-06-28 and have not been reconfirmed since. It is not clear from
-this repo whether Season 7 still runs a separate curation phase or whether rolling curation replaced it.
+**M4 - is there still a curation phase in Season 7?** The "top ~30% by votes advance" model and the
+vote economy (section 6) are all sourced to 2026-06-28 and have never been reconfirmed. The same
+2026-07-03 Telegram capture describes curation as ROLLING all season and director-driven, which does
+not obviously coexist with a gated curation phase and a 30% cut line. The threshold was removed from
+`/playbook` on 2026-09-20 (Zaal's call, same reasoning as the match ratio: a stale claim in front of
+creators is worse than a missing one). Still unresolved: whether Season 7 runs a distinct curation
+phase at all, and what the vote economy does now. The Funders Forum notes should settle it.
 
 **M5 - the meeting notes.** `meetings/raw/` (Monday Momentum + Funders Forum, Apr-Aug 2026) is not in
 this repo. Several items above - curation ethics, match caps, the prize curve rework - were explicitly
