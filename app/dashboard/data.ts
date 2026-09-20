@@ -12,6 +12,9 @@ export interface FundStats {
   projectsCurated: number | null;
   signupsDriven: number | null; // community signups we drove onto Artizen
   activeDrive: string | null; // e.g. "Frontier Fund Drive"
+  // The drive's Match Multiple - the same multiple for everyone in a drive, changed weekly by Artizen.
+  // This is THE number that sets how much match a sale unlocks; there is no fixed ratio. Fill it every
+  // scrape. See research/mechanics-canonical.md section 2.
   driveMultiplier: string | null; // e.g. "2x"
   driveDeadline: string | null; // e.g. "2026-07-09"
   lastUpdated: string; // YYYY-MM-DD (human-facing date of the last edit)

@@ -36,7 +36,7 @@ const FAQ: QA[] = [
   },
   {
     q: 'What is Artizen, briefly?',
-    a: 'A platform for funding art, music, science, and culture. Creators sell $10 digital collectibles ("Artifacts") to fans; every $1 of sales unlocks $1+ of matching funds from community Funds like ours. It is run in seasons, like a friendly competition where backing real work is how you win.',
+    a: 'A platform for funding art, music, science, and culture. Creators sell $10 digital collectibles ("Artifacts") to fans; every sale unlocks matching funds from community Funds like ours. It is run in seasons, like a friendly competition where backing real work is how you win.',
   },
   {
     q: 'What is the catch?',
@@ -66,7 +66,7 @@ export default function AboutPage() {
         {[
           { n: 1, t: 'Artists make work + a collectible', b: 'A musician or artist we believe in puts up their project and a $10 digital collectible that captures it.' },
           { n: 2, t: 'Fans back them for $10', b: 'You (or their fans) buy the $10 collectible. 100% goes to the creator - the platform takes nothing from them.' },
-          { n: 3, t: 'Your support gets matched', b: 'Every $1 raised unlocks matching funds from the ZAO Fund (and any other fund backing them). Your $10 becomes $20+ for the artist.' },
+          { n: 3, t: 'Your support gets matched', b: 'Every $1 raised unlocks matching funds from the ZAO Fund, and from any other fund backing them. Your $10 goes further than $10 - how much further is set per drive and stacks with each fund behind the artist.' },
           { n: 4, t: 'The community lifts each other', b: 'People also "boost" the projects they love, which helps them rank and win cash prizes. We win by showing up for each other.' },
         ].map((s) => (
           <div key={s.n} className="flex gap-4 rounded-xl border border-white/10 bg-white/5 p-4">

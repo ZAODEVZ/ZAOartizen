@@ -174,11 +174,14 @@ supersession log.
 
 Full detail in `research/mechanics-canonical.md` section 11.
 
-- **M1, the match ratio.** CLAUDE.md said a $10 Artifact unlocks $1 of match per fund; the research,
-  TEAM-PLAYBOOK, `/playbook`, `/about`, `/rally` and `/dashboard` all say 1:1, so $10 unlocks $10. Note that
-  $1 per $10 is exactly the documented 10% Endowment fee, so the two figures may have been conflated. The
-  canonical file carries 1:1 because that is where the dated sources point, but the entire crew pitch ("your
-  $10 becomes $20+") rests on it. **Verify this one first** - it is on public pages.
+- **M1, the match ratio - RESOLVED 2026-09-20 in the grill, and it was the wrong question.** Both circulating
+  figures were wrong in kind. Zaal: "it's different each week." The mechanism was already in this repo and
+  nobody joined it up - Venus, 2026-07-03: available match is "scaled by the drive's Match Multiple (same
+  multiple for everyone in a drive)." Every fixed ratio has been removed from `/funds`, `/apply`, `/rally`,
+  `/playbook`, `/dashboard` and `/about`; they now state the mechanic (every sale unlocks match from every
+  fund behind you) and the lever (be in more funds), not a number. `app/dashboard/data.ts` has a
+  `driveMultiplier` field for the current drive's multiple - fill it every scrape. The general lesson is in
+  the canonical file: when two docs disagree on a constant, check whether the thing is a constant at all.
 - **M2** the boost-point source list (holding ART, Endowment donations, profile, events) has no dated
   primary source in this repo.
 - **M3** the ART token and Endowment figures, contradicted by the on-chain trace and an unresolved

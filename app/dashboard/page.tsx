@@ -74,7 +74,7 @@ export default function DashboardPage() {
             {fundStats.driveDeadline ? ` (${fundStats.driveDeadline})` : ''}
           </div>
           <p className="mt-1 text-sm text-white/70">
-            This is the live lever. Every $10 the crew buys on a curated project unlocks $1-for-$1 from this
+            This is the live lever. Every $10 the crew buys on a curated project unlocks match from this
             pool before the drive closes. Pick one horse, rally everyone, deploy the match. See{' '}
             <a href="/leaderboard" className="text-[#f5a623] underline">
               the field
@@ -209,7 +209,7 @@ export default function DashboardPage() {
           Cross-back targets
         </h2>
         <p className="mb-3 text-sm text-white/60">
-          Get our projects curated into these funds too - each one adds another $1-for-$1 match stream on every
+          Get our projects curated into these funds too - each one adds another match stream on every
           Artifact sale (stacking). Pools from research; re-check live.
         </p>
         <div className="overflow-x-auto rounded-xl border border-white/10">

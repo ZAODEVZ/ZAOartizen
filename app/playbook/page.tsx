@@ -28,7 +28,7 @@ const STEPS: Step[] = [
   { n: '2', t: 'You submit your project', b: 'Submit to every Fund you qualify for. The more Funds back you, the more match you can unlock.' },
   { n: '3', t: 'The community curates', b: 'Everyone votes. The top ~30% of projects by votes get curated into the competition.' },
   { n: '4', t: 'Fans buy $10 Artifacts', b: 'Your Artifact is a $10 open-edition collectible. You keep 100% of every sale.' },
-  { n: '5', t: 'Each sale unlocks match', b: 'Every $10 in Artifact sales unlocks $10 of match - from EACH Fund backing you - while the pool lasts.' },
+  { n: '5', t: 'Each sale unlocks match', b: 'Every Artifact sale unlocks match - from EACH Fund backing you - while the pool lasts. The rate is set per drive, so it varies week to week.' },
   { n: '6', t: 'The top-ranked project wins the prize', b: 'At season end you get one payout: your sales + match + any cash prize. 10% of each Fund is a prize for its top-ranked project - and rank is (sales + match) x boosts, not sales alone. Sell AND get boosted.' },
 ];
 
@@ -38,7 +38,7 @@ interface Tactic {
 }
 
 const TACTICS: Tactic[] = [
-  { t: 'Qualify for multiple Funds', b: 'This is the biggest lever. One $10 sale matched by 3 Funds = $30 unlocked. Submit to every Fund you fit - the ZAO Fund included.' },
+  { t: 'Qualify for multiple Funds', b: 'This is the biggest lever, and the one you control. One sale backed by 3 Funds pulls from 3 pools instead of 1. Submit to every Fund you fit - the ZAO Fund included.' },
   { t: 'Make the Artifact amazing', b: 'Square, NO text or graphic overlays, and a GIF or video performs best. It is the single thing buyers see - make it iconic.' },
   { t: 'Say it simply', b: 'Few words, no jargon. Clearly: what it is and why it matters.' },
   { t: 'Promote in the first push', b: 'Bring your own fans AND the Artizen community. Early momentum compounds - a coordinated open beats a slow trickle.' },

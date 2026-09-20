@@ -50,7 +50,7 @@ doc still saying rank or the fund prize goes to the biggest seller is wrong - it
 | Mechanic | Detail | Status |
 |---|---|---|
 | Artifact price | $10 open-edition collectible. Creator keeps 100%, 0% platform fee, Ethereum mainnet. | CONFIRMED (CLAUDE.md, `/playbook`) |
-| Match ratio | **$1 of Artifact sales unlocks $1 of match from EACH fund** curating that project, while that fund's pool lasts. So a $10 Artifact unlocks $10 per fund. | TODO-VERIFY - see conflict M1 below |
+| Match rate | **There is no fixed ratio. The rate is set per drive by the Match Multiple** - the same multiple for everyone in that drive - and it changes week to week. A sale unlocks match from EACH fund curating the project, scaled by that drive's multiple, while each pool lasts. Do NOT publish a per-dollar figure; publish the mechanic (every sale unlocks match from every fund behind you) and the lever (be in more funds). | CONFIRMED - Venus, Telegram, 2026-07-03 for the Match Multiple; Zaal, 2026-09-20, that it differs each week |
 | Stacking | Match stacks across every fund a project is curated into. One project in 3 funds matches 3x on the same sales. This is the single biggest lever a creator controls. | CONFIRMED (`artizen-funds-how-they-work.md`) |
 | Endowment adds on top | The Artizen Endowment adds a further ~$1+ per $1, so ~$3+ total per $1 in a 1-fund case. | TODO-VERIFY - figure is from 2026-06-28 research, no dated primary source |
 | Endowment fee | 10% on Artifact purchases, **added on top at checkout** ($10 Artifact = $1 to the Endowment). Not deducted from the creator's 100%. | CONFIRMED - Venus, Telegram, 2026-07-03 |
@@ -205,14 +205,19 @@ project's current milestone. CONFIRMED - Venus, 2026-07-13 (doc 851), consistent
 Resolve these at play.artizen.fund or by asking Venus in the fund-director Telegram, then update this
 file and delete the conflict entry.
 
-**M1 - the match ratio.** Docs disagree on how much match a $10 Artifact unlocks per fund.
-- `research/artizen-funds-how-they-work.md`, `TEAM-PLAYBOOK.md`, `/playbook`, `/about`, `/rally` and
-  `/dashboard` all say **1:1** - $1 of sales unlocks $1 of match per fund, so $10 unlocks $10.
-- `CLAUDE.md` says a $10 Artifact unlocks **$1** of match per fund.
-- Note that $1 per $10 Artifact is exactly the separately-documented 10% Endowment fee (section 2),
-  so the two figures may have been conflated somewhere. This file carries 1:1 as the working answer
-  because that is what the weight of dated sources says - but it is NOT confirmed against the live
-  playbook, and the ZAO's whole crew pitch ("your $10 becomes $20+") rests on it. Verify first.
+**M1 - RESOLVED 2026-09-20, kept as a warning.** This repo spent months with two different fixed
+match ratios in circulation: 1:1 ($10 unlocks $10) across the research, TEAM-PLAYBOOK and four site
+pages, and $1 per $10 Artifact in CLAUDE.md. Both were wrong in kind, not just in value. Zaal's answer:
+**"it's different each week."** The mechanism was already in this repo and nobody joined it up - Venus,
+2026-07-03: available match is "scaled by the drive's Match Multiple (same multiple for everyone in a
+drive)." So any fixed per-dollar ratio is a snapshot of one drive presented as a rule.
+- The lesson generalises: when two docs disagree on a constant, check whether the thing is a constant
+  at all before picking a winner.
+- All fixed ratios were removed from the public pages on 2026-09-20 (`/funds`, `/apply`, `/rally`,
+  `/playbook`, `/dashboard`, `/about`). They now state the mechanic and the lever, not a number.
+- Still open: whether the multiple applies to a published base rate or sets the rate outright, and
+  where a creator reads the current drive's multiple. `app/dashboard/data.ts` has a `driveMultiplier`
+  field for it; it is currently null. Fill it each scrape.
 
 **M2 - boost point sources.** The "holding ART / donating to the Endowment / completing profile /
 attending events" list has no dated primary source in this repo. Only the specific awards in section 4
@@ -249,3 +254,4 @@ source overrides an earlier one.
 | 2026-07-13 | Drive window | Thursday to Thursday | Friday to Thursday for Season 7 | Venus (doc 851) |
 | 2026-07-13 | Fund director pay | "20% is outdated, it's tips + Artifacts" (2026-06-28) | 20% of sponsor dollars raised, match and prize excluded | Venus, Funders Forum recap (doc 851) |
 | 2026-08-07 | "Every project must have a crew" | Reported as a new Artizen requirement from LIVE #85 | A guest's suggestion, not policy; nothing enforces it, but claims ship 5 collaborator slots | Grow bundle read (doc 852) |
+| 2026-09-20 | The match ratio | A fixed ratio, either 1:1 or $1 per $10 Artifact depending on the doc | No fixed ratio exists - the rate is set per drive by the Match Multiple and changes weekly | Zaal, confirming the Match Multiple already recorded from Venus 2026-07-03 |

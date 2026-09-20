@@ -59,9 +59,10 @@ register of what this repo cannot confirm.
 - Artizen facts move daily mid-drive. It is a Bubble.io app - curl/exa return empty shells; render
   with a headless browser to read live fund rosters/standings. Re-verify any number before quoting.
 - Money mechanic: collecting a project's Artifact unlocks match from each fund backing it, so supporting
-  a project and supporting the fund are the same action. The exact ratio is DISPUTED between this repo's
-  docs - see conflict M1 in `research/mechanics-canonical.md`. Verify at play.artizen.fund before
-  quoting a number to anyone.
+  a project and supporting the fund are the same action. **There is no fixed match ratio** - the rate is
+  set per drive by the Match Multiple and changes weekly, so never publish a per-dollar figure. Say what
+  is true every week: every sale unlocks match from every fund behind the project, and being in more
+  funds is the lever. See `research/mechanics-canonical.md` section 2.
 - Human-only actions (sending DMs, submitting projects, Console, buying artifacts, IRL) are the
   operator's - the repo gives the copy + the plan.
 
