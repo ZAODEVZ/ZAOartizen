@@ -96,6 +96,9 @@ cross-back 2-3 projects), per season (curate the cohort, then drive sales, then 
 - Live site: **https://zaoartizen.vercel.app** - `/dashboard` (scoreboard), `/leaderboard` (the field),
   `/rally` (the GC-shareable 3-step crew CTA).
 - `research/mechanics-canonical.md` - **the mechanics source of truth.** Everything else links here.
+- `meetings/` - capture for the Monday Momentum + Funders Forum calls. Empty so far;
+  `meetings/README.md` has the recording-to-notes intake. The Funders Forum (Mondays 11am PT) is
+  where Season policy is decided live, and attending pays 25,000 Boost Points.
 - `research/` - the deep dives: platform study (844), ART/endowment economics (845), funding strategy (846),
   ecosystem playbook (847), fund-creation playbook (850), fund directory + stacking map (fund-directory.md),
   Rene digest, on-chain token reality check (art-token-onchain.md).

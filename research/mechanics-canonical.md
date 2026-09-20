@@ -10,9 +10,13 @@ Last reconciled: 2026-09-20. Reconciled against: `research/artizen-mechanics-ver
 `research/852-artizen-grow-infrastructure-live85/README.md` (2026-08-07),
 `research/artizen-funds-how-they-work.md` (2026-06-28), `CLAUDE.md`, `TEAM-PLAYBOOK.md`.
 
-> **Not yet reconciled against the meeting notes.** `meetings/raw/` (the Monday Momentum and
-> Funders Forum notes, Apr-Aug 2026) and `meetings/mechanics-changelog.md` do not exist in this
-> repo yet. When they land, re-run the audit against this file and update the Supersession log.
+> **Not yet reconciled against the meeting notes.** The Apr-Aug 2026 Monday Momentum and Funders
+> Forum calls were never written down on the ZAO side, so there is nothing to reconcile against yet.
+> `meetings/` now exists with an intake pipeline (`meetings/README.md`) and an empty index and
+> changelog. As sessions land, work each mechanics change into this file and add a row to the
+> Supersession log citing the meeting date. Several open items below - curation ethics, match caps,
+> the prize-curve rework - were explicitly "being decided on the weekly calls," so that capture is
+> the missing primary source, not a nice-to-have.
 
 ## How to read this
 
@@ -239,9 +243,11 @@ not obviously coexist with a gated curation phase and a 30% cut line. The thresh
 creators is worse than a missing one). Still unresolved: whether Season 7 runs a distinct curation
 phase at all, and what the vote economy does now. The Funders Forum notes should settle it.
 
-**M5 - the meeting notes.** `meetings/raw/` (Monday Momentum + Funders Forum, Apr-Aug 2026) is not in
-this repo. Several items above - curation ethics, match caps, the prize curve rework - were explicitly
-"being decided on the weekly calls." Those calls are the missing primary source for this file.
+**M5 - the meeting notes.** The Apr-Aug 2026 calls were never written down, so that window is simply
+lost - do not try to reconstruct it. Several items above (curation ethics, match caps, the prize-curve
+rework) were explicitly "being decided on the weekly calls," which makes those calls the missing
+primary source for this file. `meetings/` now has an intake pipeline; the fix is forward-looking -
+capture the next Funders Forum, not the last twenty.
 
 ## Supersession log
 
