@@ -108,8 +108,29 @@ const found = {
   raisedUsd: parseNum(/RAISED\$([\d,]+)/i),
 };
 
+// The drive's Match Multiple is a property of the DRIVE, not of any one fund - the same multiple
+// applies to everyone in a drive (Venus, 2026-07-03). So it is NOT inside the per-fund block above;
+// search the whole page. It is the number that sets how much match a sale unlocks - there is no
+// fixed ratio - so a wrong one here is worse than none. See research/mechanics-canonical.md #2.
+//
+// UNVERIFIED PATTERNS: these were written without a live page to test against (the `browse` binary
+// is not installed in every environment). If the multiple is visibly on the page and this prints
+// "(not found)", fix the patterns here rather than hand-editing data.ts every week.
+const MULTIPLE_PATTERNS = [
+  /(?:match\s*multiple|multiplier)\D{0,16}?(\d+(?:\.\d+)?)\s*x/i,
+  /(\d+(?:\.\d+)?)\s*x\s*(?:match|multiple|multiplier)/i,
+];
+const driveMultiplier = (() => {
+  for (const re of MULTIPLE_PATTERNS) {
+    const m = text.match(re);
+    if (m) return `${m[1]}x`;
+  }
+  return null;
+})();
+
 console.log('\nParsed (from the ZAO Fund block on the leaderboard):');
 for (const [k, v] of Object.entries(found)) console.log(`  ${k}: ${v ?? '(not found)'}`);
+console.log(`  driveMultiplier: ${driveMultiplier ?? '(not found - drive-wide, searched whole page)'}`);
 console.log('\nNote: pool size and match-remaining are not on this leaderboard page - they need');
 console.log('the fund\'s own Sponsors/About tab or a logged-in view. Not auto-updated by this script.');
 
@@ -133,12 +154,29 @@ const repl = (key, value) => {
 repl('rank', found.rank);
 repl('scoreLabel', found.scoreLabel);
 repl('prizeUsd', found.prizeUsd);
-repl('poolUsd', found.poolUsd);
 repl('matchDeployedUsd', found.matchDeployedUsd);
-repl('matchRemainingUsd', found.matchRemainingUsd);
 repl('lastUpdated', today);
 repl('scrapedAt', nowIso);
+// poolUsd and matchRemainingUsd are deliberately NOT written - they are not on this page (see the
+// note above), so there is nothing to write. Edit them by hand from the fund's own page.
+
+// The multiple changes every drive, so unlike every other field it is CLEARED when not parsed.
+// Carrying last drive's multiple forward would be a wrong number wearing today's scrapedAt stamp,
+// which is exactly what the freshness stamp cannot catch. Null renders as TBD on /dashboard.
+if (driveMultiplier) {
+  src = src.replace(/(\n\s*driveMultiplier:\s*)([^,\n]+)(,)/, `$1'${driveMultiplier}'$3`);
+} else {
+  src = src.replace(/(\n\s*driveMultiplier:\s*)([^,\n]+)(,)/, `$1null$3`);
+}
 src = src.replace(/(\n\s*updatedBy:\s*)'[^']*'/, `$1'auto-refresh'`);
 writeFileSync(DATA_FILE, src);
 console.log('\nUpdated', DATA_FILE, `(lastUpdated ${today}, scrapedAt ${nowIso}).`);
+if (driveMultiplier) {
+  console.log(`Drive Match Multiple: ${driveMultiplier}.`);
+} else {
+  console.log('\n!! Match Multiple NOT found - driveMultiplier cleared to null (any hand-entered');
+  console.log('!! value was dropped on purpose; last drive\'s multiple is not this drive\'s).');
+  console.log('!! This is the number that sets how much match a sale unlocks. Read it off the live');
+  console.log('!! drive banner and set driveMultiplier by hand, or fix MULTIPLE_PATTERNS above.');
+}
 console.log('Review the diff, then: npx next build && npx vercel --prod --yes');

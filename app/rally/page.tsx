@@ -51,6 +51,11 @@ export default function RallyPage() {
             {fundStats.activeDrive ? `${fundStats.activeDrive}` : 'Active drive'}
             {fundStats.driveDeadline ? ` - ${fundStats.driveDeadline}` : ''}. Spend before it closes.
           </div>
+          <div className="mt-1 text-sm text-white/70">
+            {fundStats.driveMultiplier
+              ? `This drive matches at ${fundStats.driveMultiplier}.`
+              : 'The match rate is set per drive and changes weekly - check the live fund for this one.'}
+          </div>
           <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-3" />
         </div>
       ) : null}
