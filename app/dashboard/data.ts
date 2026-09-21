@@ -4,11 +4,12 @@
 
 export interface FundStats {
   rank: number | null; // rank among all Artizen funds
-  scoreLabel: string | null; // the fund's SCORE as shown on Artizen
+  scoreLabel: string | null; // RETIRED - Artizen dropped the score when rank became money raised (Playbook v21, 2026-08-21). Unused; kept null.
   prizeUsd: number | null; // current prize for the fund's top project
   poolUsd: number | null; // total deposited into the fund
   matchDeployedUsd: number | null; // THE KPI - match actually unlocked by sales (the "raised" figure)
-  matchRemainingUsd: number | null; // undeployed match still in the pool (the "available" figure)
+  matchRemainingUsd: number | null; // the fund's drive card AVAILABLE - match left THIS DRIVE (resets each Thursday). NOT a season figure
+  offeredThisSeasonUsd: number | null; // the fund page's "Total": this season's sponsorship into the fund (Venus, 2026-09-11). Offered, NOT unlocked
   projectsCurated: number | null;
   signupsDriven: number | null; // community signups we drove onto Artizen
   activeDrive: string | null; // e.g. "Frontier Fund Drive"
@@ -51,21 +52,23 @@ export interface ProofEntry {
 
 // --- EDIT BELOW ---
 
-// Live numbers from artizen.thezao.com, confirmed 2026-06-22 (re-check before quoting; they move daily).
+// Written by scripts/refresh-fund.mjs from the fund's own Artizen page (see scrapedAt). Null = TBD: the
+// scraper nulls anything it cannot vouch for rather than leave an older value under a fresh date.
 export const fundStats: FundStats = {
-  rank: 13,
-  scoreLabel: '873.62',
-  prizeUsd: 2432,
-  poolUsd: 10547,
-  matchDeployedUsd: 2432, // "RAISED" on Artizen
-  matchRemainingUsd: 6331, // "AVAILABLE" on Artizen
-  projectsCurated: null, // confirm from the logged-in curator view
+  rank: null,
+  scoreLabel: null,
+  prizeUsd: null,
+  poolUsd: null,
+  matchDeployedUsd: null, // "RAISED" on Artizen
+  matchRemainingUsd: 2601, // "AVAILABLE" on Artizen
+  offeredThisSeasonUsd: 21797, // "Total" on the fund page, same read as scrapedAt
+  projectsCurated: 21, // the fund page's "Competition" count = curated projects. NOT its "Curation" count, which is submitted + removed
   signupsDriven: null,
-  activeDrive: 'Flourish Fund Drive',
+  activeDrive: 'Beyond Fund Drive',
   driveMultiplier: null, // confirm current multiplier
-  driveDeadline: 'ends in ~3 days (≈2026-06-25)',
-  lastUpdated: '2026-06-22',
-  scrapedAt: '2026-06-22T00:00:00Z',
+  driveDeadline: 'ends in 4 days (read 2026-09-19)',
+  lastUpdated: '2026-09-19',
+  scrapedAt: '2026-09-19T21:19:32Z',
   updatedBy: 'auto-refresh',
 };
 

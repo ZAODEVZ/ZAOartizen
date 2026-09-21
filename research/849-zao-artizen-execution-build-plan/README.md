@@ -54,7 +54,7 @@ tier: DISPATCH
 ## KIT A - Project submission template + artifact brief
 
 **Confirmed Artifact specs** (build to these):
-- Image (required): square 1:1, min 1000x1000px, .jpg/.png, <10MB, NO text/logo overlays.
+- Image (required): square 1:1, min 1000x1000px, .jpg/.png, <10MB, NO text/logo overlays. *[Corrected 2026-09-11: 1:1 and no overlays are Playbook rules; 1000x1000 is Venus's recommendation, not a published requirement. See [`mechanics-canonical.md`](../mechanics-canonical.md) section 10.]*
 - GIF (optional): square, min 500px, <50MB, loopable.
 - Video (optional): square, <=45s, <100MB, .mp4, loopable, no overlays.
 - Artifact = the creative essence of the project, not a marketing flyer. Video/GIF outperform static in voting.

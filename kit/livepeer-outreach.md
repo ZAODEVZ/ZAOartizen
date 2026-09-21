@@ -1,6 +1,7 @@
 # Livepeer outreach - event sponsorship + grant (drafts, not sent)
 
-Two paste-ready drafts for the Livepeer path (confirmed direction: lead with sponsorship, stack the grant).
+Two drafts for the Livepeer path. **As of 2026-09-08 only draft A is live:** Zaal dropped the whole grant
+track for 2026 ("sponsorship only"), so draft B, the grant, is parked, not deleted. Revisit it for 2027.
 Apply via livepeer.notion.site/Livepeer-Grants-Program. **These are drafts to send/submit - nothing is committed.**
 
 ---
@@ -29,7 +30,7 @@ Subject: Sponsor a free, livestreamed music festival - ZAOstock 2026
 
 ---
 
-## B. Video Disruptor grant proposal (stack this - up to $15k, paid in LPT/Arbitrum)
+## B. Video Disruptor grant proposal - PARKED 2026-09-08 (grant track dropped for 2026; kept for 2027)
 
 Submit per the grant process (proposal -> committee review 2-4 weeks -> 20% upfront + milestones). Terms to
 accept: open-source, "Powered by Livepeer" watermark on the stream, ~3-month timeline, LPT payout on Arbitrum.
@@ -62,5 +63,8 @@ demand on the network, plus an open-source toolkit other events inherit.
 ## Sequencing
 
 1. Send draft A (event sponsorship) first - lowest friction, no commitments.
-2. If the livestream team (Mickey/Iman) confirms they will run the stream on Livepeer, submit draft B.
-3. Treat both as APPLICATIONS - do not put the $15k or the sponsorship in the festival budget until awarded.
+2. ~~If the livestream team confirms they will run the stream on Livepeer, submit draft B.~~ Parked - see the top of this file.
+3. Treat the sponsorship as an APPLICATION - do not put it in the festival budget until it is agreed.
+
+> **Before sending draft A, re-check its claims** ("27-person team", "1K+ viewers", "4M+ visitors") -
+> they were written in the summer and have not been re-verified.

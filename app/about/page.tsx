@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 
 // /about - the sponsor/donor-facing explainer. Plain English on purpose.
 // MECHANICS SOURCE: research/mechanics-canonical.md - change a rule or a ratio there first.
-// The "$1 unlocks $1+" line below rests on conflict M1 in that file (unverified against the live
-// Artizen Playbook); verify before putting it in front of a paying sponsor.
+// Match copy below follows the live Playbook (v34): $1 of sales unlocks match at that week's Match
+// Multiple, set by Artizen. Never hardcode a multiple here - it changes every drive.
 
 // /about - plain-language explainer for first-time visitors (esp. sponsors/donors who've never heard
 // of Artizen). What this is, what Artizen is, how backing works, + a short FAQ. Provenance: doc 887.
@@ -24,11 +24,11 @@ interface QA {
 const FAQ: QA[] = [
   {
     q: 'Is my gift tax-deductible?',
-    a: 'It can be. We offer two separate paths: give through our 501(c)(3) partner for a tax-deductible donation, OR sponsor on Artizen where your gift is matched and you get top billing. Same dollar can only do one - we will point you to the right one for your goals.',
+    a: 'No. The ZAO has no 501(c)(3) or fiscal sponsor in 2026, so there is no tax receipt. A sponsorship on Artizen is matched, and it earns top billing on the fund. Ask your own accountant how a sponsorship applies to you.',
   },
   {
     q: 'Where does my money actually go?',
-    a: 'Into the ZAO Fund as matching funds. When a fan buys a $10 collectible from an artist we back, your match unlocks on top - so you are doubling the artist’s own fundraising, not paying for overhead. Creators keep 100% of their sales; the platform takes 0% from them.',
+    a: 'Into the ZAO Fund. Under Artizen\'s published rules, 80% of a sponsorship goes into the fund\'s match pool and 20% to the fund director. When a fan buys a $10 collectible from an artist we back, your match unlocks on top of their purchase, at a rate Artizen sets each week - so you amplify the artist\'s own fundraising instead of paying for overhead. Creators keep their full $10; Artizen adds its fee at checkout.',
   },
   {
     q: 'What do I get as a sponsor?',
@@ -36,7 +36,7 @@ const FAQ: QA[] = [
   },
   {
     q: 'What is Artizen, briefly?',
-    a: 'A platform for funding art, music, science, and culture. Creators sell $10 digital collectibles ("Artifacts") to fans; every sale unlocks matching funds from community Funds like ours. It is run in seasons, like a friendly competition where backing real work is how you win.',
+    a: 'A platform for funding art, music, science, and culture. Creators sell $10 digital collectibles ("Artifacts") to fans; every $1 of sales can unlock extra matching funds from the Artizen Endowment and community Funds like ours, at a rate set each week. It is run in seasons, like a friendly competition where backing real work is how you win.',
   },
   {
     q: 'What is the catch?',
@@ -66,7 +66,7 @@ export default function AboutPage() {
         {[
           { n: 1, t: 'Artists make work + a collectible', b: 'A musician or artist we believe in puts up their project and a $10 digital collectible that captures it.' },
           { n: 2, t: 'Fans back them for $10', b: 'You (or their fans) buy the $10 collectible. 100% goes to the creator - the platform takes nothing from them.' },
-          { n: 3, t: 'Your support gets matched', b: 'Every $1 raised unlocks matching funds from the ZAO Fund, and from any other fund backing them. Your $10 goes further than $10 - how much further is set per drive and stacks with each fund behind the artist.' },
+          { n: 3, t: 'Your support gets matched', b: 'Every $1 raised unlocks matching funds from the ZAO Fund (and any other fund backing them), at a rate Artizen sets each week. Your $10 unlocks more on top for the artist, at a match rate Artizen sets each week.' },
           { n: 4, t: 'The community lifts each other', b: 'People also "boost" the projects they love, which helps them rank and win cash prizes. We win by showing up for each other.' },
         ].map((s) => (
           <div key={s.n} className="flex gap-4 rounded-xl border border-white/10 bg-white/5 p-4">

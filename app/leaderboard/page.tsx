@@ -3,7 +3,8 @@ import { leaderboard, scrapedAt } from './data';
 import { DataStamp } from '../data-stamp';
 
 // /leaderboard - Season 6 field snapshot (scraped). Shows where every project stands and
-// flags ZAO-tied ones. Rank = Boost Score = (sales + match) x boost points / 100. Provenance: research 887.
+// flags ZAO-tied ones. Rank = money raised (sales + match), boosts win the Boost Bonus pot - live Playbook
+// v34, see research/mechanics-canonical.md. (Was the multiplicative Boost Score until 2026-08-21.)
 
 export const metadata: Metadata = {
   title: 'Season 6 Leaderboard - the field',
@@ -22,8 +23,9 @@ export default function LeaderboardPage() {
       <header className="mb-6">
         <h1 className="text-3xl font-bold sm:text-4xl">Season 6 Leaderboard</h1>
         <p className="mt-2 max-w-2xl text-white/60">
-          The whole field. Rank = <strong>Boost Score = (sales + match) x boost points / 100</strong> - boosts
-          multiply dollars, so dollars shown here are only half the picture. {zaoCount} projects are ZAO-tied
+          The whole field. This is a Season 6 snapshot, ranked by the rule of the time (the Boost Score). Today
+          rank is <strong>money raised: sales + match</strong>, and boosts win a share of a separate Boost
+          Bonus pot. {zaoCount} projects are ZAO-tied
           (gold). Use this to spot cross-back targets and who the crowd should buy AND boost.
         </p>
         <DataStamp scrapedAt={scrapedAt} className="mt-2">
@@ -71,8 +73,8 @@ export default function LeaderboardPage() {
       </div>
 
       <footer className="mt-6 border-t border-white/10 pt-6 text-xs text-white/40">
-        Win metric (official playbook): Boost Score = (sales + match) x boost points / 100. Boosts multiply
-        dollars - the lever is the crowd buying AND boosting one project. See <code>TEAM-PLAYBOOK.md</code>. Dashboard:{' '}
+        Win metric (live Playbook, since 2026-08-21): rank = money raised (sales + match unlocked), prizes follow
+        rank, and boosts win a share of the weekly Boost Bonus pot. Season 6 was ranked by the older Boost Score. See <code>TEAM-PLAYBOOK.md</code>. Dashboard:{' '}
         <a href="/dashboard" className="text-[#f5a623] underline">
           /dashboard
         </a>

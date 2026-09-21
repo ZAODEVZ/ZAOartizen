@@ -5,249 +5,294 @@ Every other doc, page, and kit file should LINK here instead of restating a form
 ratio, a season date, or a prize rule. If you find mechanics restated somewhere else, replace
 the restatement with a link to this file - one wrong copy is worse than one missing copy.
 
-Last reconciled: 2026-09-20. Reconciled against: `research/artizen-mechanics-verified-telegram.md`
-(2026-07-03), `research/851-artizen-season6-close-season7-launch/README.md` (2026-07-13),
-`research/852-artizen-grow-infrastructure-live85/README.md` (2026-08-07),
-`research/artizen-funds-how-they-work.md` (2026-06-28), `CLAUDE.md`, `TEAM-PLAYBOOK.md`.
+**Last reconciled: 2026-09-10, against the live Artizen Playbook at version 34 (2026-09-04), then against
+Venus's written answers to this file's open questions (email 2026-09-10 17:22 UTC; she checked them
+against the live Playbook and platform data), then against her section-by-section check of this file
+(email 2026-09-11 01:04 UTC, 11 corrections, all applied).**
+Also against Venus's weekly "how this week works" post (2026-09-09) and the dated repo sources the
+first pass used (`research/artizen-mechanics-verified-telegram.md` 2026-07-03, doc 851 2026-07-13,
+doc 852 2026-08-07, `research/artizen-funds-how-they-work.md` 2026-06-28).
 
-> **Not yet reconciled against the meeting notes.** The Apr-Aug 2026 Monday Momentum and Funders
-> Forum calls were never written down on the ZAO side, so there is nothing to reconcile against yet.
-> `meetings/` now exists with an intake pipeline (`meetings/README.md`) and an empty index and
-> changelog. As sessions land, work each mechanics change into this file and add a row to the
-> Supersession log citing the meeting date. Several open items below - curation ethics, match caps,
-> the prize-curve rework - were explicitly "being decided on the weekly calls," so that capture is
-> the missing primary source, not a nice-to-have.
+> **The biggest correction in this pass: rank is no longer the Boost Score.** Since the Playbook's
+> version 21 (2026-08-21), rank is **money raised = sales + match unlocked**, prizes follow rank, and
+> boosts win a share of a **separate weekly Boost Bonus pot**. The multiplicative
+> `(sales + match) x boost points / 100` formula this repo taught from July is retired. See section 1
+> and closed conflict M6 (Venus: "It is the rule, not an experiment anymore").
+
+> **Meeting notes feed this file.** `meetings/` holds the intake for the Monday Momentum and Funders Forum
+> calls (`meetings/README.md`) and a Telegram capture bot (`meetings/telegram-bot.md`). When a session
+> changes a mechanic, work it in here and cite the meeting date in the Supersession log.
+
+## How to re-verify this file (the Playbook is readable)
+
+`play.artizen.fund` is a Vite/React single-page app, so `curl` returns an empty shell - but it is
+**not** Bubble. Its text lives in a Supabase table that the page reads with its own public client:
+section content in `playbook_content`, and a **dated changelog in `playbook_versions`** (one row per
+edit, with a one-line summary). Rendering the page in a headless browser shows the same text. The
+changelog is the fastest check: read the newest versions and see whether anything below moved.
+
+**One command:** `npm run check:playbook` (or `node scripts/playbook-changelog.mjs 15` for the newest 15).
+It reads the public key from the live page bundle at run time and prints version, date and summary.
+If the newest version is above 34, something below may be stale.
 
 ## How to read this
 
 | Tag | Meaning |
 |---|---|
-| CONFIRMED | Stated by Rene or Venus in a primary channel (fund-director Telegram, Funders Forum recap, the official playbook), with the source and date given. |
-| TODO-VERIFY | Repo docs disagree, or the claim has no dated primary source. Do NOT quote publicly. Check the live Artizen Playbook at play.artizen.fund, or ask Venus in the fund-director Telegram, then update this file. |
+| CONFIRMED | Stated in the live Playbook (with its version and date), or by Rene or Venus in a primary channel, with the source and date given. |
+| TODO-VERIFY | Sources disagree, or the claim has no dated primary source. Do NOT quote publicly. Check the Playbook changelog, or ask Venus, then update this file. |
 
-Artizen changes mechanics mid-season and announces it in the Telegram and on the weekly calls,
-not in writing. A claim here is only as good as its date - check the date before you quote it.
+Artizen changes mechanics mid-season - version 21 even shipped as a "one-week experiment" and then
+stayed. A claim here is only as good as its date. Check the date before you quote it.
+
+**Where Venus's emails live.** Her written answers are cited here by date and time. The ZAO keeps their
+text verbatim in its private vault (her 2026-09-11 01:04 UTC check is `projects/venus-mechanics-check-2026-09-11.md`),
+so a citation can be re-read without opening anyone's inbox. Before quoting one of her answers outside the
+ZAO, re-check it against the live Playbook.
 
 ---
 
-## 1. How you win: the Boost Score
+## 1. How you win: rank is money raised
 
-**Boost Score = (total sales + total match unlocked) x total boost points received / 100**
+CONFIRMED - Playbook v34 (2026-09-04), Quickstart, Gameplay, Projects, Funds and FAQ all agree.
+Introduced in v21 (2026-08-21).
 
-CONFIRMED - the official playbook (play.artizen.fund), restated by Venus in the fund-director
-Telegram 2026-07-03.
+- **Two leaderboards run every Fund Drive:** projects against projects, Funds against Funds.
+- **Your rank is your money raised: sales + match unlocked.** The more you raise, the higher you rank.
+- **Prizes follow rank.** Every ranked project and Fund wins some cash, but most of the pool goes to
+  the top: #1 takes the biggest prize, #2 gets half of #1, #3 gets half of #2, then the prizes flatten
+  out so everyone further down earns a steadier share. Prizes come from the Artizen Endowment.
+- **Boosts no longer multiply your rank.** They win a share of a **separate weekly Boost Bonus pot**,
+  split among the boosted projects and Funds on a *"deliberately gentle curve so bonus money spreads
+  wide."* The pot starts at $50,000 and steps up with collective fundraising milestones for the week
+  ($500K raised -> $100,000, $1M -> $150,000, $1.5M -> $200,000, $2M -> $250,000).
+- **The Season Finale is the final drive of the season, and its prize is paid in ART.** CONFIRMED -
+  Venus, email 2026-09-11 01:04 UTC. The Playbook also describes a Finale **head start** (season totals
+  converting into Boost Points at the Finale's start), but that passage predates the rank change and
+  Venus is re-verifying it before the Finale. **TODO-VERIFY - do not quote the head start.**
 
-It is **multiplicative**, and that is the whole strategy:
+**What this changes for the ZAO's crew pitch.** The crowd still does two things, but they now earn
+two different payouts: **buying Artifacts moves rank and the prize**; **boosting moves the Boost
+Bonus share.** The Playbook's own worked example: the project that raised the most ranks #1 with
+only a sliver of the Boost Bonus, while boost-rich projects further down collect the biggest Boost
+Bonus shares. So "a top seller with no boosts LOSES" is no longer true - it wins the rank and the
+prize and leaves the bonus on the table.
 
-- Big sales with almost no boosts stays capped. Lots of boosts with no sales stays capped.
-- The playbook's own worked example: the project that sold the most dollars finished LAST because
-  it had almost no boosts; a project with fewer dollars and a boost-rich crowd took #1.
-- Both factors floor at 1.
-- So a rally has to move TWO things together: **$10 Artifact buys AND Boosts** (boosting is free).
-
-This supersedes the older "most sales wins" / "top seller" framing that predates 2026-07-03. Any
-doc still saying rank or the fund prize goes to the biggest seller is wrong - it goes to the top
-**Boost Score**.
+**Retired:** `Boost Score = (sales + match unlocked) x boost points / 100`, multiplicative. That was
+CONFIRMED from the Playbook via the Artizen Telegram on 2026-07-03 and was right until
+2026-08-21. Any doc or page still saying rank multiplies by boosts, or that the prize goes to the top
+Boost Score, is out of date.
 
 ## 2. The money
 
 | Mechanic | Detail | Status |
 |---|---|---|
-| Artifact price | $10 open-edition collectible. Creator keeps 100%, 0% platform fee, Ethereum mainnet. | CONFIRMED (CLAUDE.md, `/playbook`) |
-| Match rate | **There is no fixed ratio. The rate is set per drive by the Match Multiple** - the same multiple for everyone in that drive - and it changes week to week. A sale unlocks match from EACH fund curating the project, scaled by that drive's multiple, while each pool lasts. Do NOT publish a per-dollar figure; publish the mechanic (every sale unlocks match from every fund behind you) and the lever (be in more funds). | CONFIRMED - Venus, Telegram, 2026-07-03 for the Match Multiple; Zaal, 2026-09-20, that it differs each week |
-| Stacking | Match stacks across every fund a project is curated into. One project in 3 funds matches 3x on the same sales. This is the single biggest lever a creator controls. | CONFIRMED (`artizen-funds-how-they-work.md`) |
-| Endowment adds on top | The Artizen Endowment adds a further ~$1+ per $1, so ~$3+ total per $1 in a 1-fund case. | TODO-VERIFY - figure is from 2026-06-28 research, no dated primary source |
-| Endowment fee | 10% on Artifact purchases, **added on top at checkout** ($10 Artifact = $1 to the Endowment). Not deducted from the creator's 100%. | CONFIRMED - Venus, Telegram, 2026-07-03 |
-| Fund capital split | 90% of a fund's capital is match; 10% is an end-of-season cash prize for the fund's top-ranked project (by Boost Score - see section 1). | CONFIRMED (`artizen-funds-how-they-work.md`, 2026-06-28) |
-| Available match depletes in REAL TIME | Shared pool per fund. Act early in a drive; a hot fund can run dry, and once dry, newly curated projects get no match. | CONFIRMED - Venus, Telegram, 2026-07-03 |
-| Raised vs Prize | "Raised" (sales + unlocked match) is LOCKED once made. "Prize" fluctuates until the drive closes. | CONFIRMED - Venus, Telegram, 2026-07-03 |
-| Prize curve | #1 largest, #2 = 50% of #1, #3 = 50% of #2, then flatter; everyone ranked earns something. Rene was optimizing the lower leaderboard as of early July 2026. | CONFIRMED - Venus, Telegram, 2026-07-03 |
-| Match caps | Weekly and seasonal caps on match per project are being refined so no single project drains a fund's pool. Not a fixed published number. | TODO-VERIFY - "in progress" as of 2026-07-13 (doc 851) |
-| Fund prize flywheel | A fund's weekly prize does NOT pay out as cash - it rolls into that fund's match pool for the next drive. Boosting or sponsoring the ZAO Fund compounds match for every project it curates. | CONFIRMED - Venus, Telegram, 2026-07-03 |
-| Sponsorships vs sales | Sales = Artifact buys on a project. Sponsorships = money into a FUND's match pool. "Presented By" on a project names the top sponsors of the funds backing it, not its buyers. | CONFIRMED - Venus, Telegram, 2026-07-03 |
+| Artifact price | **$10 plus applicable fees at checkout.** Artizen adds a 10% fee on top of both Artifact sales and sponsorship sales. Open-edition NFTs. The Playbook does not name the chain for Artifacts (ART and the Endowment run on Base). | CONFIRMED - Playbook v34. The 10%-on-top fee matches Venus, Telegram, 2026-07-03 |
+| Match unlock | **Every $1 of sales (and every $1 of sponsorship) unlocks match from the curated Funds and the Endowment, scaled by that week's Match Multiple set by Artizen**, up to the project's available cap. At a 3x multiple, $1 unlocks $3 of match, $4 raised on that dollar. | CONFIRMED - Playbook v34. **Resolves conflict M1** |
+| Match Multiple changes weekly | The multiple and any per-project cap are set per drive. The Resonance drive (to 2026-09-10) ran **3x, capped at $6,000 of match per project** for that drive. Venus: *"do not quote a number for next week yet"* - it is announced at each drive open. | CONFIRMED - Venus weekly post, 2026-09-09. RE-CHECK every drive |
+| Where available match comes from | Every approved project is auto-added to the Endowment for a **baseline** match. Each Fund that curates you adds **a slice of its own available match.** | CONFIRMED - Playbook v34 |
+| How a Fund's slice is sized | By **your sales over the last 4 weeks compared with the other projects in that Fund.** Each Fund has a floor and a ceiling percentage per project, set by how many projects it curates. No more than 100% of a Fund is handed out in a week. Your pool is reserved for you for the whole drive; the number on your Fund Drive card is exactly what your community needs to unlock. | CONFIRMED - Playbook v34. Replaces the older "shared pool depletes in real time, act early" framing (Telegram, 2026-07-03) |
+| Stacking | Get curated by as many Funds as you can; each adds to your available match. There is no minimum - a single curation makes your sales eligible for that Fund's match. | CONFIRMED - Playbook v34 |
+| Quest money adds, never multiplies | Quest matches and the drive match add together. A quest mirror is its own line: it lands in the project's total raised, **never draws drive match, and never triggers another mirror.** Whether a mirror also counts on the drive leaderboard **depends on the quest** - check with Venus per quest before stating it. | CONFIRMED - Venus weekly post, 2026-09-09; leaderboard caveat from Venus, email 2026-09-11 01:04 UTC |
+| Fund prize flywheel | A Fund's cash prize is not paid out as cash - it rolls into that Fund's match pool for the next drive. | CONFIRMED - Playbook v34 (first reported by Venus, Telegram, 2026-07-03) |
+| Raised vs Prize | "Raised" (sales + unlocked match) is locked once made; "Prize" fluctuates until the drive closes. | CONFIRMED - Venus, Telegram, 2026-07-03. Not restated in v34 |
+| Fund capital split | **RETIRED.** The "10% of a Fund's capital is a season-end prize" line was an earlier season's rule and is not part of Season 7. There is one prize system: weekly Fund Drive prizes from the Endowment, ranked by money raised, plus the Boost Bonus pot. The only season-end prize is the **Season Finale** (the final drive), paid in ART | CONFIRMED - Venus, email 2026-09-10 17:22 UTC. Closed M8 |
+| Sponsorships vs sales | Sales = Artifact buys on a project. Sponsorships = money into a FUND's match pool, and sponsor dollars unlock match too. | CONFIRMED - Playbook v34; Venus, Telegram, 2026-07-03 |
+| Early Exit | A creator can take their Artifact sales and close out at any time, including during the post-season payout period. **The project is archived and the creator is paid their Artifact sales; match funding, prizes and boosts are forfeited.** Renamed from "Rage Quit" in v32. | CONFIRMED - Playbook v34; forfeit half from Venus, email 2026-09-11 01:04 UTC |
 
 ## 3. Fund drives
 
-- **Season 7 runs roughly 19 weekly fund drives, Friday to Thursday** (Venus, 2026-07-13, doc 851).
-  This supersedes the earlier "Thursday to Thursday" (Venus, 2026-07-03) - the day shifted with the
-  Season 7 rollover.
-- One drive is always live; no gaps. Timing can shift around a season close.
-- The **weekly leaderboard resets** each drive. Point balances do not - see section 4.
-- **Joining a fund mid-drive** can start applying during that drive (curation status is computed at
-  drive start/end), but applying early positions strongest for the next one.
-- Match share follows trailing activity, so consistent week-over-week engagement beats one splash -
-  while still saving firepower for a couple of concentrated pushes (Venus to a fund director, 2026-07-13).
+- **One Fund Drive a week, always live.** The Resonance drive closed Thursday 2026-09-10 at 11:00 AM
+  Pacific (18:00 UTC) and the next opened at that moment, with its theme and multiple announced then
+  (Venus, 2026-09-09).
+- **Thursday to Thursday.** Drives close Thursday 11:00 AM Pacific and the next opens as soon as
+  possible after. The Playbook FAQ's "Friday through Thursday" is loose wording for the same window, and
+  Venus will tidy it. CONFIRMED - Venus, email 2026-09-10 17:22 UTC. (Closed conflict M7.)
+- **Fair Finish:** at the scheduled close, drives and Sprints start a fresh 5-minute timer that resets
+  only on an actual lead flip - not for other sales or activity (Playbook v15, 2026-08-09).
+- The **weekly leaderboard resets** each drive. Boost Point balances do not - see section 4.
+- Sponsor and sales dollars unlock match instantly for curated projects mid-drive (Playbook v34).
 
 ## 4. Boost Points
 
-- **Boost Points never expire.** They carry over drive to drive and season to season. The only way to
-  lose them is to spend them. CONFIRMED - Rene, directly, relayed in doc 851 (2026-07-13).
-  - This CORRECTS Venus's earlier statement (2026-07-03) that unused points reset at each drive close,
-    which caused people to panic-spend. Only the weekly leaderboard competition resets.
-- Points come from holding ART, donating to the Endowment, completing your profile, and attending
-  events. TODO-VERIFY - no dated primary source in the repo for this list; check play.artizen.fund.
-- Known point awards, all CONFIRMED from doc 851 (2026-07-13) unless noted:
-  - **25,000** for attending a Funders Forum live (Mondays 11am PT).
-  - **250,000 each** to referrer and referee when a referred community leader starts a fund and applies
-    with the referrer's Artizen email.
-  - **100,000** airdropped to every creator and fund director during the Frontier drive - a one-off gift,
-    not a standing rule (Telegram, 2026-07-03). Check your balance at each drive open; when an airdrop
-    lands, deploy it, because Boost Score is multiplicative.
-  - Grow CRM contacts and verified outreach conversations each pay points - see section 8.
+- **Boost Points never expire.** They carry over drive to drive and season to season; you only lose
+  them by spending them. CONFIRMED - Playbook v34 FAQ; Rene, direct correction, doc 851 (2026-07-13).
+- **Where they come from** - CONFIRMED, Playbook v34 (resolves most of conflict M2):
+  - **Donating to the Endowment: $1 = 100 Boost Points** ($10 = 1,000). Money spent on boosts in the
+    WIN box counts as an Endowment donation and earns the same (Venus, 2026-09-09).
+  - **Holding ART:** at the start of every Fund Drive you receive Boost Points equal to **your ART
+    balance divided by 10**, added on top of what you hold - cumulative since v31 (2026-09-04). No ART
+    price lookup, no dollar conversion (v30, 2026-09-03).
+  - Crypto donations earn ART plus Boost Points; card and bank donations earn Boost Points only (v16).
+  - "Everyone gets some for free" and there are "limited free boosts" - the free amount is not stated.
+- **Profile completion and attending events still pay Boost Points** (the Playbook's Boost Points
+  passage lists both; Event Quests run weekly in the Grow app). CONFIRMED - Venus, email 2026-09-10 17:22 UTC. **Treat amounts as
+  per-quest values read in the Grow app, not constants** - her advice. As read on 2026-09-10: 10,000 BP
+  for Monday Momentum, Funders Forum and Reset and Rise; 20,000 BP for Artizen LIVE. **There is no
+  25,000 Funders Forum reward** (the doc 851 figure is retired). (Closed conflict M2.)
+- **Fund Director referral: 250,000 Boost Points each way.** When a new Fund Director accepts the role,
+  Venus airdrops 250,000 Boost Points to them, and 250,000 to whoever referred them if their application
+  named one. It is handled by Venus at launch, not a quest card in Grow. CONFIRMED - Venus, email 2026-09-11 01:04 UTC.
+  The **100,000 Frontier airdrop** from doc 851 is still **TODO-VERIFY**.
+- **Casting:** the WIN tile on the Fund Drive card computes the cheapest mix of Boost Points and money
+  to put a project or Fund into first place (v18). The BLAST and MAX buttons were removed 2026-08-24
+  (v26).
+- Grow CRM contacts and verified outreach conversations pay points - see section 8.
 
 ## 5. Seasons
 
-The authoritative season timeline, from Venus and Rene in the fund-director Telegram (doc 851,
-2026-07-13). Do not estimate season dates from doc dates - use this.
+| Season | Window | Note |
+|---|---|---|
+| Season 4 | Sep 2024 - late Jan 2025 | ~4-month pause before Season 5 |
+| Season 5 | late May 2025 - Jan 22, 2026 | |
+| Season 6 | Jan 22, 2026 - Jul 9, 2026 | Started the day Season 5 closed |
+| Season 7 | Jul 9, 2026 - **around January 7, 2027** | **Live now.** Playbook v34 FAQ: *"the exact date may shift a week or two in either direction."* RE-CHECK 2026-12-01 |
 
-| Season | Window | Length | Note |
-|---|---|---|---|
-| Season 4 | Sep 2024 - late Jan 2025 | ~4.5 months | ~4-month pause before Season 5 |
-| Season 5 | late May 2025 - Jan 22, 2026 | ~8 months | |
-| Season 6 | Jan 22, 2026 - Jul 9, 2026 | ~5.5 months | Started the day Season 5 closed |
-| Season 7 | Jul 9, 2026 - est. Dec 2026 / Jan 2027 | ~5-6 months | **Live now.** Started the day Season 6 closed |
+Seasons 4-6 from Venus and Rene, doc 851 (2026-07-13). Season cadence is not fixed; Season 8's start
+is not predictable from the pattern.
 
-Season cadence is not fixed - Venus: "Each season's timing is shaped by what's being built and learned
-between chapters rather than a fixed calendar." Season 8's start is not predictable from the pattern.
+**Season rollover rules** (CONFIRMED, Rene direct, doc 851 + `artizen-mechanics-verified-telegram.md`):
 
-**Season rollover rules** (all CONFIRMED, Rene direct, docs 851 + `artizen-mechanics-verified-telegram.md`):
+- **Funds carry over.** Unused fund balances roll into the next season.
+- **Projects carry over.** A project already curated into a fund stays curated. No re-submission.
+- **A fresh Artifact per season IS required.** The only mandatory per-project action at rollover.
+- **Boost Points carry over** (section 4).
+- **Funds only close by director choice.** Directors can edit description and requirements any time.
+  Directorship can be transferred, to an entity or an individual, handled with Artizen (Playbook v2).
+- **At season close, all sales, match funding and prizes are finalized, and payouts follow** (v34 FAQ).
 
-- **Funds carry over.** Unused fund balances roll into the next season. Nothing is stranded at close.
-- **Projects carry over.** A project already curated into a fund stays curated when the season rolls.
-  No re-submission, no new project profile.
-- **A fresh Artifact per season IS required.** That is the only mandatory per-project action at rollover.
-- **Boost Points carry over** (section 4). Weekly accrual starts fresh on top of the carried balance.
-- **Funds only close by director choice.** No automatic expiry. Directors can edit their fund's
-  description and requirements at any time - not locked at creation.
-- **The final week of a season counts the FULL season** of boosts, votes, sales and match unlocked, not
-  just that week - and that week's prizes pay out partly in ART tokens on top of the regular payout.
+**Season 6 result:** creators raised **$8,331,351** (corrected figure; the homepage counter had
+undercounted since a May 2026 upgrade). CONFIRMED - Venus, doc 851, 2026-07-13.
 
-**Season 6 result:** creators raised **$8,331,351** (corrected figure). The homepage season counter had
-been undercounting since a May 2026 platform upgrade; project-level numbers and payouts were always
-correct. Treat any Season-6-era screenshot from before this correction as stale. CONFIRMED - Venus,
-doc 851, 2026-07-13.
-
-**Season 7 stated goals:** $20M raised by creators, $100M+ endowment. These are team targets, not
-guarantees - do not quote them as facts. See conflict M3 on the endowment.
+**Season 7 stated goals:** $20M raised by creators, $100M+ endowment. Team targets, not facts. See M3.
 
 ## 6. Curation and submission
 
-- **Curation happens WITHIN each fund.** A project competes only against others in the same fund, not
-  the whole platform. So every fund you stack into is a separate curation pool AND a separate
-  competition - and a small aligned fund is easier to place in.
-- **A "top ~30% of projects by votes advance" threshold** appears in `artizen-funds-how-they-work.md`
-  (2026-06-28) and has no later confirmation. REMOVED from `/playbook` on 2026-09-20 rather than left
-  standing in front of creators - see M4. Do not restate it without a dated source.
-- **Voting:** new users get up to 100 points for completing a profile; $1 contributed = 10 votes; you
-  earn votes by showing up (events, quests). Every vote is clicked manually, even by whales - "time is
-  the equalizer." TODO-VERIFY - same 2026-06-28 source; the relationship between votes and Boost Points
-  is not stated anywhere in this repo.
-- **Season-end airdrop flywheel:** raising $1,000 this season is said to yield 10,000 votes next season.
-  TODO-VERIFY - same source and caveat.
-- **There is no tag-based fund search.** The fund index is scroll-and-read; matching is organic by
-  design. Best practice per Venus: read a fund's existing lineup rather than its description, then DM
-  the director directly with a one-line fit. The platform does not notify either party about a
-  submission, and no response does NOT mean rejected - curation is rolling all season.
-- **Curation ethics policy is still being written**, collaboratively with fund directors on the weekly
-  Funders Forum. Live as of 2026-07-13: whether a director may curate a project they are involved in
-  (resolved toward transparency + community accountability over rigid policing, with existing funds
-  grandfathered), match-funding caps, and a clearer definition of "association."
-  TODO-VERIFY - this is exactly what the Funders Forum notes in `meetings/raw/` should settle.
+- **Anyone can submit, for free. Fund admins curate the projects that fit.** CONFIRMED - Playbook v34.
+- **The 5:1 rule for curating your own work** (Playbook v1, 2026-07-21, still in v34): for every 5
+  projects a Fund curates, 1 may be a project the Fund's team is involved in - 5 allow 1, 10 allow 2.
+  **"Involved" means a creator account listed on the project is the same account as one of the Fund's
+  curators, including the Director.** A studio project that pays named creators as contractors is
+  clear as long as none of its listed creator accounts are curators on that Fund.
+  - **This bears directly on the ZAO Fund:** any project listing Zaal's account as a creator (ZAO
+    Festivals, BetterCallZaal Strategies) counts against the ZAO Fund's own-work limit, so the fund
+    needs five curated projects for each one. Accepting projects from the curation queue raises the
+    allowance.
+- **The Curation tab count includes removed projects as well as pending ones**, so it can read higher
+  than the queue actually waiting for review (Playbook v34, 2026-09-04).
+- **The vote-based curation phase is gone from the Playbook.** "Top ~30% by votes advance",
+  "$1 = 10 votes" and "$1,000 raised yields 10,000 votes next season" (all 2026-06-28) do not appear
+  anywhere in v34 - the word "vote" does not occur. Treat them as retired unless reconfirmed.
+  Conflict M4 is closed on that basis.
+- **5:1 is a curation standard, not a hard code gate.** Venus works through it with each director case
+  by case: a fund at eight or nine curated while the queue moves should talk to her rather than pull a
+  project. Holding both ZAO Festivals and BetterCallZaal Strategies means 10 curated projects in the ZAO
+  Fund, those two included. CONFIRMED - Venus, email 2026-09-10 17:22 UTC.
+- **There is no tag-based fund search.** Read a fund's existing lineup rather than its description,
+  then DM the director with a one-line fit (Venus, 2026-07-13).
+- **Does silence mean rejected? TODO-VERIFY.** This file used to say "no response does NOT mean
+  rejected - curation is rolling" (Venus, 2026-07-13). A review window for submissions was announced in
+  May (fund curators have a first-review deadline), and Venus is confirming how it is enforced in the app
+  (Venus, email 2026-09-11 01:04 UTC). Do not tell a creator that silence is not a rejection until she answers.
 
 ## 7. Payouts
 
-- Payouts run through the **Grow app** (grow.artizen.fund), launched 2026-07-13. Sign in with the
-  Artizen account email; complete a payout form per funded project (7 steps, ~5 min): KYC plus a
-  payment method - USD to a bank account or USDC to a wallet, with a test transaction.
-- Creators are paid **at season end**: sales + match + any prize, as one payout.
-- Payout reliability is reported good by creators (Trustpilot and creator reports, per CLAUDE.md).
+CONFIRMED - Playbook v7, v12, v20, v32, all current at v34.
 
-## 8. Grow, CRM and Quests
+- Payouts run through the **Grow app** (grow.artizen.fund): sign in with the Artizen account email,
+  complete the payout form per funded project - KYC ("Know Your Creator") plus a payment method, USD
+  to a bank or USDC to a wallet, with a test payment.
+- **Every funded project completes an Impact Report before its payout completes.** It is built in the
+  Impact Report editor on the payout page and holds: links to the work, **at least 5 images**, a
+  **recorded interview** (four questions, in your own voice), **at least two people who know the work,
+  with contact details** (Venus, email 2026-09-11 01:04 UTC), and a
+  narrative of the season's progress. It feeds a feature essay, published with the creator's
+  permission. **Returning creators complete a fresh one each season they are funded.**
+- **Payouts go out after the season closes, processed in batches** (Venus, email 2026-09-11 01:04 UTC), and
+- **Timing: most payouts clear within 60 days of *active review*** - the days the payout is in
+  Artizen's hands **with the Impact Report complete.** The clock pauses whenever Artizen is waiting on
+  the creator (a form, a confirmation, a test payment, Impact Report materials) and resumes when they
+  respond. Smaller payouts go first. Payouts above $10,000, or needing deeper verification, get
+  enhanced review and can take longer; Artizen says so before day 60.
+- **Practical consequence:** an unfinished Impact Report does not just delay a payout, it keeps the
+  60-day clock from starting.
 
-Grow is no longer just the payout app. Verified 2026-08-07 by reading its production JS bundle
-(doc 852) - Grow is Vite/React + Supabase, not Bubble, so its bundle is readable with curl + grep for
-future verification. What is actually shipped:
+## 8. Grow, CRM, Quests and the community chat
 
-- **CRM:** every contact added earns Boost Points; a more complete profile earns more, up to a cap per
-  person. Free Boost Score.
-- **Outreach:** Venus-assisted personalized emails. Email a sponsor prospect about your fund, CC Venus,
-  and every verified conversation earns Boost Points.
-- **Pipeline:** submissions and claims move through gated review stages - Venus reviews, Rene approves.
-- **Quests:** six categories - Karma, Outreach, Network, Sprint, Raffle, Event - with cash pots. Hourly
-  Raffle vault pots start at $500 and grow dollar-for-dollar with that hour's sales; the Collector's Cup
-  pays the top 3 up to $12,000. Winnings are paid as Venus buying the winners' Artifacts. The Raffle
-  draw is provably fair (hash published in advance, seeds after) and drawn live on the Thursday show.
-- **Collaborators:** a claim ships a 5-slot collaborators section (name + email + context required per
-  person to count). Fill all five - it costs nothing.
-  - "Get a crew for every project" (Artizen LIVE #85, 2026-08-06) was a **suggestion by guest Ben Erwin,
-    not an Artizen rule.** Nothing in the app enforces it - the word "crew" appears zero times in the
-    bundle. Do not repeat it as policy.
+- **The public Artizen Telegram group closed on 2026-09-01**, and community chat moved into the Grow
+  app (Playbook v29). **Venus says there was never a separate private fund-director Telegram**:
+  directors had a topic inside the community group, retired in July (Venus, 2026-09-10). This repo's
+  earlier notes describe a private director group ("Artizen", ~250-266 members); read those as that
+  topic, by her account. **Where directors hear about mechanics changes
+  now:** Funders Forum (Mondays 11:00 AM Pacific, after Monday Momentum), the Playbook version history
+  (`npm run check:playbook`), and Venus's email to the fund-director list; Grow Chat carries the same
+  announcements for everyone. CONFIRMED - Venus, email 2026-09-10 17:22 UTC.
+- **Quests: seven categories** (v13, 2026-08-09; list from Venus, email 2026-09-11 01:04 UTC): **Event, Karma, Sprint,
+  Raffle, Outreach, Network and Match.** In a Match Quest, qualifying fresh sales trigger extra Artifact
+  purchases on the same project while the pool lasts. Quests run for creators, and a growing set runs for
+  fund directors and curators too (Playbook, via Venus). Karma mini-games include Fund a Friend, Back the Backers and First Believer.
+  Examples live in the week of 2026-09-09: Call and Response Match, Crescendo Boost Sprint, 24 Golden
+  Hours (Venus). **Quest terms change weekly - read grow.artizen.fund/quests, do not quote old pots.**
+- **Raffles:** keys minted from Artifact sales (one key per $10 of sales in a sales raffle), a live
+  provably fair draw, a pot that grows on misses, a guaranteed winner (v10).
+- **Sprint prizes are paid as Artifact buys** (v11). Only real purchases count as a project's First
+  Believer sale - prize awards and Venus's mirror or match purchases never do (v14).
+- **CRM:** every contact added earns Boost Points; a fuller profile earns more, up to a cap (doc 852,
+  2026-08-07, read from the Grow bundle).
+- **Collaborators:** a claim ships a 5-slot collaborators section. Fill all five. "Get a crew for every
+  project" (Artizen LIVE #85, 2026-08-06) was a guest's suggestion, not an Artizen rule.
 
 ## 9. Fund director economics
 
-- **20% of sponsor dollars raised for your fund** (match and prize money excluded), payable as
-  contractor payment, nonprofit donation, crypto, or check. CONFIRMED by Venus in a June/July 2026
-  Funders Forum recap (doc 851, 2026-07-13) - but **not found in any official written Artizen doc**.
-  - This reinstates the "20%" figure that `artizen-funds-how-they-work.md` (2026-06-28) had marked
-    outdated in favour of "tips from sponsors + Artifacts." The later Funders Forum source wins on date;
-    the two models may also coexist. TODO-VERIFY the claiming process.
-- **Accelerator for Community Funds:** an application, not a given. 20 spots, ~3 months (described
-  elsewhere as 12 weeks), up to $10,000 to launch a community fund, plus mentorship. A separate
-  "$1M for Community Funds" post says up to $50,000 - likely two programs or a changed figure.
-  TODO-VERIFY the amount and the program length at artizen.link/apply before citing either.
-- **Sponsor tiers** (from the Console case, medium confidence, 2026-06-28): Presenting ~$20k+ (fund
-  naming, voting power, dashboard, top billing), Supporting ~$5k (voting power, brand listing),
-  Contributor ~$1k (Artifacts + recognition). TODO-VERIFY before quoting to a sponsor.
+- **20% of fresh sponsor dollars brought into your Fund.** A $1,000 sponsorship = $200 to the director
+  and $800 to the match pool. **No compensation on launch capital, Endowment match, or prizes.**
+  CONFIRMED - **now written in the Playbook** (v3, 2026-07-22). This closes the old "confirmed in
+  Telegram, not in any official doc" caveat.
+- **Accelerator for Community Funds:** an application, not a given. 20 spots, ~3 months, up to
+  $10,000, plus mentorship; a separate "$1M for Community Funds" post says up to $50,000.
+  TODO-VERIFY at artizen.link/apply before citing either figure.
+- **Sponsor tiers are the director's design, not a platform rule.** There are no Artizen-standard tier
+  amounts: each director designs their own (the Playbook suggests 3 to 5, creatively named, clean
+  visuals). **The Presenting Sponsor slot goes to whoever has cumulatively sponsored the Fund the most.**
+  CONFIRMED - Venus, email 2026-09-11 01:04 UTC. The $20k / $5k / $1k ladder in older repo notes (Console case,
+  2026-06-28) is **the ZAO's own pricing**, not Artizen's - quote it as ours.
 
 ## 10. Artifact spec
 
-Square 1:1 (min 1000x1000). Video or GIF performs best. **No text or graphic overlay.** Capture the
-project's current milestone. CONFIRMED - Venus, 2026-07-13 (doc 851), consistent with the earlier spec.
+**Playbook rules:** square 1:1, and **no text, logos or overlays** unless they are integral to the art.
+**Recommendation, not a published requirement:** at least 1000x1000 (Venus). Video or GIF performs best.
+Capture the project's current milestone. CONFIRMED - Venus, 2026-07-13 (doc 851), with the rule vs
+recommendation split from Venus, email 2026-09-11 01:04 UTC. Playbook v34: an Artifact is
+*"any media that marks a milestone and channels the vibe of a project"* - not the project itself.
 
 ## 11. Open conflicts - TODO-VERIFY register
 
-Resolve these at play.artizen.fund or by asking Venus in the fund-director Telegram, then update this
-file and delete the conflict entry.
+Resolve at the Playbook changelog or by asking Venus, then update this file and move the entry to the
+closed list.
 
-**M1 - RESOLVED 2026-09-20, kept as a warning.** This repo spent months with two different fixed
-match ratios in circulation: 1:1 ($10 unlocks $10) across the research, TEAM-PLAYBOOK and four site
-pages, and $1 per $10 Artifact in CLAUDE.md. Both were wrong in kind, not just in value. Zaal's answer:
-**"it's different each week."** The mechanism was already in this repo and nobody joined it up - Venus,
-2026-07-03: available match is "scaled by the drive's Match Multiple (same multiple for everyone in a
-drive)." So any fixed per-dollar ratio is a snapshot of one drive presented as a rule.
-- The lesson generalises: when two docs disagree on a constant, check whether the thing is a constant
-  at all before picking a winner.
-- All fixed ratios were removed from the public pages on 2026-09-20 (`/funds`, `/apply`, `/rally`,
-  `/playbook`, `/dashboard`, `/about`). They now state the mechanic and the lever, not a number.
-- Still open: whether the multiple applies to a published base rate or sets the rate outright, and
-  where a creator reads the current drive's multiple. `app/dashboard/data.ts` has a `driveMultiplier`
-  field for it; it is currently null. Fill it each scrape.
+**M3 - the ART token - RESOLVED 2026-09-10.** Current ART on Base is
+`0x44c4516768e47cd97cfF2561B81a74699F23f8Ec`; the Endowment SAFE is
+`0xbB96A6D3D251dFDA76F96d1650f9Cfd53b41c8d1` and the Team SAFE `0x2DACE53f4E18D9ED29B65B218C6aa55965a05F85`.
+The deprecated ART contract is `0x794FDDbe0609CD704d7920eB3f950a57D4661193` (forked and fixed after a security
+review; holders were airdropped to the new one). All four addresses appear verbatim in the live Playbook's
+Endowment section (read 2026-09-10). **The contract this repo traced in 2026 (`0x59fbbc7d...`, Juicebox
+project #587, deployed Oct 2023) is not ART and never was, per Venus, email 2026-09-10 17:22 UTC** - so the "treasury ~0.01 ETH" and
+"endowment not visible on-chain" conclusions drawn from it do not apply. The self-reported endowment size is
+still a self-report; re-trace the Base addresses above before quoting any figure. **Keep the ZAO treasury OFF
+ART** stands as a treasury policy, independent of this.
 
-**M2 - boost point sources.** The "holding ART / donating to the Endowment / completing profile /
-attending events" list has no dated primary source in this repo. Only the specific awards in section 4
-are confirmed.
+**M5 - the meeting notes.** The Monday Momentum and Funders Forum notes (Apr-Aug 2026) are not in
+this repo and **should not be** - the repo is public and those notes carry other people's names and
+discussion. Any mechanics learned from them belong here, cited by date, with no personal content.
 
-**M3 - the Endowment and the ART token.** Not a mechanic the ZAO depends on, but repeatedly quoted:
-Artizen self-reports $4M (Oct 2025) growing to ~$17M at Season 6 close and targets $100M+ for Season 7.
-Tracing the ART contract's own code (`0x59fbbc7d9c579547b47f3669aab2aec5b58d63de`) found it hardcodes
-Juicebox project #587, treasury ~0.01 ETH, deployed **October 2023** - conflicting with doc 845's
-"launched Oct 2025." ART was also relaunched (V6 migration + airdrop) around mid/late June 2026.
-Do not quote the endowment figure or the launch date. **Keep the ZAO treasury OFF ART regardless** -
-that caution stands independent of how the conflict resolves. See `research/art-token-onchain.md`.
+**Closed by Venus's answers (2026-09-10):** **M2** (profile and event points still paid, amounts per
+quest), **M3** (ART addresses), **M6** (money-raised ranking is the rule), **M7** (Thursday to Thursday),
+**M8** (the 10% season-end prize is retired).
 
-**M4 - is there still a curation phase in Season 7?** The "top ~30% by votes advance" model and the
-vote economy (section 6) are all sourced to 2026-06-28 and have never been reconfirmed. The same
-2026-07-03 Telegram capture describes curation as ROLLING all season and director-driven, which does
-not obviously coexist with a gated curation phase and a 30% cut line. The threshold was removed from
-`/playbook` on 2026-09-20 (Zaal's call, same reasoning as the match ratio: a stale claim in front of
-creators is worse than a missing one). Still unresolved: whether Season 7 runs a distinct curation
-phase at all, and what the vote economy does now. The Funders Forum notes should settle it.
-
-**M5 - the meeting notes.** The Apr-Aug 2026 calls were never written down, so that window is simply
-lost - do not try to reconstruct it. Several items above (curation ethics, match caps, the prize-curve
-rework) were explicitly "being decided on the weekly calls," which makes those calls the missing
-primary source for this file. `meetings/` now has an intake pipeline; the fix is forward-looking -
-capture the next Funders Forum, not the last twenty.
+**Closed earlier this pass:** **M1** (match ratio - resolved by the Match Multiple rule, section 2; neither
+"$1 of match per $10 Artifact" nor a flat "1:1 per fund" was right); **M2** mostly (Boost Point
+sources - section 4, with profile and event awards still open); **M4** (curation phase - the vote
+economy is gone from the Playbook, section 6).
 
 ## Supersession log
 
@@ -261,7 +306,19 @@ source overrides an earlier one.
 | 2026-07-13 | Season numbering | "Season 7 closing / Season 8 launching" | Season 6 closed Jul 9 2026; Season 7 live now | Venus (doc 851) |
 | 2026-07-13 | Season 7 re-submission | Projects must be re-submitted for the new season | Curated projects carry over automatically; only a fresh Artifact is required | Rene, correcting Venus (doc 851) |
 | 2026-07-13 | Season 6 creator total | ~$7-8M (platform counter) | $8,331,351 - the counter had undercounted since a May 2026 upgrade | Venus (doc 851) |
-| 2026-07-13 | Drive window | Thursday to Thursday | Friday to Thursday for Season 7 | Venus (doc 851) |
-| 2026-07-13 | Fund director pay | "20% is outdated, it's tips + Artifacts" (2026-06-28) | 20% of sponsor dollars raised, match and prize excluded | Venus, Funders Forum recap (doc 851) |
-| 2026-08-07 | "Every project must have a crew" | Reported as a new Artizen requirement from LIVE #85 | A guest's suggestion, not policy; nothing enforces it, but claims ship 5 collaborator slots | Grow bundle read (doc 852) |
-| 2026-09-20 | The match ratio | A fixed ratio, either 1:1 or $1 per $10 Artifact depending on the doc | No fixed ratio exists - the rate is set per drive by the Match Multiple and changes weekly | Zaal, confirming the Match Multiple already recorded from Venus 2026-07-03 |
+| 2026-07-13 | Fund director pay | "20% is outdated, it's tips + Artifacts" (2026-06-28) | 20% of sponsor dollars raised, match and prize excluded | Venus, Funders Forum recap (doc 851); written into Playbook v3, 2026-07-22 |
+| 2026-08-07 | "Every project must have a crew" | Reported as a new Artizen requirement from LIVE #85 | A guest's suggestion, not policy; claims ship 5 collaborator slots | Grow bundle read (doc 852) |
+| 2026-08-21 | How rank is decided | Boost Score, multiplicative | **Rank = money raised (sales + match unlocked); prizes follow rank; boosts win a share of a separate Boost Bonus pot** | Playbook v21, still the rule at v34 (2026-09-04) - M6 |
+| 2026-09-01 | Live community channel | "The private fund-director Telegram" | The public Artizen Telegram closed; chat is in Grow. Venus says there was never a separate director Telegram, only a topic in the community group | Playbook v29; Venus 2026-09-10 |
+| 2026-09-10 | ART token | `0x59fbbc7d...` (Juicebox #587) traced as ART | Current ART is `0x44c4...f8Ec` on Base; the traced contract is not ART | Venus 2026-09-10; Playbook Endowment section |
+| 2026-09-10 | Funders Forum reward | 25,000 BP | 10,000 BP (amounts are per-quest, read in Grow) | Venus 2026-09-10 |
+| 2026-09-10 | Fund prizes | 10% of fund capital as season-end prize | Weekly Endowment prizes + Boost Bonus; Season Finale paid in ART | Venus 2026-09-10 |
+| 2026-09-04 | Match ratio | "$10 unlocks $1 per fund" vs "$1 unlocks $1 per fund" (M1) | $1 unlocks match at that week's Match Multiple, from the Endowment baseline plus each curated Fund's slice, up to cap | Playbook v34 |
+| 2026-09-04 | Boost Point sources | ART, Endowment, profile, events (undated) | Endowment donation $1 = 100 BP; ART balance / 10 at each drive open, cumulative | Playbook v30-v31 |
+| 2026-09-04 | Payout timing | "Paid at season end" | **Not a supersession (corrected 2026-09-11): both hold.** Payouts go out after the season closes, in batches, and most clear within 60 days of active review with the Impact Report complete | Playbook v7, v20, v32; Venus 2026-09-11 |
+| 2026-09-11 | Season-end prize | "Season-long totals roll up to an end-of-season prize" | The Season Finale is the final drive, prize paid in ART; the Finale head start is TODO-VERIFY | Venus 2026-09-11 |
+| 2026-09-11 | Sponsor tiers | Presenting ~$20k / Supporting ~$5k / Contributor ~$1k read as platform tiers | No Artizen-standard tiers; directors design their own; Presenting = top cumulative sponsor; the ladder is ZAO pricing | Venus 2026-09-11 |
+| 2026-09-11 | Quest mirrors on the board | "Mirrors show as sales on the board" | Mirrors land in total raised, never draw match or trigger a mirror; leaderboard counting varies by quest | Venus 2026-09-11 |
+| 2026-09-11 | Artifact chain | "Ethereum mainnet" | Chain not named in the Playbook; ART and the Endowment are on Base | Venus 2026-09-11 |
+| 2026-09-04 | Curation | Top ~30% by votes advance; $1 = 10 votes | Fund admins curate; no vote economy in the Playbook; 5:1 own-work rule | Playbook v1, v34 |
+| 2026-09-04 | Season 7 end | "est. Dec 2026 / Jan 2027" | Around January 7, 2027, may shift a week or two | Playbook v34 FAQ |

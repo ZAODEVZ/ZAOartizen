@@ -9,7 +9,7 @@ const FUND_URL = 'https://artizen.thezao.com/';
 
 export const metadata: Metadata = {
   title: 'Rally - back our artists on Artizen',
-  description: 'The 3-step crew rally: sign up, buy a $10 Artifact, boost. Every $10 unlocks matched funding.',
+  description: 'The 3-step crew rally: sign up, buy a $10 Artifact, boost. Every $10 can unlock matched funding.',
 };
 
 function usd(n: number | null): string {
@@ -34,11 +34,11 @@ export default function RallyPage() {
       <header className="mb-8">
         <h1 className="text-3xl font-bold sm:text-4xl">Rally for our artists</h1>
         <p className="mt-2 text-white/60">
-          3 minutes. Every $10 you spend unlocks matching funds from the{' '}
+          3 minutes. Every $10 you spend can unlock extra match from the{' '}
           <a href={FUND_URL} className="text-[#f5a623] underline">
             ZAO Fund
           </a>
-          . Rank = (sales + match) x boosts, so buying AND boosting both count. We win by showing up together.
+          . Buying lifts the rank (money raised) and boosting wins a share of the weekly Boost Bonus, so both count. We win by showing up together.
         </p>
       </header>
 
@@ -50,11 +50,6 @@ export default function RallyPage() {
           <div className="mt-1 text-sm text-white/70">
             {fundStats.activeDrive ? `${fundStats.activeDrive}` : 'Active drive'}
             {fundStats.driveDeadline ? ` - ${fundStats.driveDeadline}` : ''}. Spend before it closes.
-          </div>
-          <div className="mt-1 text-sm text-white/70">
-            {fundStats.driveMultiplier
-              ? `This drive matches at ${fundStats.driveMultiplier}.`
-              : 'The match rate is set per drive and changes weekly - check the live fund for this one.'}
           </div>
           <DataStamp scrapedAt={fundStats.scrapedAt} className="mt-3" />
         </div>

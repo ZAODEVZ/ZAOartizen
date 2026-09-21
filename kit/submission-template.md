@@ -5,7 +5,7 @@ Full context: ../research/849-zao-artizen-execution-build-plan/README.md
 
 ## Confirmed Artifact specs (build to these)
 
-- Image (required): square 1:1, min 1000x1000px, .jpg/.png, <10MB, NO text/logo overlays.
+- Image (required): square 1:1 (1000x1000px or larger recommended), .jpg/.png, <10MB, NO text/logo overlays.
 - GIF (optional): square, min 500px, <50MB, loopable.
 - Video (optional): square, <=45s, <100MB, .mp4, loopable, no overlays.
 - The Artifact is the creative essence of the project, not a marketing flyer. Video/GIF outperform static in voting.
@@ -31,7 +31,6 @@ Funds to target: ZAO Fund for Emerging Culture + [ZAO Festivals Fund / Greenpill
 | Project | One-liner draft | Stack into |
 |---|---|---|
 | WaveWarZ | Music meets prediction markets meets gaming - bet on the artists you believe in | ZAO Fund + Funding the Commons |
-| SongJam | Tooling that turns X Spaces into searchable, ownable music sessions | ZAO Fund + Funding the Commons |
 | ZAOstock | A music gathering in Ellsworth, Maine - festival as community prototype | ZAO Festivals Fund + Greenpill + Emerging Culture |
 | Thy Revolution | Music with a justice spine, from the ZAO incubator | ZAO Festivals + Greenpill + Collective Women's |
 

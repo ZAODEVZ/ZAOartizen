@@ -48,11 +48,11 @@ with Heart of Ellsworth (the town's Main Street org).
 
 ## Rewards / what backers get (drives the $10 sale)
 Every backer: your name on the ZAOstock supporters wall, the build-in-public updates, and first access to the
-livestream. Every $10 also unlocks match from each fund backing us - so your buy multiplies straight into an
-artist's pay.
+livestream. Every $10 also unlocks match from each fund backing us, at the weekly match rate - so your buy goes
+further than $10 for the artists.
 
 ## Who's behind it / by the numbers (credibility)
-A 27-person team + local crew. 501(c)(3)-backed via Fractured Atlas. Two prior festivals (NYC + Miami). Part of
+A 27-person team + local crew. Two prior festivals (NYC + Miami). Part of
 Art of Ellsworth weekend, working with Heart of Ellsworth (the town's Main Street org). Targets: 200-400 in
 person + 1,000+ livestream.
 
@@ -90,7 +90,7 @@ crowd, stage, lights. A GIF or short video performs best (Artizen's own guidance
    Thy Rev, or Steve Peer - asks are drafted in testimonial-asks.md, none received as of 2026-07-13.
    Ship as a 9-slide deck if none land in time; add back in the moment one does. Format once received:
    "[their sentence]" - [Name, what they build].
-10. **The ask.** "Back ZAO Festivals. Every $10 unlocks match funding from the funds backing this
+10. **The ask.** "Back ZAO Festivals. Every $10 can unlock match funding from the funds backing this
     project - your buy multiplies straight into an artist's pay." Link: zaostock.com/festivals.
 
 ## Submit to these funds (stack the match - the more the better)

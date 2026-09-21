@@ -20,7 +20,9 @@ the newsletter. A deeper agent pass is appending more (fund-copy examples, spons
 6. **Mobilize like Artizen says:** post often + tag @ArtizenFund, personal DMs (not blasts), host events. Proof:
    a creator raised ~$100k for a 9-city tour (ZAO Festivals' exact model).
 7. **Sponsors:** Presenting (~$20k+, naming + the new top-billing feature) / Supporting (~$5k) / Contributor
-   (~$1k). Build-in-public is rewarded (Apollo requires it; ZAO already does).
+   (~$1k). **[Corrected 2026-09-11: Artizen has no standard tier amounts. Directors design their own tiers, and
+   Presenting goes to the top cumulative sponsor. This ladder is the ZAO's own pricing, not Artizen's - never
+   present it to a sponsor as an Artizen tier. See [`mechanics-canonical.md`](mechanics-canonical.md) section 9.]** Build-in-public is rewarded (Apollo requires it; ZAO already does).
 8. **Endowment is real** ($4M -> ~$10M, fast-growing); the $1T is aspirational. The **$10k-$50k Accelerator** is a
    real thing to APPLY to (amount unconfirmed).
 
@@ -98,6 +100,10 @@ The full description/eligibility carries the detail; the logline just names WHO.
 - **Distributed, niche community funds** - 32+ funds; the magic is curation diversity, not an algorithm.
 
 ## Sponsor tiers (agent pass, from the Console case - MED)
+> **Corrected 2026-09-11 (Venus):** there are **no Artizen-standard sponsor tiers.** Each director designs their
+> own (the Playbook suggests 3 to 5); the Presenting Sponsor slot goes to whoever has cumulatively sponsored the
+> Fund the most. The amounts below are one fund's case, read as the **ZAO's own pricing** - not a platform rule.
+> See [`mechanics-canonical.md`](mechanics-canonical.md) section 9.
 - **Presenting Sponsor ~$20k+**: fund naming, voting power, dashboard, public shoutouts (the new Presenting
   Sponsor feature).
 - **Supporting ~$5k**: voting power, brand listing on the fund page.

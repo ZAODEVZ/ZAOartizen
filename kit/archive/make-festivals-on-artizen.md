@@ -45,7 +45,7 @@ community-owned culture.
 **Funds to target (curate into all that apply):** ZAO Fund for Emerging Culture + Greenpill Fund for
 Regenerative Gatherings + (the ZAO Festivals Fund once it is live)
 
-**Artifact asset (you create):** square 1:1, min 1000x1000px, .jpg/.png/.mp4 (video/GIF performs best),
+**Artifact asset (you create):** square 1:1, 1000x1000px or larger recommended (not a published requirement - corrected 2026-09-11), .jpg/.png/.mp4 (video/GIF performs best),
 no text overlay - a clip or image that captures the ZAOstock / Ellsworth-parklet vibe.
 
 **Payout wallet:** [your ETH address]
@@ -79,7 +79,7 @@ no text overlay - a clip or image that captures the ZAOstock / Ellsworth-parklet
 **Funds to target:** ZAO Fund for Emerging Culture + Greenpill Fund for Regenerative Gatherings + (the
 ZAO Festivals Fund once it is live)
 
-**Artifact asset (you create):** square 1:1, min 1000x1000px, no text overlay - a clip/image of the
+**Artifact asset (you create):** square 1:1, 1000x1000px or larger recommended (not a published requirement - corrected 2026-09-11), no text overlay - a clip/image of the
 day-party vibe.
 
 **Payout wallet:** [your ETH address]
