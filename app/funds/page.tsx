@@ -49,7 +49,7 @@ export default function FundsPage() {
       <section className="mb-10 rounded-2xl border border-[#f5a623]/30 bg-gradient-to-br from-[#f5a623]/10 to-transparent p-6">
         <h2 className="text-lg font-semibold">The recommended ZAO stack</h2>
         <p className="mt-2 text-sm text-white/70">
-          For a music / art / community project, submit to all three for 3x match:
+          For a music / art / community project, submit to all three so one sale pulls from three pools:
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
           {['ZAO Fund', 'Commons Fund', 'Apollo Fund'].map((s) => (

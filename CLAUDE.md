@@ -30,6 +30,10 @@ does what. The front door for humans and agents.
 - `research/` - source docs (843-850 + 760) + reference (fund-directory, priority-funds, etc). The why.
 - `kit/` - copy-paste material: TEAM-PLAYBOOK is the index; new-artist-briefs, crew-mobilization,
   standings-tracker, fund proposal, outreach drafts, daily spotlights, call brief, sponsor one-pager.
+- `meetings/` - capture for the Monday Momentum + Funders Forum calls: `raw/` transcripts, `INDEX.md`,
+  `mechanics-changelog.md`. Empty so far - `meetings/README.md` has the recording-to-notes intake
+  (Descript transcribes, the changelog feeds research/mechanics-canonical.md) and scopes the
+  Telegram capture bot that is NOT built.
 - `README.md` - front door. `HANDOFF.md` - cold-start.
 
 ## How we win

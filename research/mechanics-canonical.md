@@ -19,6 +19,10 @@ doc 852 2026-08-07, `research/artizen-funds-how-they-work.md` 2026-06-28).
 > `(sales + match) x boost points / 100` formula this repo taught from July is retired. See section 1
 > and closed conflict M6 (Venus: "It is the rule, not an experiment anymore").
 
+> **Meeting notes feed this file.** `meetings/` holds the intake for the Monday Momentum and Funders Forum
+> calls (`meetings/README.md`) and a Telegram capture bot (`meetings/telegram-bot.md`). When a session
+> changes a mechanic, work it in here and cite the meeting date in the Supersession log.
+
 ## How to re-verify this file (the Playbook is readable)
 
 `play.artizen.fund` is a Vite/React single-page app, so `curl` returns an empty shell - but it is

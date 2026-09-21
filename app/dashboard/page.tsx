@@ -130,14 +130,11 @@ export default function DashboardPage() {
           <StatCard label="Match remaining" value={usd(fundStats.matchRemainingUsd)} />
           <StatCard label="Projects curated" value={num(fundStats.projectsCurated)} />
           <StatCard label="Signups driven" value={num(fundStats.signupsDriven)} />
-          <StatCard
-            label="Active drive"
-            value={
-              fundStats.activeDrive === null
-                ? 'TBD'
-                : `${fundStats.activeDrive}${fundStats.driveMultiplier ? ` (${fundStats.driveMultiplier})` : ''}`
-            }
-          />
+          <StatCard label="Active drive" value={txt(fundStats.activeDrive)} />
+          {/* The drive's Match Multiple sets how much match a sale unlocks - there is no fixed
+              ratio, so this is the number that matters and it changes every drive. Its own card so
+              a missing one reads as TBD rather than quietly disappearing off the drive label. */}
+          <StatCard label="Match multiple" value={txt(fundStats.driveMultiplier)} />
           <StatCard label="Drive deadline" value={txt(fundStats.driveDeadline)} />
         </div>
       </section>

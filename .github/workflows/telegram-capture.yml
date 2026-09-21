@@ -1,0 +1,68 @@
+name: Telegram capture
+
+# Polls the capture bot and commits whatever was handed to it.
+#
+# This workflow only runs on the DEFAULT BRANCH (main) - GitHub ignores schedules on other
+# branches, so nothing fires until this file is merged. Run it by hand from the Actions tab first.
+#
+# Setup, secrets and how to find your chat id: meetings/telegram-bot.md
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub delays scheduled runs under load, sometimes a lot; that is fine
+    # here, but note getUpdates drops anything older than 24h, so a full day of failed runs
+    # loses messages. The workflow fails loudly rather than silently skipping.
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Poll and print without writing (offset is not saved)'
+        type: boolean
+        default: false
+
+concurrency:
+  # Two runs polling getUpdates at once would race on the offset file and double-capture.
+  group: telegram-capture
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Capture
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ALLOWED_CHATS: ${{ vars.TELEGRAM_ALLOWED_CHATS }}
+          TELEGRAM_ALLOWED_USERS: ${{ vars.TELEGRAM_ALLOWED_USERS }}
+          # CAPTURE_ALL is deliberately not wired up here. Read the warning in
+          # scripts/tg-capture.mjs before adding it.
+        run: node scripts/tg-capture.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: Commit anything captured
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "zao-tg-capture[bot]"
+          git config user.email "info@thezao.com"
+          git add meetings/raw meetings/.telegram-offset.json
+          if git diff --staged --quiet; then
+            echo "Nothing captured this run."
+            exit 0
+          fi
+          git commit -m "meetings: telegram capture $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # Another run (or a human) may have pushed since checkout; rebase rather than fail.
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "push failed, rebasing and retrying ($attempt/3)"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || exit 1
+          done
+          echo "could not push after 3 attempts"
+          exit 1
