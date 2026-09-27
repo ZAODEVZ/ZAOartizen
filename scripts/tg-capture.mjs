@@ -31,9 +31,16 @@ const OFFSET_FILE = join(REPO_ROOT, 'meetings/.telegram-offset.json');
 const DRY_RUN = process.argv.includes('--dry-run');
 
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+// NO TOKEN MEANS NOT SET UP YET, NOT BROKEN: skip and exit 0. Measured
+// 2026-09-27: with no TELEGRAM_BOT_TOKEN secret on this repo, the scheduled
+// workflow failed 37 of 37 runs since 2026-09-21 while CI stayed green, and a
+// workflow that is always red teaches everyone to stop reading red here.
+// iman-desk's scripts/tg-to-desk.mjs already skips green the same way.
+// A token WITHOUT an allowlist still fails below: that one is a real
+// misconfiguration, an open write path into a public repo.
 if (!TOKEN) {
-  console.error('TELEGRAM_BOT_TOKEN is not set. See meetings/telegram-bot.md.');
-  process.exit(1);
+  console.log('::notice::TELEGRAM_BOT_TOKEN is not set, so capture is skipped. Setup: meetings/telegram-bot.md.');
+  process.exit(0);
 }
 
 // Allowlist. A bot username is public, so anyone can add this bot to any group and start
