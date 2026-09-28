@@ -52,7 +52,12 @@ jobs:
         run: |
           git config user.name "zao-tg-capture[bot]"
           git config user.email "info@thezao.com"
-          git add meetings/raw meetings/.telegram-offset.json
+          # Add only paths that exist. With no token the capture step skips before writing
+          # anything, and `git add` on a missing pathspec is fatal (exit 128) - that turned
+          # the green skip from #50 back into a red run.
+          for f in meetings/raw meetings/.telegram-offset.json; do
+            if [ -e "$f" ]; then git add -- "$f"; fi
+          done
           if git diff --staged --quiet; then
             echo "Nothing captured this run."
             exit 0
