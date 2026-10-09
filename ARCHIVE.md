@@ -171,7 +171,6 @@ Group-level facts only; members are not named here.
 |---|---|---|
 | `ARCHIVE.md` | This record | current |
 | `docs/artizen-history.md`, `docs/artizen-wind-down-guide.md` | Public pages for the wider Artizen community: platform history and a wind-down guide | current |
-| `research/playbook-archive/` | Saved copies of Artizen's Playbook (2026-04-02, 2026-07-01, 2026-10-02) and Payouts Terms (2026-10-09) | archive |
 | `README.md`, `TEAM-PLAYBOOK.md`, `HANDOFF.md`, `CLAUDE.md` | Front door, strategy, cold-start, agent context | historical; each now points here |
 | `RECAP.md`, `LOOP.md`, `PLAN-1/2/3-*.md` | Master recap through 2026-06-29; build loop; three operating plans | historical |
 | `research/mechanics-canonical.md` | How Artizen worked, with sources, dates and a supersession log | historical, the best mechanics record |

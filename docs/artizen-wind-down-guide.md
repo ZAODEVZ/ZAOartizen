@@ -22,14 +22,12 @@
 
 ## What is paid and what is not
 
-From Artizen's Terms (Payouts site, saved 2026-10-09,
-[copy](../research/playbook-archive/2026-10-09-payouts-terms.md)):
+From Artizen's Terms (Payouts site, saved 2026-10-09):
 
 > On Early Exit, Artizen pays Artifact sales only. Match funding, prizes, bonuses, and other awards
 > are not due. Impact Reports are not required for an Early Exit.
 
-From the Platform Continuity section (Playbook, 2026-10-02,
-[copy](../research/playbook-archive/2026-10-02-final.md)):
+From the Platform Continuity section (Playbook, 2026-10-02):
 
 > Sales already collected for a project are still paid under the normal payout process, minus any
 > amounts Artizen cannot pay because of chargebacks, uncleared payments, sanctions, or fraud. Artizen
@@ -142,8 +140,8 @@ While you still can:
 - Keep the emails from Artizen and from Venus.
 - Note your Season 6 and Season 7 sales, any match or prizes already paid, and the dates.
 
-Saved copies of the Playbook and Terms are in
-[`research/playbook-archive/`](../research/playbook-archive/). If you have a dated copy we are missing,
+Artizen's own archived Playbook is at artizen.fund/playbook. The ZAO holds dated community copies but
+is not publishing them yet. If you have a dated copy we are missing,
 especially from between 2026-09-04 and 2026-10-02, please open an issue on this repo.
 
 ## Questions still open
@@ -168,4 +166,4 @@ Asked by the community, with no answer in any source we hold:
   - artizen-creator-resources.pages.dev (creator resources and claims hub)
   - artizen.fyi (project stats; a Wayback copy of its project list from 2026-10-05)
 - **Playbook captures:** the Wayback Machine has captures of play.artizen.fund up to 2026-10-02. They
-  may load empty, so prefer the saved text in this repo.
+  may load empty.

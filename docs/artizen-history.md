@@ -37,17 +37,17 @@ The Terms also said: "Some rules are immutable (like Endowment mechanics coded i
 
 ## How the rules changed
 
-The saved copies are in [`research/playbook-archive/`](../research/playbook-archive/).
+Artizen keeps an archived copy of its Playbook at artizen.fund/playbook. The ZAO also holds dated community copies; publishing them here is on hold until we confirm we may.
 
 | When | What the Playbook said | Source |
 |---|---|---|
-| Around 2026-04-02 (Season 6) | Community votes as signal, fund admins approve. Sales Sprints and Boosts as time-limited power-ups. Match first-come-first-served, capped at about 30% of a Fund per project. Season-end cash prizes. | [April 2 copy](../research/playbook-archive/2026-04-02-season6.md) |
+| Around 2026-04-02 (Season 6) | Community votes as signal, fund admins approve. Sales Sprints and Boosts as time-limited power-ups. Match first-come-first-served, capped at about 30% of a Fund per project. Season-end cash prizes. | April 2 copy (community, held) |
 | 2026-07-09 | Season 6 closed; Season 7 began, scheduled to end around 2027-01-07. | Playbook 2026-10-02; The ZAO's records |
-| Around 2026-07-01 to 07-12 | Voting replaced by weekly Fund Drives (Thursday to Thursday). Boost Points from donating to the Endowment ($1 = 100) or holding ART. A weekly Match Multiple set by Artizen. Rank by a multiplicative Boost Score. A creator could **"Rage Quit"**: project archived, Artifact sales paid, match and cash prizes forfeited. | [July 1 copy](../research/playbook-archive/2026-07-01-season7.md) |
+| Around 2026-07-01 to 07-12 | Voting replaced by weekly Fund Drives (Thursday to Thursday). Boost Points from donating to the Endowment ($1 = 100) or holding ART. A weekly Match Multiple set by Artizen. Rank by a multiplicative Boost Score. A creator could **"Rage Quit"**: project archived, Artifact sales paid, match and cash prizes forfeited. | July 1 copy (community, held) |
 | 2026-07-21 to 2026-09-04 | 34 dated entries in the Playbook's own version history. Highlights: **2026-08-21** rank became money raised (sales plus match unlocked) and Boosts moved to a separate weekly Boost Bonus pot. **2026-09-01** Artizen's public Telegram closed and chat moved to the Grow app. **2026-09-04** "Rage Quit" renamed **"Early Exit"**, still a creator's choice, and payout timing softened to "most within 60 days of active review". | Version history, from a community transcript of the Playbook made 2026-10-07; The ZAO's [`research/mechanics-canonical.md`](../research/mechanics-canonical.md) |
-| 2026-10-02 (last live copy we hold) | Adds: **Artizen itself may elect Early Exit** for any or all projects. A **Platform Continuity** section. A **"Full satisfaction and release"** clause: once the sales amount is paid, the creator releases Artizen Works Inc. | [Oct 2 copy](../research/playbook-archive/2026-10-02-final.md) |
+| 2026-10-02 (last live copy we hold) | Adds: **Artizen itself may elect Early Exit** for any or all projects. A **Platform Continuity** section. A **"Full satisfaction and release"** clause: once the sales amount is paid, the creator releases Artizen Works Inc. | Oct 2 copy (community, held) |
 | 2026-10-05 | The Playbook becomes "an archived copy ... kept for reference" on a new Artizen Payouts site, which adds a claim deadline and a wallet-withdrawal deadline of **2026-11-30, 11:59 PM PT**. | Terms as printed 2026-10-05 (community copy) |
-| 2026-10-09 | The Terms add: before payout you confirm the total owed across all your projects, and "Once that total is paid, no further amounts are due." | [Oct 9 Terms copy](../research/playbook-archive/2026-10-09-payouts-terms.md) |
+| 2026-10-09 | The Terms add: before payout you confirm the total owed across all your projects, and "Once that total is paid, no further amounts are due." | Oct 9 Terms copy (community, held) |
 
 **When was "Artizen may elect Early Exit" added?** It is **not established** by any source we hold.
 - The Playbook's own version history ends at 2026-09-04, and that version describes Early Exit only as

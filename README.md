@@ -6,9 +6,8 @@
 > [ARCHIVE.md](ARCHIVE.md).
 >
 > **Here for Artizen's rules or the wind-down?** This is The ZAO's repo, **not an official Artizen
-> repo**. See [Artizen: a history](docs/artizen-history.md), the
-> [wind-down guide](docs/artizen-wind-down-guide.md), and saved Playbook copies in
-> [research/playbook-archive/](research/playbook-archive/).
+> repo**. See [Artizen: a history](docs/artizen-history.md) and the
+> [wind-down guide](docs/artizen-wind-down-guide.md).
 
 **The ZAO's operating home for the Artizen Fund for Emerging Culture.** Research, strategy, playbooks, and a live 7-page Next.js site that powers how The ZAO shows up on Artizen as a fund manager, creator, and community.
 
