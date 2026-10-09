@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-export const alt = 'ZArtizen - The ZAO Fund for Emerging Culture on Artizen';
+export const alt = 'ZArtizen - archived';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -25,18 +25,18 @@ export default function OpengraphImage() {
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <div style={{ display: 'flex', fontSize: 84, fontWeight: 800, lineHeight: 1.05 }}>
-            ZAO Fund for
+            The ZAO on Artizen
           </div>
           <div style={{ display: 'flex', fontSize: 84, fontWeight: 800, lineHeight: 1.05, color: '#f5a623' }}>
-            Emerging Culture
+            Archived
           </div>
           <div style={{ display: 'flex', marginTop: 28, fontSize: 32, color: 'rgba(255,255,255,0.7)' }}>
-            A community match fund backing 32 projects at the intersection of art, tech, and community.
+            The Artizen platform wound down in October 2026. This work is past.
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 28, color: 'rgba(255,255,255,0.55)' }}>
-          <div style={{ display: 'flex' }}>zaoartizen.vercel.app</div>
-          <div style={{ display: 'flex', color: '#f5a623' }}>artizen.thezao.com</div>
+          <div style={{ display: 'flex' }}>za-oartizen.vercel.app</div>
+          <div style={{ display: 'flex', color: '#f5a623' }}>The ZAO</div>
         </div>
       </div>
     ),

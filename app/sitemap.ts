@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE = 'https://zaoartizen.vercel.app';
+const BASE = 'https://za-oartizen.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // /contacts is deliberately NOT here. It is the creator contact book - 40 real
@@ -8,10 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Basic auth in middleware.ts. Listing it would ask search engines to index a
   // page they cannot fetch, and would publish the URL of a private CRM. Do not
   // add it back.
-  const routes = ['', '/dashboard', '/leaderboard', '/rally', '/apply', '/festivals', '/proposal', '/videos'];
-  return routes.map((path) => ({
-    url: `${BASE}${path}`,
-    changeFrequency: path === '/dashboard' || path === '/leaderboard' ? 'daily' : 'weekly',
-    priority: path === '' ? 1 : 0.8,
-  }));
+  // The site is archived (2026-10-09): only the notice is listed.
+  return [{ url: `${BASE}/`, changeFrequency: 'yearly', priority: 1 }];
 }
