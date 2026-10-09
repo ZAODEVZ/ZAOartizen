@@ -56,7 +56,7 @@ pitch is recorded in this repo; `kit/rene-comp-ask.md` stayed a draft).
 | 2026-09-19 | Last scoreboard data captured (section 3) | `app/dashboard/data.ts` |
 | 2026-09-20 | Artizen pauses review on its side, no date given | finance-hq `capital/artizen-impact-state-2026-09-20.md` |
 | 2026-09-21 | Last substantive merge: canonical mechanics file, meetings capture, Telegram capture bot (PR #48) | PR list |
-| 2026-09-29 | Zaal pauses all Artizen work | `.handoffs` 2026-09-29 (local, untracked) |
+| 2026-09-29 | Zaal pauses all Artizen work ("lets hold off on all things artizen right now") | zao-vault `MISTAKES.md`, 2026-09-29 entry (private, tracked) |
 | 2026-10-03 | ZAOstock held in Ellsworth, Maine. No Artizen money had arrived. | finance-hq `capital/post-festival-2026-10-05.md` |
 | 2026-10-05 | Artizen stopping operations. Zaal rules the work archived as past; Artizen removed as a partner from ZAO public surfaces (ZAOstock #447, ZAOOS #3713, zabalgames #753) | Zaal ruling 2026-10-05; PR search |
 | 2026-10-09 | This archive written | this file |
