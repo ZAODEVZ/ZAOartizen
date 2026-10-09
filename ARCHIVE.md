@@ -170,6 +170,7 @@ Group-level facts only; members are not named here.
 | Path | What | State |
 |---|---|---|
 | `ARCHIVE.md` | This record | current |
+| `docs/artizen-history.md`, `docs/artizen-wind-down-guide.md` | Public pages for the wider Artizen community: platform history and a wind-down guide | current |
 | `README.md`, `TEAM-PLAYBOOK.md`, `HANDOFF.md`, `CLAUDE.md` | Front door, strategy, cold-start, agent context | historical; each now points here |
 | `RECAP.md`, `LOOP.md`, `PLAN-1/2/3-*.md` | Master recap through 2026-06-29; build loop; three operating plans | historical |
 | `research/mechanics-canonical.md` | How Artizen worked, with sources, dates and a supersession log | historical, the best mechanics record |
