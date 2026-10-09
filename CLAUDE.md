@@ -1,5 +1,10 @@
 # CLAUDE.md - ZArtizen
 
+> **ARCHIVED 2026-10-05 - past work.** The Artizen platform wound down; The ZAO no longer works with
+> Artizen, and it is not a partner, funder or fund. Match funding and cash prizes will not be paid.
+> Everything below is kept as a historical record, not an active ask or plan. Start with
+> [ARCHIVE.md](ARCHIVE.md).
+
 Context for any collaborator or agent working in this repo.
 
 ## What this is
@@ -53,7 +58,7 @@ register of what this repo cannot confirm.
 - Live: **https://zaoartizen.vercel.app** (the old zartizen.vercel.app is dead).
 - Deploy: `cd ~/Desktop/repos/ZAOartizen && npx vercel --prod --yes` (CLI authed as bettercallzaal).
   Auto-deploy is NOT wired - redeploy manually after changes.
-- Commit as: `git -c user.email=zaalp99@gmail.com -c user.name=bettercallzaal commit ...`
+- Commit as: `git -c user.name=bettercallzaal commit ...`
 - The `browse` headless tool needs bun on PATH: `export PATH="$HOME/.bun/bin:$PATH"`. Do NOT clobber
   PATH (keep /usr/local/bin so npx/node resolve).
 

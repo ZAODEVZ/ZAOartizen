@@ -15,7 +15,7 @@ Built after the "Levitt grant" slip (I cited a doc recommendation as a real gran
   live figure. ~~[CONFIRMED] Real budget need: $10k-$25k~~ for Oct 3 (not the doc's "$5-25k") - superseded.
 - **[CONFIRMED] Active avenues:** web3/crypto sponsors + local Maine sponsors. Grants are "on the list" but
   loose - nothing in motion. One real, not-yet-pursued lead: Maine Community Foundation's Maine Expansion Arts
-  program (contact Leslie Goode, Senior Program Officer, 207-412-2002, lgoode@mainecf.org) - real, applicable
+  program (contact: a senior program officer; details held privately) - real, applicable
   to a first-year arts event under $500K in expenses; deadline unconfirmed, worth a call.
 - **[CORRECTED] The Levitt Foundation grant is NOT real** - it was a "should APPLY" recommendation in doc 364,
   never pursued. Do not cite it as a funding source.
