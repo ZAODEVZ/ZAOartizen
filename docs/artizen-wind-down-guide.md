@@ -4,8 +4,8 @@
 > director to help other creators, collectors and fund directors find their way. It is **not** an
 > Artizen document, and The ZAO cannot act for Artizen or speed up anyone's payout.
 >
-> Last updated 2026-10-09. Rules are quoted from saved copies of Artizen's own Terms and Playbook,
-> each with its date. Anything only reported by community members is marked **UNVERIFIED**.
+> Last updated 2026-10-09. Rules are summarised from Artizen's own Terms and Playbook, with short
+> quotes and links, each with its date. Anything only reported by community members is marked **UNVERIFIED**.
 > Background: [Artizen: a history](artizen-history.md).
 
 ## The short version
@@ -22,20 +22,14 @@
 
 ## What is paid and what is not
 
-From Artizen's Terms (Payouts site, saved 2026-10-09):
+Per the [Artizen Terms](https://artizen.fund/terms) (as saved 2026-10-09): on Early Exit, "Artizen pays Artifact sales only. Match funding,
+prizes, bonuses, and other awards are not due." Impact Reports are not required.
 
-> On Early Exit, Artizen pays Artifact sales only. Match funding, prizes, bonuses, and other awards
-> are not due. Impact Reports are not required for an Early Exit.
-
-From the Platform Continuity section (Playbook, 2026-10-02):
-
-> Sales already collected for a project are still paid under the normal payout process, minus any
-> amounts Artizen cannot pay because of chargebacks, uncleared payments, sanctions, or fraud. Artizen
-> may pay those sales in a single close-out batch or in installments rather than waiting for a full
-> season audit.
-
-> Open leaderboards, pending prizes, and pending Boost Bonuses do not vest. Rankings at the moment of
-> notice are not a promise to pay.
+Per the Platform Continuity section of the [Artizen Playbook](https://artizen.fund/playbook) (as of 2026-10-02):
+- Sales already collected are still paid, less anything Artizen cannot pay because of chargebacks,
+  uncleared payments, sanctions or fraud.
+- Artizen may pay "in a single close-out batch or in installments".
+- "Open leaderboards, pending prizes, and pending Boost Bonuses do not vest."
 
 What community members report about how this is being applied (**UNVERIFIED**; relayed second-hand
 from Artizen's account, 2026-10-06):
@@ -58,13 +52,9 @@ If your total looks wrong, members report that Artizen's account corrected calcu
 
 ## How to claim
 
-From the Terms (saved 2026-10-05 and 2026-10-09):
-
-> Claim deadline. Following the closure of the Artizen platform, new payout claims must be submitted
-> through the payouts site by 11:59 PM Pacific Time on November 30, 2026. Claims submitted after this
-> deadline will not be accepted. Claims submitted on or before the deadline will continue to be
-> processed under these Terms, and creators may continue to sign in to view the status of an existing
-> claim, what has been paid, and what is still owed.
+Per the [Artizen Terms](https://artizen.fund/terms) (as saved 2026-10-05 and 2026-10-09), new claims must be submitted through the payouts site
+"by 11:59 PM Pacific Time on November 30, 2026." Late claims are not accepted. Claims made in time keep
+being processed, and you can still sign in to see what has been paid and what is still owed.
 
 Steps reported by community members (UNVERIFIED):
 1. Sign in at artizen.fund with the **same email** you used on Artizen. If it says no projects or
@@ -88,32 +78,23 @@ audits and regulations." The founder wrote that it will "take longer than anyone
 
 ## Read this before you claim
 
-From the Terms (saved 2026-10-09):
+Per the [Artizen Terms](https://artizen.fund/terms) (as saved 2026-10-09), "Submitting a claim, or confirming your total, is agreement to this
+Playbook." Before payout you confirm the total owed across all your projects, less payments already made
+and refunded or disputed sales, and "Once that total is paid, no further amounts are due."
 
-> Submitting a claim, or confirming your total, is agreement to this Playbook. Before payouts are
-> sent, you will be asked to confirm the total owed to you across all of your projects, less any
-> payments already made and any refunded or disputed sales. Once that total is paid, no further
-> amounts are due.
-
-From "Full satisfaction and release" (Playbook, 2026-10-02):
-
-> Submitting a payout claim is an offer to resolve that dispute by accepting the Sales Amount as the
-> only payment Artizen will make for the listed projects and seasons. When you have received the full
-> Sales Amount, Artizen's payment obligations to you for those projects and seasons are fully
-> satisfied, and you release Artizen Works Inc. from claims for those projects and seasons. This is a
-> settlement. Neither side admits liability.
+The [Artizen Playbook](https://artizen.fund/playbook) (as of 2026-10-02) has a section called "Full satisfaction and release". In summary: a claim is
+an offer to accept the sales amount as the only payment for the listed projects and seasons. Once that
+amount is received, you release Artizen Works Inc. from claims for those projects and seasons. It
+describes this as "a settlement. Neither side admits liability."
 
 What this means for you is a legal question. If it matters to you, get your own legal advice before
 you claim, and keep the deadline in mind.
 
 ## Your ART and USDC
 
-From the Terms (saved 2026-10-05 and 2026-10-09):
-
-> You may withdraw or transfer ART and USDC from your Artizen wallet to an external wallet address that
-> supports the Base network until 11:59 PM Pacific Time on November 30, 2026. Artizen covers network
-> fees for withdrawals made through the Artizen wallet before that deadline. After that date, the
-> in-platform wallet and fee sponsorship will be discontinued.
+Per the [Artizen Terms](https://artizen.fund/terms) (as saved 2026-10-05 and 2026-10-09), you can move ART and USDC to your own wallet on the
+Base network until 11:59 PM Pacific Time on 30 November 2026. Artizen pays the network fees until then.
+"After that date, the in-platform wallet and fee sponsorship will be discontinued."
 
 - Send a small test amount first.
 - Community members describe selling ART through Artizen's Juicebox page on Base. You get either the
@@ -122,12 +103,10 @@ From the Terms (saved 2026-10-05 and 2026-10-09):
 
 ## Fund directors and backers
 
-Per the Platform Continuity section (2026-10-02):
-
-> If Artizen elects Early Exit across some or all of the platform, affected Funds wind down. Unused
-> match, unused Endowment earmarks, and unpaid Fund prizes revert to the Endowment. They do not roll
-> to the next drive or the next season. Sponsorships remain voluntary and non-refundable except where
-> required by law.
+Per the Platform Continuity section of the [Artizen Playbook](https://artizen.fund/playbook) (as of 2026-10-02):
+- Affected Funds wind down.
+- Unused match, unused Endowment earmarks and unpaid Fund prizes "revert to the Endowment".
+- Sponsorships stay non-refundable except where required by law.
 
 The Terms do not answer whether fund directors receive anything further. Members have asked, and no
 answer is recorded.
@@ -152,7 +131,7 @@ Asked by the community, with no answer in any source we hold:
 2. Which clause allows Season 6 payments to be offset against Season 7 sales?
 3. Are house purchases and creators' own purchases owed as Artifact sales?
 4. What happens to the Endowment, the Funds' balances, and the 10% fees?
-5. Who can authorise payments while the founder is away?
+5. Who at Artizen can authorise payments and answer for the wind-down?
 6. When will claimed payouts arrive?
 
 ## Where to look

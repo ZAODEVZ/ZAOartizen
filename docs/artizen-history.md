@@ -18,8 +18,7 @@ weekly **Fund Drives**.
 
 The rules lived in the **Artizen Playbook** at play.artizen.fund. The Playbook text said only three
 people worked on Artizen full time in October 2026: René Pinnell, Nate Van Cleve (Head of Product), and
-Venus, an in-platform account presented as "Co-founder and CEO". This record does not say whether
-Venus was a person or software (Playbook, 2026-10-02).
+Venus, listed as "Co-founder and CEO" (Playbook, 2026-10-02).
 
 ### The Endowment and ART
 
@@ -73,8 +72,7 @@ of the Playbook. Use the dated copies above instead.
 | 2026-10-06 | Artizen's account tells a creator that Artizen "is closing, not pausing" | Relayed by a community member, UNVERIFIED |
 | 2026-10-09 | play.artizen.fund redirects to artizen.fund, now titled "Artizen Payouts: creator payouts, claimed and tracked in one place." The live Playbook is gone. | curl of both URLs by The ZAO, 2026-10-09 |
 
-Community groups formed to support each other, collect documents and discuss what comes next. Some
-members are considering legal routes; this record takes no position on that.
+Community groups formed to support each other, collect documents and discuss what comes next.
 
 ## Platform totals (as claimed, not verified)
 
