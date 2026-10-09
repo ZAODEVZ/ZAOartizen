@@ -1,5 +1,10 @@
 # ZArtizen
 
+> **ARCHIVED 2026-10-05 - past work.** The Artizen platform wound down; The ZAO no longer works with
+> Artizen, and it is not a partner, funder or fund. Match funding and cash prizes will not be paid.
+> Everything below is kept as a historical record, not an active ask or plan. Start with
+> [ARCHIVE.md](ARCHIVE.md).
+
 **The ZAO's operating home for the Artizen Fund for Emerging Culture.** Research, strategy, playbooks, and a live 7-page Next.js site that powers how The ZAO shows up on Artizen as a fund manager, creator, and community.
 
 Graduated out of the ZAOOS monorepo (2026-06-13) into its own repo under ZADEVZ so work stands alone. Research provenance lives in ZAOOS (PR #844); this repo is the operating home.

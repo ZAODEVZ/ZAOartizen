@@ -6,7 +6,7 @@ import type { NextRequest } from 'next/server';
 // WHY THIS EXISTS. PR #25 shipped the ZAO Fund creator contact book: 40 real
 // people, their personal sites, their X handles, their university affiliations,
 // and - the part that is not public - our own internal outreach commentary about
-// each of them. "Trish Gianakis, never contacted." "Baraza TV, the claim in the
+// each of them. "<name>, never contacted." "Baraza TV, the claim in the
 // drafted email is not confirmed." That is a working CRM, and the PR wired it
 // into app/sitemap.ts, which asks search engines to index every row of it.
 //

@@ -1,5 +1,10 @@
 # ZAO x Artizen - Team Playbook
 
+> **ARCHIVED 2026-10-05 - past work.** The Artizen platform wound down; The ZAO no longer works with
+> Artizen, and it is not a partner, funder or fund. Match funding and cash prizes will not be paid.
+> Everything below is kept as a historical record, not an active ask or plan. Start with
+> [ARCHIVE.md](ARCHIVE.md).
+
 The front door for anyone helping with the ZAO's Artizen effort. Read this first, then go to the kit
 (`kit/`) for copy-paste tools and `research/` for the deep dives.
 

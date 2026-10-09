@@ -1,5 +1,10 @@
 # ZArtizen - Handoff (current as of 2026-09-20)
 
+> **ARCHIVED 2026-10-05 - past work.** The Artizen platform wound down; The ZAO no longer works with
+> Artizen, and it is not a partner, funder or fund. Match funding and cash prizes will not be paid.
+> Everything below is kept as a historical record, not an active ask or plan. Start with
+> [ARCHIVE.md](ARCHIVE.md).
+
 > **Read the 2026-09-20 section at the bottom first.** Everything above it is the 2026-07-03
 > handoff, kept as a record. It is Season 6 era and some of it is now wrong - the match ratio it
 > implies does not exist, and it reads as though the bootstrap motion has run. It has not.
