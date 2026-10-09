@@ -62,7 +62,7 @@ pitch is recorded in this repo; `kit/rene-comp-ask.md` stayed a draft).
 | 2026-10-03 | ZAOstock held in Ellsworth, Maine. No Artizen money had arrived. | finance-hq `capital/post-festival-2026-10-05.md` |
 | 2026-10-05 | Artizen's founder's wind-down message reaches the group (04:27): operations stop; Artifact sales will be paid; match funding and cash prizes will not | ZAO Artizen group export (private) |
 | 2026-10-05 | Artizen stopping operations. Zaal rules the work archived as past; Artizen removed as a partner from ZAO public surfaces (ZAOstock #447, ZAOOS #3713, zabalgames #753) | Zaal ruling 2026-10-05; PR search |
-| 2026-10-09 | A payout claim process is open; The ZAO has not submitted its claim as of 11:01 | ZAO Artizen group export (private) |
+| 2026-10-09 | A payout claim process is open; The ZAO has not submitted its claim as of 11:01 US Eastern | ZAO Artizen group export (private) |
 | 2026-10-09 | This archive written | this file |
 
 The wind-down message was first seen in the ZAO Artizen group on 2026-10-05. Its stated reason was
