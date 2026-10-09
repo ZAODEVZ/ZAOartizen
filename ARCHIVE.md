@@ -57,12 +57,17 @@ pitch is recorded in this repo; `kit/rene-comp-ask.md` stayed a draft).
 | 2026-09-20 | Artizen pauses review on its side, no date given | finance-hq `capital/artizen-impact-state-2026-09-20.md` |
 | 2026-09-21 | Last substantive merge: canonical mechanics file, meetings capture, Telegram capture bot (PR #48) | PR list |
 | 2026-09-29 | Zaal pauses all Artizen work ("lets hold off on all things artizen right now") | zao-vault `MISTAKES.md`, 2026-09-29 entry (private, tracked) |
+| 2026-08-19 | First message in the ZAO Artizen Telegram group | ZAO Artizen group export (private) |
+| 2026-09-09 | Weekly Wednesday noon (US Eastern) group calls begin; run 09-09, 09-16, 09-23, 09-30 | same |
 | 2026-10-03 | ZAOstock held in Ellsworth, Maine. No Artizen money had arrived. | finance-hq `capital/post-festival-2026-10-05.md` |
+| 2026-10-05 | Artizen's founder's wind-down message reaches the group (04:27): operations stop; Artifact sales will be paid; match funding and cash prizes will not | ZAO Artizen group export (private) |
 | 2026-10-05 | Artizen stopping operations. Zaal rules the work archived as past; Artizen removed as a partner from ZAO public surfaces (ZAOstock #447, ZAOOS #3713, zabalgames #753) | Zaal ruling 2026-10-05; PR search |
+| 2026-10-09 | A payout claim process is open; The ZAO has not submitted its claim as of 11:01 | ZAO Artizen group export (private) |
 | 2026-10-09 | This archive written | this file |
 
-**UNVERIFIED:** the date Artizen announced the wind-down and its stated reason. The announcement
-email was not read by anyone writing this archive.
+The wind-down message was first seen in the ZAO Artizen group on 2026-10-05. Its stated reason was
+personal to Artizen's founder and is not recorded here. **UNVERIFIED:** the date it was first sent to
+fund directors by email.
 
 ## 3. Outcomes
 
@@ -132,9 +137,33 @@ Plans that counted on Artizen match or prizes, including ZAOstock's 2026 budget,
 - **Status:** Artizen is paying outstanding Artifact sales slowly, with no date. Artizen offered an
   advance of this same money on 2026-09-18; it was last recorded as **not landed on 2026-09-27**.
   **Whether anything has landed since is UNVERIFIED** (not re-read).
+- **Claim (2026-10-09):** a payout claim process was open by 2026-10-09. The ZAO had not submitted
+  its claim as of 2026-10-09 11:01 US Eastern; that decision is Zaal's. No payout to anyone is reported
+  as received in the ZAO Artizen group through 2026-10-09 (that chat only).
 - **Owner:** finance-hq tracks it (finance card 9715). Payout questions go to Artizen's payout contact
   named in the wind-down email. The amounts live there, not here.
 - **UNVERIFIED:** whether Impact Reports still gate payout after the wind-down.
+
+## 5a. The ZAO Artizen group (Telegram, 2026-08-19 to 2026-10-09)
+
+Source: an export of the group taken 2026-10-09 (1,233 messages, 24 accounts posted), held privately.
+Group-level facts only; members are not named here.
+
+- Zaal ran the group for people running projects and funds on Artizen, to share strategy and
+  questions (stated 2026-09-08). Its first message is dated 2026-08-19.
+- From 2026-09-09 it held a weekly Wednesday noon (US Eastern) call, with extra calls on 2026-10-05
+  and 2026-10-07.
+- Its main activity was coordinated Artifact buying across members' projects during Artizen's hourly
+  raffle and sales events. Members reported group-backed wins on 2026-09-07 and 2026-09-09, and ZAO
+  Festivals won an hourly pot on 2026-09-08 (amount not stated).
+- On 2026-09-10 a member estimated the group had raised over $50,000 across all its projects in about
+  two weeks. **UNVERIFIED** (member estimate, no breakdown).
+- From mid-September members noted slower replies from Artizen and cancelled Monday calls (2026-09-28).
+- After the 2026-10-05 wind-down message the group discussed how payouts would be counted and the
+  claim process. On 2026-10-09 a member read the Playbook's wind-down rule as counting only actual
+  sales. **UNVERIFIED** against the Playbook.
+- A livestream planned for 2026-10-07 was announced in the group on 2026-09-23 and 2026-09-30.
+  **UNVERIFIED** whether it took place; the chat has no record of it.
 
 ## 6. Where everything lives
 
