@@ -180,21 +180,24 @@ Group-level facts only; members are not named here.
 | `meetings/` | Intake for call recordings. Nothing was ever ingested. | historical |
 | `app/` | The Next.js site | historical; see Notes below |
 | `scripts/` | Scraper, refresh-and-deploy, Playbook changelog check, guards, Telegram poller | historical; do not run `refresh.sh` (it deploys) |
-| `.github/workflows/telegram-capture.yml` | Telegram capture bot on a 15-minute schedule | still scheduled; see Notes |
+| `.github/workflows/telegram-capture.yml` | Telegram capture bot, was on a 15-minute schedule | disabled 2026-10-09 (reversible with Enable workflow) |
 | ZAOOS research (bettercallzaal/ZAOOS) | Docs 674, 683, 843-850, 924, 1077, 1079, 1277, 2309, 2311. Doc numbers collide across repos, so cite by path. | historical |
 | finance-hq (private) | The payout follow-up and all money detail | live for section 5 only |
 
-Open issues #12 and #14-#17 in this repo are Season 7 tasks that no longer apply.
+Issues #12 and #14-#17 in this repo were Season 7 tasks that no longer apply; all are closed.
 
 ## 7. Notes for whoever closes this out
 
-These are open decisions, not done by this archive:
+Done after this archive was first written:
 
-- The site at `za-oartizen.vercel.app` still answered HTTP 200 on 2026-10-09 and its pages still carry
-  live calls to action (`/rally`, `/apply`, `/sponsor`, "Back the fund" in the nav). The older host
-  `zaoartizen.vercel.app` returned 404 the same day. Taking the site down or adding a banner is a
-  public change for Zaal.
-- `.github/workflows/telegram-capture.yml` still runs every 15 minutes. With no bot token set it skips
-  and commits nothing (inferred from an empty secrets list and green runs, not proven). Disabling it
-  is a settings change for Zaal.
-- Whether to close the open issues, archive the GitHub repo, or make it private is Zaal's call.
+- **Site.** `za-oartizen.vercel.app` now shows an archived notice on `/`, and the old campaign pages
+  (`/rally`, `/apply`, `/sponsor` and others) redirect to it (checked 2026-10-09). The older host
+  `zaoartizen.vercel.app` returned 404 the same day.
+- **Telegram capture.** `.github/workflows/telegram-capture.yml` was disabled in GitHub Actions on
+  2026-10-09. CI is still active. Undo: `gh workflow enable telegram-capture.yml`.
+- **Issues.** The Season 7 issues are closed, and #11 (Vercel auto-deploy) was closed on 2026-10-10 as no
+  longer needed.
+
+Still open:
+
+- Whether to archive the GitHub repo or make it private is Zaal's call.
