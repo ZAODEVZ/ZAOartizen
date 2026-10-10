@@ -49,8 +49,22 @@ Per the Playbook (2026-10-02):
 - **On-chain, 2026-10-10:** The ZAO read the balances of the two addresses the Playbook published,
   directly from public Base nodes. The Endowment SAFE (`0xbB96A6D3D251dFDA76F96d1650f9Cfd53b41c8d1`)
   held about 305.8M ART and 100.00 USDC. The Team SAFE (`0x2DACE53f4E18D9ED29B65B218C6aa55965a05F85`)
-  held no ART and no USDC. This is a balance at one moment, not a transaction history; we could not
-  pull dated transfers, so it says nothing about where funds went or whether they were ever there.
+  held no ART and no USDC. This is a balance at one moment, not a transaction history.
+- **Liquidity deposits, read 2026-10-10 from Basescan (public pages, no login):** the Endowment address
+  sent ART and USDC into a Uniswap v4 liquidity pool twice, and received a position NFT each time:
+  - 2026-07-20 (block 48896867): about 10.80M ART and $1,000 USDC.
+    [transaction](https://basescan.org/tx/0x65a5f60abe793f341a143ccd1b0fdb2060ada1cb21e1a98741534849279e621a)
+  - 2026-09-04 (block 50849988): about 15.00M ART and $2,900 USDC.
+    [transaction](https://basescan.org/tx/0xf3c353459956bc0ce041e19024edc2635242d429275739852393bbe2d6737513)
+  - Both position NFTs (#2864727 and #3005243, #3005244) still show the Endowment as owner, and their
+    only recorded activity is the mint.
+  - In the first 12 transfers we read, from the Endowment's ERC-20 list, no token came back from the
+    pool. Basescan hides some transfers by default (suspicious tokens, zero-value), and older rows were
+    not read. So this does not show whether the liquidity is still in the pool.
+  - These are not sales. A position can be withdrawn without its NFT moving, so the NFT owner alone
+    does not show whether the money is still locked.
+  - The Playbook says Endowment money goes to match funding. How pool deposits fit that is not explained
+    in any source we hold.
 - Press in October 2026 described the Endowment as "over $14 million" (Wisevoter, 2026-10-06). How
   the displayed Endowment figure relates to on-chain balances is not explained in any source we hold.
 
