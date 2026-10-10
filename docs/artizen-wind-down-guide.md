@@ -37,10 +37,15 @@ from Artizen's account, 2026-10-06):
   deducted from their Season 7 sales payout.
 - **Seasons pooled.** Artizen's account reportedly said Season 6 and Season 7 totals are pooled
   and netted against everything already sent, including Season 6 match and prizes (relayed
-  2026-10-08).
-- **Some sales excluded.** Purchases made by Artizen's own account ("house" purchases) and by
-  creators on their own projects are reportedly treated as incentives, not sales, and are not paid.
-  Only sales to outside collectors are paid.
+  2026-10-08). Note: the Playbook copy of 2026-10-02 lists only chargebacks, uncleared payments,
+  sanctions and fraud as deductions. "Less any payments already made" first appears in the Terms
+  copy of 2026-10-09.
+- **Some sales excluded? Reports conflict.** Some members report that purchases by Artizen's own
+  account ("house" purchases) and by creators on their own projects are treated as incentives and
+  not paid. But the Playbook (2026-10-02) says "Creators are allowed to support their own projects",
+  and has no clause excluding either kind of purchase. A community site also reports Artizen saying
+  on 2026-10-08 that creators' own purchases do count as sales owed (UNVERIFIED). Corrected
+  2026-10-10; an earlier version of this guide gave only the first report.
 - **Fees.** Payouts are reported net of Artizen's 10% fee and processing fees. Artizen's account
   reportedly said the 10% went to the Endowment, and that creators are paid before any remainder goes
   to investors (relayed 2026-10-06).
@@ -126,13 +131,17 @@ especially from between 2026-09-04 and 2026-10-02, please open an issue on this 
 ## Questions still open
 
 Asked by the community, with no answer in any source we hold:
-1. When was the "Artizen may elect Early Exit" text added? The earliest copy we hold is 2026-10-02.
+1. When was the "Artizen may elect Early Exit" text added? It was in place by **2026-09-22** at the
+   latest, per the Playbook's own database timestamps (found 2026-10-10). The exact date is still open.
    See the [history](artizen-history.md#how-the-rules-changed).
 2. Which clause allows Season 6 payments to be offset against Season 7 sales?
 3. Are house purchases and creators' own purchases owed as Artifact sales?
 4. What happens to the Endowment, the Funds' balances, and the 10% fees?
 5. Who at Artizen can authorise payments and answer for the wind-down?
 6. When will claimed payouts arrive?
+
+Note: on 2026-10-10 the Terms page at artizen.fund/terms showed only a sign-in screen when we
+checked it without signing in, so changes since 2026-10-09 are not recorded here.
 
 ## Where to look
 
